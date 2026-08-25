@@ -1,7 +1,9 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-08-25T17:46:14.664244+00:00",
+  "lastUpdated": "2026-08-25T17:49:39.673508+00:00",
+  "currentMatchupPeriod": 1,
+  "currentScoringPeriod": 1,
   "teams": [
     {
       "teamId": 1,
