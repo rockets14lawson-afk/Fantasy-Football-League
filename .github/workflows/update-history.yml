@@ -1,0 +1,43 @@
+name: Update ESPN League History
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-history:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Pull ESPN historical data
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python update_history.py
+
+      - name: Save historical data
+        run: |
+          git config user.name "JDC Degenerates Bot"
+          git config user.email "actions@github.com"
+
+          git add league-history.json
+
+          if git diff --cached --quiet; then
+            echo "No historical changes to save."
+          else
+            git commit -m "Update ESPN league history"
+            git push
+          fi
