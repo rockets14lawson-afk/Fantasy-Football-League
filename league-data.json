@@ -1,0 +1,106 @@
+{
+  "leagueId": "90156758",
+  "season": "2026",
+  "teams": [
+    {
+      "teamId": 1,
+      "teamName": "Spitters Are Quitters",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 2,
+      "teamName": "Hunter's Heated Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 3,
+      "teamName": "They Hit The Second Bower",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 4,
+      "teamName": "Let's Go Muskies!",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 5,
+      "teamName": "Steve's Sneaky Team",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 6,
+      "teamName": "Stone Cold Steve",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 7,
+      "teamName": "Turn Your Head and Goff",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 8,
+      "teamName": "Team H00ch",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 9,
+      "teamName": "89 and a  Wake Up",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    },
+    {
+      "teamId": 10,
+      "teamName": "Unsolicited Dak Pics",
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 0.0,
+      "pointsAgainst": 0.0,
+      "percentage": 0.0
+    }
+  ]
+}
