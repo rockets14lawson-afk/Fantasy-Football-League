@@ -51,11 +51,14 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   gap: 8px;
   padding: 12px;
+
   background: rgba(8,8,8,.96);
   border-bottom: 1px solid #333;
 }
@@ -81,7 +84,7 @@ nav a:hover {
 
 .intro {
   text-align: center;
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto 35px;
 }
 
@@ -102,7 +105,7 @@ nav a:hover {
 }
 
 
-/* MANAGER CARD */
+/* MANAGER CARDS */
 
 .manager-card {
   background: linear-gradient(145deg,#151515,#0d0d0d);
@@ -118,7 +121,7 @@ nav a:hover {
 }
 
 .manager-card.champion {
-  border-color: rgba(212,175,55,.65);
+  border-color: rgba(212,175,55,.7);
 }
 
 .manager-main {
@@ -136,12 +139,16 @@ nav a:hover {
   min-width: 70px;
   width: 70px;
   height: 70px;
+
   border-radius: 50%;
+
   background: #d4af37;
   color: black;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 28px;
   font-weight: 900;
 }
@@ -156,41 +163,44 @@ nav a:hover {
   font-weight: bold;
 }
 
+
+/* STATS */
+
 .stats {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5,1fr);
+  gap: 8px;
 }
 
 .stat {
   background: #101010;
   border: 1px solid #292929;
   border-radius: 10px;
-  padding: 14px 8px;
+  padding: 13px 6px;
   text-align: center;
 }
 
 .stat span {
   display: block;
   color: #888;
-  font-size: 10px;
+  font-size: 9px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .8px;
   margin-bottom: 7px;
 }
 
 .stat strong {
   color: #d4af37;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
-/* BUTTON */
+/* PROFILE BUTTON */
 
 .profile-button {
   width: 100%;
   margin-top: 18px;
-  padding: 12px;
+  padding: 13px;
 
   background: transparent;
   color: #d4af37;
@@ -210,7 +220,7 @@ nav a:hover {
 }
 
 
-/* EXPANDED PROFILE */
+/* EXPANDED HEAD TO HEAD */
 
 .profile {
   display: none;
@@ -248,24 +258,20 @@ nav a:hover {
 }
 
 .h2h-record {
-  color: #d4af37;
   font-weight: 900;
 }
 
 .winning {
-  color: #67d391;
+  color: #65d68a;
 }
 
 .losing {
-  color: #ff7676;
+  color: #ff7777;
 }
 
 .even {
   color: #d4af37;
 }
-
-
-/* ROOKIE */
 
 .rookie-message {
   color: #999;
@@ -291,6 +297,14 @@ footer strong {
 
 /* MOBILE */
 
+@media (max-width: 1000px) {
+
+  .stats {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+}
+
 @media (max-width: 850px) {
 
   .manager-grid {
@@ -302,13 +316,16 @@ footer strong {
 @media (max-width: 500px) {
 
   .stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .manager-top {
+    align-items: flex-start;
   }
 
 }
 
 </style>
-
 </head>
 
 
@@ -348,11 +365,11 @@ JDC Degenerates Fantasy Football
 
 <div class="intro">
 
-<h2>2026 League Members</h2>
+<h2>JDC Degenerates Career Profiles</h2>
 
 <p>
-Career regular-season records and head-to-head history
-for the JDC Degenerates.
+Regular-season records, playoff performance, best finishes,
+championships and head-to-head history.
 </p>
 
 </div>
@@ -361,9 +378,7 @@ for the JDC Degenerates.
 <div class="manager-grid">
 
 
-<!-- ======================
-DEVIN
-====================== -->
+<!-- DEVIN -->
 
 <div class="manager-card">
 
@@ -371,18 +386,11 @@ DEVIN
 
 <div class="manager-top">
 
-<div class="manager-icon">
-D
-</div>
+<div class="manager-icon">D</div>
 
 <div class="manager-name">
-
 <h2>Devin</h2>
-
-<span>
-League Commissioner
-</span>
-
+<span>League Commissioner</span>
 </div>
 
 </div>
@@ -401,6 +409,16 @@ League Commissioner
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>2-3</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>3rd</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -408,8 +426,7 @@ League Commissioner
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('devin',this)">
+<button class="profile-button" onclick="toggleProfile('devin',this)">
 View Head-to-Head
 </button>
 
@@ -456,9 +473,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-TOBY
-====================== -->
+<!-- TOBY -->
 
 <div class="manager-card champion">
 
@@ -466,18 +481,11 @@ TOBY
 
 <div class="manager-top">
 
-<div class="manager-icon">
-T
-</div>
+<div class="manager-icon">T</div>
 
 <div class="manager-name">
-
 <h2>Toby</h2>
-
-<span>
-2022 Champion 🏆
-</span>
-
+<span>2022 Champion 🏆</span>
 </div>
 
 </div>
@@ -496,6 +504,16 @@ T
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>3-2</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>1st</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>1 🏆</strong>
 </div>
@@ -503,8 +521,7 @@ T
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('toby',this)">
+<button class="profile-button" onclick="toggleProfile('toby',this)">
 View Head-to-Head
 </button>
 
@@ -551,9 +568,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-TOM
-====================== -->
+<!-- TOM -->
 
 <div class="manager-card">
 
@@ -561,16 +576,11 @@ TOM
 
 <div class="manager-top">
 
-<div class="manager-icon">
-T
-</div>
+<div class="manager-icon">T</div>
 
 <div class="manager-name">
-
 <h2>Tom</h2>
-
 <span>Manager</span>
-
 </div>
 
 </div>
@@ -589,6 +599,16 @@ T
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>0-2</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>5th</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -596,8 +616,7 @@ T
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('tom',this)">
+<button class="profile-button" onclick="toggleProfile('tom',this)">
 View Head-to-Head
 </button>
 
@@ -609,32 +628,32 @@ View Head-to-Head
 <h3>Tom — Head-to-Head</h3>
 
 <div class="h2h-row">
-<span>vs Josh</span>
+<span class="opponent">vs Josh</span>
 <span class="h2h-record losing">1-2</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Toby</span>
+<span class="opponent">vs Toby</span>
 <span class="h2h-record even">3-3</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Mike</span>
+<span class="opponent">vs Mike</span>
 <span class="h2h-record losing">2-3</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Matt</span>
+<span class="opponent">vs Matt</span>
 <span class="h2h-record winning">4-3</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Philip</span>
+<span class="opponent">vs Philip</span>
 <span class="h2h-record losing">0-2</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Devin</span>
+<span class="opponent">vs Devin</span>
 <span class="h2h-record winning">5-3</span>
 </div>
 
@@ -644,9 +663,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-MATT
-====================== -->
+<!-- MATT -->
 
 <div class="manager-card champion">
 
@@ -654,18 +671,11 @@ MATT
 
 <div class="manager-top">
 
-<div class="manager-icon">
-M
-</div>
+<div class="manager-icon">M</div>
 
 <div class="manager-name">
-
 <h2>Matt</h2>
-
-<span>
-2025 Champion 🏆
-</span>
-
+<span>2025 Champion 🏆</span>
 </div>
 
 </div>
@@ -684,6 +694,16 @@ M
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>3-0</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>1st</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>1 🏆</strong>
 </div>
@@ -691,8 +711,7 @@ M
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('matt',this)">
+<button class="profile-button" onclick="toggleProfile('matt',this)">
 View Head-to-Head
 </button>
 
@@ -704,32 +723,32 @@ View Head-to-Head
 <h3>Matt — Head-to-Head</h3>
 
 <div class="h2h-row">
-<span>vs Josh</span>
+<span class="opponent">vs Josh</span>
 <span class="h2h-record winning">2-0</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Tom</span>
+<span class="opponent">vs Tom</span>
 <span class="h2h-record losing">3-4</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Toby</span>
+<span class="opponent">vs Toby</span>
 <span class="h2h-record losing">1-5</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Mike</span>
+<span class="opponent">vs Mike</span>
 <span class="h2h-record losing">0-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Philip</span>
+<span class="opponent">vs Philip</span>
 <span class="h2h-record even">1-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Devin</span>
+<span class="opponent">vs Devin</span>
 <span class="h2h-record even">2-2</span>
 </div>
 
@@ -739,9 +758,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-PHILIP
-====================== -->
+<!-- PHILIP -->
 
 <div class="manager-card">
 
@@ -749,18 +766,11 @@ PHILIP
 
 <div class="manager-top">
 
-<div class="manager-icon">
-P
-</div>
+<div class="manager-icon">P</div>
 
 <div class="manager-name">
-
 <h2>Philip</h2>
-
-<span>
-2025 Runner-Up
-</span>
-
+<span>2025 Runner-Up</span>
 </div>
 
 </div>
@@ -779,6 +789,16 @@ P
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>3-2</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>2nd</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -786,8 +806,7 @@ P
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('philip',this)">
+<button class="profile-button" onclick="toggleProfile('philip',this)">
 View Head-to-Head
 </button>
 
@@ -799,32 +818,32 @@ View Head-to-Head
 <h3>Philip — Head-to-Head</h3>
 
 <div class="h2h-row">
-<span>vs Josh</span>
+<span class="opponent">vs Josh</span>
 <span class="h2h-record winning">4-0</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Tom</span>
+<span class="opponent">vs Tom</span>
 <span class="h2h-record winning">2-0</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Toby</span>
+<span class="opponent">vs Toby</span>
 <span class="h2h-record winning">2-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Mike</span>
+<span class="opponent">vs Mike</span>
 <span class="h2h-record winning">4-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Matt</span>
+<span class="opponent">vs Matt</span>
 <span class="h2h-record even">1-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Devin</span>
+<span class="opponent">vs Devin</span>
 <span class="h2h-record losing">1-2</span>
 </div>
 
@@ -834,9 +853,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-MIKE
-====================== -->
+<!-- MIKE -->
 
 <div class="manager-card champion">
 
@@ -844,18 +861,11 @@ MIKE
 
 <div class="manager-top">
 
-<div class="manager-icon">
-M
-</div>
+<div class="manager-icon">M</div>
 
 <div class="manager-name">
-
 <h2>Mike</h2>
-
-<span>
-2024 Champion 🏆
-</span>
-
+<span>2024 Champion 🏆</span>
 </div>
 
 </div>
@@ -874,6 +884,16 @@ M
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>2-1</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>1st</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>1 🏆</strong>
 </div>
@@ -881,8 +901,7 @@ M
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('mike',this)">
+<button class="profile-button" onclick="toggleProfile('mike',this)">
 View Head-to-Head
 </button>
 
@@ -894,32 +913,32 @@ View Head-to-Head
 <h3>Mike — Head-to-Head</h3>
 
 <div class="h2h-row">
-<span>vs Josh</span>
+<span class="opponent">vs Josh</span>
 <span class="h2h-record winning">2-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Tom</span>
+<span class="opponent">vs Tom</span>
 <span class="h2h-record winning">3-2</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Toby</span>
+<span class="opponent">vs Toby</span>
 <span class="h2h-record winning">3-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Devin</span>
+<span class="opponent">vs Devin</span>
 <span class="h2h-record even">1-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Matt</span>
+<span class="opponent">vs Matt</span>
 <span class="h2h-record winning">1-0</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Philip</span>
+<span class="opponent">vs Philip</span>
 <span class="h2h-record losing">1-4</span>
 </div>
 
@@ -929,9 +948,7 @@ View Head-to-Head
 
 
 
-<!-- ======================
-JOSH
-====================== -->
+<!-- JOSH -->
 
 <div class="manager-card champion">
 
@@ -939,18 +956,11 @@ JOSH
 
 <div class="manager-top">
 
-<div class="manager-icon">
-J
-</div>
+<div class="manager-icon">J</div>
 
 <div class="manager-name">
-
 <h2>Josh</h2>
-
-<span>
-2023 Champion 🏆
-</span>
-
+<span>2023 Champion 🏆</span>
 </div>
 
 </div>
@@ -969,6 +979,16 @@ J
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>2-1</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>1st</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>1 🏆</strong>
 </div>
@@ -976,8 +996,7 @@ J
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('josh',this)">
+<button class="profile-button" onclick="toggleProfile('josh',this)">
 View Head-to-Head
 </button>
 
@@ -989,44 +1008,42 @@ View Head-to-Head
 <h3>Josh — Head-to-Head</h3>
 
 <div class="h2h-row">
-<span>vs Tom</span>
+<span class="opponent">vs Devin</span>
+<span class="h2h-record losing">2-4</span>
+</div>
+
+<div class="h2h-row">
+<span class="opponent">vs Tom</span>
 <span class="h2h-record winning">2-1</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Toby</span>
+<span class="opponent">vs Toby</span>
 <span class="h2h-record losing">3-5</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Mike</span>
+<span class="opponent">vs Mike</span>
 <span class="h2h-record losing">1-2</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Matt</span>
+<span class="opponent">vs Matt</span>
 <span class="h2h-record losing">0-2</span>
 </div>
 
 <div class="h2h-row">
-<span>vs Philip</span>
+<span class="opponent">vs Philip</span>
 <span class="h2h-record losing">0-4</span>
 </div>
 
-<div class="h2h-row">
-<span>vs Devin</span>
-<span class="h2h-record losing">2-4</span>
-</div>
-
 </div>
 
 </div>
 
 
 
-<!-- ======================
-HUNTER
-====================== -->
+<!-- HUNTER -->
 
 <div class="manager-card">
 
@@ -1034,18 +1051,11 @@ HUNTER
 
 <div class="manager-top">
 
-<div class="manager-icon">
-H
-</div>
+<div class="manager-icon">H</div>
 
 <div class="manager-name">
-
 <h2>Hunter</h2>
-
-<span>
-2026 Rookie
-</span>
-
+<span>2026 Rookie</span>
 </div>
 
 </div>
@@ -1064,6 +1074,16 @@ H
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>0-0</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>—</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -1071,8 +1091,7 @@ H
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('hunter',this)">
+<button class="profile-button" onclick="toggleProfile('hunter',this)">
 View Profile
 </button>
 
@@ -1081,11 +1100,11 @@ View Profile
 
 <div class="profile" id="hunter">
 
-<h3>Hunter — Head-to-Head</h3>
+<h3>Hunter — Career Profile</h3>
 
 <div class="rookie-message">
 2026 will be Hunter's first season in the JDC Degenerates.
-No career head-to-head results yet.
+No regular-season, playoff or head-to-head history yet.
 </div>
 
 </div>
@@ -1094,9 +1113,7 @@ No career head-to-head results yet.
 
 
 
-<!-- ======================
-STEVE H.
-====================== -->
+<!-- STEVE H. -->
 
 <div class="manager-card">
 
@@ -1104,18 +1121,11 @@ STEVE H.
 
 <div class="manager-top">
 
-<div class="manager-icon">
-S
-</div>
+<div class="manager-icon">S</div>
 
 <div class="manager-name">
-
 <h2>Steve H.</h2>
-
-<span>
-2026 Rookie
-</span>
-
+<span>2026 Rookie</span>
 </div>
 
 </div>
@@ -1134,6 +1144,16 @@ S
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>0-0</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>—</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -1141,8 +1161,7 @@ S
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('steveh',this)">
+<button class="profile-button" onclick="toggleProfile('steveh',this)">
 View Profile
 </button>
 
@@ -1151,11 +1170,11 @@ View Profile
 
 <div class="profile" id="steveh">
 
-<h3>Steve H. — Head-to-Head</h3>
+<h3>Steve H. — Career Profile</h3>
 
 <div class="rookie-message">
 2026 will be Steve H.'s first season in the JDC Degenerates.
-No career head-to-head results yet.
+No regular-season, playoff or head-to-head history yet.
 </div>
 
 </div>
@@ -1164,9 +1183,7 @@ No career head-to-head results yet.
 
 
 
-<!-- ======================
-STEVE P.
-====================== -->
+<!-- STEVE P. -->
 
 <div class="manager-card">
 
@@ -1174,18 +1191,11 @@ STEVE P.
 
 <div class="manager-top">
 
-<div class="manager-icon">
-S
-</div>
+<div class="manager-icon">S</div>
 
 <div class="manager-name">
-
 <h2>Steve P.</h2>
-
-<span>
-2026 Rookie
-</span>
-
+<span>2026 Rookie</span>
 </div>
 
 </div>
@@ -1204,6 +1214,16 @@ S
 </div>
 
 <div class="stat">
+<span>Playoffs</span>
+<strong>0-0</strong>
+</div>
+
+<div class="stat">
+<span>Best Finish</span>
+<strong>—</strong>
+</div>
+
+<div class="stat">
 <span>Titles</span>
 <strong>0</strong>
 </div>
@@ -1211,8 +1231,7 @@ S
 </div>
 
 
-<button class="profile-button"
-onclick="toggleProfile('stevep',this)">
+<button class="profile-button" onclick="toggleProfile('stevep',this)">
 View Profile
 </button>
 
@@ -1221,11 +1240,11 @@ View Profile
 
 <div class="profile" id="stevep">
 
-<h3>Steve P. — Head-to-Head</h3>
+<h3>Steve P. — Career Profile</h3>
 
 <div class="rookie-message">
 2026 will be Steve P.'s first season in the JDC Degenerates.
-No career head-to-head results yet.
+No regular-season, playoff or head-to-head history yet.
 </div>
 
 </div>
@@ -1240,9 +1259,7 @@ No career head-to-head results yet.
 
 <footer>
 
-<strong>
-JDC Degenerates
-</strong>
+<strong>JDC Degenerates</strong>
 
 <br><br>
 
@@ -1251,56 +1268,54 @@ Fantasy Football League • Est. 2022
 </footer>
 
 
-
 <script>
 
-function toggleProfile(id,button) {
+function toggleProfile(id, button) {
 
-  const profile =
-  document.getElementById(id);
+  const selectedProfile =
+    document.getElementById(id);
 
-  const isOpen =
-  profile.classList.contains("open");
-
-
-  document
-  .querySelectorAll(".profile")
-  .forEach(function(item) {
-
-    item.classList.remove("open");
-
-  });
+  const wasOpen =
+    selectedProfile.classList.contains("open");
 
 
   document
-  .querySelectorAll(".profile-button")
-  .forEach(function(item) {
+    .querySelectorAll(".profile")
+    .forEach(function(profile) {
 
-    if (
-      item.textContent.includes("Head-to-Head")
-    ) {
+      profile.classList.remove("open");
 
-      item.textContent =
-      "View Head-to-Head";
-
-    }
-
-    else {
-
-      item.textContent =
-      "View Profile";
-
-    }
-
-  });
+    });
 
 
-  if (!isOpen) {
+  document
+    .querySelectorAll(".profile-button")
+    .forEach(function(btn) {
 
-    profile.classList.add("open");
+      if (
+        btn.parentElement.parentElement
+        .querySelector(".manager-name span")
+        .textContent.includes("Rookie")
+      ) {
 
-    button.textContent =
-    "Close Profile";
+        btn.textContent = "View Profile";
+
+      }
+
+      else {
+
+        btn.textContent = "View Head-to-Head";
+
+      }
+
+    });
+
+
+  if (!wasOpen) {
+
+    selectedProfile.classList.add("open");
+
+    button.textContent = "Close Profile";
 
   }
 
@@ -1312,3 +1327,4 @@ function toggleProfile(id,button) {
 </body>
 
 </html>
+```
