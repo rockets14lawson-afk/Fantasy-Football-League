@@ -1,9 +1,7 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,11 +24,6 @@ body {
   color: #f5f5f5;
 }
 
-
-/* =========================
-   HERO
-========================= */
-
 .hero {
   min-height: 440px;
   display: flex;
@@ -38,11 +31,9 @@ body {
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
-
   background:
     radial-gradient(circle at top, rgba(212,175,55,.22), transparent 42%),
     linear-gradient(180deg,#111,#050505);
-
   border-bottom: 3px solid #d4af37;
 }
 
@@ -94,23 +85,15 @@ body {
   font-weight: 900;
 }
 
-
-/* =========================
-   NAV
-========================= */
-
 nav {
   position: sticky;
   top: 0;
   z-index: 100;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-
   padding: 12px;
-
   background: rgba(8,8,8,.96);
   border-bottom: 1px solid #343434;
 }
@@ -128,11 +111,6 @@ nav a:hover {
   background: #d4af37;
   color: black;
 }
-
-
-/* =========================
-   MAIN
-========================= */
 
 .container {
   width: min(1150px,92%);
@@ -174,11 +152,6 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
-
-/* =========================
-   GAME OF THE WEEK
-========================= */
-
 .game-week {
   text-align: center;
   padding: 30px 10px;
@@ -203,16 +176,12 @@ nav a:hover {
   width: 90px;
   height: 90px;
   margin: auto;
-
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #111;
   border: 3px solid #d4af37;
-
   color: #d4af37;
   font-size: 32px;
   font-weight: 900;
@@ -224,9 +193,18 @@ nav a:hover {
 }
 
 .game-score {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 900;
   color: white;
+}
+
+.featured-leading .manager-circle {
+  background: #d4af37;
+  color: #050505;
+}
+
+.featured-leading .game-score {
+  color: #d4af37;
 }
 
 .vs {
@@ -243,9 +221,27 @@ nav a:hover {
 }
 
 .game-status {
-  margin-top: 6px;
-  color: #999;
+  margin-top: 8px;
   font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.status-live {
+  color: #d4af37;
+}
+
+.status-final {
+  color: #7ee59b;
+}
+
+.status-tied {
+  color: #f0d36a;
+}
+
+.status-scheduled {
+  color: #888;
 }
 
 .week-status {
@@ -253,11 +249,6 @@ nav a:hover {
   color: #888;
   font-size: 13px;
 }
-
-
-/* =========================
-   WEEKLY MATCHUPS
-========================= */
 
 .weekly-games {
   display: grid;
@@ -269,11 +260,9 @@ nav a:hover {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 20px;
-
   background: #101010;
   border: 1px solid #303030;
   border-radius: 12px;
-
   padding: 18px;
 }
 
@@ -304,7 +293,7 @@ nav a:hover {
 }
 
 .weekly-score {
-  min-width: 145px;
+  min-width: 155px;
   text-align: center;
 }
 
@@ -316,16 +305,22 @@ nav a:hover {
 .weekly-score span {
   display: block;
   margin-top: 4px;
-  color: #777;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+.leading-team {
+  color: #d4af37;
+}
 
-/* =========================
-   ESPN STATUS
-========================= */
+.losing-team {
+  color: #ddd;
+}
+
+.final-winner {
+  color: #7ee59b;
+}
 
 .espn-status {
   display: flex;
@@ -346,17 +341,15 @@ nav a:hover {
 }
 
 .sync-time {
-  color: #777;
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+  padding: 9px 12px;
   font-size: 11px;
-  text-align: right;
-  margin-top: -10px;
-  margin-bottom: 15px;
+  text-align: center;
+  margin-bottom: 16px;
 }
-
-
-/* =========================
-   STANDINGS
-========================= */
 
 .table-wrap {
   overflow-x: auto;
@@ -415,11 +408,6 @@ tr:hover td {
   color: #ff8585;
 }
 
-
-/* =========================
-   MANAGERS
-========================= */
-
 .manager-grid {
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -442,16 +430,12 @@ tr:hover td {
   width: 52px;
   height: 52px;
   margin: auto auto 10px;
-
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background: #d4af37;
   color: black;
-
   font-weight: 900;
   font-size: 20px;
 }
@@ -466,11 +450,6 @@ tr:hover td {
   color: #777;
   font-size: 12px;
 }
-
-
-/* =========================
-   CHAMPIONS
-========================= */
 
 .history-grid {
   display: grid;
@@ -500,11 +479,6 @@ tr:hover td {
   font-size: 19px;
   font-weight: 900;
 }
-
-
-/* =========================
-   SEASON HISTORY
-========================= */
 
 .season-history-grid {
   display: grid;
@@ -548,11 +522,6 @@ tr:hover td {
   color: #d4af37;
 }
 
-
-/* =========================
-   RECORDS
-========================= */
-
 .records-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -563,10 +532,8 @@ tr:hover td {
   display: flex;
   justify-content: space-between;
   gap: 15px;
-
   background: #101010;
   border: 1px solid #303030;
-
   padding: 18px;
   border-radius: 10px;
 }
@@ -580,11 +547,6 @@ tr:hover td {
   font-weight: bold;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
 footer {
   text-align: center;
   padding: 35px 20px;
@@ -595,11 +557,6 @@ footer {
 footer strong {
   color: #d4af37;
 }
-
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 850px) {
 
@@ -643,9 +600,7 @@ footer strong {
 
 </head>
 
-
 <body>
-
 
 <header class="hero">
 
@@ -675,21 +630,14 @@ Trash Talk. Rivalries. Championships.
 
 </header>
 
-
 <nav>
 
 <a href="index.html">Home</a>
-
 <a href="schedule.html">Schedule</a>
-
 <a href="#standings">Standings</a>
-
 <a href="managers.html">Managers</a>
-
 <a href="#champions">Champions</a>
-
 <a href="#season-history">History</a>
-
 <a href="#records">Records</a>
 
 <a
@@ -700,7 +648,6 @@ ESPN League
 </a>
 
 </nav>
-
 
 <div class="container">
 
@@ -723,18 +670,15 @@ Featured Matchup
 
 </div>
 
-
 <div class="game-week">
 
 <div class="game-label" id="weekNumber">
 WEEK 1
 </div>
 
-
 <div class="matchup">
 
-
-<div>
+<div id="featuredTeam1Box">
 
 <div class="manager-circle" id="team1Initial">
 M
@@ -750,7 +694,6 @@ Matt
 
 </div>
 
-
 <div>
 
 <div class="vs">
@@ -761,14 +704,15 @@ VS
 2025 Championship Rematch
 </div>
 
-<div class="game-status" id="featuredStatus">
+<div
+class="game-status status-scheduled"
+id="featuredStatus">
 Scheduled
 </div>
 
 </div>
 
-
-<div>
+<div id="featuredTeam2Box">
 
 <div class="manager-circle" id="team2Initial">
 P
@@ -784,12 +728,9 @@ Philip
 
 </div>
 
-
 </div>
 
-
-<div class="week-status" id="weekStatus">
-</div>
+<div class="week-status" id="weekStatus"></div>
 
 </div>
 
@@ -798,8 +739,7 @@ Philip
 </section>
 
 
-
-<!-- THIS WEEK -->
+<!-- WEEKLY MATCHUPS -->
 
 <section class="section">
 
@@ -821,11 +761,9 @@ ESPN Scores
 
 </div>
 
-
 <div class="sync-time" id="syncTime">
 Loading ESPN data...
 </div>
-
 
 <div class="weekly-games" id="weeklyGames">
 
@@ -835,11 +773,9 @@ Loading weekly matchups...
 
 </div>
 
-
 </div>
 
 </section>
-
 
 
 <!-- STANDINGS -->
@@ -864,7 +800,6 @@ ESPN Sync
 
 </div>
 
-
 <div class="table-wrap">
 
 <table>
@@ -872,32 +807,22 @@ ESPN Sync
 <thead>
 
 <tr>
-
 <th>Rank</th>
-
 <th>Manager / Team</th>
-
 <th>W</th>
-
 <th>L</th>
-
 <th>T</th>
-
 <th>PF</th>
-
 </tr>
 
 </thead>
 
-
 <tbody id="standingsBody">
 
 <tr>
-
 <td colspan="6" class="loading">
 Loading ESPN standings...
 </td>
-
 </tr>
 
 </tbody>
@@ -909,7 +834,6 @@ Loading ESPN standings...
 </div>
 
 </section>
-
 
 
 <!-- MANAGERS -->
@@ -930,126 +854,73 @@ League Managers
 
 </div>
 
-
 <div class="manager-grid">
 
-
 <div class="manager-card">
-
 <div class="manager-icon">D</div>
-
 <strong>Devin</strong>
-
 <span>Commissioner</span>
-
 </div>
 
-
 <div class="manager-card champion">
-
 <div class="manager-icon">T</div>
-
 <strong>Toby</strong>
-
 <span>2022 Champion 🏆</span>
-
 </div>
 
-
 <div class="manager-card">
-
 <div class="manager-icon">T</div>
-
 <strong>Tom</strong>
-
 <span>Manager</span>
-
 </div>
 
-
 <div class="manager-card champion">
-
 <div class="manager-icon">M</div>
-
 <strong>Matt</strong>
-
 <span>2025 Champion 🏆</span>
-
 </div>
 
-
 <div class="manager-card">
-
 <div class="manager-icon">P</div>
-
 <strong>Philip</strong>
-
 <span>2025 Runner-Up</span>
-
 </div>
 
-
 <div class="manager-card champion">
-
 <div class="manager-icon">M</div>
-
 <strong>Mike</strong>
-
 <span>2024 Champion 🏆</span>
-
 </div>
-
 
 <div class="manager-card champion">
-
 <div class="manager-icon">J</div>
-
 <strong>Josh</strong>
-
 <span>2023 Champion 🏆</span>
-
 </div>
 
-
 <div class="manager-card">
-
 <div class="manager-icon">S</div>
-
 <strong>Steve P.</strong>
-
 <span>2026 Rookie</span>
-
 </div>
 
-
 <div class="manager-card">
-
 <div class="manager-icon">S</div>
-
 <strong>Steve H.</strong>
-
 <span>2026 Rookie</span>
-
 </div>
-
 
 <div class="manager-card">
-
 <div class="manager-icon">H</div>
-
 <strong>Hunter</strong>
-
 <span>2026 Rookie</span>
-
 </div>
-
 
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- CHAMPIONS -->
@@ -1069,7 +940,6 @@ Hall of Champions
 </span>
 
 </div>
-
 
 <div class="history-grid">
 
@@ -1104,7 +974,6 @@ Hall of Champions
 </section>
 
 
-
 <!-- HISTORY -->
 
 <section class="section" id="season-history">
@@ -1123,9 +992,7 @@ Final Podiums
 
 </div>
 
-
 <div class="season-history-grid">
-
 
 <div class="season-history-card">
 
@@ -1150,7 +1017,6 @@ Final Podiums
 
 </div>
 
-
 <div class="season-history-card">
 
 <div class="season-history-year">
@@ -1173,7 +1039,6 @@ Final Podiums
 </div>
 
 </div>
-
 
 <div class="season-history-card">
 
@@ -1198,7 +1063,6 @@ Final Podiums
 
 </div>
 
-
 <div class="season-history-card">
 
 <div class="season-history-year">
@@ -1222,13 +1086,11 @@ Final Podiums
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- RECORDS -->
@@ -1249,79 +1111,46 @@ All-Time
 
 </div>
 
-
 <div class="records-grid">
 
 <div class="record-card">
-<span class="record-name">
-Most Regular-Season Wins
-</span>
-<span class="record-value">
-Toby — 32
-</span>
+<span class="record-name">Most Regular-Season Wins</span>
+<span class="record-value">Toby — 32</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Best Regular-Season Win %
-</span>
-<span class="record-value">
-Philip — 79.3%
-</span>
+<span class="record-name">Best Regular-Season Win %</span>
+<span class="record-value">Philip — 79.3%</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Most Playoff Wins
-</span>
-<span class="record-value">
-Toby / Philip / Matt — 3
-</span>
+<span class="record-name">Most Playoff Wins</span>
+<span class="record-value">Toby / Philip / Matt — 3</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Best Playoff Record
-</span>
-<span class="record-value">
-Matt — 3-0
-</span>
+<span class="record-name">Best Playoff Record</span>
+<span class="record-value">Matt — 3-0</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Most Championships
-</span>
-<span class="record-value">
-1
-</span>
+<span class="record-name">Most Championships</span>
+<span class="record-value">1</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Different Champions
-</span>
-<span class="record-value">
-4
-</span>
+<span class="record-name">Different Champions</span>
+<span class="record-value">4</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Most Runner-Up Finishes
-</span>
-<span class="record-value">
-Philip — 2
-</span>
+<span class="record-name">Most Runner-Up Finishes</span>
+<span class="record-value">Philip — 2</span>
 </div>
 
 <div class="record-card">
-<span class="record-name">
-Most Consolation Wins
-</span>
-<span class="record-value">
-Devin — 2
-</span>
+<span class="record-name">Most Consolation Wins</span>
+<span class="record-value">Devin — 2</span>
 </div>
 
 </div>
@@ -1330,9 +1159,7 @@ Devin — 2
 
 </section>
 
-
 </div>
-
 
 <footer>
 
@@ -1349,141 +1176,119 @@ Fantasy Football League • Est. 2022
 
 <script>
 
-
-/* =====================================
-   MANAGER MAPPING
-===================================== */
-
 const managerMap = {
-
-1: "Devin",
-2: "Hunter",
-3: "Mike",
-4: "Tom",
-5: "Steve P.",
-6: "Steve H.",
-7: "Matt",
-8: "Toby",
-9: "Josh",
-10: "Philip"
-
+  1: "Devin",
+  2: "Hunter",
+  3: "Mike",
+  4: "Tom",
+  5: "Steve P.",
+  6: "Steve H.",
+  7: "Matt",
+  8: "Toby",
+  9: "Josh",
+  10: "Philip"
 };
-
 
 const managerToTeamId = {
-
-"Devin": 1,
-"Hunter": 2,
-"Mike": 3,
-"Tom": 4,
-"Steve P.": 5,
-"Steve H.": 6,
-"Matt": 7,
-"Toby": 8,
-"Josh": 9,
-"Philip": 10
-
+  "Devin": 1,
+  "Hunter": 2,
+  "Mike": 3,
+  "Tom": 4,
+  "Steve P.": 5,
+  "Steve H.": 6,
+  "Matt": 7,
+  "Toby": 8,
+  "Josh": 9,
+  "Philip": 10
 };
-
-
-
-/* =====================================
-   GAME OF WEEK
-===================================== */
 
 const featuredGames = {
 
-1: {
-team1: "Matt",
-team2: "Philip",
-story: "2025 Championship Rematch"
-},
+  1: {
+    team1: "Matt",
+    team2: "Philip",
+    story: "2025 Championship Rematch"
+  },
 
-2: {
-team1: "Tom",
-team2: "Josh",
-story: "Featured Matchup"
-},
+  2: {
+    team1: "Tom",
+    team2: "Josh",
+    story: "Featured Matchup"
+  },
 
-3: {
-team1: "Devin",
-team2: "Hunter",
-story: "Veteran vs Rookie"
-},
+  3: {
+    team1: "Devin",
+    team2: "Hunter",
+    story: "Veteran vs Rookie"
+  },
 
-4: {
-team1: "Toby",
-team2: "Tom",
-story: "Featured Matchup"
-},
+  4: {
+    team1: "Toby",
+    team2: "Tom",
+    story: "Featured Matchup"
+  },
 
-5: {
-team1: "Devin",
-team2: "Josh",
-story: "Featured Matchup"
-},
+  5: {
+    team1: "Devin",
+    team2: "Josh",
+    story: "Featured Matchup"
+  },
 
-6: {
-team1: "Steve H.",
-team2: "Steve P.",
-story: "Battle of the Steves"
-},
+  6: {
+    team1: "Steve H.",
+    team2: "Steve P.",
+    story: "Battle of the Steves"
+  },
 
-7: {
-team1: "Devin",
-team2: "Matt",
-story: "Commissioner vs Defending Champion"
-},
+  7: {
+    team1: "Devin",
+    team2: "Matt",
+    story: "Commissioner vs Defending Champion"
+  },
 
-8: {
-team1: "Devin",
-team2: "Tom",
-story: "Featured Matchup"
-},
+  8: {
+    team1: "Devin",
+    team2: "Tom",
+    story: "Featured Matchup"
+  },
 
-9: {
-team1: "Devin",
-team2: "Toby",
-story: "Rivalry Preview"
-},
+  9: {
+    team1: "Devin",
+    team2: "Toby",
+    story: "Rivalry Preview"
+  },
 
-10: {
-team1: "Toby",
-team2: "Mike",
-story: "Battle of Former Champions"
-},
+  10: {
+    team1: "Toby",
+    team2: "Mike",
+    story: "Battle of Former Champions"
+  },
 
-11: {
-team1: "Toby",
-team2: "Philip",
-story: "Featured Matchup"
-},
+  11: {
+    team1: "Toby",
+    team2: "Philip",
+    story: "Featured Matchup"
+  },
 
-12: {
-team1: "Devin",
-team2: "Matt",
-story: "Playoff Push"
-},
+  12: {
+    team1: "Devin",
+    team2: "Matt",
+    story: "Playoff Push"
+  },
 
-13: {
-team1: "Devin",
-team2: "Tom",
-story: "Final Tune-Up"
-},
+  13: {
+    team1: "Devin",
+    team2: "Tom",
+    story: "Final Tune-Up"
+  },
 
-14: {
-team1: "Devin",
-team2: "Toby",
-story: "🔥 RIVALRY WEEK"
-}
+  14: {
+    team1: "Devin",
+    team2: "Toby",
+    story: "🔥 RIVALRY WEEK"
+  }
 
 };
-
-
-
-/* =====================================
-   CURRENT FANTASY WEEK
-===================================== */
 
 const weekOneStart =
 new Date(2026,8,8,0,0,0);
@@ -1496,630 +1301,496 @@ const millisecondsPerWeek =
 
 let currentWeek = 1;
 
-
 if (today >= weekOneStart) {
 
-currentWeek =
-Math.floor(
-(today - weekOneStart) /
-millisecondsPerWeek
-) + 1;
+  currentWeek =
+  Math.floor(
+    (today - weekOneStart) /
+    millisecondsPerWeek
+  ) + 1;
 
 }
-
 
 if (currentWeek > 14) {
-
-currentWeek = 14;
-
+  currentWeek = 14;
 }
-
 
 const featuredGame =
 featuredGames[currentWeek];
 
-
-document.getElementById(
-"weekNumber"
-).textContent =
+document.getElementById("weekNumber").textContent =
 "WEEK " + currentWeek;
 
-
-document.getElementById(
-"weeklyMatchupTitle"
-).textContent =
+document.getElementById("weeklyMatchupTitle").textContent =
 "Week " + currentWeek + " Matchups";
 
-
-document.getElementById(
-"team1Name"
-).textContent =
+document.getElementById("team1Name").textContent =
 featuredGame.team1;
 
-
-document.getElementById(
-"team2Name"
-).textContent =
+document.getElementById("team2Name").textContent =
 featuredGame.team2;
 
-
-document.getElementById(
-"team1Initial"
-).textContent =
+document.getElementById("team1Initial").textContent =
 featuredGame.team1.charAt(0);
 
-
-document.getElementById(
-"team2Initial"
-).textContent =
+document.getElementById("team2Initial").textContent =
 featuredGame.team2.charAt(0);
 
-
-document.getElementById(
-"storyline"
-).textContent =
+document.getElementById("storyline").textContent =
 featuredGame.story;
 
-
-
-/* =====================================
-   WEEK STATUS
-===================================== */
-
 const weekStatus =
-document.getElementById(
-"weekStatus"
-);
-
+document.getElementById("weekStatus");
 
 if (today < weekOneStart) {
 
-const daysUntil =
-Math.ceil(
-(weekOneStart - today) /
-(1000 * 60 * 60 * 24)
-);
+  const daysUntil =
+  Math.ceil(
+    (weekOneStart - today) /
+    (1000 * 60 * 60 * 24)
+  );
 
-weekStatus.textContent =
-"Week 1 begins in " +
-daysUntil +
-" days";
+  weekStatus.textContent =
+  "Week 1 begins in " +
+  daysUntil +
+  " days";
 
 }
 
 else if (currentWeek === 14) {
 
-weekStatus.textContent =
-"🔥 Rivalry Week";
+  weekStatus.textContent =
+  "🔥 Rivalry Week";
 
 }
 
 else {
 
-weekStatus.textContent =
-"2026 Regular Season";
+  weekStatus.textContent =
+  "2026 Regular Season";
 
 }
 
 
+function getGameStatus(game) {
 
-/* =====================================
-   LOAD ESPN DATA
-===================================== */
+  const away =
+  Number(game.awayScore || 0);
+
+  const home =
+  Number(game.homeScore || 0);
+
+  if (
+    game.winner &&
+    game.winner !== "UNDECIDED"
+  ) {
+
+    return {
+      text: "FINAL",
+      className: "status-final"
+    };
+
+  }
+
+  if (
+    away > 0 ||
+    home > 0
+  ) {
+
+    if (away === home) {
+
+      return {
+        text: "TIED",
+        className: "status-tied"
+      };
+
+    }
+
+    return {
+      text: "LIVE",
+      className: "status-live"
+    };
+
+  }
+
+  return {
+    text: "SCHEDULED",
+    className: "status-scheduled"
+  };
+
+}
+
 
 async function loadESPNData() {
 
-const standingsBody =
-document.getElementById(
-"standingsBody"
-);
+  const standingsBody =
+  document.getElementById("standingsBody");
 
-const weeklyGames =
-document.getElementById(
-"weeklyGames"
-);
+  const weeklyGames =
+  document.getElementById("weeklyGames");
 
+  try {
 
-try {
+    const response =
+    await fetch(
+      "league-data.json?v=" +
+      Date.now()
+    );
 
-const response =
-await fetch(
-"league-data.json?v=" +
-Date.now()
-);
+    if (!response.ok) {
+      throw new Error("Could not load ESPN data");
+    }
 
+    const data =
+    await response.json();
 
-if (!response.ok) {
+    const teams =
+    data.teams || [];
 
-throw new Error(
-"Could not load ESPN data"
-);
+    const schedule =
+    data.schedule || [];
 
-}
+    const teamLookup = {};
 
+    teams.forEach(function(team) {
+      teamLookup[team.teamId] = team;
+    });
 
-const data =
-await response.json();
 
+    if (data.lastUpdated) {
 
-const teams =
-data.teams || [];
+      const updateDate =
+      new Date(data.lastUpdated);
 
+      document.getElementById("syncTime").textContent =
+      "ESPN last synced: " +
+      updateDate.toLocaleString();
 
-const schedule =
-data.schedule || [];
+    }
 
+    else {
 
-/* =====================================
-   TEAM LOOKUP
-===================================== */
+      document.getElementById("syncTime").textContent =
+      "Connected to ESPN";
 
-const teamLookup = {};
+    }
 
 
-teams.forEach(function(team) {
+    teams.sort(function(a,b) {
 
-teamLookup[team.teamId] =
-team;
+      if (b.wins !== a.wins) {
+        return b.wins - a.wins;
+      }
 
-});
+      if ((b.percentage || 0) !== (a.percentage || 0)) {
+        return (b.percentage || 0) - (a.percentage || 0);
+      }
 
+      if ((b.pointsFor || 0) !== (a.pointsFor || 0)) {
+        return (b.pointsFor || 0) - (a.pointsFor || 0);
+      }
 
+      return a.teamId - b.teamId;
 
-/* =====================================
-   LAST UPDATED
-===================================== */
+    });
 
-if (data.lastUpdated) {
 
-const updateDate =
-new Date(
-data.lastUpdated
-);
+    standingsBody.innerHTML = "";
 
-document.getElementById(
-"syncTime"
-).textContent =
-"Last synced: " +
-updateDate.toLocaleString();
 
-}
+    teams.forEach(function(team,index) {
 
-else {
+      const manager =
+      managerMap[team.teamId] || "Unknown";
 
-document.getElementById(
-"syncTime"
-).textContent =
-"Connected to ESPN";
+      const row =
+      document.createElement("tr");
 
-}
+      row.innerHTML = `
 
+      <td class="rank">
+      ${index + 1}
+      </td>
 
+      <td class="manager-cell">
 
-/* =====================================
-   STANDINGS
-===================================== */
+      <strong>
+      ${manager}
+      </strong>
 
-teams.sort(function(a,b) {
+      <span class="fantasy-team">
+      ${team.teamName}
+      </span>
 
-if (b.wins !== a.wins) {
+      </td>
 
-return b.wins - a.wins;
+      <td>${team.wins}</td>
+      <td>${team.losses}</td>
+      <td>${team.ties}</td>
 
-}
+      <td>
+      ${Number(team.pointsFor || 0).toFixed(2)}
+      </td>
 
+      `;
 
-if (
-(b.percentage || 0)
-!== 
-(a.percentage || 0)
-) {
+      standingsBody.appendChild(row);
 
-return
-(b.percentage || 0)
--
-(a.percentage || 0);
+    });
 
-}
 
+    const currentMatchups =
+    schedule.filter(function(game) {
 
-if (
-(b.pointsFor || 0)
-!== 
-(a.pointsFor || 0)
-) {
+      return game.matchupPeriodId === currentWeek;
 
-return
-(b.pointsFor || 0)
--
-(a.pointsFor || 0);
+    });
 
-}
 
+    weeklyGames.innerHTML = "";
 
-return a.teamId - b.teamId;
 
-});
+    currentMatchups.forEach(function(game) {
 
+      const homeManager =
+      managerMap[game.homeTeamId] || "Unknown";
 
-standingsBody.innerHTML = "";
+      const awayManager =
+      managerMap[game.awayTeamId] || "Unknown";
 
+      const homeTeam =
+      teamLookup[game.homeTeamId];
 
-teams.forEach(function(team,index) {
+      const awayTeam =
+      teamLookup[game.awayTeamId];
 
-const manager =
-managerMap[team.teamId]
-||
-"Unknown";
+      const homeName =
+      homeTeam ? homeTeam.teamName : "";
 
+      const awayName =
+      awayTeam ? awayTeam.teamName : "";
 
-const row =
-document.createElement(
-"tr"
-);
+      const homeScore =
+      Number(game.homeScore || 0);
 
+      const awayScore =
+      Number(game.awayScore || 0);
 
-row.innerHTML = `
+      const featuredTeam1 =
+      managerToTeamId[featuredGame.team1];
 
-<td class="rank">
-${index + 1}
-</td>
+      const featuredTeam2 =
+      managerToTeamId[featuredGame.team2];
 
-<td class="manager-cell">
+      const isFeatured =
+      (
+        game.homeTeamId === featuredTeam1 &&
+        game.awayTeamId === featuredTeam2
+      )
+      ||
+      (
+        game.homeTeamId === featuredTeam2 &&
+        game.awayTeamId === featuredTeam1
+      );
 
-<strong>
-${manager}
-</strong>
+      const status =
+      getGameStatus(game);
 
-<span class="fantasy-team">
-${team.teamName}
-</span>
+      let awayClass = "losing-team";
+      let homeClass = "losing-team";
 
-</td>
+      if (awayScore > homeScore) {
+        awayClass = "leading-team";
+      }
 
-<td>
-${team.wins}
-</td>
+      else if (homeScore > awayScore) {
+        homeClass = "leading-team";
+      }
 
-<td>
-${team.losses}
-</td>
+      if (status.text === "FINAL") {
 
-<td>
-${team.ties}
-</td>
+        if (awayScore > homeScore) {
+          awayClass = "final-winner";
+        }
 
-<td>
-${Number(team.pointsFor || 0).toFixed(2)}
-</td>
+        else if (homeScore > awayScore) {
+          homeClass = "final-winner";
+        }
 
-`;
+      }
 
+      const card =
+      document.createElement("div");
 
-standingsBody.appendChild(
-row
-);
+      card.className =
+      "weekly-game" +
+      (isFeatured ? " featured" : "");
 
-});
+      card.innerHTML = `
 
+      <div class="weekly-team-left">
 
+      <span class="weekly-manager ${awayClass}">
+      ${awayManager}
+      </span>
 
-/* =====================================
-   CURRENT WEEK MATCHUPS
-===================================== */
+      <span class="weekly-fantasy-name">
+      ${awayName}
+      </span>
 
-const currentMatchups =
-schedule.filter(
-function(game) {
+      </div>
 
-return (
-game.matchupPeriodId
-===
-currentWeek
-);
+      <div class="weekly-score">
 
-}
-);
+      <strong>
+      ${awayScore.toFixed(2)}
+      &nbsp; — &nbsp;
+      ${homeScore.toFixed(2)}
+      </strong>
 
+      <span class="${status.className}">
+      ${isFeatured ? "Game of the Week • " : ""}
+      ${status.text}
+      </span>
 
-weeklyGames.innerHTML = "";
+      </div>
 
+      <div class="weekly-team-right">
 
-currentMatchups.forEach(
-function(game) {
+      <span class="weekly-manager ${homeClass}">
+      ${homeManager}
+      </span>
 
+      <span class="weekly-fantasy-name">
+      ${homeName}
+      </span>
 
-const homeManager =
-managerMap[
-game.homeTeamId
-]
-||
-"Unknown";
+      </div>
 
+      `;
 
-const awayManager =
-managerMap[
-game.awayTeamId
-]
-||
-"Unknown";
+      weeklyGames.appendChild(card);
 
 
-const homeTeam =
-teamLookup[
-game.homeTeamId
-];
+      if (isFeatured) {
 
+        let firstScore;
+        let secondScore;
 
-const awayTeam =
-teamLookup[
-game.awayTeamId
-];
+        if (game.homeTeamId === featuredTeam1) {
 
+          firstScore =
+          homeScore;
 
-const homeName =
-homeTeam
-?
-homeTeam.teamName
-:
-"";
+          secondScore =
+          awayScore;
 
+        }
 
-const awayName =
-awayTeam
-?
-awayTeam.teamName
-:
-"";
+        else {
 
+          firstScore =
+          awayScore;
 
-const featuredTeam1 =
-managerToTeamId[
-featuredGame.team1
-];
+          secondScore =
+          homeScore;
 
+        }
 
-const featuredTeam2 =
-managerToTeamId[
-featuredGame.team2
-];
+        const team1Box =
+        document.getElementById("featuredTeam1Box");
 
+        const team2Box =
+        document.getElementById("featuredTeam2Box");
 
-const isFeatured =
-(
-game.homeTeamId === featuredTeam1
-&&
-game.awayTeamId === featuredTeam2
-)
-||
-(
-game.homeTeamId === featuredTeam2
-&&
-game.awayTeamId === featuredTeam1
-);
+        team1Box.classList.remove("featured-leading");
+        team2Box.classList.remove("featured-leading");
 
+        if (firstScore > secondScore) {
+          team1Box.classList.add("featured-leading");
+        }
 
-let gameStatus =
-"Scheduled";
+        else if (secondScore > firstScore) {
+          team2Box.classList.add("featured-leading");
+        }
 
+        document.getElementById("team1Score").textContent =
+        firstScore.toFixed(2);
 
-if (
-game.winner
-&&
-game.winner !== "UNDECIDED"
-) {
+        document.getElementById("team2Score").textContent =
+        secondScore.toFixed(2);
 
-gameStatus =
-"FINAL";
+        const featuredStatus =
+        document.getElementById("featuredStatus");
 
-}
+        featuredStatus.textContent =
+        status.text;
 
+        featuredStatus.className =
+        "game-status " +
+        status.className;
 
-const card =
-document.createElement(
-"div"
-);
+      }
 
+    });
 
-card.className =
-"weekly-game"
-+
-(
-isFeatured
-?
-" featured"
-:
-""
-);
 
+    if (currentMatchups.length === 0) {
 
-card.innerHTML = `
+      weeklyGames.innerHTML = `
 
-<div class="weekly-team-left">
+      <div class="loading">
 
-<span class="weekly-manager">
-${awayManager}
-</span>
+      No ESPN matchups are available
+      for Week ${currentWeek} yet.
 
-<span class="weekly-fantasy-name">
-${awayName}
-</span>
+      </div>
 
-</div>
+      `;
 
+    }
 
-<div class="weekly-score">
+  }
 
-<strong>
-${Number(game.awayScore || 0).toFixed(2)}
-&nbsp; — &nbsp;
-${Number(game.homeScore || 0).toFixed(2)}
-</strong>
+  catch (error) {
 
-<span>
-${isFeatured ? "Game of the Week • " : ""}
-${gameStatus}
-</span>
+    console.error(error);
 
-</div>
+    standingsBody.innerHTML = `
 
+    <tr>
 
-<div class="weekly-team-right">
+    <td colspan="6" class="error-message">
 
-<span class="weekly-manager">
-${homeManager}
-</span>
+    ESPN standings are temporarily unavailable.
 
-<span class="weekly-fantasy-name">
-${homeName}
-</span>
+    </td>
 
-</div>
+    </tr>
 
-`;
+    `;
 
+    weeklyGames.innerHTML = `
 
-weeklyGames.appendChild(
-card
-);
+    <div class="error-message">
 
+    ESPN matchup scores are temporarily unavailable.
 
+    </div>
 
-/* =====================================
-   FEATURED SCORE
-===================================== */
+    `;
 
-if (isFeatured) {
+    document.getElementById("syncTime").textContent =
+    "ESPN sync unavailable";
 
-
-let firstScore;
-let secondScore;
-
-
-if (
-game.homeTeamId
-===
-featuredTeam1
-) {
-
-firstScore =
-game.homeScore;
-
-secondScore =
-game.awayScore;
-
-}
-
-else {
-
-firstScore =
-game.awayScore;
-
-secondScore =
-game.homeScore;
-
-}
-
-
-document.getElementById(
-"team1Score"
-).textContent =
-Number(
-firstScore || 0
-).toFixed(2);
-
-
-document.getElementById(
-"team2Score"
-).textContent =
-Number(
-secondScore || 0
-).toFixed(2);
-
-
-document.getElementById(
-"featuredStatus"
-).textContent =
-gameStatus;
-
-}
-
-}
-);
-
-
-
-if (
-currentMatchups.length === 0
-) {
-
-weeklyGames.innerHTML = `
-
-<div class="loading">
-
-No ESPN matchups are available
-for Week ${currentWeek} yet.
-
-</div>
-
-`;
-
-}
-
-
-}
-
-catch (error) {
-
-
-console.error(
-error
-);
-
-
-standingsBody.innerHTML = `
-
-<tr>
-
-<td
-colspan="6"
-class="error-message">
-
-ESPN standings are temporarily unavailable.
-
-</td>
-
-</tr>
-
-`;
-
-
-weeklyGames.innerHTML = `
-
-<div class="error-message">
-
-ESPN matchup scores are temporarily unavailable.
-
-</div>
-
-`;
-
-
-document.getElementById(
-"syncTime"
-).textContent =
-"ESPN sync unavailable";
-
-}
+  }
 
 }
 
 
 loadESPNData();
 
-
 </script>
-
 
 </body>
 
