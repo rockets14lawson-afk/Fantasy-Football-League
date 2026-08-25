@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>League Records | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: white;
+}
+
+header {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+    linear-gradient(180deg,#111,#050505);
+
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4af37;
+  font-size: clamp(42px,7vw,72px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  padding: 12px;
+
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.container {
+  width: min(1200px,92%);
+  margin: auto;
+  padding: 40px 0 70px;
+}
+
+.card {
+  background: linear-gradient(145deg,#151515,#0d0d0d);
+  border: 1px solid #303030;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d4af37;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #d4af37;
+}
+
+.section-title span {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+}
+
+.record-box {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.record-label {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.record-value {
+  display: block;
+  color: #d4af37;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.record-detail {
+  display: block;
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #d4af37;
+  color: black;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #292929;
+  text-align: center;
+}
+
+td.manager {
+  text-align: left;
+  font-weight: bold;
+}
+
+.gold {
+  color: #d4af37;
+  font-weight: 900;
+}
+
+.loading {
+  color: #999;
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+@media (max-width: 700px) {
+
+  .records-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>League Record Book</h1>
+  <p>JDC Degenerates • 2022–2025 History</p>
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="schedule.html">Schedule</a>
+<a href="index.html#standings">Standings</a>
+<a href="managers.html">Managers</a>
+<a href="recap.html">Weekly Recap</a>
+<a href="index.html#champions">Champions</a>
+<a href="index.html#season-history">History</a>
+<a href="records.html">Records</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank"
+rel="noopener noreferrer">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<section class="card">
+
+<div class="section-title">
+  <h2>All-Time Records</h2>
+  <span>ESPN History</span>
+</div>
+
+<div class="records-grid" id="recordCards">
+
+<div class="loading">
+Loading historical records...
+</div>
+
+</div>
+
+</section>
+
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Career Scoring</h2>
+  <span>2022–2025</span>
+</div>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+  <th>Manager</th>
+  <th>Games</th>
+  <th>Points</th>
+  <th>Avg</th>
+  <th>High</th>
+  <th>Low</th>
+</tr>
+</thead>
+
+<tbody id="careerTable">
+
+<tr>
+<td colspan="6" class="loading">
+Loading career scoring...
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Head-to-Head Leaders</h2>
+  <span>Current Managers</span>
+</div>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+  <th>Manager</th>
+  <th>Opponent</th>
+  <th>Record</th>
+  <th>Win %</th>
+</tr>
+</thead>
+
+<tbody id="headToHeadTable">
+
+<tr>
+<td colspan="4" class="loading">
+Loading head-to-head data...
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<strong>JDC Degenerates</strong>
+
+<br><br>
+
+Fantasy Football League • Est. 2022
+
+</footer>
+
+<script>
+
+const currentManagers = [
+  "Devin",
+  "Toby",
+  "Tom",
+  "Matt",
+  "Philip",
+  "Mike",
+  "Josh"
+];
+
+
+function pct(wins, losses, ties = 0) {
+
+  const games =
+  wins + losses + ties;
+
+  if (!games) {
+    return "—";
+  }
+
+  return (
+    ((wins + ties * .5) / games) * 100
+  ).toFixed(1) + "%";
+
+}
+
+
+async function loadRecords() {
+
+  try {
+
+    const response =
+    await fetch(
+      "league-history.json?v=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        "Could not load league-history.json"
+      );
+    }
+
+    const data =
+    await response.json();
+
+    const seasons =
+    data.seasons || {};
+
+    const allGames = [];
+
+    Object.entries(seasons)
+    .forEach(function([season,seasonData]) {
+
+      const games =
+      seasonData.matchups || [];
+
+      games.forEach(function(game) {
+
+        if (
+          game.awayManager === "UNKNOWN"
+          ||
+          game.homeManager === "UNKNOWN"
+        ) {
+          return;
+        }
+
+        allGames.push({
+          ...game,
+          season: Number(season)
+        });
+
+      });
+
+    });
+
+
+    /* =========================
+       FILTER REAL SCORED GAMES
+    ========================= */
+
+    const scoredGames =
+    allGames.filter(function(game) {
+
+      return (
+        Number.isFinite(game.awayScore)
+        &&
+        Number.isFinite(game.homeScore)
+        &&
+        (
+          game.awayScore > 0
+          ||
+          game.homeScore > 0
+        )
+      );
+
+    });
+
+
+    /* =========================
+       HIGHEST SCORE
+    ========================= */
+
+    let highest = null;
+    let lowest = null;
+
+    scoredGames.forEach(function(game) {
+
+      const performances = [
+        {
+          manager: game.awayManager,
+          score: game.awayScore,
+          opponent: game.homeManager
+        },
+        {
+          manager: game.homeManager,
+          score: game.homeScore,
+          opponent: game.awayManager
+        }
+      ];
+
+      performances.forEach(function(p) {
+
+        const item = {
+          ...p,
+          season: game.season,
+          week: game.week
+        };
+
+        if (!highest || p.score > highest.score) {
+          highest = item;
+        }
+
+        if (!lowest || p.score < lowest.score) {
+          lowest = item;
+        }
+
+      });
+
+    });
+
+
+    /* =========================
+       BIGGEST / CLOSEST
+    ========================= */
+
+    let biggest = null;
+    let closest = null;
+
+    scoredGames.forEach(function(game) {
+
+      const margin =
+      Math.abs(
+        game.homeScore -
+        game.awayScore
+      );
+
+      const item = {
+        season: game.season,
+        week: game.week,
+        margin: margin,
+        homeManager: game.homeManager,
+        awayManager: game.awayManager,
+        homeScore: game.homeScore,
+        awayScore: game.awayScore
+      };
+
+      if (!biggest || margin > biggest.margin) {
+        biggest = item;
+      }
+
+      if (
+        margin > 0
+        &&
+        (!closest || margin < closest.margin)
+      ) {
+        closest = item;
+      }
+
+    });
+
+
+    /* =========================
+       CAREER SCORING
+    ========================= */
+
+    const career = {};
+
+    scoredGames.forEach(function(game) {
+
+      [
+        {
+          manager: game.awayManager,
+          score: game.awayScore
+        },
+        {
+          manager: game.homeManager,
+          score: game.homeScore
+        }
+      ]
+      .forEach(function(p) {
+
+        if (!career[p.manager]) {
+
+          career[p.manager] = {
+            games: 0,
+            points: 0,
+            high: null,
+            low: null
+          };
+
+        }
+
+        const c =
+        career[p.manager];
+
+        c.games += 1;
+        c.points += p.score;
+
+        if (
+          c.high === null
+          ||
+          p.score > c.high
+        ) {
+          c.high = p.score;
+        }
+
+        if (
+          c.low === null
+          ||
+          p.score < c.low
+        ) {
+          c.low = p.score;
+        }
+
+      });
+
+    });
+
+
+    /* =========================
+       MOST CAREER POINTS
+    ========================= */
+
+    const careerEntries =
+    Object.entries(career)
+    .sort(function(a,b) {
+
+      return b[1].points - a[1].points;
+
+    });
+
+    const mostPoints =
+    careerEntries[0];
+
+
+    /* =========================
+       HEAD TO HEAD
+    ========================= */
+
+    const h2h = {};
+
+    scoredGames.forEach(function(game) {
+
+      const away =
+      game.awayManager;
+
+      const home =
+      game.homeManager;
+
+      if (!h2h[away]) {
+        h2h[away] = {};
+      }
+
+      if (!h2h[home]) {
+        h2h[home] = {};
+      }
+
+      if (!h2h[away][home]) {
+        h2h[away][home] = {
+          wins: 0,
+          losses: 0,
+          ties: 0
+        };
+      }
+
+      if (!h2h[home][away]) {
+        h2h[home][away] = {
+          wins: 0,
+          losses: 0,
+          ties: 0
+        };
+      }
+
+      if (game.awayScore > game.homeScore) {
+
+        h2h[away][home].wins++;
+        h2h[home][away].losses++;
+
+      }
+
+      else if (game.homeScore > game.awayScore) {
+
+        h2h[home][away].wins++;
+        h2h[away][home].losses++;
+
+      }
+
+      else {
+
+        h2h[away][home].ties++;
+        h2h[home][away].ties++;
+
+      }
+
+    });
+
+
+    /* =========================
+       RECORD CARDS
+    ========================= */
+
+    const cards =
+    document.getElementById(
+      "recordCards"
+    );
+
+    cards.innerHTML = `
+
+    <div class="record-box">
+      <span class="record-label">
+      Highest Single-Game Score
+      </span>
+
+      <span class="record-value">
+      ${highest.manager} — ${highest.score.toFixed(2)}
+      </span>
+
+      <span class="record-detail">
+      ${highest.season} • Week ${highest.week}
+      vs ${highest.opponent}
+      </span>
+    </div>
+
+
+    <div class="record-box">
+      <span class="record-label">
+      Lowest Single-Game Score
+      </span>
+
+      <span class="record-value">
+      ${lowest.manager} — ${lowest.score.toFixed(2)}
+      </span>
+
+      <span class="record-detail">
+      ${lowest.season} • Week ${lowest.week}
+      vs ${lowest.opponent}
+      </span>
+    </div>
+
+
+    <div class="record-box">
+      <span class="record-label">
+      Biggest Blowout
+      </span>
+
+      <span class="record-value">
+      ${biggest.margin.toFixed(2)} points
+      </span>
+
+      <span class="record-detail">
+      ${biggest.season} • Week ${biggest.week}
+      • ${biggest.awayManager}
+      ${biggest.awayScore.toFixed(2)}
+      -
+      ${biggest.homeManager}
+      ${biggest.homeScore.toFixed(2)}
+      </span>
+    </div>
+
+
+    <div class="record-box">
+      <span class="record-label">
+      Closest Game
+      </span>
+
+      <span class="record-value">
+      ${closest.margin.toFixed(2)} points
+      </span>
+
+      <span class="record-detail">
+      ${closest.season} • Week ${closest.week}
+      • ${closest.awayManager}
+      ${closest.awayScore.toFixed(2)}
+      -
+      ${closest.homeManager}
+      ${closest.homeScore.toFixed(2)}
+      </span>
+    </div>
+
+
+    <div class="record-box">
+      <span class="record-label">
+      Most Career Points
+      </span>
+
+      <span class="record-value">
+      ${mostPoints[0]} —
+      ${mostPoints[1].points.toFixed(2)}
+      </span>
+
+      <span class="record-detail">
+      Across ${mostPoints[1].games} scored games
+      </span>
+    </div>
+
+
+    <div class="record-box">
+      <span class="record-label">
+      Historical Games Tracked
+      </span>
+
+      <span class="record-value">
+      ${scoredGames.length}
+      </span>
+
+      <span class="record-detail">
+      ESPN scores from 2022–2025
+      </span>
+    </div>
+
+    `;
+
+
+    /* =========================
+       CAREER TABLE
+    ========================= */
+
+    const careerTable =
+    document.getElementById(
+      "careerTable"
+    );
+
+    careerTable.innerHTML = "";
+
+    careerEntries
+    .forEach(function([manager,c]) {
+
+      const row =
+      document.createElement("tr");
+
+      const avg =
+      c.points / c.games;
+
+      row.innerHTML = `
+
+      <td class="manager">
+      ${manager}
+      </td>
+
+      <td>
+      ${c.games}
+      </td>
+
+      <td class="gold">
+      ${c.points.toFixed(2)}
+      </td>
+
+      <td>
+      ${avg.toFixed(2)}
+      </td>
+
+      <td>
+      ${c.high.toFixed(2)}
+      </td>
+
+      <td>
+      ${c.low.toFixed(2)}
+      </td>
+
+      `;
+
+      careerTable.appendChild(row);
+
+    });
+
+
+    /* =========================
+       H2H LEADERS
+    ========================= */
+
+    const h2hTable =
+    document.getElementById(
+      "headToHeadTable"
+    );
+
+    h2hTable.innerHTML = "";
+
+    currentManagers
+    .forEach(function(manager) {
+
+      if (!h2h[manager]) {
+        return;
+      }
+
+      Object.entries(
+        h2h[manager]
+      )
+      .filter(function([opponent]) {
+
+        return currentManagers.includes(
+          opponent
+        );
+
+      })
+      .forEach(function([opponent,record]) {
+
+        const row =
+        document.createElement("tr");
+
+        row.innerHTML = `
+
+        <td class="manager">
+        ${manager}
+        </td>
+
+        <td>
+        ${opponent}
+        </td>
+
+        <td class="gold">
+        ${record.wins}-${record.losses}
+        ${record.ties ? "-" + record.ties : ""}
+        </td>
+
+        <td>
+        ${pct(
+          record.wins,
+          record.losses,
+          record.ties
+        )}
+        </td>
+
+        `;
+
+        h2hTable.appendChild(row);
+
+      });
+
+    });
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    document.getElementById(
+      "recordCards"
+    ).innerHTML = `
+
+    <div class="loading">
+    Historical records are temporarily unavailable.
+    </div>
+
+    `;
+
+  }
+
+}
+
+
+loadRecords();
+
+</script>
+
+</body>
+</html>
