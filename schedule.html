@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2026 Schedule | JDC Degenerates</title>
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #070707;
+      color: white;
+    }
+
+    header {
+      background:
+        radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+        linear-gradient(180deg, #111, #050505);
+
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 3px solid #d4af37;
+    }
+
+    header h1 {
+      color: #d4af37;
+      font-size: clamp(40px, 7vw, 70px);
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(8,8,8,.96);
+      border-bottom: 1px solid #333;
+
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      gap: 8px;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      padding: 10px 14px;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background: #d4af37;
+      color: black;
+    }
+
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+      padding: 40px 0 70px;
+    }
+
+    .week {
+      background: linear-gradient(145deg, #151515, #0d0d0d);
+      border: 1px solid #303030;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+
+    .week-header {
+      background: #111;
+      padding: 18px 22px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .week-header h2 {
+      margin: 0;
+      color: #d4af37;
+    }
+
+    .week-header span {
+      color: #888;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .games {
+      padding: 10px 20px 20px;
+    }
+
+    .game {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+
+      gap: 20px;
+      padding: 16px 5px;
+
+      border-bottom: 1px solid #292929;
+    }
+
+    .game:last-child {
+      border-bottom: none;
+    }
+
+    .team {
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .team.left {
+      text-align: right;
+    }
+
+    .team.right {
+      text-align: left;
+    }
+
+    .vs {
+      color: #d4af37;
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .featured {
+      border: 1px solid #d4af37;
+      background: rgba(212,175,55,.05);
+      padding-left: 12px;
+      padding-right: 12px;
+      border-radius: 8px;
+      margin: 7px 0;
+    }
+
+    .featured-label {
+      text-align: center;
+      color: #d4af37;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 13px;
+    }
+
+    .rivalry {
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 25px rgba(212,175,55,.13);
+    }
+
+    .rivalry .week-header {
+      background: linear-gradient(90deg, #18130a, #111);
+    }
+
+    .rivalry-badge {
+      background: #d4af37;
+      color: black !important;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-weight: 900;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      border-top: 1px solid #292929;
+      color: #777;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    @media (max-width: 600px) {
+
+      .game {
+        gap: 10px;
+      }
+
+      .team {
+        font-size: 14px;
+      }
+
+      .week-header {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<header>
+
+  <h1>2026 Schedule</h1>
+
+  <p>
+    JDC Degenerates Fantasy Football
+  </p>
+
+</header>
+
+
+
+<nav>
+
+  <a href="index.html">Home</a>
+
+  <a href="schedule.html">Schedule</a>
+
+  <a href="index.html#standings">Standings</a>
+
+  <a href="index.html#managers">Managers</a>
+
+  <a href="index.html#history">Champions</a>
+
+  <a href="index.html#records">Records</a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<!-- WEEK 1 -->
+
+<section class="week">
+
+  <div class="week-header">
+
+    <h2>Week 1</h2>
+
+    <span>Opening Week</span>
+
+  </div>
+
+  <div class="games">
+
+    <div class="featured-label">
+      Game of the Week
+    </div>
+
+    <div class="game featured">
+
+      <div class="team left">
+        Manager
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="team right">
+        Manager
+      </div>
+
+    </div>
+
+
+    <div class="game">
+
+      <div class="team left">
+        Manager
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="team right">
+        Manager
+      </div>
+
+    </div>
+
+
+    <div class="game">
+
+      <div class="team left">
+        Manager
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="team right">
+        Manager
+      </div>
+
+    </div>
+
+
+    <div class="game">
+
+      <div class="team left">
+        Manager
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="team right">
+        Manager
+      </div>
+
+    </div>
+
+
+    <div class="game">
+
+      <div class="team left">
+        Manager
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="team right">
+        Manager
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- WEEK 2 -->
+
+<section class="week">
+
+  <div class="week-header">
+
+    <h2>Week 2</h2>
+
+    <span>Regular Season</span>
+
+  </div>
+
+  <div class="games">
+
+    <div class="game">
+      <div class="team left">Manager</div>
+      <div class="vs">VS</div>
+      <div class="team right">Manager</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Manager</div>
+      <div class="vs">VS</div>
+      <div class="team right">Manager</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Manager</div>
+      <div class="vs">VS</div>
+      <div class="team right">Manager</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Manager</div>
+      <div class="vs">VS</div>
+      <div class="team right">Manager</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Manager</div>
+      <div class="vs">VS</div>
+      <div class="team right">Manager</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- COPY THIS WEEK BLOCK FOR WEEKS 3-12 -->
+
+
+<!-- RIVALRY WEEK -->
+
+<section class="week rivalry">
+
+  <div class="week-header">
+
+    <h2>Rivalry Week</h2>
+
+    <span class="rivalry-badge">
+      Rivalry Week
+    </span>
+
+  </div>
+
+  <div class="games">
+
+    <div class="game">
+      <div class="team left">Rival</div>
+      <div class="vs">VS</div>
+      <div class="team right">Rival</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Rival</div>
+      <div class="vs">VS</div>
+      <div class="team right">Rival</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Rival</div>
+      <div class="vs">VS</div>
+      <div class="team right">Rival</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Rival</div>
+      <div class="vs">VS</div>
+      <div class="team right">Rival</div>
+    </div>
+
+    <div class="game">
+      <div class="team left">Rival</div>
+      <div class="vs">VS</div>
+      <div class="team right">Rival</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+</div>
+
+
+<footer>
+
+  <strong>JDC Degenerates</strong>
+
+  <br><br>
+
+  2026 Fantasy Football Season
+
+</footer>
+
+
+</body>
+
+</html>
