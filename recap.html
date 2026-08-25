@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weekly Recap | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: white;
+}
+
+header {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+    linear-gradient(180deg,#111,#050505);
+
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+  color: #d4af37;
+  font-size: clamp(42px,7vw,72px);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.container {
+  width: min(1150px,92%);
+  margin: auto;
+  padding: 40px 0 70px;
+}
+
+.recap-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.recap-controls button {
+  background: #111;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 7px;
+  padding: 9px 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.recap-controls button:hover,
+.recap-controls button.active {
+  background: #d4af37;
+  color: black;
+}
+
+.card {
+  background: linear-gradient(145deg,#151515,#0d0d0d);
+  border: 1px solid #303030;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 22px;
+}
+
+.section-title {
+  color: #d4af37;
+  margin-top: 0;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+}
+
+.award {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.award span {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.award strong {
+  color: #d4af37;
+  font-size: 18px;
+}
+
+.commissioner-take {
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.coming-soon {
+  text-align: center;
+  color: #999;
+  padding: 30px 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+@media (max-width: 700px) {
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Weekly Recap</h1>
+
+<p>
+JDC Degenerates • 2026 Season
+</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="schedule.html">Schedule</a>
+
+<a href="managers.html">Managers</a>
+
+<a href="recap.html">Weekly Recap</a>
+
+<a href="index.html#champions">Champions</a>
+
+<a href="index.html#records">Records</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank"
+rel="noopener noreferrer">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<div class="recap-controls" id="weekButtons"></div>
+
+<div class="card">
+
+<h2 class="section-title" id="recapTitle">
+Week 1 Recap
+</h2>
+
+<div id="recapContent">
+
+<div class="coming-soon">
+
+Week 1 recap will appear after the games are completed.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<strong>JDC Degenerates</strong>
+
+<br><br>
+
+2026 Fantasy Football Season
+
+</footer>
+
+<script>
+
+const recapData = {
+
+1: null,
+2: null,
+3: null,
+4: null,
+5: null,
+6: null,
+7: null,
+8: null,
+9: null,
+10: null,
+11: null,
+12: null,
+13: null,
+14: null
+
+};
+
+const weekButtons =
+document.getElementById("weekButtons");
+
+for (let week = 1; week <= 14; week++) {
+
+  const button =
+  document.createElement("button");
+
+  button.textContent =
+  "Week " + week;
+
+  button.addEventListener(
+    "click",
+    function() {
+
+      showWeek(week);
+
+    }
+  );
+
+  weekButtons.appendChild(button);
+
+}
+
+function showWeek(week) {
+
+  document.getElementById("recapTitle").textContent =
+  "Week " + week + " Recap";
+
+  document
+  .querySelectorAll(".recap-controls button")
+  .forEach(function(button,index) {
+
+    button.classList.toggle(
+      "active",
+      index + 1 === week
+    );
+
+  });
+
+  const recap =
+  recapData[week];
+
+  const container =
+  document.getElementById("recapContent");
+
+  if (!recap) {
+
+    container.innerHTML = `
+
+    <div class="coming-soon">
+
+    Week ${week} recap will appear
+    after the games are completed.
+
+    </div>
+
+    `;
+
+    return;
+
+  }
+
+  container.innerHTML = `
+
+  <div class="awards-grid">
+
+    <div class="award">
+      <span>🏆 Highest Scorer</span>
+      <strong>${recap.highestScorer}</strong>
+    </div>
+
+    <div class="award">
+      <span>💥 Biggest Blowout</span>
+      <strong>${recap.biggestBlowout}</strong>
+    </div>
+
+    <div class="award">
+      <span>😰 Closest Game</span>
+      <strong>${recap.closestGame}</strong>
+    </div>
+
+    <div class="award">
+      <span>😂 Lowest Scorer</span>
+      <strong>${recap.lowestScorer}</strong>
+    </div>
+
+    <div class="award">
+      <span>🔥 Game of the Week</span>
+      <strong>${recap.gameOfWeek}</strong>
+    </div>
+
+    <div class="award">
+      <span>👑 Power Ranking #1</span>
+      <strong>${recap.powerOne}</strong>
+    </div>
+
+  </div>
+
+  <div class="card" style="margin-top:18px">
+
+    <h3 class="section-title">
+    Commissioner's Take
+    </h3>
+
+    <div class="commissioner-take">
+    ${recap.take}
+    </div>
+
+  </div>
+
+  `;
+
+}
+
+showWeek(1);
+
+</script>
+
+</body>
+</html>
