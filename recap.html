@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +12,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +40,7 @@ header h1 {
   font-size: clamp(42px,7vw,72px);
   margin: 0;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 header p {
@@ -46,11 +52,14 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   gap: 8px;
   padding: 12px;
+
   background: rgba(8,8,8,.96);
   border-bottom: 1px solid #333;
 }
@@ -87,7 +96,7 @@ nav a:hover {
   color: white;
   border: 1px solid #333;
   border-radius: 7px;
-  padding: 9px 13px;
+  padding: 10px 14px;
   cursor: pointer;
   font-weight: bold;
 }
@@ -113,6 +122,17 @@ nav a:hover {
   padding-bottom: 10px;
 }
 
+.sync-box {
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
 .awards-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -132,12 +152,25 @@ nav a:hover {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .award strong {
   color: #d4af37;
   font-size: 18px;
+}
+
+.commissioner-card {
+  margin-top: 18px;
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.commissioner-card h3 {
+  margin-top: 0;
+  color: #d4af37;
 }
 
 .commissioner-take {
@@ -148,7 +181,8 @@ nav a:hover {
 .coming-soon {
   text-align: center;
   color: #999;
-  padding: 30px 10px;
+  padding: 35px 10px;
+  line-height: 1.6;
 }
 
 footer {
@@ -173,6 +207,7 @@ footer strong {
 </style>
 </head>
 
+
 <body>
 
 <header>
@@ -185,17 +220,22 @@ JDC Degenerates • 2026 Season
 
 </header>
 
+
 <nav>
 
 <a href="index.html">Home</a>
 
 <a href="schedule.html">Schedule</a>
 
+<a href="index.html#standings">Standings</a>
+
 <a href="managers.html">Managers</a>
 
 <a href="recap.html">Weekly Recap</a>
 
 <a href="index.html#champions">Champions</a>
+
+<a href="index.html#season-history">History</a>
 
 <a href="index.html#records">Records</a>
 
@@ -208,9 +248,11 @@ ESPN League
 
 </nav>
 
+
 <div class="container">
 
 <div class="recap-controls" id="weekButtons"></div>
+
 
 <div class="card">
 
@@ -218,12 +260,14 @@ ESPN League
 Week 1 Recap
 </h2>
 
+<div class="sync-box" id="syncBox">
+Loading ESPN recap data...
+</div>
+
 <div id="recapContent">
 
 <div class="coming-soon">
-
 Week 1 recap will appear after the games are completed.
-
 </div>
 
 </div>
@@ -231,6 +275,7 @@ Week 1 recap will appear after the games are completed.
 </div>
 
 </div>
+
 
 <footer>
 
@@ -242,29 +287,16 @@ Week 1 recap will appear after the games are completed.
 
 </footer>
 
+
 <script>
-
-const recapData = {
-
-1: null,
-2: null,
-3: null,
-4: null,
-5: null,
-6: null,
-7: null,
-8: null,
-9: null,
-10: null,
-11: null,
-12: null,
-13: null,
-14: null
-
-};
 
 const weekButtons =
 document.getElementById("weekButtons");
+
+let recapData = {};
+
+let currentSelectedWeek = 1;
+
 
 for (let week = 1; week <= 14; week++) {
 
@@ -278,6 +310,8 @@ for (let week = 1; week <= 14; week++) {
     "click",
     function() {
 
+      currentSelectedWeek = week;
+
       showWeek(week);
 
     }
@@ -286,6 +320,7 @@ for (let week = 1; week <= 14; week++) {
   weekButtons.appendChild(button);
 
 }
+
 
 function showWeek(week) {
 
@@ -304,10 +339,11 @@ function showWeek(week) {
   });
 
   const recap =
-  recapData[week];
+  recapData[String(week)];
 
   const container =
   document.getElementById("recapContent");
+
 
   if (!recap) {
 
@@ -326,50 +362,101 @@ function showWeek(week) {
 
   }
 
+
   container.innerHTML = `
 
   <div class="awards-grid">
 
     <div class="award">
-      <span>🏆 Highest Scorer</span>
-      <strong>${recap.highestScorer}</strong>
+
+      <span>
+      🏆 Highest Scorer
+      </span>
+
+      <strong>
+      ${recap.highestScorer}
+      </strong>
+
     </div>
 
-    <div class="award">
-      <span>💥 Biggest Blowout</span>
-      <strong>${recap.biggestBlowout}</strong>
-    </div>
 
     <div class="award">
-      <span>😰 Closest Game</span>
-      <strong>${recap.closestGame}</strong>
+
+      <span>
+      💥 Biggest Blowout
+      </span>
+
+      <strong>
+      ${recap.biggestBlowout}
+      </strong>
+
     </div>
 
-    <div class="award">
-      <span>😂 Lowest Scorer</span>
-      <strong>${recap.lowestScorer}</strong>
-    </div>
 
     <div class="award">
-      <span>🔥 Game of the Week</span>
-      <strong>${recap.gameOfWeek}</strong>
+
+      <span>
+      😰 Closest Game
+      </span>
+
+      <strong>
+      ${recap.closestGame}
+      </strong>
+
     </div>
 
+
     <div class="award">
-      <span>👑 Power Ranking #1</span>
-      <strong>${recap.powerOne}</strong>
+
+      <span>
+      😂 Lowest Scorer
+      </span>
+
+      <strong>
+      ${recap.lowestScorer}
+      </strong>
+
+    </div>
+
+
+    <div class="award">
+
+      <span>
+      🔥 Game of the Week
+      </span>
+
+      <strong>
+      ${recap.gameOfWeek}
+      </strong>
+
+    </div>
+
+
+    <div class="award">
+
+      <span>
+      📅 Week
+      </span>
+
+      <strong>
+      Week ${week}
+      </strong>
+
     </div>
 
   </div>
 
-  <div class="card" style="margin-top:18px">
 
-    <h3 class="section-title">
+  <div class="commissioner-card">
+
+    <h3>
     Commissioner's Take
     </h3>
 
     <div class="commissioner-take">
-    ${recap.take}
+
+    Add your own weekly trash talk here.
+
     </div>
 
   </div>
@@ -378,9 +465,98 @@ function showWeek(week) {
 
 }
 
-showWeek(1);
+
+async function loadRecaps() {
+
+  try {
+
+    const response =
+    await fetch(
+      "league-data.json?v=" +
+      Date.now()
+    );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Could not load league-data.json"
+      );
+
+    }
+
+
+    const data =
+    await response.json();
+
+
+    recapData =
+    data.recaps || {};
+
+
+    if (data.lastUpdated) {
+
+      const updateDate =
+      new Date(
+        data.lastUpdated
+      );
+
+      document.getElementById(
+        "syncBox"
+      ).textContent =
+      "ESPN last synced: " +
+      updateDate.toLocaleString();
+
+    }
+
+    else {
+
+      document.getElementById(
+        "syncBox"
+      ).textContent =
+      "Connected to ESPN";
+
+    }
+
+
+    showWeek(
+      currentSelectedWeek
+    );
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    document.getElementById(
+      "syncBox"
+    ).textContent =
+    "ESPN sync unavailable";
+
+
+    document.getElementById(
+      "recapContent"
+    ).innerHTML = `
+
+    <div class="coming-soon">
+
+    Weekly recap data is temporarily unavailable.
+
+    </div>
+
+    `;
+
+  }
+
+}
+
+
+loadRecaps();
 
 </script>
 
 </body>
+
 </html>
+```
