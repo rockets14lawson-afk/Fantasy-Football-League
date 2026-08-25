@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>JDC Degenerates</title>
@@ -24,6 +26,9 @@ body {
   color: #f5f5f5;
 }
 
+
+/* HERO */
+
 .hero {
   min-height: 440px;
   display: flex;
@@ -31,9 +36,11 @@ body {
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
+
   background:
     radial-gradient(circle at top, rgba(212,175,55,.22), transparent 42%),
     linear-gradient(180deg,#111,#050505);
+
   border-bottom: 3px solid #d4af37;
 }
 
@@ -71,6 +78,7 @@ body {
   color: #050505;
   border-radius: 999px;
   font-weight: 900;
+  box-shadow: 0 0 35px rgba(212,175,55,.25);
 }
 
 .draft-banner {
@@ -85,6 +93,9 @@ body {
   font-weight: 900;
   letter-spacing: 1px;
 }
+
+
+/* NAVIGATION */
 
 nav {
   position: sticky;
@@ -113,6 +124,9 @@ nav a:hover {
   color: #000;
 }
 
+
+/* MAIN */
+
 .container {
   width: min(1150px,92%);
   margin: auto;
@@ -128,6 +142,7 @@ nav a:hover {
   border: 1px solid #2c2c2c;
   border-radius: 16px;
   padding: 25px;
+  box-shadow: 0 16px 45px rgba(0,0,0,.35);
 }
 
 .section-title {
@@ -152,6 +167,9 @@ nav a:hover {
   font-size: 11px;
   letter-spacing: 2px;
 }
+
+
+/* GAME OF THE WEEK */
 
 .game-week {
   text-align: center;
@@ -213,6 +231,9 @@ nav a:hover {
   font-size: 13px;
 }
 
+
+/* STANDINGS */
+
 .table-wrap {
   overflow-x: auto;
 }
@@ -236,10 +257,17 @@ td {
   border-bottom: 1px solid #292929;
 }
 
+tr:hover td {
+  background: #1a1a1a;
+}
+
 .rank {
   font-weight: bold;
   color: #d4af37;
 }
+
+
+/* MANAGERS */
 
 .manager-grid {
   display: grid;
@@ -253,6 +281,16 @@ td {
   border-radius: 12px;
   padding: 20px 10px;
   text-align: center;
+  transition: .2s;
+}
+
+.manager-card:hover {
+  transform: translateY(-4px);
+  border-color: #d4af37;
+}
+
+.manager-card.champion {
+  border-color: #d4af37;
 }
 
 .manager-icon {
@@ -271,6 +309,7 @@ td {
 
 .manager-card strong {
   display: block;
+  font-size: 16px;
 }
 
 .manager-card span {
@@ -279,6 +318,9 @@ td {
   margin-top: 5px;
   font-size: 12px;
 }
+
+
+/* CHAMPIONS */
 
 .history-grid {
   display: grid;
@@ -292,10 +334,17 @@ td {
   background: #101010;
   border: 1px solid #303030;
   border-radius: 12px;
+  transition: .2s;
+}
+
+.champ-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-4px);
 }
 
 .champ-card .year {
   color: #888;
+  font-size: 14px;
 }
 
 .champ-card .trophy {
@@ -309,6 +358,9 @@ td {
   font-size: 19px;
 }
 
+
+/* RECORDS */
+
 .records-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -318,6 +370,8 @@ td {
 .record-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 15px;
   background: #101010;
   border: 1px solid #303030;
   padding: 18px;
@@ -334,18 +388,26 @@ td {
   font-size: 18px;
 }
 
+
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 35px 20px;
   border-top: 1px solid #292929;
   color: #777;
+  background: #050505;
 }
 
 footer strong {
   color: #d4af37;
 }
 
+
+/* MOBILE */
+
 @media (max-width: 850px) {
+
   .manager-grid {
     grid-template-columns: repeat(2,1fr);
   }
@@ -353,9 +415,15 @@ footer strong {
   .history-grid {
     grid-template-columns: repeat(2,1fr);
   }
+
 }
 
 @media (max-width: 600px) {
+
+  .hero {
+    min-height: 360px;
+  }
+
   .matchup {
     grid-template-columns: 1fr;
   }
@@ -363,12 +431,16 @@ footer strong {
   .records-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 </style>
+
 </head>
 
+
 <body>
+
 
 <header class="hero">
 
@@ -387,7 +459,7 @@ footer strong {
   </div>
 
   <div class="champion-banner">
-    🏆 Defending Champion: Kidder
+    🏆 Defending Champion: Matt
   </div>
 
   <div class="draft-banner">
@@ -398,18 +470,28 @@ footer strong {
 
 </header>
 
+
 <nav>
 
 <a href="index.html">Home</a>
+
 <a href="schedule.html">Schedule</a>
+
 <a href="#standings">Standings</a>
+
 <a href="managers.html">Managers</a>
-<a href="index.html#champions">Champions</a>
+
+<a href="#champions">Champions</a>
+
 <a href="#records">Records</a>
 
 </nav>
 
+
 <div class="container">
+
+
+<!-- GAME OF THE WEEK -->
 
 <section class="section">
 
@@ -425,11 +507,13 @@ Featured Matchup
 
 </div>
 
+
 <div class="game-week">
 
 <div class="game-label" id="weekNumber">
 WEEK 1
 </div>
+
 
 <div class="matchup">
 
@@ -445,6 +529,7 @@ Matt
 
 </div>
 
+
 <div>
 
 <div class="vs">
@@ -452,10 +537,11 @@ VS
 </div>
 
 <div class="storyline" id="storyline">
-Championship Rematch
+2025 Championship Rematch
 </div>
 
 </div>
+
 
 <div>
 
@@ -471,7 +557,9 @@ Philip
 
 </div>
 
+
 <div class="week-status" id="weekStatus"></div>
+
 
 </div>
 
@@ -479,14 +567,24 @@ Philip
 
 </section>
 
+
+
+<!-- STANDINGS -->
+
 <section class="section" id="standings">
 
 <div class="card">
 
 <div class="section-title">
+
 <h2>2026 Standings</h2>
-<span class="section-label">Regular Season</span>
+
+<span class="section-label">
+Regular Season
+</span>
+
 </div>
+
 
 <div class="table-wrap">
 
@@ -501,14 +599,23 @@ Philip
 </tr>
 
 <tr><td class="rank">1</td><td>Devin</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">2</td><td>Toby</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">3</td><td>Tom</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">4</td><td>Matt</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">5</td><td>Philip</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">6</td><td>Mike</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">7</td><td>Josh</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">8</td><td>Steve P.</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">9</td><td>Steve H.</td><td>0</td><td>0</td><td>0.0</td></tr>
+
 <tr><td class="rank">10</td><td>Hunter</td><td>0</td><td>0</td><td>0.0</td></tr>
 
 </table>
@@ -519,27 +626,137 @@ Philip
 
 </section>
 
+
+
+<!-- MANAGERS -->
+
 <section class="section" id="managers">
 
 <div class="card">
 
 <div class="section-title">
+
 <h2>League Managers</h2>
-<span class="section-label">10 Teams</span>
+
+<span class="section-label">
+10 Teams
+</span>
+
 </div>
+
 
 <div class="manager-grid">
 
-<div class="manager-card"><div class="manager-icon">D</div><strong>Devin</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">T</div><strong>Toby</strong><span>2022 Champion 🏆</span></div>
-<div class="manager-card"><div class="manager-icon">T</div><strong>Tom</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">M</div><strong>Matt</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">P</div><strong>Philip</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">M</div><strong>Mike</strong><span>2024 Champion 🏆</span></div>
-<div class="manager-card"><div class="manager-icon">J</div><strong>Josh</strong><span>2023 Champion 🏆</span></div>
-<div class="manager-card"><div class="manager-icon">S</div><strong>Steve P.</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">S</div><strong>Steve H.</strong><span>Manager</span></div>
-<div class="manager-card"><div class="manager-icon">H</div><strong>Hunter</strong><span>Manager</span></div>
+
+<div class="manager-card">
+
+<div class="manager-icon">D</div>
+
+<strong>Devin</strong>
+
+<span>Commissioner</span>
+
+</div>
+
+
+<div class="manager-card champion">
+
+<div class="manager-icon">T</div>
+
+<strong>Toby</strong>
+
+<span>2022 Champion 🏆</span>
+
+</div>
+
+
+<div class="manager-card">
+
+<div class="manager-icon">T</div>
+
+<strong>Tom</strong>
+
+<span>Manager</span>
+
+</div>
+
+
+<div class="manager-card champion">
+
+<div class="manager-icon">M</div>
+
+<strong>Matt</strong>
+
+<span>2025 Champion 🏆</span>
+
+</div>
+
+
+<div class="manager-card">
+
+<div class="manager-icon">P</div>
+
+<strong>Philip</strong>
+
+<span>2025 Runner-Up</span>
+
+</div>
+
+
+<div class="manager-card champion">
+
+<div class="manager-icon">M</div>
+
+<strong>Mike</strong>
+
+<span>2024 Champion 🏆</span>
+
+</div>
+
+
+<div class="manager-card champion">
+
+<div class="manager-icon">J</div>
+
+<strong>Josh</strong>
+
+<span>2023 Champion 🏆</span>
+
+</div>
+
+
+<div class="manager-card">
+
+<div class="manager-icon">S</div>
+
+<strong>Steve P.</strong>
+
+<span>2026 Rookie</span>
+
+</div>
+
+
+<div class="manager-card">
+
+<div class="manager-icon">S</div>
+
+<strong>Steve H.</strong>
+
+<span>2026 Rookie</span>
+
+</div>
+
+
+<div class="manager-card">
+
+<div class="manager-icon">H</div>
+
+<strong>Hunter</strong>
+
+<span>2026 Rookie</span>
+
+</div>
+
 
 </div>
 
@@ -547,43 +764,175 @@ Philip
 
 </section>
 
-<section class="section">
+
+
+<!-- CHAMPIONS -->
+
+<section class="section" id="champions">
 
 <div class="card">
 
 <div class="section-title">
+
 <h2>League Champions</h2>
-<span class="section-label">Hall of Champions</span>
+
+<span class="section-label">
+Hall of Champions
+</span>
+
 </div>
+
 
 <div class="history-grid">
 
-<div class="champ-card"><div class="year">2022</div><div class="trophy">🏆</div><div class="winner">Toby</div></div>
-<div class="champ-card"><div class="year">2023</div><div class="trophy">🏆</div><div class="winner">Josh</div></div>
-<div class="champ-card"><div class="year">2024</div><div class="trophy">🏆</div><div class="winner">Mike</div></div>
-<div class="champ-card"><div class="year">2025</div><div class="trophy">🏆</div><div class="winner">Kidder</div></div>
+
+<div class="champ-card">
+
+<div class="year">
+2022
+</div>
+
+<div class="trophy">
+🏆
+</div>
+
+<div class="winner">
+Toby
+</div>
+
+</div>
+
+
+<div class="champ-card">
+
+<div class="year">
+2023
+</div>
+
+<div class="trophy">
+🏆
+</div>
+
+<div class="winner">
+Josh
+</div>
+
+</div>
+
+
+<div class="champ-card">
+
+<div class="year">
+2024
+</div>
+
+<div class="trophy">
+🏆
+</div>
+
+<div class="winner">
+Mike
+</div>
+
+</div>
+
+
+<div class="champ-card">
+
+<div class="year">
+2025
+</div>
+
+<div class="trophy">
+🏆
+</div>
+
+<div class="winner">
+Matt
+</div>
+
+</div>
+
 
 </div>
 
 </div>
 
 </section>
+
+
+
+<!-- RECORDS -->
 
 <section class="section" id="records">
 
 <div class="card">
 
 <div class="section-title">
+
 <h2>League Records</h2>
-<span class="section-label">All-Time</span>
+
+<span class="section-label">
+All-Time
+</span>
+
 </div>
+
 
 <div class="records-grid">
 
-<div class="record-card"><span class="record-name">Completed Seasons</span><span class="record-value">4</span></div>
-<div class="record-card"><span class="record-name">Different Champions</span><span class="record-value">4</span></div>
-<div class="record-card"><span class="record-name">Most Championships</span><span class="record-value">1</span></div>
-<div class="record-card"><span class="record-name">Two-Time Champions</span><span class="record-value">0</span></div>
+
+<div class="record-card">
+
+<span class="record-name">
+Completed Seasons
+</span>
+
+<span class="record-value">
+4
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Different Champions
+</span>
+
+<span class="record-value">
+4
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Most Championships
+</span>
+
+<span class="record-value">
+1
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Two-Time Champions
+</span>
+
+<span class="record-value">
+0
+</span>
+
+</div>
+
 
 </div>
 
@@ -591,106 +940,245 @@ Philip
 
 </section>
 
+
 </div>
+
 
 <footer>
 
-<strong>JDC Degenerates</strong>
+<strong>
+JDC Degenerates
+</strong>
+
 <br><br>
+
 Fantasy Football League • Est. 2022
 
 </footer>
 
+
+
 <script>
+
+/*
+GAME OF THE WEEK
+Automatically changes each Tuesday.
+*/
 
 const featuredGames = {
 
-1: {team1:"Matt",team2:"Philip",story:"Championship Rematch"},
-2: {team1:"Tom",team2:"Josh",story:"Featured Matchup"},
-3: {team1:"Devin",team2:"Hunter",story:"Featured Matchup"},
-4: {team1:"Toby",team2:"Tom",story:"Featured Matchup"},
-5: {team1:"Devin",team2:"Josh",story:"Featured Matchup"},
-6: {team1:"Steve H.",team2:"Steve P.",story:"Battle of the Steves"},
-7: {team1:"Devin",team2:"Matt",story:"Featured Matchup"},
-8: {team1:"Devin",team2:"Tom",story:"Featured Matchup"},
-9: {team1:"Devin",team2:"Toby",story:"Rivalry Preview"},
-10: {team1:"Toby",team2:"Mike",story:"Featured Matchup"},
-11: {team1:"Toby",team2:"Philip",story:"Featured Matchup"},
-12: {team1:"Devin",team2:"Matt",story:"Featured Matchup"},
-13: {team1:"Devin",team2:"Tom",story:"Featured Matchup"},
-14: {team1:"Devin",team2:"Toby",story:"🔥 Rivalry Week"}
+1: {
+team1: "Matt",
+team2: "Philip",
+story: "2025 Championship Rematch"
+},
+
+2: {
+team1: "Tom",
+team2: "Josh",
+story: "Featured Matchup"
+},
+
+3: {
+team1: "Devin",
+team2: "Hunter",
+story: "Featured Matchup"
+},
+
+4: {
+team1: "Toby",
+team2: "Tom",
+story: "Featured Matchup"
+},
+
+5: {
+team1: "Devin",
+team2: "Josh",
+story: "Featured Matchup"
+},
+
+6: {
+team1: "Steve H.",
+team2: "Steve P.",
+story: "Battle of the Steves"
+},
+
+7: {
+team1: "Devin",
+team2: "Matt",
+story: "Featured Matchup"
+},
+
+8: {
+team1: "Devin",
+team2: "Tom",
+story: "Featured Matchup"
+},
+
+9: {
+team1: "Devin",
+team2: "Toby",
+story: "Rivalry Preview"
+},
+
+10: {
+team1: "Toby",
+team2: "Mike",
+story: "Featured Matchup"
+},
+
+11: {
+team1: "Toby",
+team2: "Philip",
+story: "Featured Matchup"
+},
+
+12: {
+team1: "Devin",
+team2: "Matt",
+story: "Featured Matchup"
+},
+
+13: {
+team1: "Devin",
+team2: "Tom",
+story: "Featured Matchup"
+},
+
+14: {
+team1: "Devin",
+team2: "Toby",
+story: "🔥 RIVALRY WEEK"
+}
 
 };
 
-const weekOneStart = new Date(2026,8,8);
-const today = new Date();
+
+/*
+Week 1 starts Tuesday,
+September 8, 2026.
+*/
+
+const weekOneStart =
+new Date(2026,8,8,0,0,0);
+
+const today =
+new Date();
+
+const millisecondsPerWeek =
+7 * 24 * 60 * 60 * 1000;
 
 let currentWeek = 1;
 
+
+/*
+Before season:
+keep Week 1 displayed.
+*/
+
 if (today >= weekOneStart) {
 
-  currentWeek =
-  Math.floor(
-    (today - weekOneStart) /
-    (7 * 24 * 60 * 60 * 1000)
-  ) + 1;
+currentWeek =
+Math.floor(
+(today - weekOneStart) /
+millisecondsPerWeek
+) + 1;
 
 }
+
+
+/*
+Stop at Week 14.
+*/
 
 if (currentWeek > 14) {
-  currentWeek = 14;
+currentWeek = 14;
 }
 
-const game = featuredGames[currentWeek];
 
-document.getElementById("weekNumber").textContent =
+const game =
+featuredGames[currentWeek];
+
+
+document.getElementById(
+"weekNumber"
+).textContent =
 "WEEK " + currentWeek;
 
-document.getElementById("team1Name").textContent =
+
+document.getElementById(
+"team1Name"
+).textContent =
 game.team1;
 
-document.getElementById("team2Name").textContent =
+
+document.getElementById(
+"team2Name"
+).textContent =
 game.team2;
 
-document.getElementById("storyline").textContent =
+
+document.getElementById(
+"storyline"
+).textContent =
 game.story;
 
-document.getElementById("team1Initial").textContent =
+
+document.getElementById(
+"team1Initial"
+).textContent =
 game.team1.charAt(0);
 
-document.getElementById("team2Initial").textContent =
+
+document.getElementById(
+"team2Initial"
+).textContent =
 game.team2.charAt(0);
 
+
+/*
+STATUS
+*/
+
 const weekStatus =
-document.getElementById("weekStatus");
+document.getElementById(
+"weekStatus"
+);
+
 
 if (today < weekOneStart) {
 
-  const daysUntil =
-  Math.ceil(
-    (weekOneStart - today) /
-    (1000 * 60 * 60 * 24)
-  );
+const daysUntil =
+Math.ceil(
+(weekOneStart - today) /
+(1000 * 60 * 60 * 24)
+);
 
-  weekStatus.textContent =
-  "Week 1 begins in " + daysUntil + " days";
+weekStatus.textContent =
+"Week 1 begins in " +
+daysUntil +
+" days";
 
 }
+
 else if (currentWeek === 14) {
 
-  weekStatus.textContent =
-  "🔥 Rivalry Week";
+weekStatus.textContent =
+"🔥 Rivalry Week";
 
 }
+
 else {
 
-  weekStatus.textContent =
-  "2026 Regular Season";
+weekStatus.textContent =
+"2026 Regular Season";
 
 }
 
 </script>
 
+
 </body>
+
 </html>
 ```
