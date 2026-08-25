@@ -1,0 +1,7116 @@
+{
+  "leagueId": "90156758",
+  "lastUpdated": "2026-08-25T18:15:53.552459+00:00",
+  "seasons": {
+    "2022": {
+      "teams": [
+        {
+          "teamId": 1,
+          "teamName": "Hanging with  Aaron Hernandez",
+          "wins": 8,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 1749.38,
+          "pointsAgainst": 1462.78
+        },
+        {
+          "teamId": 2,
+          "teamName": "The Brady  Bunch",
+          "wins": 4,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1161.42,
+          "pointsAgainst": 1507.94
+        },
+        {
+          "teamId": 3,
+          "teamName": "Riley Reid  Option ",
+          "wins": 6,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 1547.28,
+          "pointsAgainst": 1472.4
+        },
+        {
+          "teamId": 4,
+          "teamName": "Let's Go Muskies!",
+          "wins": 4,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1542.12,
+          "pointsAgainst": 1655.76
+        },
+        {
+          "teamId": 5,
+          "teamName": "Work Dream Team",
+          "wins": 4,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1411.84,
+          "pointsAgainst": 1564.08
+        },
+        {
+          "teamId": 6,
+          "teamName": "The back alley Ball fondlers ",
+          "wins": 5,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1335.2,
+          "pointsAgainst": 1523.2
+        },
+        {
+          "teamId": 7,
+          "teamName": "Ohio RiffRaff26",
+          "wins": 9,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 1640.4,
+          "pointsAgainst": 1244.78
+        },
+        {
+          "teamId": 8,
+          "teamName": "Team H00ch",
+          "wins": 9,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 1533.98,
+          "pointsAgainst": 1404.58
+        },
+        {
+          "teamId": 9,
+          "teamName": "89 and a  Wake Up",
+          "wins": 7,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 1449.0,
+          "pointsAgainst": 1381.08
+        },
+        {
+          "teamId": 10,
+          "teamName": "Cincy Katherine ",
+          "wins": 5,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1470.18,
+          "pointsAgainst": 1512.04
+        },
+        {
+          "teamId": 11,
+          "teamName": "Soup Kitchen  Mike + The Boys",
+          "wins": 4,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1280.84,
+          "pointsAgainst": 1465.74
+        },
+        {
+          "teamId": 12,
+          "teamName": "OH AshBash",
+          "wins": 7,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 1517.48,
+          "pointsAgainst": 1444.74
+        }
+      ],
+      "matchups": [
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 96.56,
+          "awayTeamId": 11,
+          "awayScore": 106.9
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 166.88,
+          "awayTeamId": 9,
+          "awayScore": 157.08
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 144.4,
+          "awayTeamId": 1,
+          "awayScore": 121.12
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 155.9,
+          "awayTeamId": 12,
+          "awayScore": 132.82
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 90.06,
+          "awayTeamId": 10,
+          "awayScore": 121.6
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 147.42,
+          "awayTeamId": 4,
+          "awayScore": 146.32
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 101.46,
+          "awayTeamId": 9,
+          "awayScore": 129.48
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 165.18,
+          "awayTeamId": 3,
+          "awayScore": 177.86
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 176.78,
+          "awayTeamId": 5,
+          "awayScore": 93.8
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 185.72,
+          "awayTeamId": 10,
+          "awayScore": 166.1
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 101.28,
+          "awayTeamId": 8,
+          "awayScore": 106.16
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 161.52,
+          "awayTeamId": 2,
+          "awayScore": 82.7
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 133.1,
+          "awayTeamId": 11,
+          "awayScore": 110.4
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 106.1,
+          "awayTeamId": 7,
+          "awayScore": 99.56
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 101.68,
+          "awayTeamId": 5,
+          "awayScore": 99.04
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 117.96,
+          "awayTeamId": 12,
+          "awayScore": 154.7
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 98.18,
+          "awayTeamId": 6,
+          "awayScore": 163.02
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 86.26,
+          "awayTeamId": 2,
+          "awayScore": 90.9
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 89.94,
+          "awayTeamId": 7,
+          "awayScore": 125.46
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 130.9,
+          "awayTeamId": 1,
+          "awayScore": 160.08
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 156.4,
+          "awayTeamId": 9,
+          "awayScore": 85.22
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 120.06,
+          "awayTeamId": 6,
+          "awayScore": 89.96
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 133.72,
+          "awayTeamId": 4,
+          "awayScore": 169.18
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 139.58,
+          "awayTeamId": 10,
+          "awayScore": 129.56
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 107.24,
+          "awayTeamId": 11,
+          "awayScore": 171.28
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 158.84,
+          "awayTeamId": 3,
+          "awayScore": 139.92
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 126.78,
+          "awayTeamId": 9,
+          "awayScore": 122.26
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 99.86,
+          "awayTeamId": 12,
+          "awayScore": 140.66
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 84.06,
+          "awayTeamId": 8,
+          "awayScore": 107.28
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 124.6,
+          "awayTeamId": 10,
+          "awayScore": 184.08
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 125.64,
+          "awayTeamId": 12,
+          "awayScore": 97.7
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 65.12,
+          "awayTeamId": 8,
+          "awayScore": 113.68
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 95.7,
+          "awayTeamId": 10,
+          "awayScore": 96.22
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 145.7,
+          "awayTeamId": 4,
+          "awayScore": 103.98
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 137.12,
+          "awayTeamId": 6,
+          "awayScore": 104.5
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 88.52,
+          "awayTeamId": 2,
+          "awayScore": 118.3
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 65.6,
+          "awayTeamId": 3,
+          "awayScore": 130.42
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 130.5,
+          "awayTeamId": 9,
+          "awayScore": 96.74
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 136.02,
+          "awayTeamId": 1,
+          "awayScore": 150.14
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 101.78,
+          "awayTeamId": 7,
+          "awayScore": 147.64
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 114.5,
+          "awayTeamId": 5,
+          "awayScore": 107.64
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 154.44,
+          "awayTeamId": 11,
+          "awayScore": 88.86
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 129.82,
+          "awayTeamId": 12,
+          "awayScore": 126.18
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 193.14,
+          "awayTeamId": 8,
+          "awayScore": 130.38
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 93.84,
+          "awayTeamId": 10,
+          "awayScore": 96.88
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 185.98,
+          "awayTeamId": 4,
+          "awayScore": 145.34
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 143.48,
+          "awayTeamId": 6,
+          "awayScore": 122.72
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 140.22,
+          "awayTeamId": 2,
+          "awayScore": 145.6
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 166.52,
+          "awayTeamId": 1,
+          "awayScore": 149.84
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 140.0,
+          "awayTeamId": 7,
+          "awayScore": 107.36
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 111.84,
+          "awayTeamId": 5,
+          "awayScore": 125.38
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 125.4,
+          "awayTeamId": 11,
+          "awayScore": 83.14
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 109.12,
+          "awayTeamId": 3,
+          "awayScore": 97.5
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 105.96,
+          "awayTeamId": 9,
+          "awayScore": 124.7
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 129.02,
+          "awayTeamId": 12,
+          "awayScore": 116.4
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 108.2,
+          "awayTeamId": 8,
+          "awayScore": 147.2
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 95.58,
+          "awayTeamId": 10,
+          "awayScore": 134.74
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 120.84,
+          "awayTeamId": 4,
+          "awayScore": 170.5
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 162.0,
+          "awayTeamId": 6,
+          "awayScore": 75.8
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 146.88,
+          "awayTeamId": 2,
+          "awayScore": 33.5
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 102.2,
+          "awayTeamId": 5,
+          "awayScore": 92.8
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 129.98,
+          "awayTeamId": 11,
+          "awayScore": 106.74
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 105.66,
+          "awayTeamId": 3,
+          "awayScore": 132.1
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 106.04,
+          "awayTeamId": 9,
+          "awayScore": 123.58
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 76.82,
+          "awayTeamId": 1,
+          "awayScore": 134.62
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 48.58,
+          "awayTeamId": 7,
+          "awayScore": 134.08
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 108.92,
+          "awayTeamId": 11,
+          "awayScore": 57.42
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 147.06,
+          "awayTeamId": 3,
+          "awayScore": 188.66
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 89.3,
+          "awayTeamId": 9,
+          "awayScore": 116.32
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 129.74,
+          "awayTeamId": 1,
+          "awayScore": 122.8
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 85.76,
+          "awayTeamId": 7,
+          "awayScore": 186.3
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 57.8,
+          "awayTeamId": 5,
+          "awayScore": 105.46
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 238.68,
+          "awayTeamId": 6,
+          "awayScore": 138.64
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 209.54,
+          "awayTeamId": 9,
+          "awayScore": 311.3
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 260.3,
+          "awayTeamId": 3,
+          "awayScore": 246.98
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 278.44,
+          "awayTeamId": 10,
+          "awayScore": 251.3
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 226.96,
+          "awayTeamId": 5,
+          "awayScore": 270.1
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 235.26,
+          "awayTeamId": 2,
+          "awayScore": 62.2
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 252.9,
+          "awayTeamId": 9,
+          "awayScore": 271.64
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 276.42,
+          "awayTeamId": 1,
+          "awayScore": 225.1
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 222.46,
+          "awayTeamId": 3,
+          "awayScore": 215.12
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 290.6,
+          "awayTeamId": 6,
+          "awayScore": 198.1
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 191.86,
+          "awayTeamId": 11,
+          "awayScore": 199.76
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 295.64,
+          "awayTeamId": 2,
+          "awayScore": 168.56
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 225.34,
+          "awayTeamId": 9,
+          "awayScore": 176.06
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 210.48,
+          "awayTeamId": 1,
+          "awayScore": 220.0
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 172.34,
+          "awayTeamId": 10,
+          "awayScore": 176.3
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 220.2,
+          "awayTeamId": 6,
+          "awayScore": 199.5
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 199.7,
+          "awayTeamId": 11,
+          "awayScore": 216.08
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 225.1,
+          "awayTeamId": 2,
+          "awayScore": 130.8
+        }
+      ],
+      "status": {
+        "activatedDate": 1661288228266,
+        "createdAsLeagueType": 3,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 15,
+        "finalScoringPeriod": 18,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": false,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 19,
+        "previousSeasons": [
+          2020,
+          2021
+        ],
+        "requestedMatchupPeriodId": 15,
+        "standingsUpdateDate": 1673771324171,
+        "teamsJoined": 12,
+        "transactionScoringPeriod": 19,
+        "waiverLastExecutionDate": 1673430001047,
+        "waiverProcessStatus": {
+          "2022-09-06T07:12:46.718+00:00": 1,
+          "2022-09-14T07:45:05.818+00:00": 3,
+          "2022-09-15T07:57:55.067+00:00": 1,
+          "2022-09-21T08:06:26.840+00:00": 3,
+          "2022-09-28T07:15:57.303+00:00": 2,
+          "2022-10-05T08:27:27.490+00:00": 6,
+          "2022-10-06T07:28:18.140+00:00": 1,
+          "2022-10-12T08:42:45.508+00:00": 5,
+          "2022-10-19T08:14:15.041+00:00": 5,
+          "2022-10-20T08:06:43.426+00:00": 1,
+          "2022-10-21T07:35:50.525+00:00": 1,
+          "2022-10-26T07:54:51.526+00:00": 8,
+          "2022-10-28T10:05:07.482+00:00": 1,
+          "2022-11-02T08:05:01.131+00:00": 7,
+          "2022-11-03T08:10:22.347+00:00": 1,
+          "2022-11-04T08:15:34.998+00:00": 1,
+          "2022-11-09T08:58:46.301+00:00": 4,
+          "2022-11-10T08:34:46.336+00:00": 1,
+          "2022-11-16T09:07:26.821+00:00": 8,
+          "2022-11-17T08:55:58.801+00:00": 1,
+          "2022-11-18T08:50:53.728+00:00": 1,
+          "2022-11-23T09:02:17.647+00:00": 4,
+          "2022-11-24T09:19:40.046+00:00": 1,
+          "2022-11-30T08:03:42.497+00:00": 4,
+          "2022-12-01T08:58:22.310+00:00": 1,
+          "2022-12-07T09:27:13.026+00:00": 4,
+          "2022-12-14T09:30:05.366+00:00": 3,
+          "2022-12-17T09:33:42.190+00:00": 1,
+          "2022-12-18T09:33:37.671+00:00": 1,
+          "2022-12-21T09:04:15.194+00:00": 3,
+          "2022-12-28T09:31:24.210+00:00": 1
+        }
+      },
+      "settings": {
+        "acquisitionSettings": {
+          "acquisitionBudget": 100,
+          "acquisitionLimit": -1,
+          "acquisitionType": "WAIVERS_TRADITIONAL",
+          "finalPlaceTransactionEligible": 0,
+          "isUsingAcquisitionBudget": false,
+          "matchupAcquisitionLimit": -1.0,
+          "matchupLimitPerScoringPeriod": true,
+          "minimumBid": 1,
+          "transactionLockingEnabled": false,
+          "waiverHours": 24,
+          "waiverOrderReset": true,
+          "waiverProcessDays": [
+            "SUNDAY",
+            "MONDAY",
+            "FRIDAY",
+            "WEDNESDAY",
+            "SATURDAY",
+            "THURSDAY"
+          ],
+          "waiverProcessHour": 11
+        },
+        "draftSettings": {
+          "auctionBudget": 200,
+          "availableDate": 1662314400000,
+          "date": 1662318000000,
+          "isTradingEnabled": false,
+          "keeperCount": 0,
+          "keeperCountFuture": 0,
+          "keeperOrderType": "TRADITIONAL",
+          "leagueSubType": "NONE",
+          "orderType": "DRAFT_START",
+          "pickOrder": [
+            9,
+            11,
+            8,
+            3,
+            12,
+            7,
+            1,
+            10,
+            4,
+            6,
+            2,
+            5
+          ],
+          "timePerSelection": 90,
+          "type": "SNAKE"
+        },
+        "financeSettings": {
+          "entryFee": 0.0,
+          "miscFee": 0.0,
+          "perLoss": 0.0,
+          "perTrade": 0.0,
+          "playerAcquisition": 0.0,
+          "playerDrop": 0.0,
+          "playerMoveToActive": 0.0,
+          "playerMoveToIR": 0.0
+        },
+        "isAutoReactivate": false,
+        "isCustomizable": true,
+        "isPublic": false,
+        "name": "JDC League ",
+        "restrictionType": "NONE",
+        "rosterSettings": {
+          "autoPilotTypeSupported": "NONE",
+          "isBenchUnlimited": true,
+          "isUsingUndroppableList": true,
+          "lineupLocktimeType": "INDIVIDUAL_GAME",
+          "lineupSlotCounts": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "3": 0,
+            "4": 2,
+            "5": 0,
+            "6": 1,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 1,
+            "17": 1,
+            "18": 0,
+            "19": 0,
+            "20": 7,
+            "21": 1,
+            "22": 0,
+            "23": 1,
+            "24": 0
+          },
+          "lineupSlotStatLimits": {},
+          "moveLimit": -1,
+          "positionLimits": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 8,
+            "4": 3,
+            "5": 3,
+            "6": -1,
+            "7": -1,
+            "8": -1,
+            "9": -1,
+            "10": -1,
+            "11": -1,
+            "12": -1,
+            "13": -1,
+            "14": -1,
+            "15": 0,
+            "16": 3,
+            "17": -1
+          },
+          "rosterLocktimeType": "INDIVIDUAL_GAME",
+          "universeIds": [
+            0
+          ]
+        },
+        "scheduleSettings": {
+          "consolationLadderDisabled": false,
+          "divisions": [
+            {
+              "id": 0,
+              "name": "East",
+              "size": 6
+            },
+            {
+              "id": 1,
+              "name": "West",
+              "size": 6
+            }
+          ],
+          "matchupPeriodCount": 12,
+          "matchupPeriodLength": 1,
+          "matchupPeriods": {
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ],
+            "4": [
+              4
+            ],
+            "5": [
+              5
+            ],
+            "6": [
+              6
+            ],
+            "7": [
+              7
+            ],
+            "8": [
+              8
+            ],
+            "9": [
+              9
+            ],
+            "10": [
+              10
+            ],
+            "11": [
+              11
+            ],
+            "12": [
+              12
+            ],
+            "13": [
+              13,
+              14
+            ],
+            "14": [
+              16,
+              15
+            ],
+            "15": [
+              17,
+              18
+            ]
+          },
+          "periodTypeId": 1,
+          "playoffMatchupPeriodLength": 2,
+          "playoffReseed": false,
+          "playoffSeedingRule": "TOTAL_POINTS_SCORED",
+          "playoffSeedingRuleBy": 0,
+          "playoffTeamCount": 8,
+          "variablePlayoffMatchupPeriodLength": false
+        },
+        "scoringSettings": {
+          "allowOutOfPositionScoring": false,
+          "homeTeamBonus": 0,
+          "matchupTieRule": "NONE",
+          "matchupTieRuleBy": 0,
+          "playerRankType": "PPR",
+          "playoffHomeTeamBonus": 0,
+          "playoffMatchupTieRule": "NONE",
+          "playoffMatchupTieRuleBy": 0,
+          "scoringItems": [
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "statId": 36
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {},
+              "statId": 25
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 46
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 122
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 123
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 57
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 121
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 133
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 53
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {},
+              "statId": 43
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -2.0,
+              "pointsOverrides": {},
+              "statId": 72
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 134
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 35
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -6.0
+              },
+              "statId": 135
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -7.0
+              },
+              "statId": 136
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 102
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "pointsOverrides": {},
+              "statId": 24
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 103
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 101
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 129
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 16
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 104
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 130
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 125
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "pointsOverrides": {},
+              "statId": 85
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.04,
+              "statId": 3
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 124
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 132
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 86
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "pointsOverrides": {},
+              "statId": 42
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "statId": 4
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 5.0
+              },
+              "statId": 89
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 90
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 206
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 209
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 95
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 10.0
+              },
+              "statId": 128
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 15
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 93
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 98
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 3.0
+              },
+              "statId": 91
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 96
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 97
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 19
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "pointsOverrides": {},
+              "statId": 80
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 26
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "pointsOverrides": {},
+              "statId": 77
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 92
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 99
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {},
+              "statId": 63
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 20
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 38
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 44
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 45
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {},
+              "statId": 201
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 5.0,
+              "pointsOverrides": {},
+              "statId": 198
+            }
+          ],
+          "scoringType": "H2H_POINTS"
+        },
+        "size": 12,
+        "tradeSettings": {
+          "allowOutOfUniverse": false,
+          "deadlineDate": 1669827600000,
+          "max": -1,
+          "revisionHours": 48,
+          "vetoVotesRequired": 0
+        }
+      }
+    },
+    "2023": {
+      "teams": [
+        {
+          "teamId": 1,
+          "teamName": "THE BENCHWARMERS",
+          "wins": 6,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 1923.64,
+          "pointsAgainst": 2034.52
+        },
+        {
+          "teamId": 2,
+          "teamName": "Buck  Nuts",
+          "wins": 8,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 1988.42,
+          "pointsAgainst": 2139.82
+        },
+        {
+          "teamId": 3,
+          "teamName": "Pigskin Pirates",
+          "wins": 7,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 1883.88,
+          "pointsAgainst": 1841.96
+        },
+        {
+          "teamId": 4,
+          "teamName": "Let's Go Muskies!",
+          "wins": 9,
+          "losses": 6,
+          "ties": 0,
+          "pointsFor": 2088.02,
+          "pointsAgainst": 1949.16
+        },
+        {
+          "teamId": 5,
+          "teamName": "Mean Machine",
+          "wins": 6,
+          "losses": 9,
+          "ties": 0,
+          "pointsFor": 2049.12,
+          "pointsAgainst": 1892.28
+        },
+        {
+          "teamId": 6,
+          "teamName": "Locker Room Cowboy",
+          "wins": 2,
+          "losses": 13,
+          "ties": 0,
+          "pointsFor": 1594.28,
+          "pointsAgainst": 2049.24
+        },
+        {
+          "teamId": 7,
+          "teamName": "Breeced Lightning",
+          "wins": 4,
+          "losses": 11,
+          "ties": 0,
+          "pointsFor": 1775.1,
+          "pointsAgainst": 2126.64
+        },
+        {
+          "teamId": 8,
+          "teamName": "Team H00ch",
+          "wins": 11,
+          "losses": 4,
+          "ties": 0,
+          "pointsFor": 1996.96,
+          "pointsAgainst": 1773.8
+        },
+        {
+          "teamId": 9,
+          "teamName": "89 and a  Wake Up",
+          "wins": 12,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2141.68,
+          "pointsAgainst": 1749.34
+        },
+        {
+          "teamId": 10,
+          "teamName": "WhoDey n the Blowfish",
+          "wins": 10,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 1979.76,
+          "pointsAgainst": 1864.1
+        }
+      ],
+      "matchups": [
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 96.42,
+          "awayTeamId": 10,
+          "awayScore": 116.44
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 114.96,
+          "awayTeamId": 1,
+          "awayScore": 139.24
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 93.86,
+          "awayTeamId": 2,
+          "awayScore": 120.66
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 109.24,
+          "awayTeamId": 9,
+          "awayScore": 118.88
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 96.4,
+          "awayTeamId": 8,
+          "awayScore": 147.8
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 142.5,
+          "awayTeamId": 2,
+          "awayScore": 145.8
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 142.98,
+          "awayTeamId": 3,
+          "awayScore": 135.0
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 150.02,
+          "awayTeamId": 10,
+          "awayScore": 68.46
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 153.36,
+          "awayTeamId": 7,
+          "awayScore": 75.2
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 155.74,
+          "awayTeamId": 6,
+          "awayScore": 105.28
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 156.96,
+          "awayTeamId": 8,
+          "awayScore": 111.78
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 141.78,
+          "awayTeamId": 5,
+          "awayScore": 129.42
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 161.0,
+          "awayTeamId": 4,
+          "awayScore": 175.84
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 149.76,
+          "awayTeamId": 7,
+          "awayScore": 102.46
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 157.16,
+          "awayTeamId": 6,
+          "awayScore": 120.18
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 133.5,
+          "awayTeamId": 4,
+          "awayScore": 123.04
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 56.2,
+          "awayTeamId": 9,
+          "awayScore": 138.1
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 103.84,
+          "awayTeamId": 8,
+          "awayScore": 168.66
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 128.94,
+          "awayTeamId": 1,
+          "awayScore": 126.32
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 144.08,
+          "awayTeamId": 2,
+          "awayScore": 146.48
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 95.6,
+          "awayTeamId": 6,
+          "awayScore": 87.32
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 122.96,
+          "awayTeamId": 3,
+          "awayScore": 124.02
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 125.22,
+          "awayTeamId": 10,
+          "awayScore": 177.42
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 164.28,
+          "awayTeamId": 1,
+          "awayScore": 155.84
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 152.92,
+          "awayTeamId": 2,
+          "awayScore": 135.86
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 138.18,
+          "awayTeamId": 1,
+          "awayScore": 123.24
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 110.38,
+          "awayTeamId": 9,
+          "awayScore": 167.3
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 111.2,
+          "awayTeamId": 5,
+          "awayScore": 102.66
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 150.64,
+          "awayTeamId": 7,
+          "awayScore": 173.24
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 111.12,
+          "awayTeamId": 3,
+          "awayScore": 105.62
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 148.98,
+          "awayTeamId": 10,
+          "awayScore": 123.14
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 129.0,
+          "awayTeamId": 2,
+          "awayScore": 107.26
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 126.8,
+          "awayTeamId": 8,
+          "awayScore": 134.16
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 131.16,
+          "awayTeamId": 4,
+          "awayScore": 103.9
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 178.96,
+          "awayTeamId": 6,
+          "awayScore": 104.38
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 187.66,
+          "awayTeamId": 5,
+          "awayScore": 132.76
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 150.92,
+          "awayTeamId": 7,
+          "awayScore": 126.76
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 129.56,
+          "awayTeamId": 3,
+          "awayScore": 124.28
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 161.66,
+          "awayTeamId": 1,
+          "awayScore": 98.7
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 136.28,
+          "awayTeamId": 9,
+          "awayScore": 146.22
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 135.32,
+          "awayTeamId": 3,
+          "awayScore": 106.02
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 81.04,
+          "awayTeamId": 1,
+          "awayScore": 132.0
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 116.08,
+          "awayTeamId": 9,
+          "awayScore": 142.12
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 137.26,
+          "awayTeamId": 5,
+          "awayScore": 132.42
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 80.08,
+          "awayTeamId": 7,
+          "awayScore": 111.08
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 109.42,
+          "awayTeamId": 10,
+          "awayScore": 141.04
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 105.98,
+          "awayTeamId": 2,
+          "awayScore": 120.52
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 129.48,
+          "awayTeamId": 8,
+          "awayScore": 142.82
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 126.16,
+          "awayTeamId": 4,
+          "awayScore": 201.66
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 166.22,
+          "awayTeamId": 6,
+          "awayScore": 124.66
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 116.72,
+          "awayTeamId": 9,
+          "awayScore": 107.64
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 88.04,
+          "awayTeamId": 5,
+          "awayScore": 173.3
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 158.6,
+          "awayTeamId": 7,
+          "awayScore": 125.96
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 101.66,
+          "awayTeamId": 3,
+          "awayScore": 141.14
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 122.22,
+          "awayTeamId": 1,
+          "awayScore": 127.28
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 174.16,
+          "awayTeamId": 10,
+          "awayScore": 107.96
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 137.16,
+          "awayTeamId": 2,
+          "awayScore": 177.56
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 105.08,
+          "awayTeamId": 8,
+          "awayScore": 160.0
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 122.32,
+          "awayTeamId": 4,
+          "awayScore": 165.84
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 156.46,
+          "awayTeamId": 6,
+          "awayScore": 85.58
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 151.54,
+          "awayTeamId": 2,
+          "awayScore": 168.36
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 152.62,
+          "awayTeamId": 5,
+          "awayScore": 119.28
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 107.6,
+          "awayTeamId": 6,
+          "awayScore": 82.6
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 114.0,
+          "awayTeamId": 9,
+          "awayScore": 204.82
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 81.42,
+          "awayTeamId": 4,
+          "awayScore": 143.86
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 129.6,
+          "awayTeamId": 9,
+          "awayScore": 101.12
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 136.18,
+          "awayTeamId": 1,
+          "awayScore": 100.74
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 127.04,
+          "awayTeamId": 3,
+          "awayScore": 126.14
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 125.44,
+          "awayTeamId": 7,
+          "awayScore": 147.06
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 112.64,
+          "awayTeamId": 5,
+          "awayScore": 149.02
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 139.84,
+          "awayTeamId": 10,
+          "awayScore": 128.98
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 158.56,
+          "awayTeamId": 2,
+          "awayScore": 161.9
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 104.92,
+          "awayTeamId": 6,
+          "awayScore": 111.44
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 91.46,
+          "awayTeamId": 4,
+          "awayScore": 118.26
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 111.3,
+          "awayTeamId": 8,
+          "awayScore": 95.76
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "UNDECIDED",
+          "homeTeamId": 9,
+          "homeScore": 124.8,
+          "awayTeamId": null,
+          "awayScore": 0
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 129.02,
+          "awayTeamId": 2,
+          "awayScore": 143.4
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 153.6,
+          "awayTeamId": 3,
+          "awayScore": 157.72
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "UNDECIDED",
+          "homeTeamId": 8,
+          "homeScore": 78.44,
+          "awayTeamId": null,
+          "awayScore": 0
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 125.68,
+          "awayTeamId": 1,
+          "awayScore": 100.4
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 168.52,
+          "awayTeamId": 6,
+          "awayScore": 107.98
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 133.52,
+          "awayTeamId": 2,
+          "awayScore": 126.52
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 151.98,
+          "awayTeamId": 3,
+          "awayScore": 166.16
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 110.8,
+          "awayTeamId": 4,
+          "awayScore": 148.6
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 115.26,
+          "awayTeamId": 7,
+          "awayScore": 137.9
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 86.5,
+          "awayTeamId": 6,
+          "awayScore": 163.24
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 166.46,
+          "awayTeamId": 3,
+          "awayScore": 157.3
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 112.6,
+          "awayTeamId": 2,
+          "awayScore": 82.32
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 34.5,
+          "awayTeamId": 4,
+          "awayScore": 146.06
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 113.1,
+          "awayTeamId": 6,
+          "awayScore": 98.8
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 99.66,
+          "awayTeamId": 1,
+          "awayScore": 132.68
+        }
+      ],
+      "status": {
+        "activatedDate": 1687592669895,
+        "createdAsLeagueType": 3,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 18,
+        "finalScoringPeriod": 18,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": false,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 19,
+        "previousSeasons": [
+          2020,
+          2021,
+          2022
+        ],
+        "requestedMatchupPeriodId": 18,
+        "standingsUpdateDate": 1705222223054,
+        "teamsJoined": 10,
+        "transactionScoringPeriod": 19,
+        "waiverLastExecutionDate": 1704875806722,
+        "waiverProcessStatus": {
+          "2023-08-28T07:10:13.122+00:00": 4,
+          "2023-09-13T07:58:29.104+00:00": 11,
+          "2023-09-20T08:02:33.268+00:00": 6,
+          "2023-09-21T08:13:18.309+00:00": 2,
+          "2023-09-27T08:18:18.687+00:00": 3,
+          "2023-10-04T07:25:09.752+00:00": 6,
+          "2023-10-11T07:02:52.650+00:00": 6,
+          "2023-10-18T12:49:20.034+00:00": 4,
+          "2023-10-20T07:14:21.588+00:00": 1,
+          "2023-10-25T07:26:12.401+00:00": 10,
+          "2023-10-26T08:52:36.593+00:00": 2,
+          "2023-11-01T07:55:03.674+00:00": 5,
+          "2023-11-02T08:44:19.057+00:00": 1,
+          "2023-11-08T08:44:05.595+00:00": 5,
+          "2023-11-09T08:32:32.038+00:00": 1,
+          "2023-11-15T09:13:25.742+00:00": 6,
+          "2023-11-16T09:07:41.737+00:00": 1,
+          "2023-11-22T10:31:49.690+00:00": 5,
+          "2023-11-23T09:23:34.440+00:00": 1,
+          "2023-11-25T08:09:53.365+00:00": 1,
+          "2023-11-29T08:35:15.350+00:00": 5,
+          "2023-12-01T09:11:31.427+00:00": 0,
+          "2023-12-06T08:51:03.327+00:00": 2,
+          "2023-12-13T10:09:30.947+00:00": 2,
+          "2023-12-16T08:51:32.439+00:00": 1,
+          "2023-12-20T10:25:42.496+00:00": 4,
+          "2023-12-21T09:10:16.455+00:00": 1,
+          "2023-12-27T09:02:55.079+00:00": 1,
+          "2024-01-03T08:15:46.076+00:00": 3
+        }
+      },
+      "settings": {
+        "acquisitionSettings": {
+          "acquisitionBudget": 100,
+          "acquisitionLimit": -1,
+          "acquisitionType": "WAIVERS_TRADITIONAL",
+          "finalPlaceTransactionEligible": 0,
+          "isUsingAcquisitionBudget": false,
+          "matchupAcquisitionLimit": -1.0,
+          "matchupLimitPerScoringPeriod": true,
+          "minimumBid": 1,
+          "transactionLockingEnabled": false,
+          "waiverHours": 24,
+          "waiverOrderReset": true,
+          "waiverProcessDays": [
+            "FRIDAY",
+            "THURSDAY",
+            "MONDAY",
+            "SATURDAY",
+            "SUNDAY",
+            "WEDNESDAY"
+          ],
+          "waiverProcessHour": 11
+        },
+        "draftSettings": {
+          "auctionBudget": 200,
+          "availableDate": 1693095300000,
+          "date": 1693095300000,
+          "isTradingEnabled": false,
+          "keeperCount": 0,
+          "keeperCountFuture": 0,
+          "keeperOrderType": "TRADITIONAL",
+          "leagueSubType": "NONE",
+          "orderType": "DRAFT_START",
+          "pickOrder": [
+            1,
+            8,
+            5,
+            7,
+            6,
+            9,
+            3,
+            4,
+            2,
+            10
+          ],
+          "timePerSelection": 90,
+          "type": "OFFLINE"
+        },
+        "financeSettings": {
+          "entryFee": 0.0,
+          "miscFee": 0.0,
+          "perLoss": 0.0,
+          "perTrade": 0.0,
+          "playerAcquisition": 0.0,
+          "playerDrop": 0.0,
+          "playerMoveToActive": 0.0,
+          "playerMoveToIR": 0.0
+        },
+        "isAutoReactivate": false,
+        "isCustomizable": true,
+        "isPublic": false,
+        "name": "JDC League ",
+        "restrictionType": "NONE",
+        "rosterSettings": {
+          "autoPilotTypeSupported": "NONE",
+          "isBenchUnlimited": true,
+          "isUsingUndroppableList": true,
+          "lineupLocktimeType": "INDIVIDUAL_GAME",
+          "lineupSlotCounts": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "3": 0,
+            "4": 2,
+            "5": 0,
+            "6": 1,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 1,
+            "17": 1,
+            "18": 0,
+            "19": 0,
+            "20": 7,
+            "21": 1,
+            "22": 0,
+            "23": 1,
+            "24": 0
+          },
+          "lineupSlotStatLimits": {},
+          "moveLimit": -1,
+          "positionLimits": {
+            "0": 0,
+            "1": -1,
+            "2": -1,
+            "3": -1,
+            "4": -1,
+            "5": -1,
+            "6": -1,
+            "7": -1,
+            "8": -1,
+            "9": -1,
+            "10": -1,
+            "11": -1,
+            "12": -1,
+            "13": -1,
+            "14": -1,
+            "15": -1,
+            "16": -1,
+            "17": -1
+          },
+          "rosterLocktimeType": "INDIVIDUAL_GAME",
+          "universeIds": [
+            0
+          ]
+        },
+        "scheduleSettings": {
+          "consolationLadderDisabled": false,
+          "divisions": [
+            {
+              "id": 0,
+              "name": "East",
+              "size": 5
+            },
+            {
+              "id": 1,
+              "name": "West",
+              "size": 5
+            }
+          ],
+          "matchupPeriodCount": 15,
+          "matchupPeriodLength": 1,
+          "matchupPeriods": {
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ],
+            "4": [
+              4
+            ],
+            "5": [
+              5
+            ],
+            "6": [
+              6
+            ],
+            "7": [
+              7
+            ],
+            "8": [
+              8
+            ],
+            "9": [
+              9
+            ],
+            "10": [
+              10
+            ],
+            "11": [
+              11
+            ],
+            "12": [
+              12
+            ],
+            "13": [
+              13
+            ],
+            "14": [
+              14
+            ],
+            "15": [
+              15
+            ],
+            "16": [
+              16
+            ],
+            "17": [
+              17
+            ],
+            "18": [
+              18
+            ]
+          },
+          "periodTypeId": 1,
+          "playoffMatchupPeriodLength": 1,
+          "playoffReseed": false,
+          "playoffSeedingRule": "TOTAL_POINTS_SCORED",
+          "playoffSeedingRuleBy": 0,
+          "playoffTeamCount": 6,
+          "variablePlayoffMatchupPeriodLength": false
+        },
+        "scoringSettings": {
+          "allowOutOfPositionScoring": false,
+          "homeTeamBonus": 0,
+          "matchupTieRule": "NONE",
+          "matchupTieRuleBy": 0,
+          "playerRankType": "PPR",
+          "playoffHomeTeamBonus": 0,
+          "playoffMatchupTieRule": "NONE",
+          "playoffMatchupTieRuleBy": 0,
+          "scoringItems": [
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "statId": 36
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {},
+              "statId": 25
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 46
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 57
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 121
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 133
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 131
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 53
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "statId": 43
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -2.0,
+              "pointsOverrides": {},
+              "statId": 72
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 134
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 35
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -6.0
+              },
+              "statId": 135
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -7.0
+              },
+              "statId": 136
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 102
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "pointsOverrides": {},
+              "statId": 24
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 103
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 101
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 129
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 16
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 104
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 130
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 125
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.04,
+              "statId": 3
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 124
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 132
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 86
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "statId": 42
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 0.0
+              },
+              "statId": 122
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "statId": 4
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 88
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 0.0
+              },
+              "statId": 123
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 5.0
+              },
+              "statId": 89
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 90
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 206
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 209
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 95
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 10.0
+              },
+              "statId": 128
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 92
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 15
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 93
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 98
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 3.0
+              },
+              "statId": 91
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 96
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 97
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 19
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 37
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "pointsOverrides": {},
+              "statId": 80
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 26
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "pointsOverrides": {},
+              "statId": 77
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 99
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 7.0,
+              "pointsOverrides": {},
+              "statId": 63
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 20
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 38
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 44
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 45
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {},
+              "statId": 201
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 5.0,
+              "pointsOverrides": {},
+              "statId": 198
+            }
+          ],
+          "scoringType": "H2H_POINTS"
+        },
+        "size": 10,
+        "tradeSettings": {
+          "allowOutOfUniverse": false,
+          "deadlineDate": 1701277200000,
+          "max": -1,
+          "revisionHours": 48,
+          "vetoVotesRequired": 0
+        }
+      }
+    },
+    "2024": {
+      "teams": [
+        {
+          "teamId": 1,
+          "teamName": "Spitters Are Quitters",
+          "wins": 7,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 2031.7,
+          "pointsAgainst": 2122.4
+        },
+        {
+          "teamId": 2,
+          "teamName": "Buck  Nuts",
+          "wins": 6,
+          "losses": 7,
+          "ties": 1,
+          "pointsFor": 2077.7,
+          "pointsAgainst": 2103.8
+        },
+        {
+          "teamId": 3,
+          "teamName": "Chaser Justin Time",
+          "wins": 9,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 2246.9,
+          "pointsAgainst": 2143.6
+        },
+        {
+          "teamId": 4,
+          "teamName": "Let's Go Muskies!",
+          "wins": 6,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 2163.2,
+          "pointsAgainst": 2327.9
+        },
+        {
+          "teamId": 5,
+          "teamName": "Mean Machine",
+          "wins": 11,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2410.1,
+          "pointsAgainst": 2112.7
+        },
+        {
+          "teamId": 6,
+          "teamName": "Bang My Nabers",
+          "wins": 11,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2433.0,
+          "pointsAgainst": 2119.5
+        },
+        {
+          "teamId": 7,
+          "teamName": "Breeced Lightning",
+          "wins": 2,
+          "losses": 12,
+          "ties": 0,
+          "pointsFor": 2148.7,
+          "pointsAgainst": 2384.4
+        },
+        {
+          "teamId": 8,
+          "teamName": "Team H00ch",
+          "wins": 4,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 1959.4,
+          "pointsAgainst": 2225.6
+        },
+        {
+          "teamId": 9,
+          "teamName": "89 and a  Wake Up",
+          "wins": 2,
+          "losses": 11,
+          "ties": 1,
+          "pointsFor": 2022.2,
+          "pointsAgainst": 2283.9
+        },
+        {
+          "teamId": 10,
+          "teamName": "Whiskey no Chaser",
+          "wins": 11,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2457.3,
+          "pointsAgainst": 2126.4
+        }
+      ],
+      "matchups": [
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 152.5,
+          "awayTeamId": 10,
+          "awayScore": 155.2
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 161.7,
+          "awayTeamId": 1,
+          "awayScore": 163.7
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 133.0,
+          "awayTeamId": 2,
+          "awayScore": 110.4
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 157.2,
+          "awayTeamId": 9,
+          "awayScore": 143.4
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 178.0,
+          "awayTeamId": 8,
+          "awayScore": 144.5
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 162.2,
+          "awayTeamId": 2,
+          "awayScore": 134.3
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 153.4,
+          "awayTeamId": 3,
+          "awayScore": 153.6
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 119.0,
+          "awayTeamId": 10,
+          "awayScore": 161.6
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 181.2,
+          "awayTeamId": 7,
+          "awayScore": 150.8
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 99.7,
+          "awayTeamId": 6,
+          "awayScore": 202.8
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 86.4,
+          "awayTeamId": 8,
+          "awayScore": 103.6
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 123.0,
+          "awayTeamId": 5,
+          "awayScore": 166.6
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 152.8,
+          "awayTeamId": 4,
+          "awayScore": 153.9
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 167.7,
+          "awayTeamId": 7,
+          "awayScore": 150.8
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 206.5,
+          "awayTeamId": 6,
+          "awayScore": 168.9
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 200.0,
+          "awayTeamId": 4,
+          "awayScore": 106.4
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 139.2,
+          "awayTeamId": 9,
+          "awayScore": 170.4
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 202.2,
+          "awayTeamId": 8,
+          "awayScore": 152.3
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 160.7,
+          "awayTeamId": 1,
+          "awayScore": 123.3
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 147.2,
+          "awayTeamId": 2,
+          "awayScore": 147.8
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 156.5,
+          "awayTeamId": 6,
+          "awayScore": 215.0
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 157.6,
+          "awayTeamId": 3,
+          "awayScore": 169.2
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 171.1,
+          "awayTeamId": 10,
+          "awayScore": 189.7
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 153.2,
+          "awayTeamId": 1,
+          "awayScore": 164.7
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 134.6,
+          "awayTeamId": 2,
+          "awayScore": 136.0
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 123.7,
+          "awayTeamId": 1,
+          "awayScore": 124.3
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 171.1,
+          "awayTeamId": 9,
+          "awayScore": 139.2
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 159.0,
+          "awayTeamId": 5,
+          "awayScore": 172.4
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 152.3,
+          "awayTeamId": 7,
+          "awayScore": 149.8
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 143.2,
+          "awayTeamId": 3,
+          "awayScore": 138.0
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 121.5,
+          "awayTeamId": 10,
+          "awayScore": 169.8
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 145.2,
+          "awayTeamId": 2,
+          "awayScore": 126.5
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 136.7,
+          "awayTeamId": 8,
+          "awayScore": 160.0
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 156.7,
+          "awayTeamId": 4,
+          "awayScore": 133.7
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 132.0,
+          "awayTeamId": 6,
+          "awayScore": 152.9
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 128.3,
+          "awayTeamId": 5,
+          "awayScore": 196.1
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 162.5,
+          "awayTeamId": 7,
+          "awayScore": 145.7
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 142.3,
+          "awayTeamId": 3,
+          "awayScore": 188.9
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 177.2,
+          "awayTeamId": 1,
+          "awayScore": 159.7
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 153.3,
+          "awayTeamId": 9,
+          "awayScore": 146.1
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 200.5,
+          "awayTeamId": 3,
+          "awayScore": 143.2
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 160.4,
+          "awayTeamId": 1,
+          "awayScore": 132.9
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 116.2,
+          "awayTeamId": 9,
+          "awayScore": 166.9
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 161.0,
+          "awayTeamId": 5,
+          "awayScore": 208.0
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 213.3,
+          "awayTeamId": 7,
+          "awayScore": 159.8
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 149.7,
+          "awayTeamId": 10,
+          "awayScore": 154.6
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "TIE",
+          "homeTeamId": 9,
+          "homeScore": 154.8,
+          "awayTeamId": 2,
+          "awayScore": 154.8
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 159.4,
+          "awayTeamId": 8,
+          "awayScore": 131.0
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 133.7,
+          "awayTeamId": 4,
+          "awayScore": 137.1
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 161.7,
+          "awayTeamId": 6,
+          "awayScore": 186.2
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 201.5,
+          "awayTeamId": 9,
+          "awayScore": 144.8
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 149.3,
+          "awayTeamId": 5,
+          "awayScore": 158.5
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 184.7,
+          "awayTeamId": 7,
+          "awayScore": 201.5
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 140.9,
+          "awayTeamId": 3,
+          "awayScore": 150.2
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 141.6,
+          "awayTeamId": 1,
+          "awayScore": 148.2
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 190.7,
+          "awayTeamId": 10,
+          "awayScore": 195.6
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 151.6,
+          "awayTeamId": 2,
+          "awayScore": 129.2
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 118.3,
+          "awayTeamId": 8,
+          "awayScore": 135.5
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 101.9,
+          "awayTeamId": 4,
+          "awayScore": 197.4
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 149.8,
+          "awayTeamId": 6,
+          "awayScore": 188.9
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 156.8,
+          "awayTeamId": 2,
+          "awayScore": 160.9
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 187.5,
+          "awayTeamId": 5,
+          "awayScore": 129.0
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 204.4,
+          "awayTeamId": 6,
+          "awayScore": 145.3
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 191.3,
+          "awayTeamId": 9,
+          "awayScore": 140.8
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 179.4,
+          "awayTeamId": 4,
+          "awayScore": 162.5
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 218.7,
+          "awayTeamId": 9,
+          "awayScore": 151.5
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 97.3,
+          "awayTeamId": 1,
+          "awayScore": 154.8
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 192.0,
+          "awayTeamId": 3,
+          "awayScore": 198.7
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 186.4,
+          "awayTeamId": 7,
+          "awayScore": 154.1
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 181.7,
+          "awayTeamId": 5,
+          "awayScore": 188.2
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "UNDECIDED",
+          "homeTeamId": 10,
+          "homeScore": 160.9,
+          "awayTeamId": null,
+          "awayScore": 0
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 149.0,
+          "awayTeamId": 1,
+          "awayScore": 147.2
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 170.8,
+          "awayTeamId": 2,
+          "awayScore": 183.5
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "UNDECIDED",
+          "homeTeamId": 3,
+          "homeScore": 179.2,
+          "awayTeamId": null,
+          "awayScore": 0
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 195.4,
+          "awayTeamId": 8,
+          "awayScore": 114.6
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 178.6,
+          "awayTeamId": 7,
+          "awayScore": 199.6
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 198.1,
+          "awayTeamId": 5,
+          "awayScore": 186.5
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 180.5,
+          "awayTeamId": 2,
+          "awayScore": 168.3
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 170.7,
+          "awayTeamId": 1,
+          "awayScore": 186.1
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 127.1,
+          "awayTeamId": 7,
+          "awayScore": 142.3
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 166.4,
+          "awayTeamId": 9,
+          "awayScore": 119.6
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 296.7,
+          "awayTeamId": 3,
+          "awayScore": 322.2
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 279.7,
+          "awayTeamId": 2,
+          "awayScore": 292.3
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 384.8,
+          "awayTeamId": 1,
+          "awayScore": 413.7
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 338.6,
+          "awayTeamId": 7,
+          "awayScore": 287.1
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 281.3,
+          "awayTeamId": 9,
+          "awayScore": 265.4
+        }
+      ],
+      "status": {
+        "activatedDate": 1718069479614,
+        "createdAsLeagueType": 3,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 17,
+        "finalScoringPeriod": 18,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": false,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 19,
+        "previousSeasons": [
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "requestedMatchupPeriodId": 17,
+        "standingsUpdateDate": 1736669617544,
+        "teamsJoined": 10,
+        "transactionScoringPeriod": 19,
+        "waiverLastExecutionDate": 1721718496198,
+        "waiverProcessStatus": {}
+      },
+      "settings": {
+        "acquisitionSettings": {
+          "acquisitionBudget": 100,
+          "acquisitionLimit": -1,
+          "acquisitionType": "FREEAGENCY",
+          "finalPlaceTransactionEligible": 0,
+          "isUsingAcquisitionBudget": false,
+          "matchupAcquisitionLimit": -1.0,
+          "matchupLimitPerScoringPeriod": true,
+          "minimumBid": 1,
+          "transactionLockingEnabled": false,
+          "waiverHours": 24,
+          "waiverOrderReset": true,
+          "waiverProcessDays": [
+            "SUNDAY",
+            "WEDNESDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "THURSDAY",
+            "MONDAY"
+          ],
+          "waiverProcessHour": 11
+        },
+        "draftSettings": {
+          "auctionBudget": 200,
+          "availableDate": 1725235200000,
+          "date": 1725235200000,
+          "isTradingEnabled": false,
+          "keeperCount": 0,
+          "keeperCountFuture": 0,
+          "keeperOrderType": "TRADITIONAL",
+          "leagueSubType": "NONE",
+          "orderType": "DRAFT_START",
+          "pickOrder": [
+            5,
+            8,
+            9,
+            6,
+            2,
+            4,
+            3,
+            7,
+            10,
+            1
+          ],
+          "timePerSelection": 90,
+          "type": "OFFLINE"
+        },
+        "financeSettings": {
+          "entryFee": 0.0,
+          "miscFee": 0.0,
+          "perLoss": 0.0,
+          "perTrade": 0.0,
+          "playerAcquisition": 0.0,
+          "playerDrop": 0.0,
+          "playerMoveToActive": 0.0,
+          "playerMoveToIR": 0.0
+        },
+        "isAutoReactivate": false,
+        "isCustomizable": true,
+        "isPublic": true,
+        "name": "JDC Degenerates",
+        "restrictionType": "NONE",
+        "rosterSettings": {
+          "autoPilotTypeSupported": "NONE",
+          "isBenchUnlimited": true,
+          "isUsingUndroppableList": true,
+          "lineupLocktimeType": "INDIVIDUAL_GAME",
+          "lineupSlotCounts": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "3": 0,
+            "4": 3,
+            "5": 0,
+            "6": 1,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 1,
+            "17": 1,
+            "18": 0,
+            "19": 0,
+            "20": 7,
+            "21": 2,
+            "22": 0,
+            "23": 1,
+            "24": 0
+          },
+          "lineupSlotStatLimits": {},
+          "moveLimit": -1,
+          "positionLimits": {
+            "0": 0,
+            "1": -1,
+            "2": -1,
+            "3": -1,
+            "4": -1,
+            "5": -1,
+            "6": -1,
+            "7": -1,
+            "8": -1,
+            "9": -1,
+            "10": -1,
+            "11": -1,
+            "12": -1,
+            "13": -1,
+            "14": -1,
+            "15": -1,
+            "16": -1,
+            "17": -1
+          },
+          "rosterLocktimeType": "INDIVIDUAL_GAME",
+          "universeIds": [
+            0
+          ]
+        },
+        "scheduleSettings": {
+          "consolationLadderDisabled": false,
+          "divisions": [
+            {
+              "id": 0,
+              "name": "Ass Guys",
+              "size": 5
+            },
+            {
+              "id": 1,
+              "name": "Boob Guys",
+              "size": 5
+            }
+          ],
+          "matchupPeriodCount": 14,
+          "matchupPeriodLength": 1,
+          "matchupPeriods": {
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ],
+            "4": [
+              4
+            ],
+            "5": [
+              5
+            ],
+            "6": [
+              6
+            ],
+            "7": [
+              7
+            ],
+            "8": [
+              8
+            ],
+            "9": [
+              9
+            ],
+            "10": [
+              10
+            ],
+            "11": [
+              11
+            ],
+            "12": [
+              12
+            ],
+            "13": [
+              13
+            ],
+            "14": [
+              14
+            ],
+            "15": [
+              15
+            ],
+            "16": [
+              16
+            ],
+            "17": [
+              17,
+              18
+            ]
+          },
+          "periodTypeId": 1,
+          "playoffMatchupPeriodLength": 0,
+          "playoffMatchupPeriodLengthByRound": {
+            "1": 1,
+            "2": 1,
+            "3": 2
+          },
+          "playoffReseed": false,
+          "playoffSeedingRule": "H2H_RECORD",
+          "playoffSeedingRuleBy": 0,
+          "playoffTeamCount": 6,
+          "variablePlayoffMatchupPeriodLength": true
+        },
+        "scoringSettings": {
+          "allowOutOfPositionScoring": false,
+          "homeTeamBonus": 0,
+          "matchupTieRule": "NONE",
+          "matchupTieRuleBy": 0,
+          "playerRankType": "PPR",
+          "playoffHomeTeamBonus": 0,
+          "playoffMatchupTieRule": "NONE",
+          "playoffMatchupTieRuleBy": 0,
+          "scoringItems": [
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "statId": 36
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 46
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 122
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 72
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 57
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 25
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 131
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 53
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 106
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 35
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 43
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 102
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 103
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "pointsOverrides": {},
+              "statId": 24
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 101
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 129
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 104
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 130
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 125
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 134
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 135
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 124
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 86
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 132
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "statId": 42
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 133
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 88
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 0.0
+              },
+              "statId": 123
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 136
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 121
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 4
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 5.0
+              },
+              "statId": 90
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 5.0
+              },
+              "statId": 89
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 91
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 206
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 15
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "statId": 3
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 209
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 3.0
+              },
+              "statId": 92
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 95
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 10.0
+              },
+              "statId": 128
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 93
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 16
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 98
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 96
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 97
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 19
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 37
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 63
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "pointsOverrides": {},
+              "statId": 80
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 26
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "pointsOverrides": {},
+              "statId": 77
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 99
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 20
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 38
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 44
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 45
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {},
+              "statId": 201
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 5.0,
+              "pointsOverrides": {},
+              "statId": 198
+            }
+          ],
+          "scoringType": "H2H_POINTS"
+        },
+        "size": 10,
+        "tradeSettings": {
+          "allowOutOfUniverse": false,
+          "deadlineDate": 1733331600000,
+          "max": -1,
+          "revisionHours": 48,
+          "vetoVotesRequired": 0
+        }
+      }
+    },
+    "2025": {
+      "teams": [
+        {
+          "teamId": 1,
+          "teamName": "Spitters Are Quitters",
+          "wins": 10,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 2688.34,
+          "pointsAgainst": 2317.59
+        },
+        {
+          "teamId": 2,
+          "teamName": "Buck  Nuts",
+          "wins": 5,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 2096.27,
+          "pointsAgainst": 2399.59
+        },
+        {
+          "teamId": 3,
+          "teamName": "They Hit The Second Bower",
+          "wins": 7,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 2476.09,
+          "pointsAgainst": 2353.78
+        },
+        {
+          "teamId": 4,
+          "teamName": "Let's Go Muskies!",
+          "wins": 8,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 2400.54,
+          "pointsAgainst": 2504.25
+        },
+        {
+          "teamId": 5,
+          "teamName": "Mean Machine",
+          "wins": 7,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 2417.46,
+          "pointsAgainst": 2383.32
+        },
+        {
+          "teamId": 6,
+          "teamName": "Olave's Neurologist ",
+          "wins": 8,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 2680.87,
+          "pointsAgainst": 2643.23
+        },
+        {
+          "teamId": 7,
+          "teamName": "Turn Your Head and Goff",
+          "wins": 10,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 2689.39,
+          "pointsAgainst": 2419.13
+        },
+        {
+          "teamId": 8,
+          "teamName": "Team H00ch",
+          "wins": 8,
+          "losses": 7,
+          "ties": 0,
+          "pointsFor": 2566.44,
+          "pointsAgainst": 2540.53
+        },
+        {
+          "teamId": 9,
+          "teamName": "89 and a  Wake Up",
+          "wins": 7,
+          "losses": 8,
+          "ties": 0,
+          "pointsFor": 2332.18,
+          "pointsAgainst": 2318.2
+        },
+        {
+          "teamId": 10,
+          "teamName": "Unsolicited Dak Pics",
+          "wins": 12,
+          "losses": 3,
+          "ties": 0,
+          "pointsFor": 2727.91,
+          "pointsAgainst": 2326.52
+        },
+        {
+          "teamId": 11,
+          "teamName": "Premature Ejeantylation",
+          "wins": 10,
+          "losses": 5,
+          "ties": 0,
+          "pointsFor": 2470.75,
+          "pointsAgainst": 2267.36
+        },
+        {
+          "teamId": 12,
+          "teamName": "First Down Syndrome",
+          "wins": 4,
+          "losses": 11,
+          "ties": 0,
+          "pointsFor": 1998.9,
+          "pointsAgainst": 2601.51
+        },
+        {
+          "teamId": 13,
+          "teamName": "OnlyFants",
+          "wins": 5,
+          "losses": 10,
+          "ties": 0,
+          "pointsFor": 2178.45,
+          "pointsAgainst": 2360.73
+        },
+        {
+          "teamId": 14,
+          "teamName": "Rowdy Rodney Pipers",
+          "wins": 4,
+          "losses": 11,
+          "ties": 0,
+          "pointsFor": 2393.35,
+          "pointsAgainst": 2681.2
+        }
+      ],
+      "matchups": [
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 165.73,
+          "awayTeamId": 6,
+          "awayScore": 180.66
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 162.72,
+          "awayTeamId": 9,
+          "awayScore": 187.76
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 183.57,
+          "awayTeamId": 5,
+          "awayScore": 155.71
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 125.55,
+          "awayTeamId": 3,
+          "awayScore": 118.42
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 123.93,
+          "awayTeamId": 2,
+          "awayScore": 161.41
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 139.57,
+          "awayTeamId": 12,
+          "awayScore": 168.62
+        },
+        {
+          "matchupPeriodId": 1,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 161.79,
+          "awayTeamId": 14,
+          "awayScore": 123.73
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 145.77,
+          "awayTeamId": 5,
+          "awayScore": 170.77
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 215.11,
+          "awayTeamId": 8,
+          "awayScore": 192.37
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 152.18,
+          "awayTeamId": 6,
+          "awayScore": 201.18
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 196.83,
+          "awayTeamId": 4,
+          "awayScore": 203.8
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 148.78,
+          "awayTeamId": 1,
+          "awayScore": 185.47
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 154.59,
+          "awayTeamId": 7,
+          "awayScore": 188.72
+        },
+        {
+          "matchupPeriodId": 2,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 95.32,
+          "awayTeamId": 14,
+          "awayScore": 163.95
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 131.54,
+          "awayTeamId": 2,
+          "awayScore": 153.94
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 159.6,
+          "awayTeamId": 11,
+          "awayScore": 159.72
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 177.03,
+          "awayTeamId": 10,
+          "awayScore": 180.17
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 129.25,
+          "awayTeamId": 13,
+          "awayScore": 148.55
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 208.1,
+          "awayTeamId": 12,
+          "awayScore": 149.21
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 152.14,
+          "awayTeamId": 7,
+          "awayScore": 143.98
+        },
+        {
+          "matchupPeriodId": 3,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 139.58,
+          "awayTeamId": 14,
+          "awayScore": 183.74
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 191.93,
+          "awayTeamId": 10,
+          "awayScore": 228.6
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 127.34,
+          "awayTeamId": 3,
+          "awayScore": 127.78
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 12,
+          "homeScore": 203.58,
+          "awayTeamId": 2,
+          "awayScore": 165.46
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 176.94,
+          "awayTeamId": 9,
+          "awayScore": 162.3
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 180.64,
+          "awayTeamId": 5,
+          "awayScore": 199.36
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 195.73,
+          "awayTeamId": 8,
+          "awayScore": 178.66
+        },
+        {
+          "matchupPeriodId": 4,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 148.15,
+          "awayTeamId": 6,
+          "awayScore": 218.51
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 142.13,
+          "awayTeamId": 1,
+          "awayScore": 174.07
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 174.86,
+          "awayTeamId": 7,
+          "awayScore": 106.77
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 232.74,
+          "awayTeamId": 14,
+          "awayScore": 157.02
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 138.42,
+          "awayTeamId": 4,
+          "awayScore": 175.28
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 2,
+          "homeScore": 194.79,
+          "awayTeamId": 13,
+          "awayScore": 127.66
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 152.4,
+          "awayTeamId": 8,
+          "awayScore": 193.2
+        },
+        {
+          "matchupPeriodId": 5,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 209.68,
+          "awayTeamId": 6,
+          "awayScore": 185.97
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 211.16,
+          "awayTeamId": 14,
+          "awayScore": 142.77
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 148.22,
+          "awayTeamId": 13,
+          "awayScore": 183.11
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 145.14,
+          "awayTeamId": 12,
+          "awayScore": 81.34
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 156.84,
+          "awayTeamId": 11,
+          "awayScore": 188.54
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 157.8,
+          "awayTeamId": 10,
+          "awayScore": 221.05
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 160.31,
+          "awayTeamId": 3,
+          "awayScore": 88.54
+        },
+        {
+          "matchupPeriodId": 6,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 138.7,
+          "awayTeamId": 2,
+          "awayScore": 143.98
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 183.55,
+          "awayTeamId": 1,
+          "awayScore": 213.2
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 183.62,
+          "awayTeamId": 8,
+          "awayScore": 200.48
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 219.35,
+          "awayTeamId": 6,
+          "awayScore": 266.14
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 92.0,
+          "awayTeamId": 9,
+          "awayScore": 96.97
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 63.96,
+          "awayTeamId": 5,
+          "awayScore": 155.04
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 154.99,
+          "awayTeamId": 3,
+          "awayScore": 154.56
+        },
+        {
+          "matchupPeriodId": 7,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 177.43,
+          "awayTeamId": 2,
+          "awayScore": 109.15
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 196.01,
+          "awayTeamId": 9,
+          "awayScore": 157.51
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 184.1,
+          "awayTeamId": 3,
+          "awayScore": 145.35
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 140.2,
+          "awayTeamId": 11,
+          "awayScore": 227.55
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 157.32,
+          "awayTeamId": 13,
+          "awayScore": 140.15
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 109.49,
+          "awayTeamId": 7,
+          "awayScore": 181.31
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 14,
+          "homeScore": 164.39,
+          "awayTeamId": 4,
+          "awayScore": 121.0
+        },
+        {
+          "matchupPeriodId": 8,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 222.56,
+          "awayTeamId": 8,
+          "awayScore": 111.54
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 218.99,
+          "awayTeamId": 6,
+          "awayScore": 164.0
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 163.02,
+          "awayTeamId": 5,
+          "awayScore": 118.25
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 128.41,
+          "awayTeamId": 2,
+          "awayScore": 143.92
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 180.0,
+          "awayTeamId": 10,
+          "awayScore": 195.7
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 4,
+          "homeScore": 151.82,
+          "awayTeamId": 12,
+          "awayScore": 167.46
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 184.01,
+          "awayTeamId": 14,
+          "awayScore": 163.98
+        },
+        {
+          "matchupPeriodId": 9,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 190.37,
+          "awayTeamId": 1,
+          "awayScore": 200.35
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 6,
+          "homeScore": 129.2,
+          "awayTeamId": 11,
+          "awayScore": 128.37
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 196.31,
+          "awayTeamId": 13,
+          "awayScore": 188.26
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 123.48,
+          "awayTeamId": 7,
+          "awayScore": 208.8
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 164.59,
+          "awayTeamId": 4,
+          "awayScore": 114.48
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 151.05,
+          "awayTeamId": 8,
+          "awayScore": 162.54
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 124.77,
+          "awayTeamId": 9,
+          "awayScore": 154.61
+        },
+        {
+          "matchupPeriodId": 10,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 200.93,
+          "awayTeamId": 3,
+          "awayScore": 169.75
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 13,
+          "homeScore": 201.63,
+          "awayTeamId": 6,
+          "awayScore": 126.22
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 176.21,
+          "awayTeamId": 5,
+          "awayScore": 169.01
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 136.33,
+          "awayTeamId": 2,
+          "awayScore": 125.61
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 139.94,
+          "awayTeamId": 10,
+          "awayScore": 186.53
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 193.25,
+          "awayTeamId": 12,
+          "awayScore": 120.29
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 3,
+          "homeScore": 213.88,
+          "awayTeamId": 14,
+          "awayScore": 214.1
+        },
+        {
+          "matchupPeriodId": 11,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 96.7,
+          "awayTeamId": 1,
+          "awayScore": 158.85
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 172.63,
+          "awayTeamId": 7,
+          "awayScore": 201.0
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 139.16,
+          "awayTeamId": 4,
+          "awayScore": 156.19
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 89.28,
+          "awayTeamId": 8,
+          "awayScore": 164.23
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 192.72,
+          "awayTeamId": 9,
+          "awayScore": 115.76
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 75.4,
+          "awayTeamId": 3,
+          "awayScore": 231.86
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 134.46,
+          "awayTeamId": 11,
+          "awayScore": 170.96
+        },
+        {
+          "matchupPeriodId": 12,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 214.87,
+          "awayTeamId": 13,
+          "awayScore": 106.26
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 6,
+          "homeScore": 162.71,
+          "awayTeamId": 8,
+          "awayScore": 198.55
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 124.25,
+          "awayTeamId": 9,
+          "awayScore": 139.62
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 137.16,
+          "awayTeamId": 3,
+          "awayScore": 139.09
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 153.05,
+          "awayTeamId": 11,
+          "awayScore": 181.0
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 133.28,
+          "awayTeamId": 13,
+          "awayScore": 158.83
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 125.45,
+          "awayTeamId": 7,
+          "awayScore": 167.05
+        },
+        {
+          "matchupPeriodId": 13,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 206.08,
+          "awayTeamId": 4,
+          "awayScore": 135.68
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 9,
+          "homeScore": 145.45,
+          "awayTeamId": 6,
+          "awayScore": 128.61
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 195.49,
+          "awayTeamId": 5,
+          "awayScore": 117.81
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 128.88,
+          "awayTeamId": 2,
+          "awayScore": 120.59
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 103.23,
+          "awayTeamId": 10,
+          "awayScore": 188.85
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 7,
+          "homeScore": 187.44,
+          "awayTeamId": 12,
+          "awayScore": 211.39
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 164.47,
+          "awayTeamId": 14,
+          "awayScore": 106.85
+        },
+        {
+          "matchupPeriodId": 14,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 8,
+          "homeScore": 175.76,
+          "awayTeamId": 1,
+          "awayScore": 144.23
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 1,
+          "homeScore": 169.13,
+          "awayTeamId": 7,
+          "awayScore": 192.82
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 14,
+          "homeScore": 188.15,
+          "awayTeamId": 4,
+          "awayScore": 199.13
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 174.83,
+          "awayTeamId": 8,
+          "awayScore": 255.14
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 13,
+          "homeScore": 178.86,
+          "awayTeamId": 11,
+          "awayScore": 145.61
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "AWAY",
+          "homeTeamId": 12,
+          "homeScore": 126.38,
+          "awayTeamId": 6,
+          "awayScore": 183.13
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 162.28,
+          "awayTeamId": 2,
+          "awayScore": 135.12
+        },
+        {
+          "matchupPeriodId": 15,
+          "playoffTierType": "NONE",
+          "winner": "HOME",
+          "homeTeamId": 3,
+          "homeScore": 187.31,
+          "awayTeamId": 9,
+          "awayScore": 170.5
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 207.16,
+          "awayTeamId": 3,
+          "awayScore": 161.56
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 144.2,
+          "awayTeamId": 6,
+          "awayScore": 219.54
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 205.72,
+          "awayTeamId": 8,
+          "awayScore": 201.98
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 185.07,
+          "awayTeamId": 4,
+          "awayScore": 166.04
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 172.48,
+          "awayTeamId": 9,
+          "awayScore": 146.35
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 13,
+          "homeScore": 177.97,
+          "awayTeamId": 2,
+          "awayScore": 80.27
+        },
+        {
+          "matchupPeriodId": 16,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 14,
+          "homeScore": 163.46,
+          "awayTeamId": 12,
+          "awayScore": 100.6
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 10,
+          "homeScore": 151.19,
+          "awayTeamId": 6,
+          "awayScore": 144.06
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "HOME",
+          "homeTeamId": 7,
+          "homeScore": 215.43,
+          "awayTeamId": 1,
+          "awayScore": 190.33
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 11,
+          "homeScore": 188.04,
+          "awayTeamId": 8,
+          "awayScore": 139.95
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 4,
+          "homeScore": 178.66,
+          "awayTeamId": 3,
+          "awayScore": 119.09
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 5,
+          "homeScore": 164.08,
+          "awayTeamId": 13,
+          "awayScore": 178.65
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 150.58,
+          "awayTeamId": 14,
+          "awayScore": 153.33
+        },
+        {
+          "matchupPeriodId": 17,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 2,
+          "homeScore": 94.85,
+          "awayTeamId": 12,
+          "awayScore": 103.71
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_BRACKET",
+          "winner": "AWAY",
+          "homeTeamId": 10,
+          "homeScore": 126.72,
+          "awayTeamId": 7,
+          "awayScore": 168.04
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 1,
+          "homeScore": 109.42,
+          "awayTeamId": 6,
+          "awayScore": 78.6
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 11,
+          "homeScore": 139.84,
+          "awayTeamId": 4,
+          "awayScore": 173.5
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "WINNERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 8,
+          "homeScore": 150.85,
+          "awayTeamId": 3,
+          "awayScore": 169.35
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 13,
+          "homeScore": 85.33,
+          "awayTeamId": 14,
+          "awayScore": 105.42
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "HOME",
+          "homeTeamId": 5,
+          "homeScore": 160.45,
+          "awayTeamId": 12,
+          "awayScore": 82.9
+        },
+        {
+          "matchupPeriodId": 18,
+          "playoffTierType": "LOSERS_CONSOLATION_LADDER",
+          "winner": "AWAY",
+          "homeTeamId": 9,
+          "homeScore": 72.89,
+          "awayTeamId": 2,
+          "awayScore": 99.57
+        }
+      ],
+      "status": {
+        "activatedDate": 1743460397137,
+        "createdAsLeagueType": 3,
+        "currentLeagueType": 0,
+        "currentMatchupPeriod": 18,
+        "finalScoringPeriod": 18,
+        "firstScoringPeriod": 1,
+        "isActive": true,
+        "isExpired": false,
+        "isFull": true,
+        "isPlayoffMatchupEdited": false,
+        "isToBeDeleted": false,
+        "isViewable": false,
+        "isWaiverOrderEdited": false,
+        "latestScoringPeriod": 19,
+        "previousSeasons": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ],
+        "requestedMatchupPeriodId": 18,
+        "standingsUpdateDate": 1768118629157,
+        "teamsJoined": 14,
+        "transactionScoringPeriod": 19,
+        "waiverLastExecutionDate": 1743460397137,
+        "waiverProcessStatus": {}
+      },
+      "settings": {
+        "acquisitionSettings": {
+          "acquisitionBudget": 100,
+          "acquisitionLimit": -1,
+          "acquisitionType": "FREEAGENCY",
+          "finalPlaceTransactionEligible": 0,
+          "isUsingAcquisitionBudget": false,
+          "matchupAcquisitionLimit": -1.0,
+          "matchupLimitPerScoringPeriod": true,
+          "minimumBid": 1,
+          "transactionLockingEnabled": false,
+          "waiverHours": 24,
+          "waiverOrderReset": true,
+          "waiverProcessDays": [
+            "SUNDAY",
+            "WEDNESDAY",
+            "FRIDAY",
+            "SATURDAY",
+            "THURSDAY",
+            "MONDAY"
+          ],
+          "waiverProcessHour": 11
+        },
+        "draftSettings": {
+          "auctionBudget": 200,
+          "availableDate": 1755964800000,
+          "date": 1755964800000,
+          "isTradingEnabled": false,
+          "keeperCount": 0,
+          "keeperCountFuture": 0,
+          "keeperOrderType": "TRADITIONAL",
+          "leagueSubType": "NONE",
+          "orderType": "DRAFT_START",
+          "pickOrder": [
+            10,
+            8,
+            3,
+            11,
+            4,
+            5,
+            2,
+            7,
+            1,
+            6,
+            9,
+            14,
+            13,
+            12
+          ],
+          "timePerSelection": 90,
+          "type": "OFFLINE"
+        },
+        "financeSettings": {
+          "entryFee": 0.0,
+          "miscFee": 0.0,
+          "perLoss": 0.0,
+          "perTrade": 0.0,
+          "playerAcquisition": 0.0,
+          "playerDrop": 0.0,
+          "playerMoveToActive": 0.0,
+          "playerMoveToIR": 0.0
+        },
+        "isAutoReactivate": false,
+        "isCustomizable": true,
+        "isPublic": false,
+        "name": "JDC Degenerates",
+        "restrictionType": "NONE",
+        "rosterSettings": {
+          "autoPilotTypeSupported": "NONE",
+          "isBenchUnlimited": true,
+          "isUsingUndroppableList": true,
+          "lineupLocktimeType": "INDIVIDUAL_GAME",
+          "lineupSlotCounts": {
+            "0": 1,
+            "1": 0,
+            "2": 2,
+            "3": 0,
+            "4": 2,
+            "5": 0,
+            "6": 1,
+            "7": 1,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 1,
+            "17": 1,
+            "18": 0,
+            "19": 0,
+            "20": 8,
+            "21": 2,
+            "22": 0,
+            "23": 1,
+            "24": 0
+          },
+          "lineupSlotStatLimits": {},
+          "moveLimit": -1,
+          "positionLimits": {
+            "0": 0,
+            "1": 2,
+            "2": -1,
+            "3": -1,
+            "4": -1,
+            "5": -1,
+            "6": -1,
+            "7": -1,
+            "8": -1,
+            "9": -1,
+            "10": -1,
+            "11": -1,
+            "12": -1,
+            "13": -1,
+            "14": -1,
+            "15": -1,
+            "16": -1,
+            "17": -1
+          },
+          "rosterLocktimeType": "INDIVIDUAL_GAME",
+          "universeIds": [
+            0
+          ]
+        },
+        "scheduleSettings": {
+          "consolationLadderDisabled": false,
+          "divisions": [
+            {
+              "id": 0,
+              "name": "Ass Guys",
+              "size": 7
+            },
+            {
+              "id": 1,
+              "name": "Boob Guys",
+              "size": 7
+            }
+          ],
+          "matchupPeriodCount": 15,
+          "matchupPeriodLength": 1,
+          "matchupPeriods": {
+            "1": [
+              1
+            ],
+            "2": [
+              2
+            ],
+            "3": [
+              3
+            ],
+            "4": [
+              4
+            ],
+            "5": [
+              5
+            ],
+            "6": [
+              6
+            ],
+            "7": [
+              7
+            ],
+            "8": [
+              8
+            ],
+            "9": [
+              9
+            ],
+            "10": [
+              10
+            ],
+            "11": [
+              11
+            ],
+            "12": [
+              12
+            ],
+            "13": [
+              13
+            ],
+            "14": [
+              14
+            ],
+            "15": [
+              15
+            ],
+            "16": [
+              16
+            ],
+            "17": [
+              17
+            ],
+            "18": [
+              18
+            ]
+          },
+          "periodTypeId": 1,
+          "playoffMatchupPeriodLength": 1,
+          "playoffMatchupPeriodLengthByRound": {},
+          "playoffReseed": false,
+          "playoffSeedingRule": "TOTAL_POINTS_SCORED",
+          "playoffSeedingRuleBy": 0,
+          "playoffTeamCount": 8,
+          "variablePlayoffMatchupPeriodLength": false
+        },
+        "scoringSettings": {
+          "allowOutOfPositionScoring": false,
+          "homeTeamBonus": 0,
+          "matchupTieRule": "SLOT_POINTS",
+          "matchupTieRuleBy": 20,
+          "playerRankType": "PPR",
+          "playoffHomeTeamBonus": 0,
+          "playoffMatchupTieRule": "NONE",
+          "playoffMatchupTieRuleBy": 0,
+          "scoringItems": [
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "statId": 36
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 46
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 122
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 72
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 57
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 25
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 53
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 106
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 56
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 0.01
+              },
+              "statId": 114
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 35
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 43
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 102
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 103
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "pointsOverrides": {},
+              "statId": 24
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 101
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 7.0
+              },
+              "statId": 129
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 104
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "statId": 18
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 130
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -5.0
+              },
+              "statId": 125
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 134
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 135
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -3.0
+              },
+              "statId": 124
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {},
+              "statId": 86
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 132
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "statId": 42
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 133
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 88
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 0.0
+              },
+              "statId": 123
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": -1.0
+              },
+              "statId": 136
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 121
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 4
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 131
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 5.0
+              },
+              "statId": 90
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 4.0
+              },
+              "statId": 91
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 206
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 15
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.1,
+              "statId": 3
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 89
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 209
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 3.0
+              },
+              "statId": 92
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 95
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 10.0
+              },
+              "statId": 128
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {
+                "16": 6.0
+              },
+              "statId": 93
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 16
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 98
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 17
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 96
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 2.0
+              },
+              "statId": 97
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 19
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 1.0,
+              "statId": 37
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "statId": 63
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 3.0,
+              "pointsOverrides": {},
+              "statId": 80
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 26
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 4.0,
+              "pointsOverrides": {},
+              "statId": 77
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 0.0,
+              "pointsOverrides": {
+                "16": 1.0
+              },
+              "statId": 99
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": -1.0,
+              "statId": 20
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 38
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "pointsOverrides": {},
+              "statId": 44
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 2.0,
+              "statId": 45
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 6.0,
+              "pointsOverrides": {},
+              "statId": 201
+            },
+            {
+              "isReverseItem": false,
+              "leagueRanking": 0.0,
+              "leagueTotal": 0.0,
+              "points": 5.0,
+              "pointsOverrides": {},
+              "statId": 198
+            }
+          ],
+          "scoringType": "H2H_POINTS"
+        },
+        "size": 14,
+        "tradeSettings": {
+          "allowOutOfUniverse": false,
+          "deadlineDate": 1767200400000,
+          "max": -1,
+          "revisionHours": 48,
+          "vetoVotesRequired": 0
+        }
+      }
+    }
+  }
+}
