@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>JDC Degenerates</title>
@@ -27,7 +25,9 @@ body {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
   min-height: 440px;
@@ -95,17 +95,22 @@ body {
 }
 
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
   position: sticky;
   top: 0;
   z-index: 100;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   gap: 8px;
   padding: 12px;
+
   background: rgba(8,8,8,.96);
   border-bottom: 1px solid #343434;
 }
@@ -125,7 +130,9 @@ nav a:hover {
 }
 
 
-/* MAIN */
+/* =========================
+   MAIN
+========================= */
 
 .container {
   width: min(1150px,92%);
@@ -150,8 +157,10 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
+
   margin-bottom: 22px;
   padding-bottom: 12px;
+
   border-bottom: 2px solid #d4af37;
 }
 
@@ -169,7 +178,9 @@ nav a:hover {
 }
 
 
-/* GAME OF THE WEEK */
+/* =========================
+   GAME OF THE WEEK
+========================= */
 
 .game-week {
   text-align: center;
@@ -196,12 +207,15 @@ nav a:hover {
   width: 90px;
   height: 90px;
   margin: auto;
+
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: #111;
   border: 3px solid #d4af37;
+
   color: #d4af37;
   font-size: 32px;
   font-weight: 900;
@@ -232,7 +246,9 @@ nav a:hover {
 }
 
 
-/* STANDINGS */
+/* =========================
+   STANDINGS
+========================= */
 
 .table-wrap {
   overflow-x: auto;
@@ -267,7 +283,9 @@ tr:hover td {
 }
 
 
-/* MANAGERS */
+/* =========================
+   MANAGERS
+========================= */
 
 .manager-grid {
   display: grid;
@@ -297,12 +315,16 @@ tr:hover td {
   width: 52px;
   height: 52px;
   margin: auto auto 10px;
+
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: #d4af37;
   color: #050505;
+
   font-weight: 900;
   font-size: 20px;
 }
@@ -320,7 +342,9 @@ tr:hover td {
 }
 
 
-/* CHAMPIONS */
+/* =========================
+   LEAGUE CHAMPIONS
+========================= */
 
 .history-grid {
   display: grid;
@@ -331,9 +355,11 @@ tr:hover td {
 .champ-card {
   text-align: center;
   padding: 25px 15px;
+
   background: #101010;
   border: 1px solid #303030;
   border-radius: 12px;
+
   transition: .2s;
 }
 
@@ -359,7 +385,71 @@ tr:hover td {
 }
 
 
-/* RECORDS */
+/* =========================
+   SEASON HISTORY
+========================= */
+
+.season-history-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+
+.season-history-card {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.season-history-card:hover {
+  border-color: #d4af37;
+  transform: translateY(-3px);
+}
+
+.season-history-year {
+  background: #d4af37;
+  color: #050505;
+
+  text-align: center;
+  padding: 12px;
+
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.podium-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #292929;
+}
+
+.podium-row:last-child {
+  border-bottom: none;
+}
+
+.podium-row span {
+  color: #aaa;
+}
+
+.podium-row strong {
+  color: white;
+}
+
+.champion-row strong {
+  color: #d4af37;
+}
+
+
+/* =========================
+   RECORDS
+========================= */
 
 .records-grid {
   display: grid;
@@ -371,9 +461,12 @@ tr:hover td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   gap: 15px;
+
   background: #101010;
   border: 1px solid #303030;
+
   padding: 18px;
   border-radius: 10px;
 }
@@ -389,12 +482,16 @@ tr:hover td {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   text-align: center;
   padding: 35px 20px;
+
   border-top: 1px solid #292929;
+
   color: #777;
   background: #050505;
 }
@@ -404,7 +501,9 @@ footer strong {
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 850px) {
 
@@ -414,6 +513,10 @@ footer strong {
 
   .history-grid {
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .season-history-grid {
+    grid-template-columns: 1fr;
   }
 
 }
@@ -442,34 +545,42 @@ footer strong {
 <body>
 
 
+<!-- =========================
+     HERO
+========================= -->
+
 <header class="hero">
 
 <div class="hero-content">
 
-  <div class="season">
-    2026 Fantasy Football Season
-  </div>
+<div class="season">
+2026 Fantasy Football Season
+</div>
 
-  <h1>
-    JDC<br>Degenerates
-  </h1>
+<h1>
+JDC<br>Degenerates
+</h1>
 
-  <div class="hero-subtitle">
-    Trash Talk. Rivalries. Championships.
-  </div>
+<div class="hero-subtitle">
+Trash Talk. Rivalries. Championships.
+</div>
 
-  <div class="champion-banner">
-    🏆 Defending Champion: Matt
-  </div>
+<div class="champion-banner">
+🏆 Defending Champion: Matt
+</div>
 
-  <div class="draft-banner">
-    📅 2026 DRAFT • SEPTEMBER 5, 2026 • 12:30 PM
-  </div>
+<div class="draft-banner">
+📅 2026 DRAFT • SEPTEMBER 5, 2026 • 12:30 PM
+</div>
 
 </div>
 
 </header>
 
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
 
@@ -483,6 +594,8 @@ footer strong {
 
 <a href="#champions">Champions</a>
 
+<a href="#season-history">History</a>
+
 <a href="#records">Records</a>
 
 </nav>
@@ -491,7 +604,9 @@ footer strong {
 <div class="container">
 
 
-<!-- GAME OF THE WEEK -->
+<!-- =========================
+     GAME OF THE WEEK
+========================= -->
 
 <section class="section">
 
@@ -560,7 +675,6 @@ Philip
 
 <div class="week-status" id="weekStatus"></div>
 
-
 </div>
 
 </div>
@@ -568,8 +682,9 @@ Philip
 </section>
 
 
-
-<!-- STANDINGS -->
+<!-- =========================
+     STANDINGS
+========================= -->
 
 <section class="section" id="standings">
 
@@ -598,25 +713,85 @@ Regular Season
 <th>PF</th>
 </tr>
 
-<tr><td class="rank">1</td><td>Devin</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">1</td>
+<td>Devin</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">2</td><td>Toby</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">2</td>
+<td>Toby</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">3</td><td>Tom</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">3</td>
+<td>Tom</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">4</td><td>Matt</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">4</td>
+<td>Matt</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">5</td><td>Philip</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">5</td>
+<td>Philip</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">6</td><td>Mike</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">6</td>
+<td>Mike</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">7</td><td>Josh</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">7</td>
+<td>Josh</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">8</td><td>Steve P.</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">8</td>
+<td>Steve P.</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">9</td><td>Steve H.</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">9</td>
+<td>Steve H.</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
-<tr><td class="rank">10</td><td>Hunter</td><td>0</td><td>0</td><td>0.0</td></tr>
+<tr>
+<td class="rank">10</td>
+<td>Hunter</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+</tr>
 
 </table>
 
@@ -627,8 +802,9 @@ Regular Season
 </section>
 
 
-
-<!-- MANAGERS -->
+<!-- =========================
+     MANAGERS
+========================= -->
 
 <section class="section" id="managers">
 
@@ -765,8 +941,9 @@ Regular Season
 </section>
 
 
-
-<!-- CHAMPIONS -->
+<!-- =========================
+     LEAGUE CHAMPIONS
+========================= -->
 
 <section class="section" id="champions">
 
@@ -861,8 +1038,234 @@ Matt
 </section>
 
 
+<!-- =========================
+     SEASON HISTORY
+========================= -->
 
-<!-- RECORDS -->
+<section class="section" id="season-history">
+
+<div class="card">
+
+<div class="section-title">
+
+<h2>Season History</h2>
+
+<span class="section-label">
+Final Podiums
+</span>
+
+</div>
+
+
+<div class="season-history-grid">
+
+
+<!-- 2022 -->
+
+<div class="season-history-card">
+
+<div class="season-history-year">
+2022
+</div>
+
+<div class="podium-row champion-row">
+
+<span>
+🏆 Champion
+</span>
+
+<strong>
+Toby
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥈 Runner-Up
+</span>
+
+<strong>
+Josh
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥉 Consolation Winner
+</span>
+
+<strong>
+Devin
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- 2023 -->
+
+<div class="season-history-card">
+
+<div class="season-history-year">
+2023
+</div>
+
+<div class="podium-row champion-row">
+
+<span>
+🏆 Champion
+</span>
+
+<strong>
+Josh
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥈 Runner-Up
+</span>
+
+<strong>
+Jacob
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥉 Consolation Winner
+</span>
+
+<strong>
+Toby
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- 2024 -->
+
+<div class="season-history-card">
+
+<div class="season-history-year">
+2024
+</div>
+
+<div class="podium-row champion-row">
+
+<span>
+🏆 Champion
+</span>
+
+<strong>
+Mike
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥈 Runner-Up
+</span>
+
+<strong>
+Philip
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥉 Consolation Winner
+</span>
+
+<strong>
+Chad Nort
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- 2025 -->
+
+<div class="season-history-card">
+
+<div class="season-history-year">
+2025
+</div>
+
+<div class="podium-row champion-row">
+
+<span>
+🏆 Champion
+</span>
+
+<strong>
+Matt
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥈 Runner-Up
+</span>
+
+<strong>
+Philip
+</strong>
+
+</div>
+
+
+<div class="podium-row">
+
+<span>
+🥉 Consolation Winner
+</span>
+
+<strong>
+Devin
+</strong>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     LEAGUE RECORDS
+========================= -->
 
 <section class="section" id="records">
 
@@ -885,11 +1288,11 @@ All-Time
 <div class="record-card">
 
 <span class="record-name">
-Completed Seasons
+Most Regular-Season Wins
 </span>
 
 <span class="record-value">
-4
+Toby — 32
 </span>
 
 </div>
@@ -898,11 +1301,37 @@ Completed Seasons
 <div class="record-card">
 
 <span class="record-name">
-Different Champions
+Best Regular-Season Win %
 </span>
 
 <span class="record-value">
-4
+Philip — 79.3%
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Most Playoff Wins
+</span>
+
+<span class="record-value">
+Toby / Philip / Matt — 3
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Best Playoff Record
+</span>
+
+<span class="record-value">
+Matt — 3-0
 </span>
 
 </div>
@@ -924,11 +1353,37 @@ Most Championships
 <div class="record-card">
 
 <span class="record-name">
-Two-Time Champions
+Different Champions
 </span>
 
 <span class="record-value">
-0
+4
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Most Runner-Up Finishes
+</span>
+
+<span class="record-value">
+Philip — 2
+</span>
+
+</div>
+
+
+<div class="record-card">
+
+<span class="record-name">
+Most Consolation Wins
+</span>
+
+<span class="record-value">
+Devin — 2
 </span>
 
 </div>
@@ -944,6 +1399,10 @@ Two-Time Champions
 </div>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
 
 <strong>
@@ -957,13 +1416,11 @@ Fantasy Football League • Est. 2022
 </footer>
 
 
+<!-- =========================
+     AUTOMATIC GAME OF WEEK
+========================= -->
 
 <script>
-
-/*
-GAME OF THE WEEK
-Automatically changes each Tuesday.
-*/
 
 const featuredGames = {
 
@@ -982,7 +1439,7 @@ story: "Featured Matchup"
 3: {
 team1: "Devin",
 team2: "Hunter",
-story: "Featured Matchup"
+story: "Veteran vs Rookie"
 },
 
 4: {
@@ -1006,7 +1463,7 @@ story: "Battle of the Steves"
 7: {
 team1: "Devin",
 team2: "Matt",
-story: "Featured Matchup"
+story: "Commissioner vs Defending Champion"
 },
 
 8: {
@@ -1024,7 +1481,7 @@ story: "Rivalry Preview"
 10: {
 team1: "Toby",
 team2: "Mike",
-story: "Featured Matchup"
+story: "Battle of Former Champions"
 },
 
 11: {
@@ -1055,8 +1512,7 @@ story: "🔥 RIVALRY WEEK"
 
 
 /*
-Week 1 starts Tuesday,
-September 8, 2026.
+Week 1 begins September 8, 2026.
 */
 
 const weekOneStart =
@@ -1072,7 +1528,7 @@ let currentWeek = 1;
 
 
 /*
-Before season:
+Before the season,
 keep Week 1 displayed.
 */
 
@@ -1092,7 +1548,9 @@ Stop at Week 14.
 */
 
 if (currentWeek > 14) {
+
 currentWeek = 14;
+
 }
 
 
@@ -1137,13 +1595,11 @@ game.team2.charAt(0);
 
 
 /*
-STATUS
+WEEK STATUS
 */
 
 const weekStatus =
-document.getElementById(
-"weekStatus"
-);
+document.getElementById("weekStatus");
 
 
 if (today < weekOneStart) {
@@ -1181,4 +1637,3 @@ weekStatus.textContent =
 </body>
 
 </html>
-```
