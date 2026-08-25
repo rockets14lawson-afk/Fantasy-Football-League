@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,13 +33,10 @@ body {
 
 .hero {
   min-height: 440px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
   padding: 40px 20px;
 
   background:
@@ -62,14 +60,10 @@ body {
 
 .hero h1 {
   margin: 12px 0 8px;
-
   font-size: clamp(44px,8vw,85px);
-
   color: #d4af37;
-
   letter-spacing: 3px;
   text-transform: uppercase;
-
   line-height: .95;
 }
 
@@ -81,41 +75,28 @@ body {
 
 .champion-banner {
   display: inline-block;
-
   padding: 14px 24px;
-
   background: #d4af37;
   color: #050505;
-
   border-radius: 999px;
-
   font-weight: 900;
-
-  box-shadow:
-    0 0 35px rgba(212,175,55,.25);
 }
 
 .draft-banner {
   margin: 18px auto 0;
-
   display: table;
-
   padding: 12px 22px;
-
   border: 1px solid #d4af37;
   border-radius: 999px;
-
   color: #d4af37;
   background: rgba(212,175,55,.06);
-
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 1px;
 }
 
 
 /* =========================
-   NAVIGATION
+   NAV
 ========================= */
 
 nav {
@@ -126,31 +107,26 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   gap: 8px;
+
   padding: 12px;
 
   background: rgba(8,8,8,.96);
-
   border-bottom: 1px solid #343434;
 }
 
 nav a {
-  color: #eeeeee;
-
+  color: white;
   text-decoration: none;
-
   padding: 10px 14px;
-
   border-radius: 6px;
-
   font-weight: bold;
   font-size: 14px;
 }
 
 nav a:hover {
   background: #d4af37;
-  color: #000;
+  color: black;
 }
 
 
@@ -160,9 +136,7 @@ nav a:hover {
 
 .container {
   width: min(1150px,92%);
-
   margin: auto;
-
   padding: 35px 0 70px;
 }
 
@@ -171,50 +145,32 @@ nav a:hover {
 }
 
 .card {
-  background:
-    linear-gradient(145deg,#151515,#0e0e0e);
-
+  background: linear-gradient(145deg,#151515,#0e0e0e);
   border: 1px solid #2c2c2c;
-
   border-radius: 16px;
-
   padding: 25px;
-
-  box-shadow:
-    0 16px 45px rgba(0,0,0,.35);
 }
 
 .section-title {
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   gap: 15px;
-
   margin-bottom: 22px;
-
   padding-bottom: 12px;
-
   border-bottom: 2px solid #d4af37;
 }
 
 .section-title h2 {
   margin: 0;
-
   color: #d4af37;
-
   font-size: 25px;
 }
 
 .section-label {
   color: #999;
-
   text-transform: uppercase;
-
   font-size: 11px;
-
   letter-spacing: 2px;
 }
 
@@ -225,125 +181,182 @@ nav a:hover {
 
 .game-week {
   text-align: center;
-
   padding: 30px 10px;
 }
 
 .game-label {
   color: #d4af37;
-
   letter-spacing: 3px;
-
   font-size: 13px;
-
   font-weight: bold;
-
-  text-transform: uppercase;
 }
 
 .matchup {
   display: grid;
-
-  grid-template-columns:
-    1fr auto 1fr;
-
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-
   gap: 20px;
-
   margin-top: 30px;
 }
 
 .manager-circle {
   width: 90px;
-
   height: 90px;
-
   margin: auto;
 
   border-radius: 50%;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   background: #111;
-
   border: 3px solid #d4af37;
 
   color: #d4af37;
-
   font-size: 32px;
-
   font-weight: 900;
 }
 
 .matchup h3 {
+  margin: 10px 0 5px;
   font-size: 23px;
+}
 
-  margin-bottom: 5px;
+.game-score {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
 }
 
 .vs {
   color: #d4af37;
-
-  font-size: 28px;
-
+  font-size: 27px;
   font-weight: 900;
 }
 
 .storyline {
-  margin-top: 7px;
-
+  margin-top: 8px;
   color: #d4af37;
-
-  font-weight: bold;
-
   font-size: 14px;
+  font-weight: bold;
+}
+
+.game-status {
+  margin-top: 6px;
+  color: #999;
+  font-size: 12px;
 }
 
 .week-status {
   margin-top: 25px;
-
   color: #888;
-
   font-size: 13px;
 }
 
 
 /* =========================
-   ESPN STANDINGS
+   WEEKLY MATCHUPS
+========================= */
+
+.weekly-games {
+  display: grid;
+  gap: 12px;
+}
+
+.weekly-game {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+
+  padding: 18px;
+}
+
+.weekly-game.featured {
+  border-color: #d4af37;
+  background: rgba(212,175,55,.06);
+}
+
+.weekly-team-left {
+  text-align: right;
+}
+
+.weekly-team-right {
+  text-align: left;
+}
+
+.weekly-manager {
+  display: block;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.weekly-fantasy-name {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-size: 11px;
+}
+
+.weekly-score {
+  min-width: 145px;
+  text-align: center;
+}
+
+.weekly-score strong {
+  color: #d4af37;
+  font-size: 20px;
+}
+
+.weekly-score span {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   ESPN STATUS
 ========================= */
 
 .espn-status {
-  display: inline-flex;
-
+  display: flex;
   align-items: center;
-
   gap: 7px;
-
   color: #d4af37;
-
   font-size: 11px;
-
-  font-weight: bold;
-
   text-transform: uppercase;
-
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
 .live-dot {
   width: 8px;
-
   height: 8px;
-
   background: #d4af37;
-
   border-radius: 50%;
 }
+
+.sync-time {
+  color: #777;
+  font-size: 11px;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   STANDINGS
+========================= */
 
 .table-wrap {
   overflow-x: auto;
@@ -351,27 +364,19 @@ nav a:hover {
 
 table {
   width: 100%;
-
   border-collapse: collapse;
 }
 
 th {
   background: #d4af37;
-
   color: #050505;
-
   padding: 13px;
-
   text-align: center;
-
-  font-size: 13px;
 }
 
 td {
   padding: 14px 10px;
-
   text-align: center;
-
   border-bottom: 1px solid #292929;
 }
 
@@ -380,11 +385,8 @@ tr:hover td {
 }
 
 .rank {
-  font-weight: 900;
-
   color: #d4af37;
-
-  font-size: 17px;
+  font-weight: 900;
 }
 
 .manager-cell {
@@ -393,38 +395,24 @@ tr:hover td {
 
 .manager-cell strong {
   display: block;
-
-  color: white;
-
-  font-size: 15px;
 }
 
 .fantasy-team {
   display: block;
-
-  color: #888;
-
+  color: #777;
   font-size: 11px;
-
   margin-top: 4px;
 }
 
-.record-cell {
-  font-weight: bold;
-}
-
-.loading {
+.loading,
+.error-message {
+  text-align: center;
   color: #888;
-
   padding: 30px;
 }
 
-.standings-error {
-  color: #ff8a8a;
-
-  text-align: center;
-
-  padding: 25px;
+.error-message {
+  color: #ff8585;
 }
 
 
@@ -434,31 +422,16 @@ tr:hover td {
 
 .manager-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(5,1fr);
-
+  grid-template-columns: repeat(5,1fr);
   gap: 14px;
 }
 
 .manager-card {
   background: #101010;
-
   border: 1px solid #303030;
-
   border-radius: 12px;
-
   padding: 20px 10px;
-
   text-align: center;
-
-  transition: .2s;
-}
-
-.manager-card:hover {
-  transform: translateY(-4px);
-
-  border-color: #d4af37;
 }
 
 .manager-card.champion {
@@ -467,41 +440,30 @@ tr:hover td {
 
 .manager-icon {
   width: 52px;
-
   height: 52px;
-
   margin: auto auto 10px;
 
   border-radius: 50%;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   background: #d4af37;
-
-  color: #050505;
+  color: black;
 
   font-weight: 900;
-
   font-size: 20px;
 }
 
 .manager-card strong {
   display: block;
-
-  font-size: 16px;
 }
 
 .manager-card span {
   display: block;
-
-  color: #777;
-
   margin-top: 5px;
-
+  color: #777;
   font-size: 12px;
 }
 
@@ -512,51 +474,31 @@ tr:hover td {
 
 .history-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns: repeat(4,1fr);
   gap: 16px;
 }
 
 .champ-card {
   text-align: center;
-
   padding: 25px 15px;
-
   background: #101010;
-
   border: 1px solid #303030;
-
   border-radius: 12px;
-
-  transition: .2s;
-}
-
-.champ-card:hover {
-  border-color: #d4af37;
-
-  transform: translateY(-4px);
 }
 
 .champ-card .year {
   color: #888;
-
-  font-size: 14px;
 }
 
 .champ-card .trophy {
   font-size: 34px;
-
   margin: 10px 0;
 }
 
 .champ-card .winner {
   color: #d4af37;
-
-  font-weight: 900;
-
   font-size: 19px;
+  font-weight: 900;
 }
 
 
@@ -566,56 +508,31 @@ tr:hover td {
 
 .season-history-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(2,1fr);
-
+  grid-template-columns: repeat(2,1fr);
   gap: 18px;
 }
 
 .season-history-card {
   background: #101010;
-
   border: 1px solid #303030;
-
   border-radius: 14px;
-
   overflow: hidden;
-
-  transition: .2s;
-}
-
-.season-history-card:hover {
-  border-color: #d4af37;
-
-  transform: translateY(-3px);
 }
 
 .season-history-year {
   background: #d4af37;
-
-  color: #050505;
-
+  color: black;
   text-align: center;
-
   padding: 12px;
-
   font-size: 22px;
-
   font-weight: 900;
 }
 
 .podium-row {
   display: flex;
-
   justify-content: space-between;
-
-  align-items: center;
-
   gap: 15px;
-
   padding: 16px 18px;
-
   border-bottom: 1px solid #292929;
 }
 
@@ -625,10 +542,6 @@ tr:hover td {
 
 .podium-row span {
   color: #aaa;
-}
-
-.podium-row strong {
-  color: white;
 }
 
 .champion-row strong {
@@ -642,28 +555,19 @@ tr:hover td {
 
 .records-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(2,1fr);
-
+  grid-template-columns: repeat(2,1fr);
   gap: 15px;
 }
 
 .record-card {
   display: flex;
-
   justify-content: space-between;
-
-  align-items: center;
-
   gap: 15px;
 
   background: #101010;
-
   border: 1px solid #303030;
 
   padding: 18px;
-
   border-radius: 10px;
 }
 
@@ -673,10 +577,7 @@ tr:hover td {
 
 .record-value {
   color: #d4af37;
-
   font-weight: bold;
-
-  font-size: 18px;
 }
 
 
@@ -686,14 +587,9 @@ tr:hover td {
 
 footer {
   text-align: center;
-
   padding: 35px 20px;
-
   border-top: 1px solid #292929;
-
   color: #777;
-
-  background: #050505;
 }
 
 footer strong {
@@ -708,13 +604,11 @@ footer strong {
 @media (max-width: 850px) {
 
   .manager-grid {
-    grid-template-columns:
-      repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   .history-grid {
-    grid-template-columns:
-      repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
   }
 
   .season-history-grid {
@@ -725,29 +619,22 @@ footer strong {
 
 @media (max-width: 600px) {
 
-  .hero {
-    min-height: 360px;
-  }
-
   .matchup {
     grid-template-columns: 1fr;
   }
 
+  .weekly-game {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .weekly-team-left,
+  .weekly-team-right {
+    text-align: center;
+  }
+
   .records-grid {
     grid-template-columns: 1fr;
-  }
-
-  th,
-  td {
-    padding: 11px 7px;
-  }
-
-  .manager-cell strong {
-    font-size: 13px;
-  }
-
-  .fantasy-team {
-    font-size: 10px;
   }
 
 }
@@ -759,10 +646,6 @@ footer strong {
 
 <body>
 
-
-<!-- =========================
-     HERO
-========================= -->
 
 <header class="hero">
 
@@ -793,39 +676,21 @@ Trash Talk. Rivalries. Championships.
 </header>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
-
 <nav>
 
-<a href="index.html">
-Home
-</a>
+<a href="index.html">Home</a>
 
-<a href="schedule.html">
-Schedule
-</a>
+<a href="schedule.html">Schedule</a>
 
-<a href="#standings">
-Standings
-</a>
+<a href="#standings">Standings</a>
 
-<a href="managers.html">
-Managers
-</a>
+<a href="managers.html">Managers</a>
 
-<a href="#champions">
-Champions
-</a>
+<a href="#champions">Champions</a>
 
-<a href="#season-history">
-History
-</a>
+<a href="#season-history">History</a>
 
-<a href="#records">
-Records
-</a>
+<a href="#records">Records</a>
 
 <a
 href="https://fantasy.espn.com/football/league?leagueId=90156758"
@@ -840,9 +705,7 @@ ESPN League
 <div class="container">
 
 
-<!-- =========================
-     GAME OF THE WEEK
-========================= -->
+<!-- GAME OF THE WEEK -->
 
 <section class="section">
 
@@ -863,9 +726,7 @@ Featured Matchup
 
 <div class="game-week">
 
-<div
-class="game-label"
-id="weekNumber">
+<div class="game-label" id="weekNumber">
 WEEK 1
 </div>
 
@@ -875,15 +736,17 @@ WEEK 1
 
 <div>
 
-<div
-class="manager-circle"
-id="team1Initial">
+<div class="manager-circle" id="team1Initial">
 M
 </div>
 
 <h3 id="team1Name">
 Matt
 </h3>
+
+<div class="game-score" id="team1Score">
+0.00
+</div>
 
 </div>
 
@@ -894,10 +757,12 @@ Matt
 VS
 </div>
 
-<div
-class="storyline"
-id="storyline">
+<div class="storyline" id="storyline">
 2025 Championship Rematch
+</div>
+
+<div class="game-status" id="featuredStatus">
+Scheduled
 </div>
 
 </div>
@@ -905,9 +770,7 @@ id="storyline">
 
 <div>
 
-<div
-class="manager-circle"
-id="team2Initial">
+<div class="manager-circle" id="team2Initial">
 P
 </div>
 
@@ -915,17 +778,18 @@ P
 Philip
 </h3>
 
+<div class="game-score" id="team2Score">
+0.00
+</div>
+
 </div>
 
 
 </div>
 
 
-<div
-class="week-status"
-id="weekStatus">
+<div class="week-status" id="weekStatus">
 </div>
-
 
 </div>
 
@@ -934,16 +798,55 @@ id="weekStatus">
 </section>
 
 
-<!-- =========================
-     AUTOMATIC ESPN STANDINGS
-========================= -->
 
-<section
-class="section"
-id="standings">
+<!-- THIS WEEK -->
+
+<section class="section">
 
 <div class="card">
 
+<div class="section-title">
+
+<h2 id="weeklyMatchupTitle">
+Week 1 Matchups
+</h2>
+
+<div class="espn-status">
+
+<span class="live-dot"></span>
+
+ESPN Scores
+
+</div>
+
+</div>
+
+
+<div class="sync-time" id="syncTime">
+Loading ESPN data...
+</div>
+
+
+<div class="weekly-games" id="weeklyGames">
+
+<div class="loading">
+Loading weekly matchups...
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- STANDINGS -->
+
+<section class="section" id="standings">
+
+<div class="card">
 
 <div class="section-title">
 
@@ -970,29 +873,17 @@ ESPN Sync
 
 <tr>
 
-<th>
-Rank
-</th>
+<th>Rank</th>
 
-<th>
-Manager / Team
-</th>
+<th>Manager / Team</th>
 
-<th>
-W
-</th>
+<th>W</th>
 
-<th>
-L
-</th>
+<th>L</th>
 
-<th>
-T
-</th>
+<th>T</th>
 
-<th>
-PF
-</th>
+<th>PF</th>
 
 </tr>
 
@@ -1003,18 +894,13 @@ PF
 
 <tr>
 
-<td
-colspan="6"
-class="loading">
-
+<td colspan="6" class="loading">
 Loading ESPN standings...
-
 </td>
 
 </tr>
 
 </tbody>
-
 
 </table>
 
@@ -1025,13 +911,10 @@ Loading ESPN standings...
 </section>
 
 
-<!-- =========================
-     CURRENT MANAGERS
-========================= -->
 
-<section
-class="section"
-id="managers">
+<!-- MANAGERS -->
+
+<section class="section">
 
 <div class="card">
 
@@ -1053,170 +936,110 @@ League Managers
 
 <div class="manager-card">
 
-<div class="manager-icon">
-D
-</div>
+<div class="manager-icon">D</div>
 
-<strong>
-Devin
-</strong>
+<strong>Devin</strong>
 
-<span>
-Commissioner
-</span>
+<span>Commissioner</span>
 
 </div>
 
 
 <div class="manager-card champion">
 
-<div class="manager-icon">
-T
-</div>
+<div class="manager-icon">T</div>
 
-<strong>
-Toby
-</strong>
+<strong>Toby</strong>
 
-<span>
-2022 Champion 🏆
-</span>
+<span>2022 Champion 🏆</span>
 
 </div>
 
 
 <div class="manager-card">
 
-<div class="manager-icon">
-T
-</div>
+<div class="manager-icon">T</div>
 
-<strong>
-Tom
-</strong>
+<strong>Tom</strong>
 
-<span>
-Manager
-</span>
+<span>Manager</span>
 
 </div>
 
 
 <div class="manager-card champion">
 
-<div class="manager-icon">
-M
-</div>
+<div class="manager-icon">M</div>
 
-<strong>
-Matt
-</strong>
+<strong>Matt</strong>
 
-<span>
-2025 Champion 🏆
-</span>
+<span>2025 Champion 🏆</span>
 
 </div>
 
 
 <div class="manager-card">
 
-<div class="manager-icon">
-P
-</div>
+<div class="manager-icon">P</div>
 
-<strong>
-Philip
-</strong>
+<strong>Philip</strong>
 
-<span>
-2025 Runner-Up
-</span>
+<span>2025 Runner-Up</span>
 
 </div>
 
 
 <div class="manager-card champion">
 
-<div class="manager-icon">
-M
-</div>
+<div class="manager-icon">M</div>
 
-<strong>
-Mike
-</strong>
+<strong>Mike</strong>
 
-<span>
-2024 Champion 🏆
-</span>
+<span>2024 Champion 🏆</span>
 
 </div>
 
 
 <div class="manager-card champion">
 
-<div class="manager-icon">
-J
-</div>
+<div class="manager-icon">J</div>
 
-<strong>
-Josh
-</strong>
+<strong>Josh</strong>
 
-<span>
-2023 Champion 🏆
-</span>
+<span>2023 Champion 🏆</span>
 
 </div>
 
 
 <div class="manager-card">
 
-<div class="manager-icon">
-S
-</div>
+<div class="manager-icon">S</div>
 
-<strong>
-Steve P.
-</strong>
+<strong>Steve P.</strong>
 
-<span>
-2026 Rookie
-</span>
+<span>2026 Rookie</span>
 
 </div>
 
 
 <div class="manager-card">
 
-<div class="manager-icon">
-S
-</div>
+<div class="manager-icon">S</div>
 
-<strong>
-Steve H.
-</strong>
+<strong>Steve H.</strong>
 
-<span>
-2026 Rookie
-</span>
+<span>2026 Rookie</span>
 
 </div>
 
 
 <div class="manager-card">
 
-<div class="manager-icon">
-H
-</div>
+<div class="manager-icon">H</div>
 
-<strong>
-Hunter
-</strong>
+<strong>Hunter</strong>
 
-<span>
-2026 Rookie
-</span>
+<span>2026 Rookie</span>
 
 </div>
 
@@ -1228,13 +1051,10 @@ Hunter
 </section>
 
 
-<!-- =========================
-     CHAMPIONS
-========================= -->
 
-<section
-class="section"
-id="champions">
+<!-- CHAMPIONS -->
+
+<section class="section" id="champions">
 
 <div class="card">
 
@@ -1253,74 +1073,29 @@ Hall of Champions
 
 <div class="history-grid">
 
+<div class="champ-card">
+<div class="year">2022</div>
+<div class="trophy">🏆</div>
+<div class="winner">Toby</div>
+</div>
 
 <div class="champ-card">
-
-<div class="year">
-2022
+<div class="year">2023</div>
+<div class="trophy">🏆</div>
+<div class="winner">Josh</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Toby
-</div>
-
-</div>
-
 
 <div class="champ-card">
-
-<div class="year">
-2023
+<div class="year">2024</div>
+<div class="trophy">🏆</div>
+<div class="winner">Mike</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Josh
-</div>
-
-</div>
-
 
 <div class="champ-card">
-
-<div class="year">
-2024
+<div class="year">2025</div>
+<div class="trophy">🏆</div>
+<div class="winner">Matt</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Mike
-</div>
-
-</div>
-
-
-<div class="champ-card">
-
-<div class="year">
-2025
-</div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Matt
-</div>
-
-</div>
-
 
 </div>
 
@@ -1329,13 +1104,10 @@ Matt
 </section>
 
 
-<!-- =========================
-     SEASON HISTORY
-========================= -->
 
-<section
-class="section"
-id="season-history">
+<!-- HISTORY -->
+
+<section class="section" id="season-history">
 
 <div class="card">
 
@@ -1362,39 +1134,18 @@ Final Podiums
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Toby
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Toby</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Josh
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Josh</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Devin
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Devin</strong>
 </div>
 
 </div>
@@ -1407,39 +1158,18 @@ Devin
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Josh
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Josh</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Jacob
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Jacob</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Toby
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Toby</strong>
 </div>
 
 </div>
@@ -1452,39 +1182,18 @@ Toby
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Mike
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Mike</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Philip
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Philip</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Chad Nort
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Chad Nort</strong>
 </div>
 
 </div>
@@ -1497,39 +1206,18 @@ Chad Nort
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Matt
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Matt</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Philip
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Philip</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Devin
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Devin</strong>
 </div>
 
 </div>
@@ -1542,13 +1230,10 @@ Devin
 </section>
 
 
-<!-- =========================
-     RECORDS
-========================= -->
 
-<section
-class="section"
-id="records">
+<!-- RECORDS -->
+
+<section class="section" id="records">
 
 <div class="card">
 
@@ -1567,110 +1252,77 @@ All-Time
 
 <div class="records-grid">
 
-
 <div class="record-card">
-
 <span class="record-name">
 Most Regular-Season Wins
 </span>
-
 <span class="record-value">
 Toby — 32
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Best Regular-Season Win %
 </span>
-
 <span class="record-value">
 Philip — 79.3%
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Most Playoff Wins
 </span>
-
 <span class="record-value">
 Toby / Philip / Matt — 3
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Best Playoff Record
 </span>
-
 <span class="record-value">
 Matt — 3-0
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Most Championships
 </span>
-
 <span class="record-value">
 1
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Different Champions
 </span>
-
 <span class="record-value">
 4
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Most Runner-Up Finishes
 </span>
-
 <span class="record-value">
 Philip — 2
 </span>
-
 </div>
 
-
 <div class="record-card">
-
 <span class="record-name">
 Most Consolation Wins
 </span>
-
 <span class="record-value">
 Devin — 2
 </span>
-
 </div>
-
 
 </div>
 
@@ -1681,10 +1333,6 @@ Devin — 2
 
 </div>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
@@ -1701,235 +1349,47 @@ Fantasy Football League • Est. 2022
 
 <script>
 
-/* ==========================================
-   ESPN TEAM ID → MANAGER MAPPING
-========================================== */
+
+/* =====================================
+   MANAGER MAPPING
+===================================== */
 
 const managerMap = {
 
-  1: "Devin",
-
-  2: "Hunter",
-
-  3: "Mike",
-
-  4: "Tom",
-
-  5: "Steve P.",
-
-  6: "Steve H.",
-
-  7: "Matt",
-
-  8: "Toby",
-
-  9: "Josh",
-
-  10: "Philip"
+1: "Devin",
+2: "Hunter",
+3: "Mike",
+4: "Tom",
+5: "Steve P.",
+6: "Steve H.",
+7: "Matt",
+8: "Toby",
+9: "Josh",
+10: "Philip"
 
 };
 
 
-/* ==========================================
-   LOAD AUTOMATIC ESPN STANDINGS
-========================================== */
+const managerToTeamId = {
 
-async function loadStandings() {
+"Devin": 1,
+"Hunter": 2,
+"Mike": 3,
+"Tom": 4,
+"Steve P.": 5,
+"Steve H.": 6,
+"Matt": 7,
+"Toby": 8,
+"Josh": 9,
+"Philip": 10
 
-  const standingsBody =
-    document.getElementById("standingsBody");
+};
 
-  try {
 
-    const response =
-      await fetch(
-        "league-data.json?v=" + Date.now()
-      );
 
-    if (!response.ok) {
-
-      throw new Error(
-        "Unable to load league-data.json"
-      );
-
-    }
-
-    const data =
-      await response.json();
-
-    let teams =
-      data.teams || [];
-
-
-    /*
-    Sort standings:
-
-    1. Wins
-    2. Win percentage
-    3. Points For
-    4. Team ID
-    */
-
-    teams.sort(function(a,b) {
-
-      if (b.wins !== a.wins) {
-
-        return b.wins - a.wins;
-
-      }
-
-      if (
-        (b.percentage || 0)
-        !==
-        (a.percentage || 0)
-      ) {
-
-        return
-          (b.percentage || 0)
-          -
-          (a.percentage || 0);
-
-      }
-
-      if (
-        (b.pointsFor || 0)
-        !==
-        (a.pointsFor || 0)
-      ) {
-
-        return
-          (b.pointsFor || 0)
-          -
-          (a.pointsFor || 0);
-
-      }
-
-      return a.teamId - b.teamId;
-
-    });
-
-
-    standingsBody.innerHTML = "";
-
-
-    teams.forEach(function(team,index) {
-
-      const row =
-        document.createElement("tr");
-
-
-      const manager =
-        managerMap[team.teamId]
-        ||
-        "Unknown";
-
-
-      const pointsFor =
-        Number(
-          team.pointsFor || 0
-        ).toFixed(2);
-
-
-      row.innerHTML = `
-
-        <td class="rank">
-          ${index + 1}
-        </td>
-
-        <td class="manager-cell">
-
-          <strong>
-            ${manager}
-          </strong>
-
-          <span class="fantasy-team">
-            ${team.teamName}
-          </span>
-
-        </td>
-
-        <td class="record-cell">
-          ${team.wins}
-        </td>
-
-        <td class="record-cell">
-          ${team.losses}
-        </td>
-
-        <td class="record-cell">
-          ${team.ties}
-        </td>
-
-        <td>
-          ${pointsFor}
-        </td>
-
-      `;
-
-
-      standingsBody.appendChild(row);
-
-    });
-
-
-    if (teams.length === 0) {
-
-      standingsBody.innerHTML = `
-
-        <tr>
-
-          <td
-            colspan="6"
-            class="standings-error">
-
-            ESPN returned no teams.
-
-          </td>
-
-        </tr>
-
-      `;
-
-    }
-
-  }
-
-  catch (error) {
-
-    console.error(
-      "Standings error:",
-      error
-    );
-
-
-    standingsBody.innerHTML = `
-
-      <tr>
-
-        <td
-          colspan="6"
-          class="standings-error">
-
-          ESPN standings are temporarily unavailable.
-
-        </td>
-
-      </tr>
-
-    `;
-
-  }
-
-}
-
-
-loadStandings();
-
-
-
-/* ==========================================
-   AUTOMATIC GAME OF THE WEEK
-========================================== */
+/* =====================================
+   GAME OF WEEK
+===================================== */
 
 const featuredGames = {
 
@@ -2020,148 +1480,643 @@ story: "🔥 RIVALRY WEEK"
 };
 
 
-/*
-Week 1 starts Tuesday,
-September 8, 2026.
-*/
+
+/* =====================================
+   CURRENT FANTASY WEEK
+===================================== */
 
 const weekOneStart =
-  new Date(
-    2026,
-    8,
-    8,
-    0,
-    0,
-    0
-  );
-
+new Date(2026,8,8,0,0,0);
 
 const today =
-  new Date();
-
+new Date();
 
 const millisecondsPerWeek =
-  7 *
-  24 *
-  60 *
-  60 *
-  1000;
-
+7 * 24 * 60 * 60 * 1000;
 
 let currentWeek = 1;
 
 
-if (
-  today >= weekOneStart
-) {
+if (today >= weekOneStart) {
 
-  currentWeek =
-    Math.floor(
-      (today - weekOneStart)
-      /
-      millisecondsPerWeek
-    )
-    +
-    1;
+currentWeek =
+Math.floor(
+(today - weekOneStart) /
+millisecondsPerWeek
+) + 1;
 
 }
 
 
-if (
-  currentWeek > 14
-) {
+if (currentWeek > 14) {
 
-  currentWeek = 14;
+currentWeek = 14;
 
 }
 
 
-const game =
-  featuredGames[currentWeek];
+const featuredGame =
+featuredGames[currentWeek];
 
 
 document.getElementById(
-  "weekNumber"
+"weekNumber"
 ).textContent =
-  "WEEK " + currentWeek;
+"WEEK " + currentWeek;
 
 
 document.getElementById(
-  "team1Name"
+"weeklyMatchupTitle"
 ).textContent =
-  game.team1;
+"Week " + currentWeek + " Matchups";
 
 
 document.getElementById(
-  "team2Name"
+"team1Name"
 ).textContent =
-  game.team2;
+featuredGame.team1;
 
 
 document.getElementById(
-  "storyline"
+"team2Name"
 ).textContent =
-  game.story;
+featuredGame.team2;
 
 
 document.getElementById(
-  "team1Initial"
+"team1Initial"
 ).textContent =
-  game.team1.charAt(0);
+featuredGame.team1.charAt(0);
 
 
 document.getElementById(
-  "team2Initial"
+"team2Initial"
 ).textContent =
-  game.team2.charAt(0);
+featuredGame.team2.charAt(0);
 
 
-/* ==========================================
+document.getElementById(
+"storyline"
+).textContent =
+featuredGame.story;
+
+
+
+/* =====================================
    WEEK STATUS
-========================================== */
+===================================== */
 
 const weekStatus =
-  document.getElementById(
-    "weekStatus"
-  );
+document.getElementById(
+"weekStatus"
+);
 
 
-if (
-  today < weekOneStart
-) {
+if (today < weekOneStart) {
 
-  const daysUntil =
-    Math.ceil(
-      (weekOneStart - today)
-      /
-      (1000 * 60 * 60 * 24)
-    );
+const daysUntil =
+Math.ceil(
+(weekOneStart - today) /
+(1000 * 60 * 60 * 24)
+);
 
-
-  weekStatus.textContent =
-    "Week 1 begins in "
-    +
-    daysUntil
-    +
-    " days";
+weekStatus.textContent =
+"Week 1 begins in " +
+daysUntil +
+" days";
 
 }
 
-else if (
-  currentWeek === 14
-) {
+else if (currentWeek === 14) {
 
-  weekStatus.textContent =
-    "🔥 Rivalry Week";
+weekStatus.textContent =
+"🔥 Rivalry Week";
 
 }
 
 else {
 
-  weekStatus.textContent =
-    "2026 Regular Season";
+weekStatus.textContent =
+"2026 Regular Season";
 
 }
+
+
+
+/* =====================================
+   LOAD ESPN DATA
+===================================== */
+
+async function loadESPNData() {
+
+const standingsBody =
+document.getElementById(
+"standingsBody"
+);
+
+const weeklyGames =
+document.getElementById(
+"weeklyGames"
+);
+
+
+try {
+
+const response =
+await fetch(
+"league-data.json?v=" +
+Date.now()
+);
+
+
+if (!response.ok) {
+
+throw new Error(
+"Could not load ESPN data"
+);
+
+}
+
+
+const data =
+await response.json();
+
+
+const teams =
+data.teams || [];
+
+
+const schedule =
+data.schedule || [];
+
+
+/* =====================================
+   TEAM LOOKUP
+===================================== */
+
+const teamLookup = {};
+
+
+teams.forEach(function(team) {
+
+teamLookup[team.teamId] =
+team;
+
+});
+
+
+
+/* =====================================
+   LAST UPDATED
+===================================== */
+
+if (data.lastUpdated) {
+
+const updateDate =
+new Date(
+data.lastUpdated
+);
+
+document.getElementById(
+"syncTime"
+).textContent =
+"Last synced: " +
+updateDate.toLocaleString();
+
+}
+
+else {
+
+document.getElementById(
+"syncTime"
+).textContent =
+"Connected to ESPN";
+
+}
+
+
+
+/* =====================================
+   STANDINGS
+===================================== */
+
+teams.sort(function(a,b) {
+
+if (b.wins !== a.wins) {
+
+return b.wins - a.wins;
+
+}
+
+
+if (
+(b.percentage || 0)
+!== 
+(a.percentage || 0)
+) {
+
+return
+(b.percentage || 0)
+-
+(a.percentage || 0);
+
+}
+
+
+if (
+(b.pointsFor || 0)
+!== 
+(a.pointsFor || 0)
+) {
+
+return
+(b.pointsFor || 0)
+-
+(a.pointsFor || 0);
+
+}
+
+
+return a.teamId - b.teamId;
+
+});
+
+
+standingsBody.innerHTML = "";
+
+
+teams.forEach(function(team,index) {
+
+const manager =
+managerMap[team.teamId]
+||
+"Unknown";
+
+
+const row =
+document.createElement(
+"tr"
+);
+
+
+row.innerHTML = `
+
+<td class="rank">
+${index + 1}
+</td>
+
+<td class="manager-cell">
+
+<strong>
+${manager}
+</strong>
+
+<span class="fantasy-team">
+${team.teamName}
+</span>
+
+</td>
+
+<td>
+${team.wins}
+</td>
+
+<td>
+${team.losses}
+</td>
+
+<td>
+${team.ties}
+</td>
+
+<td>
+${Number(team.pointsFor || 0).toFixed(2)}
+</td>
+
+`;
+
+
+standingsBody.appendChild(
+row
+);
+
+});
+
+
+
+/* =====================================
+   CURRENT WEEK MATCHUPS
+===================================== */
+
+const currentMatchups =
+schedule.filter(
+function(game) {
+
+return (
+game.matchupPeriodId
+===
+currentWeek
+);
+
+}
+);
+
+
+weeklyGames.innerHTML = "";
+
+
+currentMatchups.forEach(
+function(game) {
+
+
+const homeManager =
+managerMap[
+game.homeTeamId
+]
+||
+"Unknown";
+
+
+const awayManager =
+managerMap[
+game.awayTeamId
+]
+||
+"Unknown";
+
+
+const homeTeam =
+teamLookup[
+game.homeTeamId
+];
+
+
+const awayTeam =
+teamLookup[
+game.awayTeamId
+];
+
+
+const homeName =
+homeTeam
+?
+homeTeam.teamName
+:
+"";
+
+
+const awayName =
+awayTeam
+?
+awayTeam.teamName
+:
+"";
+
+
+const featuredTeam1 =
+managerToTeamId[
+featuredGame.team1
+];
+
+
+const featuredTeam2 =
+managerToTeamId[
+featuredGame.team2
+];
+
+
+const isFeatured =
+(
+game.homeTeamId === featuredTeam1
+&&
+game.awayTeamId === featuredTeam2
+)
+||
+(
+game.homeTeamId === featuredTeam2
+&&
+game.awayTeamId === featuredTeam1
+);
+
+
+let gameStatus =
+"Scheduled";
+
+
+if (
+game.winner
+&&
+game.winner !== "UNDECIDED"
+) {
+
+gameStatus =
+"FINAL";
+
+}
+
+
+const card =
+document.createElement(
+"div"
+);
+
+
+card.className =
+"weekly-game"
++
+(
+isFeatured
+?
+" featured"
+:
+""
+);
+
+
+card.innerHTML = `
+
+<div class="weekly-team-left">
+
+<span class="weekly-manager">
+${awayManager}
+</span>
+
+<span class="weekly-fantasy-name">
+${awayName}
+</span>
+
+</div>
+
+
+<div class="weekly-score">
+
+<strong>
+${Number(game.awayScore || 0).toFixed(2)}
+&nbsp; — &nbsp;
+${Number(game.homeScore || 0).toFixed(2)}
+</strong>
+
+<span>
+${isFeatured ? "Game of the Week • " : ""}
+${gameStatus}
+</span>
+
+</div>
+
+
+<div class="weekly-team-right">
+
+<span class="weekly-manager">
+${homeManager}
+</span>
+
+<span class="weekly-fantasy-name">
+${homeName}
+</span>
+
+</div>
+
+`;
+
+
+weeklyGames.appendChild(
+card
+);
+
+
+
+/* =====================================
+   FEATURED SCORE
+===================================== */
+
+if (isFeatured) {
+
+
+let firstScore;
+let secondScore;
+
+
+if (
+game.homeTeamId
+===
+featuredTeam1
+) {
+
+firstScore =
+game.homeScore;
+
+secondScore =
+game.awayScore;
+
+}
+
+else {
+
+firstScore =
+game.awayScore;
+
+secondScore =
+game.homeScore;
+
+}
+
+
+document.getElementById(
+"team1Score"
+).textContent =
+Number(
+firstScore || 0
+).toFixed(2);
+
+
+document.getElementById(
+"team2Score"
+).textContent =
+Number(
+secondScore || 0
+).toFixed(2);
+
+
+document.getElementById(
+"featuredStatus"
+).textContent =
+gameStatus;
+
+}
+
+}
+);
+
+
+
+if (
+currentMatchups.length === 0
+) {
+
+weeklyGames.innerHTML = `
+
+<div class="loading">
+
+No ESPN matchups are available
+for Week ${currentWeek} yet.
+
+</div>
+
+`;
+
+}
+
+
+}
+
+catch (error) {
+
+
+console.error(
+error
+);
+
+
+standingsBody.innerHTML = `
+
+<tr>
+
+<td
+colspan="6"
+class="error-message">
+
+ESPN standings are temporarily unavailable.
+
+</td>
+
+</tr>
+
+`;
+
+
+weeklyGames.innerHTML = `
+
+<div class="error-message">
+
+ESPN matchup scores are temporarily unavailable.
+
+</div>
+
+`;
+
+
+document.getElementById(
+"syncTime"
+).textContent =
+"ESPN sync unavailable";
+
+}
+
+}
+
+
+loadESPNData();
+
 
 </script>
 
