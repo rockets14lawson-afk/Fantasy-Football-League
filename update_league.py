@@ -1,6 +1,7 @@
 import json
 import os
 import requests
+from datetime import datetime, timezone
 
 LEAGUE_ID = "90156758"
 SEASON = "2026"
@@ -13,9 +14,11 @@ url = (
     f"seasons/{SEASON}/segments/0/leagues/{LEAGUE_ID}"
 )
 
-params = {
-    "view": ["mTeam", "mStandings"]
-}
+params = [
+    ("view", "mTeam"),
+    ("view", "mStandings"),
+    ("view", "mMatchupScore")
+]
 
 cookies = {
     "espn_s2": ESPN_S2,
@@ -33,6 +36,11 @@ response.raise_for_status()
 
 data = response.json()
 
+
+# -----------------------------
+# TEAMS / STANDINGS
+# -----------------------------
+
 teams = []
 
 for team in data.get("teams", []):
@@ -43,7 +51,9 @@ for team in data.get("teams", []):
         "teamId": team.get("id"),
         "teamName": (
             team.get("name")
-            or f"{team.get('location', '')} {team.get('nickname', '')}".strip()
+            or
+            f"{team.get('location', '')} "
+            f"{team.get('nickname', '')}".strip()
         ),
         "wins": record.get("wins", 0),
         "losses": record.get("losses", 0),
@@ -53,6 +63,7 @@ for team in data.get("teams", []):
         "percentage": record.get("percentage", 0)
     })
 
+
 teams.sort(
     key=lambda x: (
         -x["wins"],
@@ -61,13 +72,56 @@ teams.sort(
     )
 )
 
+
+# -----------------------------
+# WEEKLY MATCHUPS
+# -----------------------------
+
+schedule = []
+
+for matchup in data.get("schedule", []):
+
+    home = matchup.get("home", {})
+    away = matchup.get("away", {})
+
+    schedule.append({
+        "matchupPeriodId": matchup.get("matchupPeriodId"),
+        "homeTeamId": home.get("teamId"),
+        "homeScore": round(home.get("totalPoints", 0), 2),
+        "awayTeamId": away.get("teamId"),
+        "awayScore": round(away.get("totalPoints", 0), 2),
+        "winner": matchup.get("winner", "UNDECIDED")
+    })
+
+
+# -----------------------------
+# OUTPUT
+# -----------------------------
+
 output = {
     "leagueId": LEAGUE_ID,
     "season": SEASON,
-    "teams": teams
+    "lastUpdated": datetime.now(timezone.utc).isoformat(),
+    "teams": teams,
+    "schedule": schedule
 }
 
-with open("league-data.json", "w", encoding="utf-8") as f:
-    json.dump(output, f, indent=2)
 
-print("league-data.json updated successfully")
+with open(
+    "league-data.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        output,
+        f,
+        indent=2
+    )
+
+
+print(
+    f"league-data.json updated: "
+    f"{len(teams)} teams, "
+    f"{len(schedule)} matchups"
+)
