@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Managers | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: white;
+}
+
+header {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+    linear-gradient(180deg,#111,#050505);
+
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+  color: #d4af37;
+  font-size: clamp(42px,7vw,72px);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.container {
+  width: min(1150px,92%);
+  margin: auto;
+  padding: 40px 0 70px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.intro h2 {
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.intro p {
+  color: #999;
+}
+
+.manager-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.manager-card {
+  background: linear-gradient(145deg,#151515,#0d0d0d);
+  border: 1px solid #303030;
+  border-radius: 16px;
+  padding: 24px;
+  transition: .2s;
+}
+
+.manager-card:hover {
+  transform: translateY(-4px);
+  border-color: #d4af37;
+}
+
+.manager-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.manager-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #d4af37;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.manager-name h2 {
+  margin: 0;
+  color: white;
+}
+
+.manager-name span {
+  color: #d4af37;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+
+.stat {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.stat strong {
+  color: #d4af37;
+  font-size: 18px;
+}
+
+.profile-button {
+  display: block;
+  margin-top: 18px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.profile-button:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.champion {
+  border-color: #d4af37;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+@media (max-width: 800px) {
+  .manager-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>League Managers</h1>
+  <p>JDC Degenerates Fantasy Football</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="index.html#standings">Standings</a>
+  <a href="managers.html">Managers</a>
+  <a href="history.html">History</a>
+  <a href="index.html#records">Records</a>
+</nav>
+
+<div class="container">
+
+<div class="intro">
+  <h2>2026 League Members</h2>
+  <p>Career profiles and league history for every manager.</p>
+</div>
+
+<div class="manager-grid">
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">D</div>
+    <div class="manager-name">
+      <h2>Devin</h2>
+      <span>League Commissioner</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card champion">
+  <div class="manager-top">
+    <div class="manager-icon">T</div>
+    <div class="manager-name">
+      <h2>Toby</h2>
+      <span>2022 Champion 🏆</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>1</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>1st</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">T</div>
+    <div class="manager-name">
+      <h2>Tom</h2>
+      <span>Manager</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">M</div>
+    <div class="manager-name">
+      <h2>Matt</h2>
+      <span>Manager</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">P</div>
+    <div class="manager-name">
+      <h2>Philip</h2>
+      <span>2025 Runner-Up</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>2nd</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card champion">
+  <div class="manager-top">
+    <div class="manager-icon">M</div>
+    <div class="manager-name">
+      <h2>Mike</h2>
+      <span>2024 Champion 🏆</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>1</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>1st</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card champion">
+  <div class="manager-top">
+    <div class="manager-icon">J</div>
+    <div class="manager-name">
+      <h2>Josh</h2>
+      <span>2023 Champion 🏆</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>1</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>1st</strong></div>
+    <div class="stat"><span>Career Record</span><strong>—</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">S</div>
+    <div class="manager-name">
+      <h2>Steve P.</h2>
+      <span>2026 Rookie</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>0-0</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">S</div>
+    <div class="manager-name">
+      <h2>Steve H.</h2>
+      <span>2026 Rookie</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>0-0</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+
+<div class="manager-card">
+  <div class="manager-top">
+    <div class="manager-icon">H</div>
+    <div class="manager-name">
+      <h2>Hunter</h2>
+      <span>2026 Rookie</span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Titles</span><strong>0</strong></div>
+    <div class="stat"><span>Best Finish</span><strong>—</strong></div>
+    <div class="stat"><span>Career Record</span><strong>0-0</strong></div>
+  </div>
+
+  <a class="profile-button" href="#">View Profile</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+  <strong>JDC Degenerates</strong>
+  <br><br>
+  Fantasy Football League • Est. 2022
+</footer>
+
+</body>
+</html>
