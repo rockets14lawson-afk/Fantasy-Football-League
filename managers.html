@@ -84,7 +84,7 @@ nav a:hover {
 
 .intro {
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto 35px;
 }
 
@@ -98,14 +98,27 @@ nav a:hover {
   line-height: 1.6;
 }
 
+.sync-box {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  padding: 10px 14px;
+
+  text-align: center;
+
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+
+  font-size: 11px;
+}
+
 .manager-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
 }
-
-
-/* MANAGER CARDS */
 
 .manager-card {
   background: linear-gradient(145deg,#151515,#0d0d0d);
@@ -163,8 +176,12 @@ nav a:hover {
   font-weight: bold;
 }
 
-
-/* STATS */
+.manager-subname {
+  display: block;
+  color: #777 !important;
+  font-size: 11px !important;
+  margin-top: 4px;
+}
 
 .stats {
   display: grid;
@@ -194,9 +211,6 @@ nav a:hover {
   font-size: 16px;
 }
 
-
-/* PROFILE BUTTON */
-
 .profile-button {
   width: 100%;
   margin-top: 18px;
@@ -219,9 +233,6 @@ nav a:hover {
   color: black;
 }
 
-
-/* EXPANDED HEAD TO HEAD */
-
 .profile {
   display: none;
   border-top: 1px solid #333;
@@ -240,25 +251,82 @@ nav a:hover {
   border-bottom: 1px solid #333;
 }
 
+.profile-section {
+  margin-top: 25px;
+}
+
+.profile-section h4 {
+  color: #d4af37;
+  margin: 0 0 12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+
+.career-box {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 13px;
+  text-align: center;
+}
+
+.career-box span {
+  display: block;
+  color: #777;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin-bottom: 7px;
+}
+
+.career-box strong {
+  color: #d4af37;
+  font-size: 15px;
+}
+
+.season-row,
 .h2h-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  gap: 10px;
 
   padding: 11px 5px;
   border-bottom: 1px solid #222;
 }
 
+.season-row {
+  grid-template-columns: 65px 1fr 1fr 1fr;
+}
+
+.h2h-row {
+  grid-template-columns: 1fr auto auto;
+}
+
+.season-row:last-child,
 .h2h-row:last-child {
   border-bottom: none;
 }
 
-.opponent {
-  color: #ccc;
+.season-year {
+  color: #d4af37;
+  font-weight: 900;
+}
+
+.muted {
+  color: #888;
 }
 
 .h2h-record {
   font-weight: 900;
+  min-width: 55px;
+  text-align: center;
 }
 
 .winning {
@@ -273,15 +341,55 @@ nav a:hover {
   color: #d4af37;
 }
 
+.h2h-points {
+  color: #888;
+  font-size: 11px;
+  min-width: 120px;
+  text-align: right;
+}
+
+.game-history {
+  margin-top: 7px;
+  padding-left: 15px;
+}
+
+.game-history details {
+  border-bottom: 1px solid #1d1d1d;
+  padding: 7px 0;
+}
+
+.game-history summary {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.game-result {
+  padding: 8px 0 3px;
+  color: #ddd;
+  font-size: 12px;
+}
+
+.win-text {
+  color: #65d68a;
+}
+
+.loss-text {
+  color: #ff7777;
+}
+
 .rookie-message {
   color: #999;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   line-height: 1.6;
 }
 
-
-/* FOOTER */
+.loading {
+  color: #999;
+  text-align: center;
+  padding: 20px;
+}
 
 footer {
   text-align: center;
@@ -293,9 +401,6 @@ footer {
 footer strong {
   color: #d4af37;
 }
-
-
-/* MOBILE */
 
 @media (max-width: 1000px) {
 
@@ -309,6 +414,27 @@ footer strong {
 
   .manager-grid {
     grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .career-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .season-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .h2h-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .h2h-points {
+    grid-column: 1 / -1;
+    text-align: left;
   }
 
 }
@@ -330,7 +456,6 @@ footer strong {
 
 
 <body>
-
 
 <header>
 
@@ -375,897 +500,25 @@ ESPN League
 
 <div class="container">
 
-
 <div class="intro">
 
 <h2>JDC Degenerates Career Profiles</h2>
 
 <p>
-Regular-season records, playoff performance, best finishes,
-championships and head-to-head history.
+Career records, championships and finishes are shown on each card.
+Open a manager's profile for ESPN-powered scoring history,
+season-by-season results and head-to-head matchups.
 </p>
 
 </div>
 
 
-<div class="manager-grid">
-
-
-<!-- DEVIN -->
-
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">D</div>
-
-<div class="manager-name">
-<h2>Devin</h2>
-<span>League Commissioner</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>31-25</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>55.4%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>2-3</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>3rd</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('devin',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="devin">
-
-<h3>Devin — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record winning">4-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record losing">3-5</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record winning">5-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record even">1-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record even">2-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record winning">2-1</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- TOBY -->
-
-<div class="manager-card champion">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">T</div>
-
-<div class="manager-name">
-<h2>Toby</h2>
-<span>2022 Champion 🏆</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>32-24</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>57.1%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>3-2</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>1st</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>1 🏆</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('toby',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="toby">
-
-<h3>Toby — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record winning">5-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record losing">3-4</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record losing">1-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record winning">5-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record losing">1-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record losing">3-5</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- TOM -->
-
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">T</div>
-
-<div class="manager-name">
-<h2>Tom</h2>
-<span>Manager</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>27-29</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>48.2%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>0-2</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>5th</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('tom',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="tom">
-
-<h3>Tom — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record losing">1-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record even">3-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record losing">2-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record winning">4-3</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record losing">0-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record winning">5-3</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- MATT -->
-
-<div class="manager-card champion">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">M</div>
-
-<div class="manager-name">
-<h2>Matt</h2>
-<span>2025 Champion 🏆</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>16-28</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>36.4%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>3-0</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>1st</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>1 🏆</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('matt',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="matt">
-
-<h3>Matt — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record winning">2-0</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record losing">3-4</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record losing">1-5</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record losing">0-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record even">1-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record even">2-2</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- PHILIP -->
-
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">P</div>
-
-<div class="manager-name">
-<h2>Philip</h2>
-<span>2025 Runner-Up</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>23-6</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>79.3%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>3-2</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>2nd</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('philip',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="philip">
-
-<h3>Philip — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record winning">4-0</span>
+<div class="sync-box" id="historySync">
+Loading ESPN historical profiles...
 </div>
 
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record winning">2-0</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record winning">2-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record winning">4-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record even">1-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record losing">1-2</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- MIKE -->
-
-<div class="manager-card champion">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">M</div>
-
-<div class="manager-name">
-<h2>Mike</h2>
-<span>2024 Champion 🏆</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>16-13</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>55.2%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>2-1</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>1st</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>1 🏆</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('mike',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="mike">
-
-<h3>Mike — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Josh</span>
-<span class="h2h-record winning">2-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record winning">3-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record winning">3-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record even">1-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record winning">1-0</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record losing">1-4</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- JOSH -->
-
-<div class="manager-card champion">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">J</div>
-
-<div class="manager-name">
-<h2>Josh</h2>
-<span>2023 Champion 🏆</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>28-27</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>50.9%</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>2-1</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>1st</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>1 🏆</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('josh',this)">
-View Head-to-Head
-</button>
-
-</div>
-
-
-<div class="profile" id="josh">
-
-<h3>Josh — Head-to-Head</h3>
-
-<div class="h2h-row">
-<span class="opponent">vs Devin</span>
-<span class="h2h-record losing">2-4</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Tom</span>
-<span class="h2h-record winning">2-1</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Toby</span>
-<span class="h2h-record losing">3-5</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Mike</span>
-<span class="h2h-record losing">1-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Matt</span>
-<span class="h2h-record losing">0-2</span>
-</div>
-
-<div class="h2h-row">
-<span class="opponent">vs Philip</span>
-<span class="h2h-record losing">0-4</span>
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- HUNTER -->
 
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">H</div>
-
-<div class="manager-name">
-<h2>Hunter</h2>
-<span>2026 Rookie</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('hunter',this)">
-View Profile
-</button>
-
-</div>
-
-
-<div class="profile" id="hunter">
-
-<h3>Hunter — Career Profile</h3>
-
-<div class="rookie-message">
-2026 will be Hunter's first season in the JDC Degenerates.
-No regular-season, playoff or head-to-head history yet.
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- STEVE H. -->
-
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">S</div>
-
-<div class="manager-name">
-<h2>Steve H.</h2>
-<span>2026 Rookie</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('steveh',this)">
-View Profile
-</button>
-
-</div>
-
-
-<div class="profile" id="steveh">
-
-<h3>Steve H. — Career Profile</h3>
-
-<div class="rookie-message">
-2026 will be Steve H.'s first season in the JDC Degenerates.
-No regular-season, playoff or head-to-head history yet.
-</div>
-
-</div>
-
-</div>
-
-
-
-<!-- STEVE P. -->
-
-<div class="manager-card">
-
-<div class="manager-main">
-
-<div class="manager-top">
-
-<div class="manager-icon">S</div>
-
-<div class="manager-name">
-<h2>Steve P.</h2>
-<span>2026 Rookie</span>
-</div>
-
-</div>
-
-
-<div class="stats">
-
-<div class="stat">
-<span>Regular Season</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Win %</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Playoffs</span>
-<strong>0-0</strong>
-</div>
-
-<div class="stat">
-<span>Best Finish</span>
-<strong>—</strong>
-</div>
-
-<div class="stat">
-<span>Titles</span>
-<strong>0</strong>
-</div>
-
-</div>
-
-
-<button class="profile-button" onclick="toggleProfile('stevep',this)">
-View Profile
-</button>
-
-</div>
-
-
-<div class="profile" id="stevep">
-
-<h3>Steve P. — Career Profile</h3>
-
-<div class="rookie-message">
-2026 will be Steve P.'s first season in the JDC Degenerates.
-No regular-season, playoff or head-to-head history yet.
-</div>
-
-</div>
-
-</div>
-
-
-</div>
+<div class="manager-grid" id="managerGrid"></div>
 
 </div>
 
@@ -1283,61 +536,1158 @@ Fantasy Football League • Est. 2022
 
 <script>
 
-function toggleProfile(id, button) {
+/* =========================================================
+   MANAGER CONFIG
+========================================================= */
 
-  const selectedProfile =
-    document.getElementById(id);
+const managers = [
+
+  {
+    name: "Devin",
+    display: "Devin",
+    subtitle: "League Commissioner",
+    initial: "D",
+    record: "31-25",
+    winPct: "55.4%",
+    playoffs: "2-3",
+    bestFinish: "3rd",
+    titles: 0,
+    champion: false
+  },
+
+  {
+    name: "Toby",
+    display: "Toby",
+    subtitle: "2022 Champion 🏆",
+    initial: "T",
+    record: "32-24",
+    winPct: "57.1%",
+    playoffs: "3-2",
+    bestFinish: "1st",
+    titles: 1,
+    champion: true
+  },
+
+  {
+    name: "Tom",
+    display: "Tom",
+    subtitle: "Manager",
+    initial: "T",
+    record: "27-29",
+    winPct: "48.2%",
+    playoffs: "0-2",
+    bestFinish: "5th",
+    titles: 0,
+    champion: false
+  },
+
+  {
+    name: "Matt",
+    display: "Matt",
+    subtitle: "2025 Champion 🏆",
+    initial: "M",
+    record: "16-28",
+    winPct: "36.4%",
+    playoffs: "3-0",
+    bestFinish: "1st",
+    titles: 1,
+    champion: true
+  },
+
+  {
+    name: "Philip",
+    display: "Philip",
+    subtitle: "Two-Time Runner-Up",
+    initial: "P",
+    record: "23-6",
+    winPct: "79.3%",
+    playoffs: "3-2",
+    bestFinish: "2nd",
+    titles: 0,
+    champion: false
+  },
+
+  {
+    name: "Mike",
+    display: "Mike",
+    subtitle: "2024 Champion 🏆",
+    initial: "M",
+    record: "16-13",
+    winPct: "55.2%",
+    playoffs: "2-1",
+    bestFinish: "1st",
+    titles: 1,
+    champion: true
+  },
+
+  {
+    name: "Josh",
+    display: "Josh",
+    subtitle: "2023 Champion 🏆",
+    initial: "J",
+    record: "28-27",
+    winPct: "50.9%",
+    playoffs: "2-1",
+    bestFinish: "1st",
+    titles: 1,
+    champion: true
+  },
+
+  {
+    name: "Hunter",
+    display: "Hunter",
+    subtitle: "2026 Rookie",
+    initial: "H",
+    record: "0-0",
+    winPct: "—",
+    playoffs: "0-0",
+    bestFinish: "—",
+    titles: 0,
+    champion: false,
+    rookie: true
+  },
+
+  {
+    name: "Steve H.",
+    display: "Steve",
+    subtitle: "2026 Rookie",
+    subname: "ESPN / Schedule: Steve H.",
+    initial: "S",
+    record: "0-0",
+    winPct: "—",
+    playoffs: "0-0",
+    bestFinish: "—",
+    titles: 0,
+    champion: false,
+    rookie: true
+  },
+
+  {
+    name: "Steve P.",
+    display: "Dr. Steve",
+    subtitle: "2026 Rookie",
+    subname: "ESPN / Schedule: Steve P.",
+    initial: "S",
+    record: "0-0",
+    winPct: "—",
+    playoffs: "0-0",
+    bestFinish: "—",
+    titles: 0,
+    champion: false,
+    rookie: true
+  }
+
+];
+
+
+const currentVeterans = [
+  "Devin",
+  "Toby",
+  "Tom",
+  "Matt",
+  "Philip",
+  "Mike",
+  "Josh"
+];
+
+
+/* =========================================================
+   INITIAL CARDS
+========================================================= */
+
+function buildManagerCards() {
+
+  const grid =
+  document.getElementById("managerGrid");
+
+  grid.innerHTML = "";
+
+  managers.forEach(function(manager,index) {
+
+    const card =
+    document.createElement("div");
+
+    card.className =
+    "manager-card" +
+    (manager.champion ? " champion" : "");
+
+    card.innerHTML = `
+
+    <div class="manager-main">
+
+      <div class="manager-top">
+
+        <div class="manager-icon">
+        ${manager.initial}
+        </div>
+
+        <div class="manager-name">
+
+          <h2>
+          ${manager.display}
+          </h2>
+
+          <span>
+          ${manager.subtitle}
+          </span>
+
+          ${
+            manager.subname
+            ?
+            `<span class="manager-subname">${manager.subname}</span>`
+            :
+            ""
+          }
+
+        </div>
+
+      </div>
+
+
+      <div class="stats">
+
+        <div class="stat">
+          <span>Regular Season</span>
+          <strong>${manager.record}</strong>
+        </div>
+
+        <div class="stat">
+          <span>Win %</span>
+          <strong>${manager.winPct}</strong>
+        </div>
+
+        <div class="stat">
+          <span>Playoffs</span>
+          <strong>${manager.playoffs}</strong>
+        </div>
+
+        <div class="stat">
+          <span>Best Finish</span>
+          <strong>${manager.bestFinish}</strong>
+        </div>
+
+        <div class="stat">
+          <span>Titles</span>
+          <strong>
+          ${manager.titles}${manager.titles ? " 🏆" : ""}
+          </strong>
+        </div>
+
+      </div>
+
+
+      <button
+        class="profile-button"
+        onclick="toggleProfile('profile-${index}',this)">
+
+        ${
+          manager.rookie
+          ?
+          "View Profile"
+          :
+          "View ESPN Career Profile"
+        }
+
+      </button>
+
+    </div>
+
+
+    <div
+      class="profile"
+      id="profile-${index}"
+      data-manager="${manager.name}">
+
+      <div class="loading">
+      Loading ESPN history...
+      </div>
+
+    </div>
+
+    `;
+
+    grid.appendChild(card);
+
+  });
+
+}
+
+
+/* =========================================================
+   TOGGLE PROFILES
+========================================================= */
+
+function toggleProfile(id,button) {
+
+  const profile =
+  document.getElementById(id);
 
   const wasOpen =
-    selectedProfile.classList.contains("open");
+  profile.classList.contains("open");
 
 
   document
-    .querySelectorAll(".profile")
-    .forEach(function(profile) {
+  .querySelectorAll(".profile")
+  .forEach(function(item) {
 
-      profile.classList.remove("open");
+    item.classList.remove("open");
 
-    });
+  });
 
 
   document
-    .querySelectorAll(".profile-button")
-    .forEach(function(btn) {
+  .querySelectorAll(".profile-button")
+  .forEach(function(btn,index) {
 
-      if (
-        btn.parentElement.parentElement
-        .querySelector(".manager-name span")
-        .textContent.includes("Rookie")
-      ) {
+    const manager =
+    managers[index];
 
-        btn.textContent = "View Profile";
+    btn.textContent =
+    manager.rookie
+    ?
+    "View Profile"
+    :
+    "View ESPN Career Profile";
 
-      }
-
-      else {
-
-        btn.textContent = "View Head-to-Head";
-
-      }
-
-    });
+  });
 
 
   if (!wasOpen) {
 
-    selectedProfile.classList.add("open");
+    profile.classList.add("open");
 
-    button.textContent = "Close Profile";
+    button.textContent =
+    "Close Profile";
 
   }
 
 }
 
+
+/* =========================================================
+   ESPN HISTORY
+========================================================= */
+
+async function loadHistory() {
+
+  try {
+
+    const response =
+    await fetch(
+      "league-history.json?v=" +
+      Date.now()
+    );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Could not load league-history.json"
+      );
+
+    }
+
+
+    const data =
+    await response.json();
+
+
+    if (data.lastUpdated) {
+
+      const update =
+      new Date(data.lastUpdated);
+
+      document.getElementById(
+        "historySync"
+      ).textContent =
+      "Historical ESPN data last synced: " +
+      update.toLocaleString();
+
+    }
+
+    else {
+
+      document.getElementById(
+        "historySync"
+      ).textContent =
+      "Connected to ESPN historical data";
+
+    }
+
+
+    const games = [];
+
+
+    Object.entries(
+      data.seasons || {}
+    )
+    .forEach(function([season,seasonData]) {
+
+      (
+        seasonData.matchups
+        ||
+        []
+      )
+      .forEach(function(game) {
+
+        if (
+          game.awayManager === "UNKNOWN"
+          ||
+          game.homeManager === "UNKNOWN"
+        ) {
+
+          return;
+
+        }
+
+
+        const awayScore =
+        Number(game.awayScore);
+
+        const homeScore =
+        Number(game.homeScore);
+
+
+        if (
+          !Number.isFinite(awayScore)
+          ||
+          !Number.isFinite(homeScore)
+        ) {
+
+          return;
+
+        }
+
+
+        if (
+          awayScore === 0
+          &&
+          homeScore === 0
+        ) {
+
+          return;
+
+        }
+
+
+        games.push({
+
+          ...game,
+
+          season:
+          Number(season),
+
+          awayScore,
+          homeScore
+
+        });
+
+      });
+
+    });
+
+
+    managers.forEach(function(manager,index) {
+
+      buildProfile(
+        manager,
+        index,
+        games
+      );
+
+    });
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    document.getElementById(
+      "historySync"
+    ).textContent =
+    "ESPN historical profiles unavailable";
+
+
+    document
+    .querySelectorAll(".profile")
+    .forEach(function(profile) {
+
+      profile.innerHTML = `
+
+      <div class="rookie-message">
+      Historical ESPN data is temporarily unavailable.
+      </div>
+
+      `;
+
+    });
+
+  }
+
+}
+
+
+/* =========================================================
+   BUILD PROFILE
+========================================================= */
+
+function buildProfile(manager,index,allGames) {
+
+  const container =
+  document.getElementById(
+    "profile-" + index
+  );
+
+
+  const managerGames =
+  allGames.filter(function(game) {
+
+    return (
+      game.awayManager === manager.name
+      ||
+      game.homeManager === manager.name
+    );
+
+  });
+
+
+  if (managerGames.length === 0) {
+
+    container.innerHTML = `
+
+    <h3>
+    ${manager.display} — Career Profile
+    </h3>
+
+    <div class="rookie-message">
+
+    2026 will be ${manager.display}'s first season
+    in the JDC Degenerates.
+
+    <br><br>
+
+    No ESPN regular-season, playoff or
+    head-to-head history yet.
+
+    </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  let totalPoints = 0;
+
+  let high = null;
+  let low = null;
+
+  let biggestWin = null;
+  let worstLoss = null;
+
+
+  const seasonStats = {};
+
+  const h2h = {};
+
+
+  managerGames.forEach(function(game) {
+
+    const isAway =
+    game.awayManager === manager.name;
+
+
+    const score =
+    isAway
+    ?
+    game.awayScore
+    :
+    game.homeScore;
+
+
+    const opponentScore =
+    isAway
+    ?
+    game.homeScore
+    :
+    game.awayScore;
+
+
+    const opponent =
+    isAway
+    ?
+    game.homeManager
+    :
+    game.awayManager;
+
+
+    totalPoints += score;
+
+
+    if (
+      high === null
+      ||
+      score > high.score
+    ) {
+
+      high = {
+        score,
+        opponent,
+        season: game.season,
+        week: game.week
+      };
+
+    }
+
+
+    if (
+      low === null
+      ||
+      score < low.score
+    ) {
+
+      low = {
+        score,
+        opponent,
+        season: game.season,
+        week: game.week
+      };
+
+    }
+
+
+    const margin =
+    Math.abs(
+      score - opponentScore
+    );
+
+
+    let result = "T";
+
+
+    if (score > opponentScore) {
+
+      result = "W";
+
+
+      if (
+        !biggestWin
+        ||
+        margin > biggestWin.margin
+      ) {
+
+        biggestWin = {
+          margin,
+          score,
+          opponentScore,
+          opponent,
+          season: game.season,
+          week: game.week
+        };
+
+      }
+
+    }
+
+    else if (score < opponentScore) {
+
+      result = "L";
+
+
+      if (
+        !worstLoss
+        ||
+        margin > worstLoss.margin
+      ) {
+
+        worstLoss = {
+          margin,
+          score,
+          opponentScore,
+          opponent,
+          season: game.season,
+          week: game.week
+        };
+
+      }
+
+    }
+
+
+    /* SEASON STATS */
+
+    if (!seasonStats[game.season]) {
+
+      seasonStats[game.season] = {
+        games: 0,
+        wins: 0,
+        losses: 0,
+        ties: 0,
+        points: 0
+      };
+
+    }
+
+
+    const season =
+    seasonStats[game.season];
+
+    season.games++;
+    season.points += score;
+
+
+    if (result === "W") {
+      season.wins++;
+    }
+
+    else if (result === "L") {
+      season.losses++;
+    }
+
+    else {
+      season.ties++;
+    }
+
+
+    /* HEAD TO HEAD */
+
+    if (!h2h[opponent]) {
+
+      h2h[opponent] = {
+        wins: 0,
+        losses: 0,
+        ties: 0,
+        pointsFor: 0,
+        pointsAgainst: 0,
+        games: []
+      };
+
+    }
+
+
+    const series =
+    h2h[opponent];
+
+    series.pointsFor += score;
+    series.pointsAgainst += opponentScore;
+
+
+    if (result === "W") {
+      series.wins++;
+    }
+
+    else if (result === "L") {
+      series.losses++;
+    }
+
+    else {
+      series.ties++;
+    }
+
+
+    series.games.push({
+
+      result,
+      season: game.season,
+      week: game.week,
+      score,
+      opponentScore
+
+    });
+
+  });
+
+
+  const average =
+  totalPoints /
+  managerGames.length;
+
+
+  /* =====================================================
+     SEASON HTML
+  ===================================================== */
+
+  const seasonHTML =
+  Object.entries(seasonStats)
+  .sort(function(a,b) {
+
+    return Number(a[0]) - Number(b[0]);
+
+  })
+  .map(function([season,stats]) {
+
+    const average =
+    stats.points /
+    stats.games;
+
+
+    return `
+
+    <div class="season-row">
+
+      <span class="season-year">
+      ${season}
+      </span>
+
+      <span>
+      ${stats.wins}-${stats.losses}
+      ${stats.ties ? "-" + stats.ties : ""}
+      </span>
+
+      <span class="muted">
+      ${stats.points.toFixed(2)} pts
+      </span>
+
+      <span class="muted">
+      ${average.toFixed(2)} avg
+      </span>
+
+    </div>
+
+    `;
+
+  })
+  .join("");
+
+
+  /* =====================================================
+     H2H HTML
+  ===================================================== */
+
+  const h2hHTML =
+  Object.entries(h2h)
+
+  .filter(function([opponent]) {
+
+    return currentVeterans.includes(
+      opponent
+    );
+
+  })
+
+  .sort(function(a,b) {
+
+    return a[0].localeCompare(
+      b[0]
+    );
+
+  })
+
+  .map(function([opponent,series]) {
+
+    let className = "even";
+
+
+    if (
+      series.wins >
+      series.losses
+    ) {
+
+      className = "winning";
+
+    }
+
+    else if (
+      series.losses >
+      series.wins
+    ) {
+
+      className = "losing";
+
+    }
+
+
+    const games =
+    series.games
+    .sort(function(a,b) {
+
+      if (
+        a.season !== b.season
+      ) {
+
+        return (
+          b.season -
+          a.season
+        );
+
+      }
+
+      return (
+        b.week -
+        a.week
+      );
+
+    })
+    .map(function(game) {
+
+      const resultClass =
+      game.result === "W"
+      ?
+      "win-text"
+      :
+      game.result === "L"
+      ?
+      "loss-text"
+      :
+      "";
+
+
+      return `
+
+      <details>
+
+        <summary>
+
+        ${game.season}
+        Week ${game.week}
+
+        </summary>
+
+        <div class="game-result ${resultClass}">
+
+        ${game.result} •
+        ${manager.display}
+        ${game.score.toFixed(2)}
+        —
+        ${opponent}
+        ${game.opponentScore.toFixed(2)}
+
+        </div>
+
+      </details>
+
+      `;
+
+    })
+    .join("");
+
+
+    return `
+
+    <div>
+
+      <div class="h2h-row">
+
+        <span>
+        vs ${opponent}
+        </span>
+
+        <span class="h2h-record ${className}">
+
+        ${series.wins}-${series.losses}
+        ${series.ties ? "-" + series.ties : ""}
+
+        </span>
+
+        <span class="h2h-points">
+
+        PF ${series.pointsFor.toFixed(2)}
+        •
+        PA ${series.pointsAgainst.toFixed(2)}
+
+        </span>
+
+      </div>
+
+
+      <div class="game-history">
+      ${games}
+      </div>
+
+    </div>
+
+    `;
+
+  })
+  .join("");
+
+
+  /* =====================================================
+     BIGGEST WIN / LOSS
+  ===================================================== */
+
+  const biggestWinText =
+  biggestWin
+  ?
+  `${biggestWin.margin.toFixed(2)} pts vs ${biggestWin.opponent}
+  (${biggestWin.score.toFixed(2)}-${biggestWin.opponentScore.toFixed(2)},
+  ${biggestWin.season} W${biggestWin.week})`
+  :
+  "—";
+
+
+  const worstLossText =
+  worstLoss
+  ?
+  `${worstLoss.margin.toFixed(2)} pts vs ${worstLoss.opponent}
+  (${worstLoss.score.toFixed(2)}-${worstLoss.opponentScore.toFixed(2)},
+  ${worstLoss.season} W${worstLoss.week})`
+  :
+  "—";
+
+
+  /* =====================================================
+     FINAL PROFILE
+  ===================================================== */
+
+  container.innerHTML = `
+
+  <h3>
+  ${manager.display} — ESPN Career Profile
+  </h3>
+
+
+  <div class="career-grid">
+
+    <div class="career-box">
+
+      <span>
+      Games Tracked
+      </span>
+
+      <strong>
+      ${managerGames.length}
+      </strong>
+
+    </div>
+
+
+    <div class="career-box">
+
+      <span>
+      Career Points
+      </span>
+
+      <strong>
+      ${totalPoints.toFixed(2)}
+      </strong>
+
+    </div>
+
+
+    <div class="career-box">
+
+      <span>
+      Average
+      </span>
+
+      <strong>
+      ${average.toFixed(2)}
+      </strong>
+
+    </div>
+
+
+    <div class="career-box">
+
+      <span>
+      Career High
+      </span>
+
+      <strong>
+      ${high.score.toFixed(2)}
+      </strong>
+
+    </div>
+
+
+    <div class="career-box">
+
+      <span>
+      Career Low
+      </span>
+
+      <strong>
+      ${low.score.toFixed(2)}
+      </strong>
+
+    </div>
+
+
+    <div class="career-box">
+
+      <span>
+      Seasons Tracked
+      </span>
+
+      <strong>
+      ${Object.keys(seasonStats).length}
+      </strong>
+
+    </div>
+
+  </div>
+
+
+  <div class="profile-section">
+
+    <h4>
+    Biggest Win
+    </h4>
+
+    <div class="muted">
+    ${biggestWinText}
+    </div>
+
+  </div>
+
+
+  <div class="profile-section">
+
+    <h4>
+    Worst Loss
+    </h4>
+
+    <div class="muted">
+    ${worstLossText}
+    </div>
+
+  </div>
+
+
+  <div class="profile-section">
+
+    <h4>
+    Season-by-Season ESPN Results
+    </h4>
+
+    ${seasonHTML}
+
+  </div>
+
+
+  <div class="profile-section">
+
+    <h4>
+    Head-to-Head vs Current Veterans
+    </h4>
+
+    ${
+      h2hHTML
+      ||
+      `<div class="rookie-message">
+      No current-manager meetings found.
+      </div>`
+    }
+
+  </div>
+
+  `;
+
+}
+
+
+/* =========================================================
+   START PAGE
+========================================================= */
+
+buildManagerCards();
+
+loadHistory();
+
 </script>
 
-
 </body>
-
 </html>
-```
