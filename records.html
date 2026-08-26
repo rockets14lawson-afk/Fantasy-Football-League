@@ -119,6 +119,12 @@ nav a:hover {
   border: 1px solid #303030;
   border-radius: 12px;
   padding: 18px;
+  transition: .2s;
+}
+
+.record-box:hover {
+  border-color: #d4af37;
+  transform: translateY(-2px);
 }
 
 .record-label {
@@ -142,6 +148,7 @@ nav a:hover {
   color: #aaa;
   font-size: 12px;
   margin-top: 7px;
+  line-height: 1.5;
 }
 
 .table-wrap {
@@ -183,6 +190,14 @@ td.manager {
   padding: 30px;
 }
 
+.note {
+  color: #888;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
 footer {
   text-align: center;
   color: #777;
@@ -205,12 +220,19 @@ footer strong {
 </style>
 </head>
 
+
 <body>
 
 <header>
-  <h1>League Record Book</h1>
-  <p>JDC Degenerates • 2022–2025 History</p>
+
+<h1>League Record Book</h1>
+
+<p>
+JDC Degenerates • 2022–2025 History
+</p>
+
 </header>
+
 
 <nav>
 
@@ -219,6 +241,8 @@ footer strong {
 <a href="schedule.html">Schedule</a>
 
 <a href="index.html#standings">Standings</a>
+
+<a href="index.html#playoff-race">Playoff Race</a>
 
 <a href="managers.html">Managers</a>
 
@@ -243,14 +267,26 @@ ESPN League
 
 </nav>
 
+
 <div class="container">
+
+
+<!-- RECORD BOOK -->
 
 <section class="card">
 
 <div class="section-title">
-  <h2>All-Time Records</h2>
-  <span>ESPN History</span>
+
+<h2>
+All-Time Records
+</h2>
+
+<span>
+ESPN History
+</span>
+
 </div>
+
 
 <div class="records-grid" id="recordCards">
 
@@ -260,37 +296,63 @@ Loading historical records...
 
 </div>
 
+<div class="note">
+Scoring, streak and season records are calculated from the ESPN history file.
+</div>
+
 </section>
 
+
+<!-- CAREER SCORING -->
 
 <section class="card">
 
 <div class="section-title">
-  <h2>Career Scoring</h2>
-  <span>2022–2025</span>
+
+<h2>
+Career Scoring
+</h2>
+
+<span>
+2022–2025
+</span>
+
 </div>
+
 
 <div class="table-wrap">
 
 <table>
 
 <thead>
+
 <tr>
-  <th>Manager</th>
-  <th>Games</th>
-  <th>Points</th>
-  <th>Avg</th>
-  <th>High</th>
-  <th>Low</th>
+
+<th>Manager</th>
+
+<th>Games</th>
+
+<th>Points</th>
+
+<th>Avg</th>
+
+<th>High</th>
+
+<th>Low</th>
+
 </tr>
+
 </thead>
+
 
 <tbody id="careerTable">
 
 <tr>
+
 <td colspan="6" class="loading">
 Loading career scoring...
 </td>
+
 </tr>
 
 </tbody>
@@ -302,32 +364,54 @@ Loading career scoring...
 </section>
 
 
+<!-- SEASON RECORDS -->
+
 <section class="card">
 
 <div class="section-title">
-  <h2>Head-to-Head Leaders</h2>
-  <span>Current Managers</span>
+
+<h2>
+Season-by-Season Records
+</h2>
+
+<span>
+Regular Season
+</span>
+
 </div>
+
 
 <div class="table-wrap">
 
 <table>
 
 <thead>
+
 <tr>
-  <th>Manager</th>
-  <th>Opponent</th>
-  <th>Record</th>
-  <th>Win %</th>
+
+<th>Season</th>
+
+<th>Manager</th>
+
+<th>Record</th>
+
+<th>Win %</th>
+
+<th>Points</th>
+
 </tr>
+
 </thead>
 
-<tbody id="headToHeadTable">
+
+<tbody id="seasonTable">
 
 <tr>
-<td colspan="4" class="loading">
-Loading head-to-head data...
+
+<td colspan="5" class="loading">
+Loading season records...
 </td>
+
 </tr>
 
 </tbody>
@@ -338,11 +422,129 @@ Loading head-to-head data...
 
 </section>
 
+
+<!-- PLAYOFF HISTORY -->
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+Playoff History
+</h2>
+
+<span>
+Appearances
+</span>
+
 </div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Manager</th>
+
+<th>Playoff Appearances</th>
+
+<th>Championship Appearances</th>
+
+<th>Titles</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="playoffTable">
+
+<tr>
+
+<td colspan="4" class="loading">
+Loading playoff history...
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- H2H -->
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+Head-to-Head Leaders
+</h2>
+
+<span>
+Current Veterans
+</span>
+
+</div>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Manager</th>
+
+<th>Opponent</th>
+
+<th>Record</th>
+
+<th>Win %</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="headToHeadTable">
+
+<tr>
+
+<td colspan="4" class="loading">
+Loading head-to-head data...
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+</div>
+
 
 <footer>
 
-<strong>JDC Degenerates</strong>
+<strong>
+JDC Degenerates
+</strong>
 
 <br><br>
 
@@ -350,9 +552,16 @@ Fantasy Football League • Est. 2022
 
 </footer>
 
+
 <script>
 
+
+/* =========================
+   CURRENT VETERANS
+========================= */
+
 const currentManagers = [
+
   "Devin",
   "Toby",
   "Tom",
@@ -360,24 +569,81 @@ const currentManagers = [
   "Philip",
   "Mike",
   "Josh"
+
 ];
 
 
-function pct(wins, losses, ties = 0) {
+/* =========================
+   CHAMPIONSHIP HISTORY
+========================= */
 
-  const games =
-  wins + losses + ties;
+const championshipGames = {
 
-  if (!games) {
-    return "—";
+  2022: {
+    champion: "Toby",
+    runnerUp: "Josh"
+  },
+
+  2023: {
+    champion: "Josh",
+    runnerUp: "Jacob"
+  },
+
+  2024: {
+    champion: "Mike",
+    runnerUp: "Philip"
+  },
+
+  2025: {
+    champion: "Matt",
+    runnerUp: "Philip"
   }
 
+};
+
+
+/* =========================
+   PERCENTAGE
+========================= */
+
+function pct(
+  wins,
+  losses,
+  ties = 0
+) {
+
+  const games =
+  wins +
+  losses +
+  ties;
+
+
+  if (!games) {
+
+    return "—";
+
+  }
+
+
   return (
-    ((wins + ties * .5) / games) * 100
+    (
+      (
+        wins +
+        ties * .5
+      )
+      /
+      games
+    )
+    *
+    100
   ).toFixed(1) + "%";
 
 }
 
+
+/* =========================
+   LOAD HISTORY
+========================= */
 
 async function loadRecords() {
 
@@ -385,288 +651,1290 @@ async function loadRecords() {
 
     const response =
     await fetch(
-      "league-history.json?v=" + Date.now()
+      "league-history.json?v=" +
+      Date.now()
     );
 
-    if (!response.ok) {
+
+    if (
+      !response.ok
+    ) {
+
       throw new Error(
         "Could not load league-history.json"
       );
+
     }
+
 
     const data =
     await response.json();
 
+
     const seasons =
     data.seasons || {};
 
-    const allGames = [];
 
-    Object.entries(seasons)
-    .forEach(function([season,seasonData]) {
+    const allGames =
+    [];
 
-      const games =
-      seasonData.matchups || [];
 
-      games.forEach(function(game) {
+    Object.entries(
+      seasons
+    )
+    .forEach(
+      function(
+        [season,seasonData]
+      ) {
 
-        if (
-          game.awayManager === "UNKNOWN"
-          ||
-          game.homeManager === "UNKNOWN"
-        ) {
-          return;
-        }
+        const games =
+        seasonData.matchups || [];
 
-        allGames.push({
-          ...game,
-          season: Number(season)
-        });
 
-      });
+        games.forEach(
+          function(game) {
 
-    });
+            if (
+              game.awayManager ===
+              "UNKNOWN"
+              ||
+              game.homeManager ===
+              "UNKNOWN"
+            ) {
+
+              return;
+
+            }
+
+
+            allGames.push({
+
+              ...game,
+
+              season:
+              Number(season),
+
+              week:
+              Number(game.week),
+
+              awayScore:
+              Number(game.awayScore),
+
+              homeScore:
+              Number(game.homeScore)
+
+            });
+
+          }
+        );
+
+      }
+    );
 
 
     /* =========================
-       FILTER REAL SCORED GAMES
+       REAL SCORED GAMES
     ========================= */
 
     const scoredGames =
-    allGames.filter(function(game) {
+    allGames.filter(
+      function(game) {
 
-      return (
-        Number.isFinite(game.awayScore)
-        &&
-        Number.isFinite(game.homeScore)
-        &&
-        (
-          game.awayScore > 0
-          ||
-          game.homeScore > 0
-        )
-      );
+        return (
+          Number.isFinite(
+            game.awayScore
+          )
+          &&
+          Number.isFinite(
+            game.homeScore
+          )
+          &&
+          (
+            game.awayScore > 0
+            ||
+            game.homeScore > 0
+          )
+        );
 
-    });
+      }
+    );
 
 
     /* =========================
-       HIGHEST SCORE
+       HIGHEST / LOWEST SCORE
     ========================= */
 
-    let highest = null;
-    let lowest = null;
+    let highest =
+    null;
 
-    scoredGames.forEach(function(game) {
 
-      const performances = [
-        {
-          manager: game.awayManager,
-          score: game.awayScore,
-          opponent: game.homeManager
-        },
-        {
-          manager: game.homeManager,
-          score: game.homeScore,
-          opponent: game.awayManager
-        }
-      ];
+    let lowest =
+    null;
 
-      performances.forEach(function(p) {
+
+    scoredGames.forEach(
+      function(game) {
+
+        const performances = [
+
+          {
+            manager:
+            game.awayManager,
+
+            score:
+            game.awayScore,
+
+            opponent:
+            game.homeManager
+          },
+
+          {
+            manager:
+            game.homeManager,
+
+            score:
+            game.homeScore,
+
+            opponent:
+            game.awayManager
+          }
+
+        ];
+
+
+        performances.forEach(
+          function(p) {
+
+            const item = {
+
+              ...p,
+
+              season:
+              game.season,
+
+              week:
+              game.week
+
+            };
+
+
+            if (
+              !highest
+              ||
+              p.score >
+              highest.score
+            ) {
+
+              highest =
+              item;
+
+            }
+
+
+            if (
+              !lowest
+              ||
+              p.score <
+              lowest.score
+            ) {
+
+              lowest =
+              item;
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================
+       BIGGEST / CLOSEST GAME
+    ========================= */
+
+    let biggest =
+    null;
+
+
+    let closest =
+    null;
+
+
+    scoredGames.forEach(
+      function(game) {
+
+        const margin =
+        Math.abs(
+          game.homeScore -
+          game.awayScore
+        );
+
 
         const item = {
-          ...p,
-          season: game.season,
-          week: game.week
+
+          season:
+          game.season,
+
+          week:
+          game.week,
+
+          margin:
+
+          margin,
+
+          homeManager:
+          game.homeManager,
+
+          awayManager:
+          game.awayManager,
+
+          homeScore:
+          game.homeScore,
+
+          awayScore:
+          game.awayScore
+
         };
 
-        if (!highest || p.score > highest.score) {
-          highest = item;
+
+        if (
+          !biggest
+          ||
+          margin >
+          biggest.margin
+        ) {
+
+          biggest =
+          item;
+
         }
 
-        if (!lowest || p.score < lowest.score) {
-          lowest = item;
+
+        if (
+          margin > 0
+          &&
+          (
+            !closest
+            ||
+            margin <
+            closest.margin
+          )
+        ) {
+
+          closest =
+          item;
+
         }
 
-      });
-
-    });
-
-
-    /* =========================
-       BIGGEST / CLOSEST
-    ========================= */
-
-    let biggest = null;
-    let closest = null;
-
-    scoredGames.forEach(function(game) {
-
-      const margin =
-      Math.abs(
-        game.homeScore -
-        game.awayScore
-      );
-
-      const item = {
-        season: game.season,
-        week: game.week,
-        margin: margin,
-        homeManager: game.homeManager,
-        awayManager: game.awayManager,
-        homeScore: game.homeScore,
-        awayScore: game.awayScore
-      };
-
-      if (!biggest || margin > biggest.margin) {
-        biggest = item;
       }
-
-      if (
-        margin > 0
-        &&
-        (!closest || margin < closest.margin)
-      ) {
-        closest = item;
-      }
-
-    });
+    );
 
 
     /* =========================
        CAREER SCORING
     ========================= */
 
-    const career = {};
-
-    scoredGames.forEach(function(game) {
-
-      [
-        {
-          manager: game.awayManager,
-          score: game.awayScore
-        },
-        {
-          manager: game.homeManager,
-          score: game.homeScore
-        }
-      ]
-      .forEach(function(p) {
-
-        if (!career[p.manager]) {
-
-          career[p.manager] = {
-            games: 0,
-            points: 0,
-            high: null,
-            low: null
-          };
-
-        }
-
-        const c =
-        career[p.manager];
-
-        c.games += 1;
-        c.points += p.score;
-
-        if (
-          c.high === null
-          ||
-          p.score > c.high
-        ) {
-          c.high = p.score;
-        }
-
-        if (
-          c.low === null
-          ||
-          p.score < c.low
-        ) {
-          c.low = p.score;
-        }
-
-      });
-
-    });
+    const career =
+    {};
 
 
-    /* =========================
-       MOST CAREER POINTS
-    ========================= */
+    scoredGames.forEach(
+      function(game) {
+
+        [
+
+          {
+            manager:
+            game.awayManager,
+
+            score:
+            game.awayScore
+          },
+
+          {
+            manager:
+            game.homeManager,
+
+            score:
+            game.homeScore
+          }
+
+        ]
+        .forEach(
+          function(p) {
+
+            if (
+              !career[
+                p.manager
+              ]
+            ) {
+
+              career[
+                p.manager
+              ] = {
+
+                games: 0,
+
+                points: 0,
+
+                high: null,
+
+                low: null
+
+              };
+
+            }
+
+
+            const c =
+            career[
+              p.manager
+            ];
+
+
+            c.games +=
+            1;
+
+
+            c.points +=
+            p.score;
+
+
+            if (
+              c.high === null
+              ||
+              p.score >
+              c.high
+            ) {
+
+              c.high =
+              p.score;
+
+            }
+
+
+            if (
+              c.low === null
+              ||
+              p.score <
+              c.low
+            ) {
+
+              c.low =
+              p.score;
+
+            }
+
+          }
+        );
+
+      }
+    );
+
 
     const careerEntries =
-    Object.entries(career)
-    .sort(function(a,b) {
+    Object.entries(
+      career
+    )
+    .sort(
+      function(a,b) {
 
-      return b[1].points - a[1].points;
+        return (
+          b[1].points -
+          a[1].points
+        );
 
-    });
+      }
+    );
+
 
     const mostPoints =
     careerEntries[0];
 
 
     /* =========================
+       REGULAR SEASON STATS
+       WEEKS 1-14
+    ========================= */
+
+    const seasonStats =
+    {};
+
+
+    scoredGames
+    .filter(
+      function(game) {
+
+        return (
+          game.week >= 1
+          &&
+          game.week <= 14
+        );
+
+      }
+    )
+    .forEach(
+      function(game) {
+
+        const season =
+        game.season;
+
+
+        if (
+          !seasonStats[
+            season
+          ]
+        ) {
+
+          seasonStats[
+            season
+          ] = {};
+
+        }
+
+
+        [
+          game.awayManager,
+          game.homeManager
+        ]
+        .forEach(
+          function(manager) {
+
+            if (
+              !seasonStats[
+                season
+              ][
+                manager
+              ]
+            ) {
+
+              seasonStats[
+                season
+              ][
+                manager
+              ] = {
+
+                wins: 0,
+
+                losses: 0,
+
+                ties: 0,
+
+                points: 0
+
+              };
+
+            }
+
+          }
+        );
+
+
+        const away =
+        seasonStats[
+          season
+        ][
+          game.awayManager
+        ];
+
+
+        const home =
+        seasonStats[
+          season
+        ][
+          game.homeManager
+        ];
+
+
+        away.points +=
+        game.awayScore;
+
+
+        home.points +=
+        game.homeScore;
+
+
+        if (
+          game.awayScore >
+          game.homeScore
+        ) {
+
+          away.wins++;
+
+          home.losses++;
+
+        }
+
+
+        else if (
+          game.homeScore >
+          game.awayScore
+        ) {
+
+          home.wins++;
+
+          away.losses++;
+
+        }
+
+
+        else {
+
+          away.ties++;
+
+          home.ties++;
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       BEST SINGLE SEASON
+    ========================= */
+
+    let bestSeason =
+    null;
+
+
+    const seasonRows =
+    [];
+
+
+    Object.entries(
+      seasonStats
+    )
+    .forEach(
+      function(
+        [season,managers]
+      ) {
+
+        Object.entries(
+          managers
+        )
+        .forEach(
+          function(
+            [manager,record]
+          ) {
+
+            const games =
+            record.wins +
+            record.losses +
+            record.ties;
+
+
+            const percentage =
+            games
+            ?
+            (
+              record.wins +
+              record.ties * .5
+            )
+            /
+            games
+            :
+            0;
+
+
+            const item = {
+
+              season:
+              Number(season),
+
+              manager,
+
+              ...record,
+
+              games,
+
+              percentage
+
+            };
+
+
+            seasonRows.push(
+              item
+            );
+
+
+            if (
+              !bestSeason
+              ||
+              percentage >
+              bestSeason.percentage
+              ||
+              (
+                percentage ===
+                bestSeason.percentage
+                &&
+                record.wins >
+                bestSeason.wins
+              )
+              ||
+              (
+                percentage ===
+                bestSeason.percentage
+                &&
+                record.wins ===
+                bestSeason.wins
+                &&
+                record.points >
+                bestSeason.points
+              )
+            ) {
+
+              bestSeason =
+              item;
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    seasonRows.sort(
+      function(a,b) {
+
+        if (
+          b.season !==
+          a.season
+        ) {
+
+          return (
+            b.season -
+            a.season
+          );
+
+        }
+
+
+        if (
+          b.percentage !==
+          a.percentage
+        ) {
+
+          return (
+            b.percentage -
+            a.percentage
+          );
+
+        }
+
+
+        return (
+          b.points -
+          a.points
+        );
+
+      }
+    );
+
+
+    /* =========================
+       LONGEST WINNING STREAK
+    ========================= */
+
+    const managerGames =
+    {};
+
+
+    scoredGames
+    .slice()
+    .sort(
+      function(a,b) {
+
+        if (
+          a.season !==
+          b.season
+        ) {
+
+          return (
+            a.season -
+            b.season
+          );
+
+        }
+
+
+        return (
+          a.week -
+          b.week
+        );
+
+      }
+    )
+    .forEach(
+      function(game) {
+
+        const performances = [
+
+          {
+            manager:
+            game.awayManager,
+
+            score:
+            game.awayScore,
+
+            opponentScore:
+            game.homeScore
+          },
+
+          {
+            manager:
+            game.homeManager,
+
+            score:
+            game.homeScore,
+
+            opponentScore:
+            game.awayScore
+          }
+
+        ];
+
+
+        performances.forEach(
+          function(p) {
+
+            if (
+              !managerGames[
+                p.manager
+              ]
+            ) {
+
+              managerGames[
+                p.manager
+              ] = [];
+
+            }
+
+
+            managerGames[
+              p.manager
+            ].push({
+
+              season:
+              game.season,
+
+              week:
+              game.week,
+
+              result:
+              p.score >
+              p.opponentScore
+              ?
+              "W"
+              :
+              p.score <
+              p.opponentScore
+              ?
+              "L"
+              :
+              "T"
+
+            });
+
+          }
+        );
+
+      }
+    );
+
+
+    let longestStreak =
+    {
+
+      manager:
+      "—",
+
+      wins:
+      0,
+
+      startSeason:
+      null,
+
+      startWeek:
+      null,
+
+      endSeason:
+      null,
+
+      endWeek:
+      null
+
+    };
+
+
+    Object.entries(
+      managerGames
+    )
+    .forEach(
+      function(
+        [manager,games]
+      ) {
+
+        let current =
+        0;
+
+
+        let start =
+        null;
+
+
+        games.forEach(
+          function(game) {
+
+            if (
+              game.result ===
+              "W"
+            ) {
+
+              if (
+                current === 0
+              ) {
+
+                start =
+                game;
+
+              }
+
+
+              current++;
+
+
+              if (
+                current >
+                longestStreak.wins
+              ) {
+
+                longestStreak = {
+
+                  manager,
+
+                  wins:
+                  current,
+
+                  startSeason:
+                  start.season,
+
+                  startWeek:
+                  start.week,
+
+                  endSeason:
+                  game.season,
+
+                  endWeek:
+                  game.week
+
+                };
+
+              }
+
+            }
+
+
+            else {
+
+              current =
+              0;
+
+              start =
+              null;
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================
+       PLAYOFF APPEARANCES
+       ANY GAME WEEK 15+
+    ========================= */
+
+    const playoffAppearances =
+    {};
+
+
+    Object.keys(
+      seasons
+    )
+    .forEach(
+      function(season) {
+
+        const managers =
+        new Set();
+
+
+        scoredGames
+        .filter(
+          function(game) {
+
+            return (
+              game.season ===
+              Number(season)
+              &&
+              game.week >= 15
+            );
+
+          }
+        )
+        .forEach(
+          function(game) {
+
+            managers.add(
+              game.awayManager
+            );
+
+            managers.add(
+              game.homeManager
+            );
+
+          }
+        );
+
+
+        managers.forEach(
+          function(manager) {
+
+            playoffAppearances[
+              manager
+            ] =
+            (
+              playoffAppearances[
+                manager
+              ]
+              ||
+              0
+            )
+            +
+            1;
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================
+       CHAMPIONSHIP APPEARANCES
+    ========================= */
+
+    const championshipAppearances =
+    {};
+
+
+    const championships =
+    {};
+
+
+    Object.values(
+      championshipGames
+    )
+    .forEach(
+      function(result) {
+
+        championshipAppearances[
+          result.champion
+        ] =
+        (
+          championshipAppearances[
+            result.champion
+          ]
+          ||
+          0
+        )
+        +
+        1;
+
+
+        championshipAppearances[
+          result.runnerUp
+        ] =
+        (
+          championshipAppearances[
+            result.runnerUp
+          ]
+          ||
+          0
+        )
+        +
+        1;
+
+
+        championships[
+          result.champion
+        ] =
+        (
+          championships[
+            result.champion
+          ]
+          ||
+          0
+        )
+        +
+        1;
+
+      }
+    );
+
+
+    const mostPlayoffAppearances =
+    Object.entries(
+      playoffAppearances
+    )
+    .sort(
+      function(a,b) {
+
+        return (
+          b[1] -
+          a[1]
+        );
+
+      }
+    );
+
+
+    const maxPlayoffs =
+    mostPlayoffAppearances.length
+    ?
+    mostPlayoffAppearances[0][1]
+    :
+    0;
+
+
+    const playoffLeaders =
+    mostPlayoffAppearances
+    .filter(
+      function(item) {
+
+        return (
+          item[1] ===
+          maxPlayoffs
+        );
+
+      }
+    )
+    .map(
+      function(item) {
+
+        return item[0];
+
+      }
+    );
+
+
+    const championshipEntries =
+    Object.entries(
+      championshipAppearances
+    )
+    .sort(
+      function(a,b) {
+
+        return (
+          b[1] -
+          a[1]
+        );
+
+      }
+    );
+
+
+    const maxChampionshipAppearances =
+    championshipEntries.length
+    ?
+    championshipEntries[0][1]
+    :
+    0;
+
+
+    const championshipLeaders =
+    championshipEntries
+    .filter(
+      function(item) {
+
+        return (
+          item[1] ===
+          maxChampionshipAppearances
+        );
+
+      }
+    )
+    .map(
+      function(item) {
+
+        return item[0];
+
+      }
+    );
+
+
+    /* =========================
        HEAD TO HEAD
     ========================= */
 
-    const h2h = {};
+    const h2h =
+    {};
 
-    scoredGames.forEach(function(game) {
 
-      const away =
-      game.awayManager;
+    scoredGames.forEach(
+      function(game) {
 
-      const home =
-      game.homeManager;
+        const away =
+        game.awayManager;
 
-      if (!h2h[away]) {
-        h2h[away] = {};
+
+        const home =
+        game.homeManager;
+
+
+        if (
+          !h2h[
+            away
+          ]
+        ) {
+
+          h2h[
+            away
+          ] = {};
+
+        }
+
+
+        if (
+          !h2h[
+            home
+          ]
+        ) {
+
+          h2h[
+            home
+          ] = {};
+
+        }
+
+
+        if (
+          !h2h[
+            away
+          ][
+            home
+          ]
+        ) {
+
+          h2h[
+            away
+          ][
+            home
+          ] = {
+
+            wins: 0,
+
+            losses: 0,
+
+            ties: 0
+
+          };
+
+        }
+
+
+        if (
+          !h2h[
+            home
+          ][
+            away
+          ]
+        ) {
+
+          h2h[
+            home
+          ][
+            away
+          ] = {
+
+            wins: 0,
+
+            losses: 0,
+
+            ties: 0
+
+          };
+
+        }
+
+
+        if (
+          game.awayScore >
+          game.homeScore
+        ) {
+
+          h2h[
+            away
+          ][
+            home
+          ].wins++;
+
+
+          h2h[
+            home
+          ][
+            away
+          ].losses++;
+
+        }
+
+
+        else if (
+          game.homeScore >
+          game.awayScore
+        ) {
+
+          h2h[
+            home
+          ][
+            away
+          ].wins++;
+
+
+          h2h[
+            away
+          ][
+            home
+          ].losses++;
+
+        }
+
+
+        else {
+
+          h2h[
+            away
+          ][
+            home
+          ].ties++;
+
+
+          h2h[
+            home
+          ][
+            away
+          ].ties++;
+
+        }
+
       }
-
-      if (!h2h[home]) {
-        h2h[home] = {};
-      }
-
-      if (!h2h[away][home]) {
-        h2h[away][home] = {
-          wins: 0,
-          losses: 0,
-          ties: 0
-        };
-      }
-
-      if (!h2h[home][away]) {
-        h2h[home][away] = {
-          wins: 0,
-          losses: 0,
-          ties: 0
-        };
-      }
-
-      if (game.awayScore > game.homeScore) {
-
-        h2h[away][home].wins++;
-        h2h[home][away].losses++;
-
-      }
-
-      else if (game.homeScore > game.awayScore) {
-
-        h2h[home][away].wins++;
-        h2h[away][home].losses++;
-
-      }
-
-      else {
-
-        h2h[away][home].ties++;
-        h2h[home][away].ties++;
-
-      }
-
-    });
+    );
 
 
     /* =========================
@@ -678,11 +1946,14 @@ async function loadRecords() {
       "recordCards"
     );
 
+
     cards.innerHTML = `
 
+
     <div class="record-box">
+
       <span class="record-label">
-      Highest Single-Game Score
+      🔥 Highest Single-Game Score
       </span>
 
       <span class="record-value">
@@ -693,12 +1964,14 @@ async function loadRecords() {
       ${highest.season} • Week ${highest.week}
       vs ${highest.opponent}
       </span>
+
     </div>
 
 
     <div class="record-box">
+
       <span class="record-label">
-      Lowest Single-Game Score
+      🧊 Lowest Single-Game Score
       </span>
 
       <span class="record-value">
@@ -709,12 +1982,14 @@ async function loadRecords() {
       ${lowest.season} • Week ${lowest.week}
       vs ${lowest.opponent}
       </span>
+
     </div>
 
 
     <div class="record-box">
+
       <span class="record-label">
-      Biggest Blowout
+      💥 Biggest Blowout Ever
       </span>
 
       <span class="record-value">
@@ -725,16 +2000,18 @@ async function loadRecords() {
       ${biggest.season} • Week ${biggest.week}
       • ${biggest.awayManager}
       ${biggest.awayScore.toFixed(2)}
-      -
+      —
       ${biggest.homeManager}
       ${biggest.homeScore.toFixed(2)}
       </span>
+
     </div>
 
 
     <div class="record-box">
+
       <span class="record-label">
-      Closest Game
+      😰 Closest Game Ever
       </span>
 
       <span class="record-value">
@@ -745,16 +2022,95 @@ async function loadRecords() {
       ${closest.season} • Week ${closest.week}
       • ${closest.awayManager}
       ${closest.awayScore.toFixed(2)}
-      -
+      —
       ${closest.homeManager}
       ${closest.homeScore.toFixed(2)}
       </span>
+
     </div>
 
 
     <div class="record-box">
+
       <span class="record-label">
-      Most Career Points
+      🔥 Longest Winning Streak
+      </span>
+
+      <span class="record-value">
+      ${longestStreak.manager} — ${longestStreak.wins} straight
+      </span>
+
+      <span class="record-detail">
+      ${longestStreak.startSeason} Week ${longestStreak.startWeek}
+      through
+      ${longestStreak.endSeason} Week ${longestStreak.endWeek}
+      </span>
+
+    </div>
+
+
+    <div class="record-box">
+
+      <span class="record-label">
+      👑 Best Single Regular Season
+      </span>
+
+      <span class="record-value">
+      ${bestSeason.manager} —
+      ${bestSeason.wins}-${bestSeason.losses}
+      ${bestSeason.ties ? "-" + bestSeason.ties : ""}
+      </span>
+
+      <span class="record-detail">
+      ${bestSeason.season}
+      •
+      ${(bestSeason.percentage * 100).toFixed(1)}% win rate
+      •
+      ${bestSeason.points.toFixed(2)} PF
+      </span>
+
+    </div>
+
+
+    <div class="record-box">
+
+      <span class="record-label">
+      🏈 Most Playoff Appearances
+      </span>
+
+      <span class="record-value">
+      ${playoffLeaders.join(" / ")} — ${maxPlayoffs}
+      </span>
+
+      <span class="record-detail">
+      Seasons with at least one postseason matchup
+      </span>
+
+    </div>
+
+
+    <div class="record-box">
+
+      <span class="record-label">
+      🏆 Most Championship Appearances
+      </span>
+
+      <span class="record-value">
+      ${championshipLeaders.join(" / ")} —
+      ${maxChampionshipAppearances}
+      </span>
+
+      <span class="record-detail">
+      Championship-game appearances from 2022–2025
+      </span>
+
+    </div>
+
+
+    <div class="record-box">
+
+      <span class="record-label">
+      📈 Most Career Points
       </span>
 
       <span class="record-value">
@@ -765,12 +2121,14 @@ async function loadRecords() {
       <span class="record-detail">
       Across ${mostPoints[1].games} scored games
       </span>
+
     </div>
 
 
     <div class="record-box">
+
       <span class="record-label">
-      Historical Games Tracked
+      📚 Historical Games Tracked
       </span>
 
       <span class="record-value">
@@ -780,6 +2138,7 @@ async function loadRecords() {
       <span class="record-detail">
       ESPN scores from 2022–2025
       </span>
+
     </div>
 
     `;
@@ -794,82 +2153,26 @@ async function loadRecords() {
       "careerTable"
     );
 
-    careerTable.innerHTML = "";
 
-    careerEntries
-    .forEach(function([manager,c]) {
-
-      const row =
-      document.createElement("tr");
-
-      const avg =
-      c.points / c.games;
-
-      row.innerHTML = `
-
-      <td class="manager">
-      ${manager}
-      </td>
-
-      <td>
-      ${c.games}
-      </td>
-
-      <td class="gold">
-      ${c.points.toFixed(2)}
-      </td>
-
-      <td>
-      ${avg.toFixed(2)}
-      </td>
-
-      <td>
-      ${c.high.toFixed(2)}
-      </td>
-
-      <td>
-      ${c.low.toFixed(2)}
-      </td>
-
-      `;
-
-      careerTable.appendChild(row);
-
-    });
+    careerTable.innerHTML =
+    "";
 
 
-    /* =========================
-       H2H LEADERS
-    ========================= */
-
-    const h2hTable =
-    document.getElementById(
-      "headToHeadTable"
-    );
-
-    h2hTable.innerHTML = "";
-
-    currentManagers
-    .forEach(function(manager) {
-
-      if (!h2h[manager]) {
-        return;
-      }
-
-      Object.entries(
-        h2h[manager]
-      )
-      .filter(function([opponent]) {
-
-        return currentManagers.includes(
-          opponent
-        );
-
-      })
-      .forEach(function([opponent,record]) {
+    careerEntries.forEach(
+      function(
+        [manager,c]
+      ) {
 
         const row =
-        document.createElement("tr");
+        document.createElement(
+          "tr"
+        );
+
+
+        const avg =
+        c.points /
+        c.games;
+
 
         row.innerHTML = `
 
@@ -878,35 +2181,308 @@ async function loadRecords() {
         </td>
 
         <td>
-        ${opponent}
+        ${c.games}
         </td>
 
         <td class="gold">
+        ${c.points.toFixed(2)}
+        </td>
+
+        <td>
+        ${avg.toFixed(2)}
+        </td>
+
+        <td>
+        ${c.high.toFixed(2)}
+        </td>
+
+        <td>
+        ${c.low.toFixed(2)}
+        </td>
+
+        `;
+
+
+        careerTable.appendChild(
+          row
+        );
+
+      }
+    );
+
+
+    /* =========================
+       SEASON TABLE
+    ========================= */
+
+    const seasonTable =
+    document.getElementById(
+      "seasonTable"
+    );
+
+
+    seasonTable.innerHTML =
+    "";
+
+
+    seasonRows.forEach(
+      function(record) {
+
+        const row =
+        document.createElement(
+          "tr"
+        );
+
+
+        row.innerHTML = `
+
+        <td class="gold">
+        ${record.season}
+        </td>
+
+        <td class="manager">
+        ${record.manager}
+        </td>
+
+        <td>
         ${record.wins}-${record.losses}
         ${record.ties ? "-" + record.ties : ""}
         </td>
 
         <td>
-        ${pct(
-          record.wins,
-          record.losses,
-          record.ties
-        )}
+        ${(record.percentage * 100).toFixed(1)}%
+        </td>
+
+        <td>
+        ${record.points.toFixed(2)}
         </td>
 
         `;
 
-        h2hTable.appendChild(row);
 
-      });
+        seasonTable.appendChild(
+          row
+        );
 
-    });
+      }
+    );
+
+
+    /* =========================
+       PLAYOFF TABLE
+    ========================= */
+
+    const playoffTable =
+    document.getElementById(
+      "playoffTable"
+    );
+
+
+    playoffTable.innerHTML =
+    "";
+
+
+    const playoffManagers =
+    new Set([
+      ...Object.keys(
+        playoffAppearances
+      ),
+      ...Object.keys(
+        championshipAppearances
+      ),
+      ...Object.keys(
+        championships
+      )
+    ]);
+
+
+    [...playoffManagers]
+    .sort(
+      function(a,b) {
+
+        const playoffDiff =
+        (
+          playoffAppearances[b]
+          ||
+          0
+        )
+        -
+        (
+          playoffAppearances[a]
+          ||
+          0
+        );
+
+
+        if (
+          playoffDiff !==
+          0
+        ) {
+
+          return playoffDiff;
+
+        }
+
+
+        return (
+          (
+            championshipAppearances[b]
+            ||
+            0
+          )
+          -
+          (
+            championshipAppearances[a]
+            ||
+            0
+          )
+        );
+
+      }
+    )
+    .forEach(
+      function(manager) {
+
+        const row =
+        document.createElement(
+          "tr"
+        );
+
+
+        row.innerHTML = `
+
+        <td class="manager">
+        ${manager}
+        </td>
+
+        <td class="gold">
+        ${playoffAppearances[manager] || 0}
+        </td>
+
+        <td>
+        ${championshipAppearances[manager] || 0}
+        </td>
+
+        <td>
+        ${championships[manager] || 0}
+        ${(championships[manager] || 0) ? " 🏆" : ""}
+        </td>
+
+        `;
+
+
+        playoffTable.appendChild(
+          row
+        );
+
+      }
+    );
+
+
+    /* =========================
+       H2H TABLE
+    ========================= */
+
+    const h2hTable =
+    document.getElementById(
+      "headToHeadTable"
+    );
+
+
+    h2hTable.innerHTML =
+    "";
+
+
+    currentManagers.forEach(
+      function(manager) {
+
+        if (
+          !h2h[
+            manager
+          ]
+        ) {
+
+          return;
+
+        }
+
+
+        Object.entries(
+          h2h[
+            manager
+          ]
+        )
+        .filter(
+          function(
+            [opponent]
+          ) {
+
+            return (
+              currentManagers.includes(
+                opponent
+              )
+            );
+
+          }
+        )
+        .forEach(
+          function(
+            [opponent,record]
+          ) {
+
+            const row =
+            document.createElement(
+              "tr"
+            );
+
+
+            row.innerHTML = `
+
+            <td class="manager">
+            ${manager}
+            </td>
+
+            <td>
+            ${opponent}
+            </td>
+
+            <td class="gold">
+            ${record.wins}-${record.losses}
+            ${record.ties ? "-" + record.ties : ""}
+            </td>
+
+            <td>
+            ${pct(
+              record.wins,
+              record.losses,
+              record.ties
+            )}
+            </td>
+
+            `;
+
+
+            h2hTable.appendChild(
+              row
+            );
+
+          }
+        );
+
+      }
+    );
 
   }
 
-  catch (error) {
 
-    console.error(error);
+  catch (
+    error
+  ) {
+
+    console.error(
+      error
+    );
+
 
     document.getElementById(
       "recordCards"
@@ -923,9 +2499,15 @@ async function loadRecords() {
 }
 
 
+/* =========================
+   START
+========================= */
+
 loadRecords();
+
 
 </script>
 
 </body>
+
 </html>
