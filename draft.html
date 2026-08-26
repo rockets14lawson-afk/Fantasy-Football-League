@@ -77,7 +77,7 @@ nav a:hover {
 }
 
 .container {
-  width: min(1150px,92%);
+  width: min(1200px,92%);
   margin: auto;
   padding: 40px 0 70px;
 }
@@ -114,11 +114,21 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
+.sync-box {
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
 .countdown {
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 12px;
-  margin-top: 20px;
 }
 
 .count-box {
@@ -172,6 +182,32 @@ nav a:hover {
   font-size: 17px;
 }
 
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+}
+
+.rule {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.rule span {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.rule strong {
+  color: #d4af37;
+}
+
 .order-list {
   display: grid;
   gap: 10px;
@@ -208,41 +244,19 @@ nav a:hover {
   font-weight: bold;
 }
 
-.rules-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 12px;
-}
-
-.rule {
-  background: #101010;
-  border: 1px solid #303030;
-  border-radius: 10px;
-  padding: 16px;
-}
-
-.rule span {
-  display: block;
-  color: #888;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
-}
-
-.rule strong {
-  color: #d4af37;
+.draft-board-wrap {
+  overflow-x: auto;
 }
 
 .draft-board {
   display: grid;
-  grid-template-columns: repeat(10,1fr);
+  grid-template-columns: repeat(10, minmax(130px,1fr));
   gap: 6px;
-  overflow-x: auto;
+  min-width: 1300px;
 }
 
 .team-column {
-  min-width: 120px;
+  min-width: 130px;
 }
 
 .team-header {
@@ -262,6 +276,18 @@ nav a:hover {
   font-size: 11px;
 }
 
+.pick-cell strong {
+  display: block;
+  color: white;
+}
+
+.pick-cell span {
+  display: block;
+  color: #777;
+  margin-top: 4px;
+  font-size: 9px;
+}
+
 .placeholder {
   color: #777;
   font-style: italic;
@@ -271,6 +297,33 @@ nav a:hover {
   text-align: center;
   color: #999;
   line-height: 1.6;
+}
+
+.draft-status {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.status-waiting {
+  background: rgba(212,175,55,.12);
+  color: #d4af37;
+  border: 1px solid rgba(212,175,55,.4);
+}
+
+.status-complete {
+  background: rgba(101,214,138,.12);
+  color: #65d68a;
+  border: 1px solid rgba(101,214,138,.4);
+}
+
+.loading {
+  color: #999;
+  text-align: center;
+  padding: 25px;
 }
 
 footer {
@@ -319,17 +372,27 @@ JDC Degenerates • 2026 Fantasy Football Draft
 
 </header>
 
+
 <nav>
 
 <a href="index.html">Home</a>
+
 <a href="schedule.html">Schedule</a>
+
 <a href="index.html#standings">Standings</a>
+
 <a href="managers.html">Managers</a>
+
 <a href="recap.html">Weekly Recap</a>
+
 <a href="rivalries.html">Rivalries</a>
+
 <a href="draft.html">Draft Central</a>
+
 <a href="index.html#champions">Champions</a>
+
 <a href="index.html#season-history">History</a>
+
 <a href="records.html">Records</a>
 
 <a
@@ -341,37 +404,54 @@ ESPN League
 
 </nav>
 
+
 <div class="container">
 
-<!-- COUNTDOWN -->
 
 <section class="card">
 
 <div class="section-title">
-  <h2>Draft Countdown</h2>
-  <span>September 5, 2026 • 12:30 PM</span>
+
+<h2>
+Draft Countdown
+</h2>
+
+<span>
+September 5, 2026 • 12:30 PM
+</span>
+
 </div>
+
+
+<div id="draftStatusBox" style="text-align:center;margin-bottom:20px">
+
+<span class="draft-status status-waiting" id="draftStatus">
+Awaiting Draft
+</span>
+
+</div>
+
 
 <div class="countdown">
 
 <div class="count-box">
-  <strong id="days">0</strong>
-  <span>Days</span>
+<strong id="days">0</strong>
+<span>Days</span>
 </div>
 
 <div class="count-box">
-  <strong id="hours">0</strong>
-  <span>Hours</span>
+<strong id="hours">0</strong>
+<span>Hours</span>
 </div>
 
 <div class="count-box">
-  <strong id="minutes">0</strong>
-  <span>Minutes</span>
+<strong id="minutes">0</strong>
+<span>Minutes</span>
 </div>
 
 <div class="count-box">
-  <strong id="seconds">0</strong>
-  <span>Seconds</span>
+<strong id="seconds">0</strong>
+<span>Seconds</span>
 </div>
 
 </div>
@@ -379,30 +459,36 @@ ESPN League
 </section>
 
 
-<!-- DETAILS -->
-
 <section class="card">
 
 <div class="section-title">
-  <h2>Draft Details</h2>
-  <span>2026</span>
+
+<h2>
+Draft Details
+</h2>
+
+<span>
+2026
+</span>
+
 </div>
+
 
 <div class="draft-details">
 
 <div class="detail-box">
-  <span>Date</span>
-  <strong>September 5, 2026</strong>
+<span>Date</span>
+<strong>September 5, 2026</strong>
 </div>
 
 <div class="detail-box">
-  <span>Time</span>
-  <strong>12:30 PM</strong>
+<span>Time</span>
+<strong>12:30 PM</strong>
 </div>
 
 <div class="detail-box">
-  <span>Format</span>
-  <strong>In-Person Draft</strong>
+<span>Format</span>
+<strong>In-Person Snake Draft</strong>
 </div>
 
 </div>
@@ -410,204 +496,128 @@ ESPN League
 </section>
 
 
-<!-- DRAFT ORDER -->
-
 <section class="card">
 
 <div class="section-title">
-  <h2>Draft Order</h2>
-  <span>To Be Drawn</span>
+
+<h2>
+Draft Order
+</h2>
+
+<span id="draftOrderLabel">
+To Be Drawn
+</span>
+
 </div>
 
-<div class="note">
 
+<div class="note" id="draftOrderNote">
 Draft positions will be determined by random envelope draw.
-
 </div>
 
 <br>
 
-<div class="order-list">
-
-<div class="order-row">
-  <div class="pick-number">1</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">2</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">3</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">4</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">5</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">6</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">7</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">8</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">9</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-<div class="order-row">
-  <div class="pick-number">10</div>
-  <div class="pick-manager">TBD</div>
-</div>
-
-</div>
+<div class="order-list" id="draftOrderList"></div>
 
 </section>
 
 
-<!-- RULES -->
-
 <section class="card">
 
 <div class="section-title">
-  <h2>Draft Rules</h2>
-  <span>League Settings</span>
+
+<h2>
+Draft Rules
+</h2>
+
+<span>
+League Settings
+</span>
+
 </div>
+
 
 <div class="rules-grid">
 
 <div class="rule">
-  <span>Teams</span>
-  <strong>10</strong>
+<span>Teams</span>
+<strong>10</strong>
 </div>
 
 <div class="rule">
-  <span>Scoring</span>
-  <strong>PPR</strong>
+<span>Scoring</span>
+<strong>PPR</strong>
 </div>
 
 <div class="rule">
-  <span>Format</span>
-  <strong>Superflex</strong>
+<span>Format</span>
+<strong>Superflex</strong>
 </div>
 
 <div class="rule">
-  <span>Entry Fee</span>
-  <strong>$20 Cash</strong>
+<span>Entry Fee</span>
+<strong>$20 Cash</strong>
 </div>
 
 <div class="rule">
-  <span>Draft Style</span>
-  <strong>Snake Draft</strong>
+<span>Draft Style</span>
+<strong>Snake Draft</strong>
 </div>
 
 <div class="rule">
-  <span>Trades During Draft</span>
-  <strong>Allowed</strong>
+<span>Trades During Draft</span>
+<strong>Allowed</strong>
 </div>
 
 </div>
 
 </section>
 
-
-<!-- DRAFT BOARD -->
 
 <section class="card">
 
 <div class="section-title">
-  <h2>2026 Draft Board</h2>
-  <span>Opens After Draft</span>
+
+<h2>
+2026 Draft Board
+</h2>
+
+<span id="draftBoardLabel">
+Awaiting Draft
+</span>
+
 </div>
 
-<div class="note">
 
-After the draft is completed, this section can be updated to show every pick and each manager's full roster.
+<div class="sync-box" id="syncBox">
+Loading ESPN draft data...
+</div>
 
+
+<div class="note" id="draftBoardNote">
+The draft board will automatically populate from ESPN after the draft is completed.
 </div>
 
 <br>
 
-<div class="draft-board">
 
-<div class="team-column">
-  <div class="team-header">Devin</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
+<div class="draft-board-wrap">
 
-<div class="team-column">
-  <div class="team-header">Hunter</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Mike</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Tom</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Dr. Steve</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Steve</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Matt</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Toby</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Josh</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
-
-<div class="team-column">
-  <div class="team-header">Philip</div>
-  <div class="pick-cell placeholder">Awaiting Draft</div>
-</div>
+<div class="draft-board" id="draftBoard"></div>
 
 </div>
 
 </section>
 
+
 </div>
+
 
 <footer>
 
-<strong>JDC Degenerates</strong>
+<strong>
+JDC Degenerates
+</strong>
 
 <br><br>
 
@@ -615,10 +625,56 @@ After the draft is completed, this section can be updated to show every pick and
 
 </footer>
 
+
 <script>
 
+
+const displayNames = {
+
+  "Devin": "Devin",
+  "Hunter": "Hunter",
+  "Mike": "Mike",
+  "Tom": "Tom",
+  "Steve P.": "Dr. Steve",
+  "Steve H.": "Steve",
+  "Matt": "Matt",
+  "Toby": "Toby",
+  "Josh": "Josh",
+  "Philip": "Philip"
+
+};
+
+
+const managerOrder = [
+
+  "Devin",
+  "Hunter",
+  "Mike",
+  "Tom",
+  "Steve P.",
+  "Steve H.",
+  "Matt",
+  "Toby",
+  "Josh",
+  "Philip"
+
+];
+
+
+/* =====================================
+   COUNTDOWN
+===================================== */
+
 const draftDate =
-new Date(2026, 8, 5, 12, 30, 0);
+new Date(
+  2026,
+  8,
+  5,
+  12,
+  30,
+  0
+);
+
 
 function updateCountdown() {
 
@@ -628,22 +684,32 @@ function updateCountdown() {
   const difference =
   draftDate - now;
 
+
   if (difference <= 0) {
 
-    document.getElementById("days").textContent = "0";
-    document.getElementById("hours").textContent = "0";
-    document.getElementById("minutes").textContent = "0";
-    document.getElementById("seconds").textContent = "0";
+    document.getElementById("days").textContent =
+    "0";
+
+    document.getElementById("hours").textContent =
+    "0";
+
+    document.getElementById("minutes").textContent =
+    "0";
+
+    document.getElementById("seconds").textContent =
+    "0";
 
     return;
 
   }
+
 
   const days =
   Math.floor(
     difference /
     (1000 * 60 * 60 * 24)
   );
+
 
   const hours =
   Math.floor(
@@ -653,6 +719,7 @@ function updateCountdown() {
     ) % 24
   );
 
+
   const minutes =
   Math.floor(
     (
@@ -661,6 +728,7 @@ function updateCountdown() {
     ) % 60
   );
 
+
   const seconds =
   Math.floor(
     (
@@ -668,6 +736,7 @@ function updateCountdown() {
       1000
     ) % 60
   );
+
 
   document.getElementById("days").textContent =
   days;
@@ -683,6 +752,7 @@ function updateCountdown() {
 
 }
 
+
 updateCountdown();
 
 setInterval(
@@ -690,7 +760,442 @@ setInterval(
   1000
 );
 
+
+/* =====================================
+   EMPTY DRAFT ORDER
+===================================== */
+
+function buildWaitingOrder() {
+
+  const list =
+  document.getElementById(
+    "draftOrderList"
+  );
+
+
+  list.innerHTML = "";
+
+
+  for (
+    let pick = 1;
+    pick <= 10;
+    pick++
+  ) {
+
+    const row =
+    document.createElement("div");
+
+
+    row.className =
+    "order-row";
+
+
+    row.innerHTML = `
+
+    <div class="pick-number">
+    ${pick}
+    </div>
+
+    <div class="pick-manager">
+    TBD
+    </div>
+
+    `;
+
+
+    list.appendChild(row);
+
+  }
+
+}
+
+
+/* =====================================
+   EMPTY DRAFT BOARD
+===================================== */
+
+function buildEmptyBoard() {
+
+  const board =
+  document.getElementById(
+    "draftBoard"
+  );
+
+
+  board.innerHTML = "";
+
+
+  managerOrder.forEach(
+    function(manager) {
+
+      const column =
+      document.createElement("div");
+
+
+      column.className =
+      "team-column";
+
+
+      column.innerHTML = `
+
+      <div class="team-header">
+      ${displayNames[manager] || manager}
+      </div>
+
+      <div class="pick-cell placeholder">
+      Awaiting Draft
+      </div>
+
+      `;
+
+
+      board.appendChild(column);
+
+    }
+  );
+
+}
+
+
+/* =====================================
+   BUILD REAL DRAFT BOARD
+===================================== */
+
+function buildDraftBoard(picks) {
+
+  const board =
+  document.getElementById(
+    "draftBoard"
+  );
+
+
+  board.innerHTML = "";
+
+
+  const managerPicks = {};
+
+
+  managerOrder.forEach(
+    function(manager) {
+
+      managerPicks[manager] = [];
+
+    }
+  );
+
+
+  picks.forEach(function(pick) {
+
+    if (!managerPicks[pick.manager]) {
+
+      managerPicks[pick.manager] = [];
+
+    }
+
+
+    managerPicks[
+      pick.manager
+    ].push(pick);
+
+  });
+
+
+  const firstRound =
+  picks
+  .filter(function(pick) {
+
+    return (
+      Number(pick.roundId)
+      ===
+      1
+    );
+
+  })
+  .sort(function(a,b) {
+
+    return (
+      Number(a.roundPickNumber)
+      -
+      Number(b.roundPickNumber)
+    );
+
+  });
+
+
+  if (firstRound.length) {
+
+    const list =
+    document.getElementById(
+      "draftOrderList"
+    );
+
+
+    list.innerHTML = "";
+
+
+    firstRound.forEach(
+      function(pick) {
+
+        const row =
+        document.createElement("div");
+
+
+        row.className =
+        "order-row";
+
+
+        row.innerHTML = `
+
+        <div class="pick-number">
+        ${pick.roundPickNumber}
+        </div>
+
+        <div class="pick-manager">
+        ${displayNames[pick.manager] || pick.manager}
+        </div>
+
+        `;
+
+
+        list.appendChild(row);
+
+      }
+    );
+
+
+    document.getElementById(
+      "draftOrderLabel"
+    ).textContent =
+    "Official Draft Order";
+
+
+    document.getElementById(
+      "draftOrderNote"
+    ).textContent =
+    "Official 2026 draft order from ESPN.";
+
+  }
+
+
+  managerOrder.forEach(
+    function(manager) {
+
+      const column =
+      document.createElement("div");
+
+
+      column.className =
+      "team-column";
+
+
+      const managerDraft =
+      managerPicks[manager] || [];
+
+
+      managerDraft.sort(
+        function(a,b) {
+
+          return (
+            Number(a.overallPickNumber)
+            -
+            Number(b.overallPickNumber)
+          );
+
+        }
+      );
+
+
+      const pickHTML =
+      managerDraft.length
+      ?
+      managerDraft
+      .map(function(pick) {
+
+        return `
+
+        <div class="pick-cell">
+
+          <strong>
+          Pick ${pick.overallPickNumber}
+          </strong>
+
+          <span>
+          Round ${pick.roundId}
+          • Pick ${pick.roundPickNumber}
+          </span>
+
+          <span>
+          Player ID: ${pick.playerId}
+          </span>
+
+        </div>
+
+        `;
+
+      })
+      .join("")
+      :
+      `
+
+      <div class="pick-cell placeholder">
+      No picks found
+      </div>
+
+      `;
+
+
+      column.innerHTML = `
+
+      <div class="team-header">
+      ${displayNames[manager] || manager}
+      </div>
+
+      ${pickHTML}
+
+      `;
+
+
+      board.appendChild(column);
+
+    }
+  );
+
+}
+
+
+/* =====================================
+   LOAD ESPN DRAFT DATA
+===================================== */
+
+async function loadDraft() {
+
+  try {
+
+    const response =
+    await fetch(
+      "league-data.json?v=" +
+      Date.now()
+    );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Could not load league-data.json"
+      );
+
+    }
+
+
+    const data =
+    await response.json();
+
+
+    const draft =
+    data.draft || {
+      drafted: false,
+      picks: []
+    };
+
+
+    if (data.lastUpdated) {
+
+      const updated =
+      new Date(
+        data.lastUpdated
+      );
+
+
+      document.getElementById(
+        "syncBox"
+      ).textContent =
+      "ESPN last synced: " +
+      updated.toLocaleString();
+
+    }
+
+
+    if (
+      !draft.drafted
+      ||
+      !draft.picks
+      ||
+      draft.picks.length === 0
+    ) {
+
+      buildWaitingOrder();
+
+      buildEmptyBoard();
+
+      return;
+
+    }
+
+
+    document.getElementById(
+      "draftStatus"
+    ).textContent =
+    "Draft Complete";
+
+
+    document.getElementById(
+      "draftStatus"
+    ).className =
+    "draft-status status-complete";
+
+
+    document.getElementById(
+      "draftBoardLabel"
+    ).textContent =
+    draft.picks.length +
+    " Picks Loaded";
+
+
+    document.getElementById(
+      "draftBoardNote"
+    ).textContent =
+    "Official 2026 ESPN draft results.";
+
+
+    buildDraftBoard(
+      draft.picks
+    );
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+
+    document.getElementById(
+      "syncBox"
+    ).textContent =
+    "ESPN draft data unavailable";
+
+
+    buildWaitingOrder();
+
+    buildEmptyBoard();
+
+  }
+
+}
+
+
+/* =====================================
+   START
+===================================== */
+
+buildWaitingOrder();
+
+buildEmptyBoard();
+
+loadDraft();
+
+
 </script>
 
 </body>
+
 </html>
