@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rivalries | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: white;
+}
+
+header {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+    linear-gradient(180deg,#111,#050505);
+
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4af37;
+  font-size: clamp(42px,7vw,72px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  padding: 12px;
+
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.container {
+  width: min(1200px,92%);
+  margin: auto;
+  padding: 40px 0 70px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 35px;
+}
+
+.intro h2 {
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.intro p {
+  color: #999;
+  line-height: 1.6;
+}
+
+.rivalry-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.rivalry-card {
+  background: linear-gradient(145deg,#151515,#0d0d0d);
+  border: 1px solid #303030;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.rivalry-card.featured {
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 28px rgba(212,175,55,.10);
+}
+
+.rivalry-header {
+  background: #111;
+  padding: 18px 20px;
+  border-bottom: 2px solid #d4af37;
+}
+
+.rivalry-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.rivalry-title h2 {
+  margin: 0;
+  color: #d4af37;
+  font-size: 22px;
+}
+
+.badge {
+  background: #d4af37;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.series {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.series-matchup {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.series-manager {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.series-score {
+  color: #d4af37;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.series-vs {
+  color: #777;
+  font-weight: bold;
+}
+
+.series-leader {
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.stat {
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 13px;
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.stat strong {
+  color: #d4af37;
+  font-size: 15px;
+}
+
+.history-button {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 20px 20px;
+  padding: 12px;
+
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #d4af37;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.history-button:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.history {
+  display: none;
+  padding: 0 20px 20px;
+}
+
+.history.open {
+  display: block;
+}
+
+.history h3 {
+  color: #d4af37;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+.game-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid #222;
+  font-size: 13px;
+}
+
+.game-row:last-child {
+  border-bottom: none;
+}
+
+.game-meta {
+  color: #777;
+}
+
+.game-team {
+  font-weight: bold;
+}
+
+.game-score {
+  color: #d4af37;
+  font-weight: 900;
+}
+
+.loading {
+  text-align: center;
+  color: #999;
+  padding: 35px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+@media (max-width: 850px) {
+
+  .rivalry-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  .series-matchup {
+    grid-template-columns: 1fr;
+  }
+
+  .game-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Rivalries</h1>
+
+<p>
+JDC Degenerates • All-Time Series History
+</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="schedule.html">Schedule</a>
+<a href="index.html#standings">Standings</a>
+<a href="managers.html">Managers</a>
+<a href="recap.html">Weekly Recap</a>
+<a href="rivalries.html">Rivalries</a>
+<a href="index.html#champions">Champions</a>
+<a href="index.html#season-history">History</a>
+<a href="records.html">Records</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank"
+rel="noopener noreferrer">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<div class="intro">
+
+<h2>Week 14 Rivalry Series</h2>
+
+<p>
+Every rivalry below is calculated automatically from the
+historical ESPN scores pulled from the 2022–2025 seasons.
+</p>
+
+</div>
+
+<div id="rivalryGrid" class="rivalry-grid">
+
+<div class="loading">
+Loading rivalry history...
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<strong>JDC Degenerates</strong>
+
+<br><br>
+
+Fantasy Football League • Est. 2022
+
+</footer>
+
+<script>
+
+/* ==========================================
+   OFFICIAL WEEK 14 RIVALRIES
+========================================== */
+
+const rivalries = [
+
+  {
+    team1: "Devin",
+    team2: "Toby",
+    name: "Devin vs Toby"
+  },
+
+  {
+    team1: "Tom",
+    team2: "Josh",
+    name: "Tom vs Josh"
+  },
+
+  {
+    team1: "Matt",
+    team2: "Philip",
+    name: "Matt vs Philip"
+  },
+
+  {
+    team1: "Mike",
+    team2: "Hunter",
+    name: "Mike vs Hunter"
+  },
+
+  {
+    team1: "Steve H.",
+    team2: "Steve P.",
+    name: "Battle of the Steves"
+  }
+
+];
+
+
+/* ==========================================
+   BUILD ONE RIVALRY
+========================================== */
+
+function buildRivalry(rivalry, games, index) {
+
+  const relevantGames =
+  games.filter(function(game) {
+
+    const managers =
+    new Set([
+      game.awayManager,
+      game.homeManager
+    ]);
+
+    return (
+      managers.has(rivalry.team1)
+      &&
+      managers.has(rivalry.team2)
+    );
+
+  });
+
+
+  let team1Wins = 0;
+  let team2Wins = 0;
+  let ties = 0;
+
+  let team1Points = 0;
+  let team2Points = 0;
+
+  let biggest = null;
+  let closest = null;
+
+
+  relevantGames.forEach(function(game) {
+
+    let team1Score;
+    let team2Score;
+
+
+    if (game.awayManager === rivalry.team1) {
+
+      team1Score =
+      Number(game.awayScore || 0);
+
+      team2Score =
+      Number(game.homeScore || 0);
+
+    }
+
+    else {
+
+      team1Score =
+      Number(game.homeScore || 0);
+
+      team2Score =
+      Number(game.awayScore || 0);
+
+    }
+
+
+    team1Points += team1Score;
+    team2Points += team2Score;
+
+
+    if (team1Score > team2Score) {
+
+      team1Wins++;
+
+    }
+
+    else if (team2Score > team1Score) {
+
+      team2Wins++;
+
+    }
+
+    else {
+
+      ties++;
+
+    }
+
+
+    const margin =
+    Math.abs(
+      team1Score - team2Score
+    );
+
+
+    const item = {
+      ...game,
+      team1Score,
+      team2Score,
+      margin
+    };
+
+
+    if (
+      !biggest
+      ||
+      margin > biggest.margin
+    ) {
+
+      biggest = item;
+
+    }
+
+
+    if (
+      margin > 0
+      &&
+      (
+        !closest
+        ||
+        margin < closest.margin
+      )
+    ) {
+
+      closest = item;
+
+    }
+
+  });
+
+
+  relevantGames.sort(function(a,b) {
+
+    if (a.season !== b.season) {
+      return b.season - a.season;
+    }
+
+    return b.week - a.week;
+
+  });
+
+
+  const lastGame =
+  relevantGames.length
+  ?
+  relevantGames[0]
+  :
+  null;
+
+
+  let leaderText = "Series tied";
+
+
+  if (team1Wins > team2Wins) {
+
+    leaderText =
+    `${rivalry.team1} leads the series`;
+
+  }
+
+  else if (team2Wins > team1Wins) {
+
+    leaderText =
+    `${rivalry.team2} leads the series`;
+
+  }
+
+
+  let lastMeetingText =
+  "No previous meeting";
+
+
+  if (lastGame) {
+
+    lastMeetingText =
+    `${lastGame.season} W${lastGame.week}`;
+
+  }
+
+
+  let biggestText = "—";
+
+
+  if (biggest) {
+
+    biggestText =
+    `${biggest.margin.toFixed(2)} pts`;
+
+  }
+
+
+  let closestText = "—";
+
+
+  if (closest) {
+
+    closestText =
+    `${closest.margin.toFixed(2)} pts`;
+
+  }
+
+
+  const historyRows =
+  relevantGames.length
+  ?
+  relevantGames
+  .map(function(game) {
+
+    let team1Score;
+    let team2Score;
+
+
+    if (game.awayManager === rivalry.team1) {
+
+      team1Score =
+      Number(game.awayScore || 0);
+
+      team2Score =
+      Number(game.homeScore || 0);
+
+    }
+
+    else {
+
+      team1Score =
+      Number(game.homeScore || 0);
+
+      team2Score =
+      Number(game.awayScore || 0);
+
+    }
+
+
+    return `
+
+    <div class="game-row">
+
+      <span class="game-meta">
+        ${game.season} W${game.week}
+      </span>
+
+      <span class="game-team">
+        ${rivalry.team1}
+      </span>
+
+      <span class="game-score">
+        ${team1Score.toFixed(2)}
+        —
+        ${team2Score.toFixed(2)}
+      </span>
+
+      <span class="game-team">
+        ${rivalry.team2}
+      </span>
+
+    </div>
+
+    `;
+
+  })
+  .join("")
+  :
+  `
+
+  <div class="loading">
+  No historical meetings yet.
+  </div>
+
+  `;
+
+
+  return `
+
+  <div class="rivalry-card featured">
+
+    <div class="rivalry-header">
+
+      <div class="rivalry-title">
+
+        <h2>
+          ${rivalry.name}
+        </h2>
+
+        <span class="badge">
+          Week 14
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="series">
+
+      <div class="series-matchup">
+
+        <span class="series-manager">
+          ${rivalry.team1}
+        </span>
+
+        <span class="series-score">
+          ${team1Wins}
+          <span class="series-vs">-</span>
+          ${team2Wins}
+        </span>
+
+        <span class="series-manager">
+          ${rivalry.team2}
+        </span>
+
+      </div>
+
+
+      <div class="series-leader">
+
+        ${leaderText}
+
+        ${ties ? ` • ${ties} tie${ties === 1 ? "" : "s"}` : ""}
+
+      </div>
+
+    </div>
+
+
+    <div class="stats">
+
+      <div class="stat">
+
+        <span>
+        Meetings
+        </span>
+
+        <strong>
+        ${relevantGames.length}
+        </strong>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span>
+        Last Meeting
+        </span>
+
+        <strong>
+        ${lastMeetingText}
+        </strong>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span>
+        Biggest Margin
+        </span>
+
+        <strong>
+        ${biggestText}
+        </strong>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span>
+        Closest Game
+        </span>
+
+        <strong>
+        ${closestText}
+        </strong>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span>
+        ${rivalry.team1} Points
+        </span>
+
+        <strong>
+        ${team1Points.toFixed(2)}
+        </strong>
+
+      </div>
+
+
+      <div class="stat">
+
+        <span>
+        ${rivalry.team2} Points
+        </span>
+
+        <strong>
+        ${team2Points.toFixed(2)}
+        </strong>
+
+      </div>
+
+    </div>
+
+
+    <button
+      class="history-button"
+      onclick="toggleHistory('history-${index}', this)">
+      View Full History
+    </button>
+
+
+    <div
+      class="history"
+      id="history-${index}">
+
+      <h3>
+      All Meetings
+      </h3>
+
+      ${historyRows}
+
+    </div>
+
+  </div>
+
+  `;
+
+}
+
+
+/* ==========================================
+   EXPAND HISTORY
+========================================== */
+
+function toggleHistory(id, button) {
+
+  const section =
+  document.getElementById(id);
+
+  const open =
+  section.classList.contains("open");
+
+
+  section.classList.toggle(
+    "open"
+  );
+
+
+  button.textContent =
+  open
+  ?
+  "View Full History"
+  :
+  "Hide Full History";
+
+}
+
+
+/* ==========================================
+   LOAD ESPN HISTORY
+========================================== */
+
+async function loadRivalries() {
+
+  const grid =
+  document.getElementById(
+    "rivalryGrid"
+  );
+
+
+  try {
+
+    const response =
+    await fetch(
+      "league-history.json?v=" +
+      Date.now()
+    );
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        "Could not load history"
+      );
+
+    }
+
+
+    const data =
+    await response.json();
+
+
+    const games = [];
+
+
+    Object.entries(
+      data.seasons || {}
+    )
+    .forEach(
+      function([season,seasonData]) {
+
+        (
+          seasonData.matchups
+          ||
+          []
+        )
+        .forEach(function(game) {
+
+          if (
+            game.awayManager === "UNKNOWN"
+            ||
+            game.homeManager === "UNKNOWN"
+          ) {
+
+            return;
+
+          }
+
+
+          if (
+            Number(game.awayScore) === 0
+            &&
+            Number(game.homeScore) === 0
+          ) {
+
+            return;
+
+          }
+
+
+          games.push({
+
+            ...game,
+
+            season:
+            Number(season)
+
+          });
+
+        });
+
+      }
+    );
+
+
+    grid.innerHTML =
+    rivalries
+    .map(
+      function(rivalry,index) {
+
+        return buildRivalry(
+          rivalry,
+          games,
+          index
+        );
+
+      }
+    )
+    .join("");
+
+
+  }
+
+  catch (error) {
+
+    console.error(error);
+
+    grid.innerHTML = `
+
+    <div class="loading">
+
+    Rivalry history is temporarily unavailable.
+
+    </div>
+
+    `;
+
+  }
+
+}
+
+
+loadRivalries();
+
+</script>
+
+</body>
+
+</html>
