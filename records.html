@@ -6,13 +6,11 @@
 <meta charset="UTF-8">
 
 <meta
-name="viewport"
-content="width=device-width, initial-scale=1.0"
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
 >
 
-<title>
-League Records | JDC Degenerates
-</title>
+<title>League Records | JDC Degenerates</title>
 
 <style>
 
@@ -174,7 +172,6 @@ nav a:hover {
 
 .record-label {
   display: block;
-
   color: #9299a3;
 
   font-size: 11px;
@@ -186,7 +183,6 @@ nav a:hover {
 
 .record-value {
   display: block;
-
   color: #d4af37;
 
   font-size: 19px;
@@ -196,13 +192,12 @@ nav a:hover {
 
 .record-detail {
   display: block;
-
-  color: #aaa;
+  color: #c6c6c6;
 
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.6;
 
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .table-wrap {
@@ -288,9 +283,7 @@ footer strong {
 
 <header>
 
-<h1>
-League Record Book
-</h1>
+<h1>League Record Book</h1>
 
 <p>
 JDC Degenerates • 2022–2025 History
@@ -301,54 +294,32 @@ JDC Degenerates • 2022–2025 History
 
 <nav>
 
-<a href="index.html">
-Home
-</a>
+<a href="index.html">Home</a>
 
-<a href="schedule.html">
-Schedule
-</a>
+<a href="schedule.html">Schedule</a>
 
-<a href="index.html#standings">
-Standings
-</a>
+<a href="index.html#standings">Standings</a>
 
-<a href="index.html#playoff-race">
-Playoff Race
-</a>
+<a href="index.html#playoff-race">Playoff Race</a>
 
-<a href="managers.html">
-Managers
-</a>
+<a href="managers.html">Managers</a>
 
-<a href="recap.html">
-Weekly Recap
-</a>
+<a href="recap.html">Weekly Recap</a>
 
-<a href="rivalries.html">
-Rivalries
-</a>
+<a href="rivalries.html">Rivalries</a>
 
-<a href="draft.html">
-Draft Central
-</a>
+<a href="draft.html">Draft Central</a>
 
-<a href="index.html#champions">
-Champions
-</a>
+<a href="index.html#champions">Champions</a>
 
-<a href="index.html#season-history">
-History
-</a>
+<a href="index.html#season-history">History</a>
 
-<a href="records.html">
-Records
-</a>
+<a href="records.html">Records</a>
 
 <a
-href="https://fantasy.espn.com/football/league?leagueId=90156758"
-target="_blank"
-rel="noopener noreferrer"
+  href="https://fantasy.espn.com/football/league?leagueId=90156758"
+  target="_blank"
+  rel="noopener noreferrer"
 >
 ESPN League
 </a>
@@ -359,7 +330,7 @@ ESPN League
 <div class="container">
 
 
-<!-- ALL-TIME RECORDS -->
+<!-- ALL-TIME SCORING -->
 
 <section class="card">
 
@@ -379,13 +350,13 @@ Regular Season + Playoff Bracket
 
 Losers Bracket games are
 <strong>not included</strong>
-in official scoring records.
+in official records.
 
 </div>
 
 <div
-class="records-grid"
-id="scoringRecords"
+  class="records-grid"
+  id="scoringRecords"
 >
 
 <div class="loading">
@@ -414,8 +385,8 @@ Regular Season Only
 </div>
 
 <div
-class="records-grid"
-id="seasonRecords"
+  class="records-grid"
+  id="seasonRecords"
 >
 
 <div class="loading">
@@ -445,14 +416,15 @@ Regular Season + Playoff Bracket
 
 <div class="info-box">
 
-Losers Bracket games do not count toward career wins,
-losses, points or career win percentage.
+<strong>Career Points</strong>
+are calculated from regular-season games plus official
+Playoff Bracket games. Losers Bracket games never count.
 
 </div>
 
 <div
-class="records-grid"
-id="careerRecords"
+  class="records-grid"
+  id="careerRecords"
 >
 
 <div class="loading">
@@ -481,8 +453,8 @@ Official Games
 </div>
 
 <div
-class="records-grid"
-id="streakRecords"
+  class="records-grid"
+  id="streakRecords"
 >
 
 <div class="loading">
@@ -518,8 +490,8 @@ Losers Bracket games are completely separate.
 </div>
 
 <div
-class="records-grid"
-id="playoffRecords"
+  class="records-grid"
+  id="playoffRecords"
 >
 
 <div class="loading">
@@ -548,8 +520,8 @@ Championship Bracket Only
 </div>
 
 <div
-class="records-grid"
-id="playoffScoringRecords"
+  class="records-grid"
+  id="playoffScoringRecords"
 >
 
 <div class="loading">
@@ -580,13 +552,13 @@ Separate Record Book
 <div class="info-box">
 
 These games are tracked separately and do not affect
-official playoff or career statistics.
+official career or Playoff Bracket statistics.
 
 </div>
 
 <div
-class="records-grid"
-id="losersRecords"
+  class="records-grid"
+  id="losersRecords"
 >
 
 <div class="loading">
@@ -615,8 +587,8 @@ Regular Season + Playoff Bracket
 </div>
 
 <div
-class="records-grid"
-id="h2hRecords"
+  class="records-grid"
+  id="h2hRecords"
 >
 
 <div class="loading">
@@ -645,8 +617,8 @@ Official Games
 </div>
 
 <div
-class="records-grid"
-id="weirdRecords"
+  class="records-grid"
+  id="weirdRecords"
 >
 
 <div class="loading">
@@ -688,7 +660,7 @@ Losers Bracket Excluded
 <th>L</th>
 <th>T</th>
 <th>Win %</th>
-<th>Points</th>
+<th>Career Points</th>
 <th>Avg</th>
 <th>High</th>
 
@@ -696,14 +668,13 @@ Losers Bracket Excluded
 
 </thead>
 
-
 <tbody id="careerTable">
 
 <tr>
 
 <td
-colspan="9"
-class="loading"
+  colspan="9"
+  class="loading"
 >
 Loading career records...
 </td>
@@ -753,14 +724,13 @@ Regular Season Only
 
 </thead>
 
-
 <tbody id="seasonTable">
 
 <tr>
 
 <td
-colspan="5"
-class="loading"
+  colspan="5"
+  class="loading"
 >
 Loading season records...
 </td>
@@ -776,7 +746,7 @@ Loading season records...
 </section>
 
 
-<!-- PLAYOFF HISTORY -->
+<!-- PLAYOFF TABLE -->
 
 <section class="card">
 
@@ -813,14 +783,13 @@ Official Playoffs
 
 </thead>
 
-
 <tbody id="playoffTable">
 
 <tr>
 
 <td
-colspan="8"
-class="loading"
+  colspan="8"
+  class="loading"
 >
 Loading playoff history...
 </td>
@@ -836,7 +805,7 @@ Loading playoff history...
 </section>
 
 
-<!-- LOSERS HISTORY -->
+<!-- LOSERS TABLE -->
 
 <section class="card">
 
@@ -872,14 +841,13 @@ Separate From Playoffs
 
 </thead>
 
-
 <tbody id="losersTable">
 
 <tr>
 
 <td
-colspan="7"
-class="loading"
+  colspan="7"
+  class="loading"
 >
 Loading Losers Bracket history...
 </td>
@@ -896,9 +864,9 @@ Loading Losers Bracket history...
 
 
 <div
-id="classificationWarning"
-class="info-box"
-style="display:none;"
+  id="classificationWarning"
+  class="info-box"
+  style="display:none;"
 >
 </div>
 
@@ -923,8 +891,7 @@ Fantasy Football League • Est. 2022
 
 
 /* =========================================
-   SEASON FORMAT DATA
-   HIDDEN FROM WEBSITE
+   HISTORICAL FORMAT
 ========================================= */
 
 const seasonFormats = {
@@ -1036,7 +1003,7 @@ const seasonFormats = {
 
 
 /* =========================================
-   ACTUAL CHAMPIONSHIP RESULTS
+   CHAMPIONSHIP RESULTS
 ========================================= */
 
 const championshipHistory = {
@@ -1082,7 +1049,7 @@ const losersBracketHistory = {
 
 
 /* =========================================
-   EXCLUDED MANAGERS
+   EXCLUDED MANAGER
 ========================================= */
 
 function isExcluded(manager) {
@@ -1105,7 +1072,7 @@ function isExcluded(manager) {
 
 
 /* =========================================
-   BASIC HELPERS
+   HELPERS
 ========================================= */
 
 function percentage(
@@ -1121,9 +1088,7 @@ function percentage(
 
 
   if (!total) {
-
     return 0;
-
   }
 
 
@@ -1210,13 +1175,9 @@ function getTiedLeaders(
   const value =
   highest
   ?
-  Math.max(
-    ...values
-  )
+  Math.max(...values)
   :
-  Math.min(
-    ...values
-  );
+  Math.min(...values);
 
 
   return {
@@ -1302,8 +1263,124 @@ function card(
 }
 
 
+function performanceDetail(
+  record
+) {
+
+  if (
+    !record
+    ||
+    !record.items
+    ||
+    !record.items.length
+  ) {
+
+    return "";
+
+  }
+
+
+  return record.items
+  .map(
+    function(p) {
+
+      return (
+        p.manager
+        +
+        " "
+        +
+        Number(
+          p.score
+        ).toFixed(2)
+        +
+        " vs "
+        +
+        p.opponent
+        +
+        " "
+        +
+        Number(
+          p.opponentScore
+        ).toFixed(2)
+        +
+        " • "
+        +
+        p.season
+        +
+        " • "
+        +
+        p.roundName
+      );
+
+    }
+  )
+  .join(
+    "<br>"
+  );
+
+}
+
+
+function matchupDetail(
+  record
+) {
+
+  if (
+    !record
+    ||
+    !record.items
+    ||
+    !record.items.length
+  ) {
+
+    return "";
+
+  }
+
+
+  return record.items
+  .map(
+    function(game) {
+
+      return (
+        game.awayManager
+        +
+        " "
+        +
+        Number(
+          game.awayScore
+        ).toFixed(2)
+        +
+        " vs "
+        +
+        game.homeManager
+        +
+        " "
+        +
+        Number(
+          game.homeScore
+        ).toFixed(2)
+        +
+        " • "
+        +
+        game.season
+        +
+        " • "
+        +
+        game.roundName
+      );
+
+    }
+  )
+  .join(
+    "<br>"
+  );
+
+}
+
+
 /* =========================================
-   SEASON PERIOD
+   PERIOD INFO
 ========================================= */
 
 function getPeriodInfo(
@@ -1335,7 +1412,7 @@ function getPeriodInfo(
 
     return {
       type: "REGULAR",
-      roundName: null,
+      roundName: `Week ${week}`,
       roundIndex: null
     };
 
@@ -1384,7 +1461,7 @@ function getPeriodInfo(
 
 
 /* =========================================
-   CHAMPIONSHIP FINALIST CHECK
+   FINALIST CHECK
 ========================================= */
 
 function isChampionshipFinal(
@@ -1393,23 +1470,21 @@ function isChampionshipFinal(
   manager2
 ) {
 
-  const result =
+  const final =
   championshipHistory[
     season
   ];
 
 
-  if (!result) {
-
+  if (!final) {
     return false;
-
   }
 
 
-  const actualFinalists =
+  const known =
   [
-    result.champion,
-    result.runnerUp
+    final.champion,
+    final.runnerUp
   ]
   .map(
     name =>
@@ -1420,7 +1495,7 @@ function isChampionshipFinal(
   .sort();
 
 
-  const matchup =
+  const actual =
   [
     manager1,
     manager2
@@ -1435,20 +1510,18 @@ function isChampionshipFinal(
 
 
   return (
-    actualFinalists[0]
-    ===
-    matchup[0]
+    known[0] ===
+    actual[0]
     &&
-    actualFinalists[1]
-    ===
-    matchup[1]
+    known[1] ===
+    actual[1]
   );
 
 }
 
 
 /* =========================================
-   POSTSEASON BRACKET CLASSIFIER
+   BRACKET CLASSIFICATION
 ========================================= */
 
 function classifyPostseasonRound(
@@ -1461,14 +1534,13 @@ function classifyPostseasonRound(
 
 
   /*
-     CHAMPIONSHIP ROUND
+     FINAL ROUND:
 
-     We know exactly who played
-     in every championship.
+     We know the actual championship
+     matchup each season.
 
-     Therefore any other matchup
-     during the championship round
-     is automatically Losers Bracket.
+     Everyone else in that round
+     belongs to the Losers Bracket.
   */
 
   if (
@@ -1476,31 +1548,26 @@ function classifyPostseasonRound(
     "Championship"
   ) {
 
-    if (
-      isChampionshipFinal(
-        first.season,
-        first.awayManager,
-        first.homeManager
-      )
-    ) {
-
-      return "PLAYOFF";
-
-    }
-
-
-    return "LOSERS";
+    return isChampionshipFinal(
+      first.season,
+      first.awayManager,
+      first.homeManager
+    )
+    ?
+    "PLAYOFF"
+    :
+    "LOSERS";
 
   }
 
 
   /*
-     EARLIER ROUNDS
+     ROUNDS 1 & 2:
 
-     Use ESPN's bracket indicator.
+     Use ESPN bracket indicator.
   */
 
-  const tierText =
+  const tier =
   entries
   .map(
     game =>
@@ -1515,13 +1582,9 @@ function classifyPostseasonRound(
 
 
   if (
-    tierText.includes(
-      "WINNER"
-    )
+    tier.includes("WINNER")
     ||
-    tierText.includes(
-      "CHAMP"
-    )
+    tier.includes("CHAMP")
   ) {
 
     return "PLAYOFF";
@@ -1530,13 +1593,9 @@ function classifyPostseasonRound(
 
 
   if (
-    tierText.includes(
-      "LOSER"
-    )
+    tier.includes("LOSER")
     ||
-    tierText.includes(
-      "CONSOL"
-    )
+    tier.includes("CONSOL")
   ) {
 
     return "LOSERS";
@@ -1550,7 +1609,7 @@ function classifyPostseasonRound(
 
 
 /* =========================================
-   LOAD HISTORY
+   LOAD RECORDS
 ========================================= */
 
 async function loadRecords() {
@@ -1565,9 +1624,7 @@ async function loadRecords() {
     );
 
 
-    if (
-      !response.ok
-    ) {
+    if (!response.ok) {
 
       throw new Error(
         "Could not load league-history.json"
@@ -1722,7 +1779,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       REGULAR SEASON
+       REGULAR-SEASON GAMES
     ========================================= */
 
     const regularGames =
@@ -1772,7 +1829,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       GROUP POSTSEASON ROUNDS
+       GROUP POSTSEASON BY MATCHUP + ROUND
     ========================================= */
 
     const postseasonRaw =
@@ -1838,7 +1895,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       TURN EACH ROUND INTO ONE GAME
+       AGGREGATE MULTI-WEEK PLAYOFF GAME
     ========================================= */
 
     function aggregateRound(
@@ -1910,41 +1967,50 @@ async function loadRecords() {
       );
 
 
+      /*
+         DEFAULT:
+
+         Each week contains its own
+         weekly score, so add them.
+      */
+
       let awayScore =
       awayScores.reduce(
-        (sum,value) =>
-        sum + value,
+        (total,value) =>
+        total + value,
         0
       );
 
 
       let homeScore =
       homeScores.reduce(
-        (sum,value) =>
-        sum + value,
+        (total,value) =>
+        total + value,
         0
       );
 
 
       /*
-         ESPN MAY SAVE WEEK TWO AS
-         A CUMULATIVE TOTAL.
+         ESPN SOMETIMES STORES WEEK TWO
+         AS THE FULL CUMULATIVE TOTAL.
 
-         Example:
-         Week 17 = 180
-         Week 18 = 413
-
-         In that case 413 is already
-         the full two-week total.
-
-         We should NOT calculate
-         180 + 413.
+         If that clearly happened,
+         use the final stored total
+         instead of adding it twice.
       */
 
       if (
         entries.length >
         1
       ) {
+
+        const firstAway =
+        awayScores[0];
+
+
+        const firstHome =
+        homeScores[0];
+
 
         const lastAway =
         awayScores[
@@ -1958,32 +2024,28 @@ async function loadRecords() {
         ];
 
 
-        const firstAway =
-        awayScores[0];
-
-
-        const firstHome =
-        homeScores[0];
-
-
-        const looksCumulative =
-        (
-          lastAway >
-          firstAway * 1.45
-          ||
-          lastHome >
-          firstHome * 1.45
-        )
-        &&
+        const awayLooksCumulative =
         (
           lastAway > 250
-          ||
+          &&
+          lastAway >
+          firstAway * 1.40
+        );
+
+
+        const homeLooksCumulative =
+        (
           lastHome > 250
+          &&
+          lastHome >
+          firstHome * 1.40
         );
 
 
         if (
-          looksCumulative
+          awayLooksCumulative
+          ||
+          homeLooksCumulative
         ) {
 
           awayScore =
@@ -2080,6 +2142,17 @@ async function loadRecords() {
     );
 
 
+    /*
+       THIS IS THE ONE OFFICIAL GAME SET.
+
+       EVERYTHING CALLED "CAREER",
+       "OFFICIAL", "H2H" OR "STREAK"
+       BELOW USES THIS SAME ARRAY.
+
+       That prevents career points from
+       changing between different sections.
+    */
+
     const officialGames =
     [
       ...regularGames,
@@ -2109,9 +2182,9 @@ async function loadRecords() {
 
       ${unknownGames.length}
       postseason matchup${unknownGames.length === 1 ? "" : "s"}
-      could not be safely identified as Playoff Bracket or Losers Bracket.
+      could not be safely classified.
 
-      Those games were excluded instead of being guessed.
+      They are excluded instead of being guessed.
 
       `;
 
@@ -2309,7 +2382,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       MAIN SCORING RECORDS
+       SCORING RECORDS
     ========================================= */
 
     const highestScore =
@@ -2374,7 +2447,8 @@ async function loadRecords() {
 
       officialPerformances.filter(
         p =>
-        p.result ===
+        p.result
+        ===
         "L"
       ),
 
@@ -2388,7 +2462,8 @@ async function loadRecords() {
 
       officialPerformances.filter(
         p =>
-        p.result ===
+        p.result
+        ===
         "W"
       ),
 
@@ -2400,7 +2475,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       CAREER BUILDER
+       CAREER
     ========================================= */
 
     function buildCareer(
@@ -2455,8 +2530,13 @@ async function loadRecords() {
 
           c.games++;
 
-          c.points +=
-          p.score;
+          c.points =
+          Number(
+            (
+              c.points +
+              p.score
+            ).toFixed(2)
+          );
 
 
           if (
@@ -2539,6 +2619,11 @@ async function loadRecords() {
 
     }
 
+
+    /*
+       CAREER IS BUILT ONCE
+       FROM OFFICIAL PERFORMANCES.
+    */
 
     const career =
     buildCareer(
@@ -2662,7 +2747,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       REGULAR-SEASON RECORDS
+       SEASON RECORDS
     ========================================= */
 
     const seasonStats =
@@ -2724,8 +2809,14 @@ async function loadRecords() {
 
         s.games++;
 
-        s.points +=
-        p.score;
+
+        s.points =
+        Number(
+          (
+            s.points +
+            p.score
+          ).toFixed(2)
+        );
 
 
         if (
@@ -3158,29 +3249,13 @@ async function loadRecords() {
         game.homeManager;
 
 
-        if (
-          !h2h[
-            away
-          ]
-        ) {
-
-          h2h[
-            away
-          ] = {};
-
+        if (!h2h[away]) {
+          h2h[away] = {};
         }
 
 
-        if (
-          !h2h[
-            home
-          ]
-        ) {
-
-          h2h[
-            home
-          ] = {};
-
+        if (!h2h[home]) {
+          h2h[home] = {};
         }
 
 
@@ -3199,9 +3274,7 @@ async function loadRecords() {
           ] = {
 
             wins: 0,
-
             losses: 0,
-
             ties: 0
 
           };
@@ -3224,9 +3297,7 @@ async function loadRecords() {
           ] = {
 
             wins: 0,
-
             losses: 0,
-
             ties: 0
 
           };
@@ -3708,7 +3779,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       PLAYOFF SCORING RECORDS
+       PLAYOFF SCORING
     ========================================= */
 
     const playoffHigh =
@@ -3796,7 +3867,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       RENDER ALL-TIME
+       RENDER SCORING
     ========================================= */
 
     document.getElementById(
@@ -3823,11 +3894,9 @@ async function loadRecords() {
       :
       "—",
 
-      highestScore.items[0]
-      ?
-      `${highestScore.items[0].season} • ${highestScore.items[0].roundName}`
-      :
-      ""
+      performanceDetail(
+        highestScore
+      )
 
     )
 
@@ -3852,7 +3921,11 @@ async function loadRecords() {
       +
       lowestScore.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        lowestScore
+      )
 
     )
 
@@ -3871,7 +3944,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        biggestBlowout
+      )
 
     )
 
@@ -3890,7 +3967,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        closestGame
+      )
 
     )
 
@@ -3909,7 +3990,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        highestCombined
+      )
 
     )
 
@@ -3928,7 +4013,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        lowestCombined
+      )
 
     )
 
@@ -3953,7 +4042,11 @@ async function loadRecords() {
       +
       highestLoss.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        highestLoss
+      )
 
     )
 
@@ -3978,7 +4071,11 @@ async function loadRecords() {
       +
       lowestWin.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        lowestWin
+      )
 
     )
 
@@ -4314,7 +4411,9 @@ async function loadRecords() {
       +
       " — "
       +
-      careerPoints.value.toFixed(2)
+      careerPoints.value.toFixed(2),
+
+      "Regular Season + Playoff Bracket only"
 
     )
 
@@ -4334,7 +4433,9 @@ async function loadRecords() {
       +
       " — "
       +
-      bestCareerAverage.value.toFixed(2)
+      bestCareerAverage.value.toFixed(2),
+
+      "Minimum 10 official games"
 
     )
 
@@ -4446,7 +4547,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       RENDER PLAYOFF
+       RENDER PLAYOFF RECORDS
     ========================================= */
 
     document.getElementById(
@@ -4498,7 +4599,7 @@ async function loadRecords() {
       :
       "—",
 
-      "Multi-week rounds count as one game."
+      "Two-week rounds count as one game."
 
     )
 
@@ -4684,7 +4785,11 @@ async function loadRecords() {
       +
       playoffHigh.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        playoffHigh
+      )
 
     )
 
@@ -4709,7 +4814,11 @@ async function loadRecords() {
       +
       playoffLow.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        playoffLow
+      )
 
     )
 
@@ -4728,7 +4837,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        playoffBiggest
+      )
 
     )
 
@@ -4747,7 +4860,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        playoffClosest
+      )
 
     );
 
@@ -4905,11 +5022,9 @@ async function loadRecords() {
       :
       "—",
 
-      losersHigh.items[0]
-      ?
-      `${losersHigh.items[0].season} • ${losersHigh.items[0].roundName}`
-      :
-      ""
+      performanceDetail(
+        losersHigh
+      )
 
     )
 
@@ -4934,7 +5049,11 @@ async function loadRecords() {
       +
       losersLow.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        losersLow
+      )
 
     )
 
@@ -4953,7 +5072,11 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        losersBiggest
+      )
 
     )
 
@@ -4972,13 +5095,17 @@ async function loadRecords() {
       +
       " points"
       :
-      "—"
+      "—",
+
+      matchupDetail(
+        losersClosest
+      )
 
     );
 
 
     /* =========================================
-       RENDER H2H
+       H2H
     ========================================= */
 
     document.getElementById(
@@ -5059,7 +5186,11 @@ async function loadRecords() {
       +
       highestLoss.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        highestLoss
+      )
 
     )
 
@@ -5084,7 +5215,11 @@ async function loadRecords() {
       +
       lowestWin.value.toFixed(2)
       :
-      "—"
+      "—",
+
+      performanceDetail(
+        lowestWin
+      )
 
     )
 
@@ -5160,21 +5295,21 @@ async function loadRecords() {
       function(a,b) {
 
         if (
-          b[1].wins !==
-          a[1].wins
+          b[1].points !==
+          a[1].points
         ) {
 
           return (
-            b[1].wins -
-            a[1].wins
+            b[1].points -
+            a[1].points
           );
 
         }
 
 
         return (
-          b[1].points -
-          a[1].points
+          b[1].wins -
+          a[1].wins
         );
 
       }
@@ -5220,7 +5355,7 @@ async function loadRecords() {
         )}
         </td>
 
-        <td>
+        <td class="gold">
         ${c.points.toFixed(2)}
         </td>
 
@@ -5339,7 +5474,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       PLAYOFF TABLE
+       PLAYOFF HISTORY TABLE
     ========================================= */
 
     const playoffTable =
@@ -5481,7 +5616,7 @@ async function loadRecords() {
 
 
     /* =========================================
-       LOSERS TABLE
+       LOSERS HISTORY TABLE
     ========================================= */
 
     const losersTable =
@@ -5643,9 +5778,7 @@ async function loadRecords() {
         );
 
 
-        if (
-          element
-        ) {
+        if (element) {
 
           element.innerHTML = `
 
@@ -5666,7 +5799,6 @@ async function loadRecords() {
 
 
 loadRecords();
-
 
 </script>
 
