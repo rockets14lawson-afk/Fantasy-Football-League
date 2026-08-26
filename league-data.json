@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-08-26T11:34:59.692016+00:00",
+  "lastUpdated": "2026-08-26T11:43:11.223707+00:00",
   "currentMatchupPeriod": 1,
   "currentScoringPeriod": 1,
   "teams": [
@@ -678,6 +678,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -688,6 +689,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -698,6 +700,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -708,6 +711,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -718,6 +722,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -728,6 +733,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -738,6 +744,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -748,6 +755,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -758,6 +766,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -768,6 +777,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -778,6 +788,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -788,6 +799,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -798,6 +810,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -808,6 +821,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -818,6 +832,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -828,6 +843,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -838,6 +854,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -848,6 +865,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -858,6 +876,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -868,6 +887,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -878,6 +898,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -888,6 +909,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -898,6 +920,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -908,6 +931,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -918,6 +942,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -928,6 +953,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -938,6 +964,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -948,6 +975,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -958,6 +986,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -968,6 +997,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -978,6 +1008,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -988,6 +1019,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -998,6 +1030,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1008,6 +1041,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1018,6 +1052,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1028,6 +1063,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1038,6 +1074,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1048,6 +1085,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1058,6 +1096,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1068,6 +1107,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1078,6 +1118,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1088,6 +1129,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1098,6 +1140,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1108,6 +1151,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1118,6 +1162,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1128,6 +1173,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1138,6 +1184,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1148,6 +1195,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1158,6 +1206,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1168,6 +1217,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1178,6 +1228,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1188,6 +1239,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1198,6 +1250,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1208,6 +1261,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1218,6 +1272,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1228,6 +1283,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1238,6 +1294,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1248,6 +1305,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1258,6 +1316,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1268,6 +1327,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1278,6 +1338,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1288,6 +1349,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1298,6 +1360,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1308,6 +1371,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1318,6 +1382,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1328,6 +1393,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1338,6 +1404,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1348,6 +1415,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1358,6 +1426,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1368,6 +1437,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1378,6 +1448,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1388,6 +1459,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1398,6 +1470,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1408,6 +1481,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1418,6 +1492,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1428,6 +1503,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1438,6 +1514,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1448,6 +1525,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1458,6 +1536,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1468,6 +1547,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1478,6 +1558,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1488,6 +1569,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1498,6 +1580,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1508,6 +1591,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1518,6 +1602,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1528,6 +1613,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1538,6 +1624,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1548,6 +1635,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1558,6 +1646,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1568,6 +1657,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1578,6 +1668,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1588,6 +1679,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1598,6 +1690,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1608,6 +1701,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1618,6 +1712,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1628,6 +1723,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1638,6 +1734,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1648,6 +1745,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1658,6 +1756,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1668,6 +1767,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1678,6 +1778,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1688,6 +1789,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1698,6 +1800,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1708,6 +1811,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1718,6 +1822,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1728,6 +1833,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1738,6 +1844,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1748,6 +1855,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1758,6 +1866,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1768,6 +1877,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1778,6 +1888,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1788,6 +1899,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1798,6 +1910,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1808,6 +1921,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1818,6 +1932,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1828,6 +1943,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1838,6 +1954,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1848,6 +1965,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1858,6 +1976,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1868,6 +1987,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1878,6 +1998,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1888,6 +2009,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1898,6 +2020,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1908,6 +2031,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1918,6 +2042,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1928,6 +2053,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1938,6 +2064,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1948,6 +2075,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1958,6 +2086,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1968,6 +2097,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1978,6 +2108,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1988,6 +2119,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1998,6 +2130,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2008,6 +2141,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2018,6 +2152,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2028,6 +2163,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2038,6 +2174,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2048,6 +2185,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2058,6 +2196,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2068,6 +2207,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2078,6 +2218,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2088,6 +2229,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2098,6 +2240,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2108,6 +2251,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2118,6 +2262,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2128,6 +2273,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2138,6 +2284,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2148,6 +2295,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2158,6 +2306,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2168,6 +2317,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2178,6 +2328,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2188,6 +2339,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2198,6 +2350,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2208,6 +2361,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2218,6 +2372,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2228,6 +2383,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2238,6 +2394,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2248,6 +2405,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2258,6 +2416,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2268,6 +2427,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2278,6 +2438,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2288,6 +2449,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2298,6 +2460,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2308,6 +2471,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2318,6 +2482,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2328,6 +2493,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2338,6 +2504,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2348,6 +2515,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2358,6 +2526,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2368,6 +2537,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": -1,
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       }
