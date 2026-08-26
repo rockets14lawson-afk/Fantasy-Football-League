@@ -1024,9 +1024,13 @@ function buildDraftBoard(picks) {
           • Pick ${pick.roundPickNumber}
           </span>
 
-          <span>
-          Player ID: ${pick.playerId}
-          </span>
+          <strong>
+${pick.playerName || "Player Name Pending"}
+</strong>
+
+<span>
+Player ID: ${pick.playerId}
+</span>
 
         </div>
 
