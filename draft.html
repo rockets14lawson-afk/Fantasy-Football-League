@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Draft Central | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: white;
+}
+
+header {
+  background:
+    radial-gradient(circle at top, rgba(212,175,55,.22), transparent 45%),
+    linear-gradient(180deg,#111,#050505);
+
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #d4af37;
+}
+
+header h1 {
+  margin: 0;
+  color: #d4af37;
+  font-size: clamp(42px,7vw,72px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  padding: 12px;
+
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.container {
+  width: min(1150px,92%);
+  margin: auto;
+  padding: 40px 0 70px;
+}
+
+.card {
+  background: linear-gradient(145deg,#151515,#0d0d0d);
+  border: 1px solid #303030;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+
+  border-bottom: 2px solid #d4af37;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #d4af37;
+}
+
+.section-title span {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.count-box {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.count-box strong {
+  display: block;
+  color: #d4af37;
+  font-size: 30px;
+}
+
+.count-box span {
+  display: block;
+  color: #888;
+  margin-top: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.draft-details {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+}
+
+.detail-box {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+.detail-box span {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 7px;
+}
+
+.detail-box strong {
+  color: #d4af37;
+  font-size: 17px;
+}
+
+.order-list {
+  display: grid;
+  gap: 10px;
+}
+
+.order-row {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  align-items: center;
+  gap: 12px;
+
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.pick-number {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d4af37;
+  color: black;
+
+  font-weight: 900;
+}
+
+.pick-manager {
+  font-weight: bold;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 12px;
+}
+
+.rule {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.rule span {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.rule strong {
+  color: #d4af37;
+}
+
+.draft-board {
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 6px;
+  overflow-x: auto;
+}
+
+.team-column {
+  min-width: 120px;
+}
+
+.team-header {
+  background: #d4af37;
+  color: black;
+  text-align: center;
+  padding: 10px 6px;
+  font-weight: 900;
+  border-radius: 8px 8px 0 0;
+}
+
+.pick-cell {
+  background: #101010;
+  border: 1px solid #292929;
+  min-height: 58px;
+  padding: 8px;
+  font-size: 11px;
+}
+
+.placeholder {
+  color: #777;
+  font-style: italic;
+}
+
+.note {
+  text-align: center;
+  color: #999;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+@media (max-width: 850px) {
+
+  .draft-details {
+    grid-template-columns: 1fr;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .countdown {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Draft Central</h1>
+
+<p>
+JDC Degenerates • 2026 Fantasy Football Draft
+</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="schedule.html">Schedule</a>
+<a href="index.html#standings">Standings</a>
+<a href="managers.html">Managers</a>
+<a href="recap.html">Weekly Recap</a>
+<a href="rivalries.html">Rivalries</a>
+<a href="draft.html">Draft Central</a>
+<a href="index.html#champions">Champions</a>
+<a href="index.html#season-history">History</a>
+<a href="records.html">Records</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank"
+rel="noopener noreferrer">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<!-- COUNTDOWN -->
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Draft Countdown</h2>
+  <span>September 5, 2026 • 12:30 PM</span>
+</div>
+
+<div class="countdown">
+
+<div class="count-box">
+  <strong id="days">0</strong>
+  <span>Days</span>
+</div>
+
+<div class="count-box">
+  <strong id="hours">0</strong>
+  <span>Hours</span>
+</div>
+
+<div class="count-box">
+  <strong id="minutes">0</strong>
+  <span>Minutes</span>
+</div>
+
+<div class="count-box">
+  <strong id="seconds">0</strong>
+  <span>Seconds</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DETAILS -->
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Draft Details</h2>
+  <span>2026</span>
+</div>
+
+<div class="draft-details">
+
+<div class="detail-box">
+  <span>Date</span>
+  <strong>September 5, 2026</strong>
+</div>
+
+<div class="detail-box">
+  <span>Time</span>
+  <strong>12:30 PM</strong>
+</div>
+
+<div class="detail-box">
+  <span>Format</span>
+  <strong>In-Person Draft</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DRAFT ORDER -->
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Draft Order</h2>
+  <span>To Be Drawn</span>
+</div>
+
+<div class="note">
+
+Draft positions will be determined by random envelope draw.
+
+</div>
+
+<br>
+
+<div class="order-list">
+
+<div class="order-row">
+  <div class="pick-number">1</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">2</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">3</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">4</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">5</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">6</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">7</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">8</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">9</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+<div class="order-row">
+  <div class="pick-number">10</div>
+  <div class="pick-manager">TBD</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RULES -->
+
+<section class="card">
+
+<div class="section-title">
+  <h2>Draft Rules</h2>
+  <span>League Settings</span>
+</div>
+
+<div class="rules-grid">
+
+<div class="rule">
+  <span>Teams</span>
+  <strong>10</strong>
+</div>
+
+<div class="rule">
+  <span>Scoring</span>
+  <strong>PPR</strong>
+</div>
+
+<div class="rule">
+  <span>Format</span>
+  <strong>Superflex</strong>
+</div>
+
+<div class="rule">
+  <span>Entry Fee</span>
+  <strong>$20 Cash</strong>
+</div>
+
+<div class="rule">
+  <span>Draft Style</span>
+  <strong>Snake Draft</strong>
+</div>
+
+<div class="rule">
+  <span>Trades During Draft</span>
+  <strong>Allowed</strong>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DRAFT BOARD -->
+
+<section class="card">
+
+<div class="section-title">
+  <h2>2026 Draft Board</h2>
+  <span>Opens After Draft</span>
+</div>
+
+<div class="note">
+
+After the draft is completed, this section can be updated to show every pick and each manager's full roster.
+
+</div>
+
+<br>
+
+<div class="draft-board">
+
+<div class="team-column">
+  <div class="team-header">Devin</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Hunter</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Mike</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Tom</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Dr. Steve</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Steve</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Matt</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Toby</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Josh</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+<div class="team-column">
+  <div class="team-header">Philip</div>
+  <div class="pick-cell placeholder">Awaiting Draft</div>
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<strong>JDC Degenerates</strong>
+
+<br><br>
+
+2026 Fantasy Football Season
+
+</footer>
+
+<script>
+
+const draftDate =
+new Date(2026, 8, 5, 12, 30, 0);
+
+function updateCountdown() {
+
+  const now =
+  new Date();
+
+  const difference =
+  draftDate - now;
+
+  if (difference <= 0) {
+
+    document.getElementById("days").textContent = "0";
+    document.getElementById("hours").textContent = "0";
+    document.getElementById("minutes").textContent = "0";
+    document.getElementById("seconds").textContent = "0";
+
+    return;
+
+  }
+
+  const days =
+  Math.floor(
+    difference /
+    (1000 * 60 * 60 * 24)
+  );
+
+  const hours =
+  Math.floor(
+    (
+      difference /
+      (1000 * 60 * 60)
+    ) % 24
+  );
+
+  const minutes =
+  Math.floor(
+    (
+      difference /
+      (1000 * 60)
+    ) % 60
+  );
+
+  const seconds =
+  Math.floor(
+    (
+      difference /
+      1000
+    ) % 60
+  );
+
+  document.getElementById("days").textContent =
+  days;
+
+  document.getElementById("hours").textContent =
+  hours;
+
+  document.getElementById("minutes").textContent =
+  minutes;
+
+  document.getElementById("seconds").textContent =
+  seconds;
+
+}
+
+updateCountdown();
+
+setInterval(
+  updateCountdown,
+  1000
+);
+
+</script>
+
+</body>
+</html>
