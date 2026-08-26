@@ -20,6 +20,11 @@ SEASON = 2026
 ESPN_S2 = os.environ["ESPN_S2"]
 ESPN_SWID = os.environ["ESPN_SWID"]
 
+cookies = {
+    "espn_s2": ESPN_S2,
+    "SWID": ESPN_SWID
+}
+
 
 # =========================================================
 # ESPN API
@@ -35,13 +40,9 @@ params = [
     ("view", "mStandings"),
     ("view", "mMatchupScore"),
     ("view", "mStatus"),
-    ("view", "mDraftDetail")
+    ("view", "mDraftDetail"),
+    ("view", "mRoster")
 ]
-
-cookies = {
-    "espn_s2": ESPN_S2,
-    "SWID": ESPN_SWID
-}
 
 
 # =========================================================
@@ -88,10 +89,79 @@ manager_id_map = {
 
 
 # =========================================================
+# PLAYER LOOKUP
+#
+# Builds:
+# player ID -> actual player name
+#
+# After the draft, drafted players should appear on rosters,
+# allowing the draft board to show names automatically.
+# =========================================================
+
+player_lookup = {}
+
+
+for team in data.get("teams", []):
+
+    roster = team.get(
+        "roster",
+        {}
+    )
+
+    entries = roster.get(
+        "entries",
+        []
+    )
+
+
+    for entry in entries:
+
+        player_pool_entry = entry.get(
+            "playerPoolEntry",
+            {}
+        )
+
+        player = player_pool_entry.get(
+            "player",
+            {}
+        )
+
+        player_id = (
+            player.get("id")
+            or
+            player_pool_entry.get("id")
+        )
+
+        player_name = (
+            player.get("fullName")
+            or
+            player.get("name")
+        )
+
+
+        if (
+            player_id is not None
+            and
+            player_name
+        ):
+
+            player_lookup[
+                int(player_id)
+            ] = player_name
+
+
+print(
+    f"Player names loaded: "
+    f"{len(player_lookup)}"
+)
+
+
+# =========================================================
 # TEAM / STANDINGS DATA
 # =========================================================
 
 teams = []
+
 
 for team in data.get("teams", []):
 
@@ -102,6 +172,7 @@ for team in data.get("teams", []):
     )
 
     team_name = team.get("name")
+
 
     if not team_name:
 
@@ -119,24 +190,56 @@ for team in data.get("teams", []):
             f"{location} {nickname}"
         ).strip()
 
+
     teams.append({
-        "teamId": team.get("id"),
-        "teamName": team_name,
-        "wins": record.get("wins", 0),
-        "losses": record.get("losses", 0),
-        "ties": record.get("ties", 0),
-        "pointsFor": round(
-            record.get("pointsFor", 0),
-            2
-        ),
-        "pointsAgainst": round(
-            record.get("pointsAgainst", 0),
-            2
-        ),
-        "percentage": record.get(
-            "percentage",
-            0
-        )
+
+        "teamId":
+            team.get("id"),
+
+        "teamName":
+            team_name,
+
+        "wins":
+            record.get(
+                "wins",
+                0
+            ),
+
+        "losses":
+            record.get(
+                "losses",
+                0
+            ),
+
+        "ties":
+            record.get(
+                "ties",
+                0
+            ),
+
+        "pointsFor":
+            round(
+                record.get(
+                    "pointsFor",
+                    0
+                ),
+                2
+            ),
+
+        "pointsAgainst":
+            round(
+                record.get(
+                    "pointsAgainst",
+                    0
+                ),
+                2
+            ),
+
+        "percentage":
+            record.get(
+                "percentage",
+                0
+            )
     })
 
 
@@ -155,18 +258,35 @@ teams.sort(
 
 schedule = []
 
-for matchup in data.get("schedule", []):
 
-    home = matchup.get("home", {})
-    away = matchup.get("away", {})
+for matchup in data.get(
+    "schedule",
+    []
+):
+
+    home = matchup.get(
+        "home",
+        {}
+    )
+
+    away = matchup.get(
+        "away",
+        {}
+    )
+
 
     schedule.append({
+
         "matchupPeriodId":
             matchup.get(
                 "matchupPeriodId"
             ),
+
         "homeTeamId":
-            home.get("teamId"),
+            home.get(
+                "teamId"
+            ),
+
         "homeScore":
             round(
                 home.get(
@@ -175,8 +295,12 @@ for matchup in data.get("schedule", []):
                 ),
                 2
             ),
+
         "awayTeamId":
-            away.get("teamId"),
+            away.get(
+                "teamId"
+            ),
+
         "awayScore":
             round(
                 away.get(
@@ -185,6 +309,7 @@ for matchup in data.get("schedule", []):
                 ),
                 2
             ),
+
         "winner":
             matchup.get(
                 "winner",
@@ -202,48 +327,100 @@ draft = {
     "picks": []
 }
 
+
 draft_detail = data.get(
     "draftDetail",
     {}
 )
 
-picks = draft_detail.get(
+
+draft_picks = draft_detail.get(
     "picks",
     []
 )
 
-if picks:
+
+if draft_picks:
 
     draft["drafted"] = True
 
-    for pick in picks:
 
-        team_id = pick.get("teamId")
+    for pick in draft_picks:
 
-        draft["picks"].append({
+        team_id = pick.get(
+            "teamId"
+        )
+
+        player_id = pick.get(
+            "playerId"
+        )
+
+
+        try:
+
+            lookup_player_id = int(
+                player_id
+            )
+
+        except (
+            TypeError,
+            ValueError
+        ):
+
+            lookup_player_id = None
+
+
+        player_name = None
+
+
+        if lookup_player_id is not None:
+
+            player_name = (
+                player_lookup.get(
+                    lookup_player_id
+                )
+            )
+
+
+        draft[
+            "picks"
+        ].append({
+
             "roundId":
-                pick.get("roundId"),
+                pick.get(
+                    "roundId"
+                ),
+
             "roundPickNumber":
                 pick.get(
                     "roundPickNumber"
                 ),
+
             "overallPickNumber":
                 pick.get(
                     "overallPickNumber"
                 ),
+
             "teamId":
                 team_id,
+
             "manager":
                 manager_map.get(
                     team_id,
                     "Unknown"
                 ),
+
             "playerId":
-                pick.get("playerId"),
+                player_id,
+
+            "playerName":
+                player_name,
+
             "bidAmount":
                 pick.get(
                     "bidAmount"
                 ),
+
             "keeper":
                 pick.get(
                     "keeper",
@@ -364,56 +541,108 @@ featured_games = {
 
 recaps = {}
 
-for week in range(1, 15):
+
+for week in range(
+    1,
+    15
+):
 
     week_games = [
+
         game
+
         for game in schedule
-        if game["matchupPeriodId"] == week
+
+        if (
+            game[
+                "matchupPeriodId"
+            ]
+            ==
+            week
+        )
     ]
+
 
     completed_games = [
+
         game
+
         for game in week_games
-        if game["winner"] != "UNDECIDED"
+
+        if (
+            game["winner"]
+            !=
+            "UNDECIDED"
+        )
     ]
 
-    if len(completed_games) < 5:
 
-        recaps[str(week)] = None
+    if (
+        len(completed_games)
+        <
+        5
+    ):
+
+        recaps[
+            str(week)
+        ] = None
+
         continue
 
+
     performances = []
+
 
     for game in completed_games:
 
         performances.append({
+
             "teamId":
-                game["homeTeamId"],
+                game[
+                    "homeTeamId"
+                ],
+
             "score":
-                game["homeScore"]
+                game[
+                    "homeScore"
+                ]
         })
+
 
         performances.append({
+
             "teamId":
-                game["awayTeamId"],
+                game[
+                    "awayTeamId"
+                ],
+
             "score":
-                game["awayScore"]
+                game[
+                    "awayScore"
+                ]
         })
 
+
     highest = max(
+
         performances,
+
         key=lambda team:
             team["score"]
     )
+
 
     lowest = min(
+
         performances,
+
         key=lambda team:
             team["score"]
     )
 
+
     margins = []
+
 
     for game in completed_games:
 
@@ -425,65 +654,99 @@ for week in range(1, 15):
             game["awayScore"]
         )
 
+
         margin = abs(
             home_score -
             away_score
         )
 
-        if home_score > away_score:
+
+        if (
+            home_score >
+            away_score
+        ):
 
             winner_id = (
-                game["homeTeamId"]
+                game[
+                    "homeTeamId"
+                ]
             )
 
             loser_id = (
-                game["awayTeamId"]
+                game[
+                    "awayTeamId"
+                ]
             )
 
-        elif away_score > home_score:
+
+        elif (
+            away_score >
+            home_score
+        ):
 
             winner_id = (
-                game["awayTeamId"]
+                game[
+                    "awayTeamId"
+                ]
             )
 
             loser_id = (
-                game["homeTeamId"]
+                game[
+                    "homeTeamId"
+                ]
             )
+
 
         else:
 
             winner_id = (
-                game["homeTeamId"]
+                game[
+                    "homeTeamId"
+                ]
             )
 
             loser_id = (
-                game["awayTeamId"]
+                game[
+                    "awayTeamId"
+                ]
             )
 
+
         margins.append({
+
             "margin":
                 margin,
+
             "winnerId":
                 winner_id,
+
             "loserId":
                 loser_id
         })
 
+
     biggest = max(
+
         margins,
+
         key=lambda game:
             game["margin"]
     )
 
+
     closest = min(
+
         margins,
+
         key=lambda game:
             game["margin"]
     )
+
 
     game_of_week_text = (
         "Game not found"
     )
+
 
     featured = (
         featured_games.get(
@@ -491,15 +754,21 @@ for week in range(1, 15):
         )
     )
 
+
     if featured:
 
         team1_name = (
-            featured["team1"]
+            featured[
+                "team1"
+            ]
         )
 
         team2_name = (
-            featured["team2"]
+            featured[
+                "team2"
+            ]
         )
+
 
         team1_id = (
             manager_id_map.get(
@@ -513,17 +782,26 @@ for week in range(1, 15):
             )
         )
 
+
         for game in completed_games:
 
             game_team_ids = {
-                game["homeTeamId"],
-                game["awayTeamId"]
+
+                game[
+                    "homeTeamId"
+                ],
+
+                game[
+                    "awayTeamId"
+                ]
             }
+
 
             featured_ids = {
                 team1_id,
                 team2_id
             }
+
 
             if (
                 game_team_ids
@@ -532,103 +810,146 @@ for week in range(1, 15):
             ):
 
                 if (
-                    game["homeTeamId"]
+                    game[
+                        "homeTeamId"
+                    ]
                     ==
                     team1_id
                 ):
 
                     team1_score = (
-                        game["homeScore"]
+                        game[
+                            "homeScore"
+                        ]
                     )
 
                     team2_score = (
-                        game["awayScore"]
+                        game[
+                            "awayScore"
+                        ]
                     )
+
 
                 else:
 
                     team1_score = (
-                        game["awayScore"]
+                        game[
+                            "awayScore"
+                        ]
                     )
 
                     team2_score = (
-                        game["homeScore"]
+                        game[
+                            "homeScore"
+                        ]
                     )
 
+
                 game_of_week_text = (
+
                     f"{team1_name} "
                     f"{team1_score:.2f}"
                     f" — "
                     f"{team2_name} "
                     f"{team2_score:.2f}"
+
                 )
 
                 break
 
+
     highest_name = (
         manager_map.get(
-            highest["teamId"],
+            highest[
+                "teamId"
+            ],
             "Unknown"
         )
     )
+
 
     lowest_name = (
         manager_map.get(
-            lowest["teamId"],
+            lowest[
+                "teamId"
+            ],
             "Unknown"
         )
     )
+
 
     biggest_winner = (
         manager_map.get(
-            biggest["winnerId"],
+            biggest[
+                "winnerId"
+            ],
             "Unknown"
         )
     )
+
 
     biggest_loser = (
         manager_map.get(
-            biggest["loserId"],
+            biggest[
+                "loserId"
+            ],
             "Unknown"
         )
     )
+
 
     closest_winner = (
         manager_map.get(
-            closest["winnerId"],
+            closest[
+                "winnerId"
+            ],
             "Unknown"
         )
     )
+
 
     closest_loser = (
         manager_map.get(
-            closest["loserId"],
+            closest[
+                "loserId"
+            ],
             "Unknown"
         )
     )
 
-    recaps[str(week)] = {
+
+    recaps[
+        str(week)
+    ] = {
 
         "highestScorer": (
+
             f"{highest_name} — "
             f"{highest['score']:.2f} pts"
+
         ),
 
         "lowestScorer": (
+
             f"{lowest_name} — "
             f"{lowest['score']:.2f} pts"
+
         ),
 
         "biggestBlowout": (
+
             f"{biggest_winner} defeated "
             f"{biggest_loser} by "
             f"{biggest['margin']:.2f}"
+
         ),
 
         "closestGame": (
+
             f"{closest_winner} defeated "
             f"{closest_loser} by "
             f"{closest['margin']:.2f}"
+
         ),
 
         "gameOfWeek":
@@ -645,12 +966,14 @@ status = data.get(
     {}
 )
 
+
 current_matchup_period = (
     status.get(
         "currentMatchupPeriod",
         1
     )
 )
+
 
 current_scoring_period = (
     status.get(
@@ -731,6 +1054,11 @@ print(
 print(
     f"Schedule matchups loaded: "
     f"{len(schedule)}"
+)
+
+print(
+    f"Player names loaded: "
+    f"{len(player_lookup)}"
 )
 
 print(
