@@ -340,7 +340,15 @@ draft_picks = draft_detail.get(
 )
 
 
-if draft_picks:
+draft_has_happened = datetime.now().astimezone() >= datetime(
+    2026,
+    9,
+    5,
+    12,
+    30
+).astimezone()
+
+if draft_picks and draft_has_happened:
 
     draft["drafted"] = True
 
