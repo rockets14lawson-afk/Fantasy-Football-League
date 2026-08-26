@@ -153,9 +153,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   LEAGUE NEWS
-========================= */
+/* LEAGUE NEWS */
 
 .news-feed {
   display: grid;
@@ -182,9 +180,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   GAME OF THE WEEK
-========================= */
+/* GAME OF THE WEEK */
 
 .game-week {
   text-align: center;
@@ -285,9 +281,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   WEEKLY MATCHUPS
-========================= */
+/* WEEKLY MATCHUPS */
 
 .weekly-games {
   display: grid;
@@ -391,9 +385,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   TABLES
-========================= */
+/* TABLES */
 
 .table-wrap {
   overflow-x: auto;
@@ -453,9 +445,202 @@ tr:hover td {
 }
 
 
-/* =========================
-   MANAGERS
-========================= */
+/* PLAYOFF RACE */
+
+.playoff-summary {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.playoff-format {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+}
+
+.playoff-format strong {
+  display: block;
+  color: #d4af37;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.playoff-format span {
+  color: #888;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.playoff-message {
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 10px;
+  padding: 13px 15px;
+  color: #ddd;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.playoff-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.playoff-team {
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 11px;
+  padding: 14px;
+}
+
+.playoff-team.bye {
+  border-color: #d4af37;
+  background: rgba(212,175,55,.08);
+}
+
+.playoff-team.in {
+  border-color: rgba(101,214,138,.5);
+}
+
+.playoff-team.bubble {
+  border-color: rgba(240,211,106,.55);
+}
+
+.playoff-team.out {
+  border-color: rgba(255,119,119,.35);
+}
+
+.playoff-seed {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #d4af37;
+  font-weight: 900;
+}
+
+.playoff-team.bye .playoff-seed {
+  background: #d4af37;
+  color: black;
+}
+
+.playoff-team-main strong {
+  display: block;
+  font-size: 16px;
+}
+
+.playoff-team-main span {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-size: 11px;
+}
+
+.playoff-status {
+  text-align: right;
+  max-width: 360px;
+}
+
+.playoff-status strong {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.playoff-status span {
+  display: block;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 1.4;
+  margin-top: 4px;
+}
+
+.status-bye {
+  color: #d4af37;
+}
+
+.status-in {
+  color: #65d68a;
+}
+
+.status-bubble {
+  color: #f0d36a;
+}
+
+.status-out {
+  color: #ff7777;
+}
+
+.playoff-cutline {
+  position: relative;
+  margin-top: 8px;
+}
+
+.playoff-cutline::before {
+  content: "PLAYOFF CUT LINE";
+  display: block;
+  color: #d4af37;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  border-top: 2px dashed rgba(212,175,55,.5);
+}
+
+.playoff-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 18px;
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .7px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.bye-dot {
+  background: #d4af37;
+}
+
+.in-dot {
+  background: #65d68a;
+}
+
+.bubble-dot {
+  background: #f0d36a;
+}
+
+.out-dot {
+  background: #ff7777;
+}
+
+
+/* MANAGERS */
 
 .manager-grid {
   display: grid;
@@ -501,9 +686,7 @@ tr:hover td {
 }
 
 
-/* =========================
-   CHAMPIONS
-========================= */
+/* CHAMPIONS */
 
 .history-grid {
   display: grid;
@@ -535,9 +718,7 @@ tr:hover td {
 }
 
 
-/* =========================
-   HISTORY
-========================= */
+/* HISTORY */
 
 .season-history-grid {
   display: grid;
@@ -582,9 +763,7 @@ tr:hover td {
 }
 
 
-/* =========================
-   RECORDS
-========================= */
+/* RECORDS */
 
 .records-grid {
   display: grid;
@@ -612,10 +791,6 @@ tr:hover td {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
-
 footer {
   text-align: center;
   padding: 35px 20px;
@@ -627,10 +802,6 @@ footer strong {
   color: #d4af37;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 850px) {
 
@@ -644,6 +815,25 @@ footer strong {
 
   .season-history-grid {
     grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .playoff-summary {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .playoff-team {
+    grid-template-columns: 45px 1fr;
+  }
+
+  .playoff-status {
+    grid-column: 1 / -1;
+    text-align: left;
+    max-width: none;
+    padding-left: 59px;
   }
 
 }
@@ -673,7 +863,6 @@ footer strong {
 </style>
 
 </head>
-
 
 <body>
 
@@ -710,23 +899,15 @@ Trash Talk. Rivalries. Championships.
 <nav>
 
 <a href="index.html">Home</a>
-
 <a href="schedule.html">Schedule</a>
-
 <a href="#standings">Standings</a>
-
+<a href="#playoff-race">Playoff Race</a>
 <a href="managers.html">Managers</a>
-
 <a href="recap.html">Weekly Recap</a>
-
 <a href="rivalries.html">Rivalries</a>
-
 <a href="draft.html">Draft Central</a>
-
 <a href="#champions">Champions</a>
-
 <a href="#season-history">History</a>
-
 <a href="records.html">Records</a>
 
 <a
@@ -742,9 +923,7 @@ ESPN League
 <div class="container">
 
 
-<!-- =========================
-     LEAGUE NEWS
-========================= -->
+<!-- LEAGUE NEWS -->
 
 <section class="section">
 
@@ -762,7 +941,6 @@ Latest Updates
 
 </div>
 
-
 <div class="news-feed" id="leagueNews">
 
 <div class="loading">
@@ -776,9 +954,7 @@ Loading league news...
 </section>
 
 
-<!-- =========================
-     GAME OF THE WEEK
-========================= -->
+<!-- GAME OF THE WEEK -->
 
 <section class="section">
 
@@ -796,13 +972,11 @@ Featured Matchup
 
 </div>
 
-
 <div class="game-week">
 
 <div class="game-label" id="weekNumber">
 WEEK 1
 </div>
-
 
 <div class="matchup">
 
@@ -822,7 +996,6 @@ Matt
 
 </div>
 
-
 <div>
 
 <div class="vs">
@@ -840,7 +1013,6 @@ Scheduled
 </div>
 
 </div>
-
 
 <div id="featuredTeam2Box">
 
@@ -860,7 +1032,6 @@ Philip
 
 </div>
 
-
 <div class="week-status" id="weekStatus"></div>
 
 </div>
@@ -870,9 +1041,7 @@ Philip
 </section>
 
 
-<!-- =========================
-     WEEKLY MATCHUPS
-========================= -->
+<!-- WEEKLY MATCHUPS -->
 
 <section class="section">
 
@@ -885,20 +1054,15 @@ Week 1 Matchups
 </h2>
 
 <div class="espn-status">
-
 <span class="live-dot"></span>
-
 ESPN Scores
-
 </div>
 
 </div>
-
 
 <div class="sync-time" id="syncTime">
 Loading ESPN data...
 </div>
-
 
 <div class="weekly-games" id="weeklyGames">
 
@@ -913,9 +1077,7 @@ Loading weekly matchups...
 </section>
 
 
-<!-- =========================
-     STANDINGS
-========================= -->
+<!-- STANDINGS -->
 
 <section class="section" id="standings">
 
@@ -928,15 +1090,11 @@ Loading weekly matchups...
 </h2>
 
 <div class="espn-status">
-
 <span class="live-dot"></span>
-
 ESPN Sync
-
 </div>
 
 </div>
-
 
 <div class="table-wrap">
 
@@ -945,32 +1103,22 @@ ESPN Sync
 <thead>
 
 <tr>
-
 <th>Rank</th>
-
 <th>Manager / Team</th>
-
 <th>W</th>
-
 <th>L</th>
-
 <th>T</th>
-
 <th>PF</th>
-
 </tr>
 
 </thead>
 
-
 <tbody id="standingsBody">
 
 <tr>
-
 <td colspan="6" class="loading">
 Loading ESPN standings...
 </td>
-
 </tr>
 
 </tbody>
@@ -984,9 +1132,90 @@ Loading ESPN standings...
 </section>
 
 
-<!-- =========================
-     MANAGERS
-========================= -->
+<!-- PLAYOFF RACE -->
+
+<section class="section" id="playoff-race">
+
+<div class="card">
+
+<div class="section-title">
+
+<h2>
+🏆 Playoff Race
+</h2>
+
+<span class="section-label" id="playoffRaceLabel">
+6 Teams Make It
+</span>
+
+</div>
+
+<div class="playoff-summary">
+
+<div class="playoff-format">
+<strong>6</strong>
+<span>Playoff Teams</span>
+</div>
+
+<div class="playoff-format">
+<strong>2</strong>
+<span>First-Round Byes</span>
+</div>
+
+<div class="playoff-format">
+<strong>14</strong>
+<span>Regular Season Weeks</span>
+</div>
+
+<div class="playoff-format">
+<strong>PF</strong>
+<span>Seeding Tiebreaker</span>
+</div>
+
+</div>
+
+<div class="playoff-message" id="playoffMessage">
+Loading playoff picture...
+</div>
+
+<div class="playoff-grid" id="playoffRace">
+
+<div class="loading">
+Loading playoff race...
+</div>
+
+</div>
+
+<div class="playoff-legend">
+
+<span>
+<span class="legend-dot bye-dot"></span>
+First-Round Bye
+</span>
+
+<span>
+<span class="legend-dot in-dot"></span>
+Playoff Position
+</span>
+
+<span>
+<span class="legend-dot bubble-dot"></span>
+On the Bubble
+</span>
+
+<span>
+<span class="legend-dot out-dot"></span>
+Outside Looking In
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MANAGERS -->
 
 <section class="section">
 
@@ -1004,176 +1233,66 @@ League Managers
 
 </div>
 
-
 <div class="manager-grid">
 
 <div class="manager-card">
-
-<div class="manager-icon">
-D
+<div class="manager-icon">D</div>
+<strong>Devin</strong>
+<span>Commissioner</span>
 </div>
-
-<strong>
-Devin
-</strong>
-
-<span>
-Commissioner
-</span>
-
-</div>
-
 
 <div class="manager-card champion">
-
-<div class="manager-icon">
-T
+<div class="manager-icon">T</div>
+<strong>Toby</strong>
+<span>2022 Champion 🏆</span>
 </div>
-
-<strong>
-Toby
-</strong>
-
-<span>
-2022 Champion 🏆
-</span>
-
-</div>
-
 
 <div class="manager-card">
-
-<div class="manager-icon">
-T
+<div class="manager-icon">T</div>
+<strong>Tom</strong>
+<span>Manager</span>
 </div>
-
-<strong>
-Tom
-</strong>
-
-<span>
-Manager
-</span>
-
-</div>
-
 
 <div class="manager-card champion">
-
-<div class="manager-icon">
-M
+<div class="manager-icon">M</div>
+<strong>Matt</strong>
+<span>2025 Champion 🏆</span>
 </div>
-
-<strong>
-Matt
-</strong>
-
-<span>
-2025 Champion 🏆
-</span>
-
-</div>
-
 
 <div class="manager-card">
-
-<div class="manager-icon">
-P
+<div class="manager-icon">P</div>
+<strong>Philip</strong>
+<span>2025 Runner-Up</span>
 </div>
-
-<strong>
-Philip
-</strong>
-
-<span>
-2025 Runner-Up
-</span>
-
-</div>
-
 
 <div class="manager-card champion">
-
-<div class="manager-icon">
-M
+<div class="manager-icon">M</div>
+<strong>Mike</strong>
+<span>2024 Champion 🏆</span>
 </div>
-
-<strong>
-Mike
-</strong>
-
-<span>
-2024 Champion 🏆
-</span>
-
-</div>
-
 
 <div class="manager-card champion">
-
-<div class="manager-icon">
-J
+<div class="manager-icon">J</div>
+<strong>Josh</strong>
+<span>2023 Champion 🏆</span>
 </div>
-
-<strong>
-Josh
-</strong>
-
-<span>
-2023 Champion 🏆
-</span>
-
-</div>
-
 
 <div class="manager-card">
-
-<div class="manager-icon">
-S
+<div class="manager-icon">S</div>
+<strong>Steve P.</strong>
+<span>2026 Rookie</span>
 </div>
-
-<strong>
-Steve P.
-</strong>
-
-<span>
-2026 Rookie
-</span>
-
-</div>
-
 
 <div class="manager-card">
-
-<div class="manager-icon">
-S
+<div class="manager-icon">S</div>
+<strong>Steve H.</strong>
+<span>2026 Rookie</span>
 </div>
-
-<strong>
-Steve H.
-</strong>
-
-<span>
-2026 Rookie
-</span>
-
-</div>
-
 
 <div class="manager-card">
-
-<div class="manager-icon">
-H
-</div>
-
-<strong>
-Hunter
-</strong>
-
-<span>
-2026 Rookie
-</span>
-
+<div class="manager-icon">H</div>
+<strong>Hunter</strong>
+<span>2026 Rookie</span>
 </div>
 
 </div>
@@ -1183,9 +1302,7 @@ Hunter
 </section>
 
 
-<!-- =========================
-     CHAMPIONS
-========================= -->
+<!-- CHAMPIONS -->
 
 <section class="section" id="champions">
 
@@ -1203,74 +1320,30 @@ Hall of Champions
 
 </div>
 
-
 <div class="history-grid">
 
 <div class="champ-card">
-
-<div class="year">
-2022
+<div class="year">2022</div>
+<div class="trophy">🏆</div>
+<div class="winner">Toby</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Toby
-</div>
-
-</div>
-
 
 <div class="champ-card">
-
-<div class="year">
-2023
+<div class="year">2023</div>
+<div class="trophy">🏆</div>
+<div class="winner">Josh</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Josh
-</div>
-
-</div>
-
 
 <div class="champ-card">
-
-<div class="year">
-2024
+<div class="year">2024</div>
+<div class="trophy">🏆</div>
+<div class="winner">Mike</div>
 </div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Mike
-</div>
-
-</div>
-
 
 <div class="champ-card">
-
-<div class="year">
-2025
-</div>
-
-<div class="trophy">
-🏆
-</div>
-
-<div class="winner">
-Matt
-</div>
-
+<div class="year">2025</div>
+<div class="trophy">🏆</div>
+<div class="winner">Matt</div>
 </div>
 
 </div>
@@ -1280,9 +1353,7 @@ Matt
 </section>
 
 
-<!-- =========================
-     SEASON HISTORY
-========================= -->
+<!-- SEASON HISTORY -->
 
 <section class="section" id="season-history">
 
@@ -1300,9 +1371,7 @@ Final Podiums
 
 </div>
 
-
 <div class="season-history-grid">
-
 
 <div class="season-history-card">
 
@@ -1311,39 +1380,18 @@ Final Podiums
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Toby
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Toby</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Josh
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Josh</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Devin
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Devin</strong>
 </div>
 
 </div>
@@ -1356,39 +1404,18 @@ Devin
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Josh
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Josh</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Jacob
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Jacob</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Toby
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Toby</strong>
 </div>
 
 </div>
@@ -1401,39 +1428,18 @@ Toby
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Mike
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Mike</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Philip
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Philip</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Chad Nort
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Chad Nort</strong>
 </div>
 
 </div>
@@ -1446,43 +1452,21 @@ Chad Nort
 </div>
 
 <div class="podium-row champion-row">
-
-<span>
-🏆 Champion
-</span>
-
-<strong>
-Matt
-</strong>
-
+<span>🏆 Champion</span>
+<strong>Matt</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥈 Runner-Up
-</span>
-
-<strong>
-Philip
-</strong>
-
+<span>🥈 Runner-Up</span>
+<strong>Philip</strong>
 </div>
 
 <div class="podium-row">
-
-<span>
-🥉 Consolation Winner
-</span>
-
-<strong>
-Devin
-</strong>
-
+<span>🥉 Consolation Winner</span>
+<strong>Devin</strong>
 </div>
 
 </div>
-
 
 </div>
 
@@ -1491,9 +1475,7 @@ Devin
 </section>
 
 
-<!-- =========================
-     RECORDS
-========================= -->
+<!-- RECORDS -->
 
 <section class="section" id="records">
 
@@ -1511,110 +1493,46 @@ All-Time
 
 </div>
 
-
 <div class="records-grid">
 
 <div class="record-card">
-
-<span class="record-name">
-Most Regular-Season Wins
-</span>
-
-<span class="record-value">
-Toby — 32
-</span>
-
+<span class="record-name">Most Regular-Season Wins</span>
+<span class="record-value">Toby — 32</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Best Regular-Season Win %
-</span>
-
-<span class="record-value">
-Philip — 79.3%
-</span>
-
+<span class="record-name">Best Regular-Season Win %</span>
+<span class="record-value">Philip — 79.3%</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Most Playoff Wins
-</span>
-
-<span class="record-value">
-Toby / Philip / Matt — 3
-</span>
-
+<span class="record-name">Most Playoff Wins</span>
+<span class="record-value">Toby / Philip / Matt — 3</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Best Playoff Record
-</span>
-
-<span class="record-value">
-Matt — 3-0
-</span>
-
+<span class="record-name">Best Playoff Record</span>
+<span class="record-value">Matt — 3-0</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Most Championships
-</span>
-
-<span class="record-value">
-1
-</span>
-
+<span class="record-name">Most Championships</span>
+<span class="record-value">1</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Different Champions
-</span>
-
-<span class="record-value">
-4
-</span>
-
+<span class="record-name">Different Champions</span>
+<span class="record-value">4</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Most Runner-Up Finishes
-</span>
-
-<span class="record-value">
-Philip — 2
-</span>
-
+<span class="record-name">Most Runner-Up Finishes</span>
+<span class="record-value">Philip — 2</span>
 </div>
 
-
 <div class="record-card">
-
-<span class="record-name">
-Most Consolation Wins
-</span>
-
-<span class="record-value">
-Devin — 2
-</span>
-
+<span class="record-name">Most Consolation Wins</span>
+<span class="record-value">Devin — 2</span>
 </div>
 
 </div>
@@ -1622,7 +1540,6 @@ Devin — 2
 </div>
 
 </section>
-
 
 </div>
 
@@ -1643,9 +1560,7 @@ Fantasy Football League • Est. 2022
 <script>
 
 
-/* =========================
-   MANAGER MAPPING
-========================= */
+/* MANAGER MAPPING */
 
 const managerMap = {
 
@@ -1679,9 +1594,7 @@ const managerToTeamId = {
 };
 
 
-/* =========================
-   FEATURED GAMES
-========================= */
+/* FEATURED GAMES */
 
 const featuredGames = {
 
@@ -1772,9 +1685,7 @@ const featuredGames = {
 };
 
 
-/* =========================
-   CURRENT WEEK
-========================= */
+/* CURRENT WEEK */
 
 const weekOneStart =
 new Date(2026,8,8,0,0,0);
@@ -1787,7 +1698,6 @@ const millisecondsPerWeek =
 
 let currentWeek = 1;
 
-
 if (today >= weekOneStart) {
 
   currentWeek =
@@ -1798,65 +1708,52 @@ if (today >= weekOneStart) {
 
 }
 
-
 if (currentWeek > 14) {
-
   currentWeek = 14;
-
 }
-
 
 const featuredGame =
 featuredGames[currentWeek];
-
 
 document.getElementById(
   "weekNumber"
 ).textContent =
 "WEEK " + currentWeek;
 
-
 document.getElementById(
   "weeklyMatchupTitle"
 ).textContent =
 "Week " + currentWeek + " Matchups";
-
 
 document.getElementById(
   "team1Name"
 ).textContent =
 featuredGame.team1;
 
-
 document.getElementById(
   "team2Name"
 ).textContent =
 featuredGame.team2;
-
 
 document.getElementById(
   "team1Initial"
 ).textContent =
 featuredGame.team1.charAt(0);
 
-
 document.getElementById(
   "team2Initial"
 ).textContent =
 featuredGame.team2.charAt(0);
-
 
 document.getElementById(
   "storyline"
 ).textContent =
 featuredGame.story;
 
-
 const weekStatus =
 document.getElementById(
   "weekStatus"
 );
-
 
 if (today < weekOneStart) {
 
@@ -1866,7 +1763,6 @@ if (today < weekOneStart) {
     (1000 * 60 * 60 * 24)
   );
 
-
   weekStatus.textContent =
   "Week 1 begins in " +
   daysUntil +
@@ -1874,16 +1770,12 @@ if (today < weekOneStart) {
 
 }
 
-
-else if (
-  currentWeek === 14
-) {
+else if (currentWeek === 14) {
 
   weekStatus.textContent =
   "🔥 Rivalry Week";
 
 }
-
 
 else {
 
@@ -1893,9 +1785,7 @@ else {
 }
 
 
-/* =========================
-   GAME STATUS
-========================= */
+/* GAME STATUS */
 
 function getGameStatus(game) {
 
@@ -1909,7 +1799,6 @@ function getGameStatus(game) {
     game.homeScore || 0
   );
 
-
   if (
     game.winner &&
     game.winner !== "UNDECIDED"
@@ -1922,15 +1811,12 @@ function getGameStatus(game) {
 
   }
 
-
   if (
     away > 0 ||
     home > 0
   ) {
 
-    if (
-      away === home
-    ) {
+    if (away === home) {
 
       return {
         text: "TIED",
@@ -1939,14 +1825,12 @@ function getGameStatus(game) {
 
     }
 
-
     return {
       text: "LIVE",
       className: "status-live"
     };
 
   }
-
 
   return {
     text: "SCHEDULED",
@@ -1956,9 +1840,7 @@ function getGameStatus(game) {
 }
 
 
-/* =========================
-   LEAGUE NEWS
-========================= */
+/* LEAGUE NEWS */
 
 function buildLeagueNews(data) {
 
@@ -1967,31 +1849,23 @@ function buildLeagueNews(data) {
     "leagueNews"
   );
 
-
   if (!news) {
     return;
   }
 
-
   const items = [];
-
 
   const teams =
   data.teams || [];
 
-
   const recaps =
   data.recaps || {};
-
 
   const draft =
   data.draft || {
     drafted: false,
     picks: []
   };
-
-
-  /* DRAFT NEWS */
 
   if (
     draft.drafted &&
@@ -2011,7 +1885,6 @@ function buildLeagueNews(data) {
 
   }
 
-
   else {
 
     items.push({
@@ -2026,81 +1899,58 @@ function buildLeagueNews(data) {
 
   }
 
-
-  /* CURRENT LEAGUE LEADER */
-
-  if (
-    teams.length
-  ) {
+  if (teams.length) {
 
     const sorted =
     [...teams].sort(
       function(a,b) {
 
         if (
-          Number(b.wins || 0)
-          !==
+          Number(b.wins || 0) !==
           Number(a.wins || 0)
         ) {
 
           return (
-            Number(b.wins || 0)
-            -
+            Number(b.wins || 0) -
             Number(a.wins || 0)
           );
 
         }
 
-
         if (
-          Number(a.losses || 0)
-          !==
+          Number(a.losses || 0) !==
           Number(b.losses || 0)
         ) {
 
           return (
-            Number(a.losses || 0)
-            -
+            Number(a.losses || 0) -
             Number(b.losses || 0)
           );
 
         }
 
-
         return (
-          Number(b.pointsFor || 0)
-          -
+          Number(b.pointsFor || 0) -
           Number(a.pointsFor || 0)
         );
 
       }
     );
 
-
     const leader =
     sorted[0];
-
 
     if (
       leader &&
       (
-        Number(
-          leader.wins || 0
-        ) > 0
-        ||
-        Number(
-          leader.losses || 0
-        ) > 0
-        ||
-        Number(
-          leader.ties || 0
-        ) > 0
+        Number(leader.wins || 0) > 0 ||
+        Number(leader.losses || 0) > 0 ||
+        Number(leader.ties || 0) > 0
       )
     ) {
 
       let record =
       `${leader.wins}-${leader.losses}`;
-
 
       if (
         Number(
@@ -2112,7 +1962,6 @@ function buildLeagueNews(data) {
         `-${leader.ties}`;
 
       }
-
 
       items.push({
 
@@ -2128,12 +1977,8 @@ function buildLeagueNews(data) {
 
   }
 
-
-  /* LATEST COMPLETED WEEK */
-
   let latestCompletedWeek =
   null;
-
 
   for (
     let week = 14;
@@ -2156,10 +2001,7 @@ function buildLeagueNews(data) {
 
   }
 
-
-  if (
-    latestCompletedWeek
-  ) {
+  if (latestCompletedWeek) {
 
     const recap =
     recaps[
@@ -2168,10 +2010,7 @@ function buildLeagueNews(data) {
       )
     ];
 
-
-    if (
-      recap.highestScorer
-    ) {
+    if (recap.highestScorer) {
 
       items.push({
 
@@ -2185,10 +2024,7 @@ function buildLeagueNews(data) {
 
     }
 
-
-    if (
-      recap.biggestBlowout
-    ) {
+    if (recap.biggestBlowout) {
 
       items.push({
 
@@ -2202,10 +2038,7 @@ function buildLeagueNews(data) {
 
     }
 
-
-    if (
-      recap.gameOfWeek
-    ) {
+    if (recap.gameOfWeek) {
 
       items.push({
 
@@ -2220,9 +2053,6 @@ function buildLeagueNews(data) {
     }
 
   }
-
-
-  /* RIVALRY WEEK */
 
   if (
     currentWeek >= 12 &&
@@ -2241,7 +2071,6 @@ function buildLeagueNews(data) {
 
   }
 
-
   else if (
     currentWeek === 14
   ) {
@@ -2258,15 +2087,9 @@ function buildLeagueNews(data) {
 
   }
 
-
-  /* BUILD NEWS CARDS */
-
   news.innerHTML =
   items
-  .slice(
-    0,
-    6
-  )
+  .slice(0,6)
   .map(
     function(item) {
 
@@ -2289,6 +2112,1162 @@ function buildLeagueNews(data) {
     }
   )
   .join("");
+
+}
+
+  /* PLAYOFF RACE STARTS HERE */
+
+
+/* =========================
+   PLAYOFF RACE
+========================= */
+
+function buildPlayoffRace(data) {
+
+  const playoffRace =
+  document.getElementById(
+    "playoffRace"
+  );
+
+  const playoffMessage =
+  document.getElementById(
+    "playoffMessage"
+  );
+
+  const playoffRaceLabel =
+  document.getElementById(
+    "playoffRaceLabel"
+  );
+
+
+  if (
+    !playoffRace ||
+    !playoffMessage
+  ) {
+
+    return;
+
+  }
+
+
+  const teams =
+  [...(data.teams || [])];
+
+
+  const schedule =
+  data.schedule || [];
+
+
+  if (
+    teams.length === 0
+  ) {
+
+    playoffRace.innerHTML = `
+
+    <div class="loading">
+    Playoff standings are not available yet.
+    </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  /* =========================
+     SORT BY ESPN PLAYOFF RULES
+     RECORD → POINTS FOR
+  ========================= */
+
+  teams.sort(
+    function(a,b) {
+
+      const aWinValue =
+      Number(a.wins || 0) +
+      (
+        Number(a.ties || 0)
+        *
+        .5
+      );
+
+
+      const bWinValue =
+      Number(b.wins || 0) +
+      (
+        Number(b.ties || 0)
+        *
+        .5
+      );
+
+
+      if (
+        bWinValue !==
+        aWinValue
+      ) {
+
+        return (
+          bWinValue -
+          aWinValue
+        );
+
+      }
+
+
+      if (
+        Number(b.pointsFor || 0)
+        !==
+        Number(a.pointsFor || 0)
+      ) {
+
+        return (
+          Number(b.pointsFor || 0)
+          -
+          Number(a.pointsFor || 0)
+        );
+
+      }
+
+
+      return (
+        Number(a.teamId)
+        -
+        Number(b.teamId)
+      );
+
+    }
+  );
+
+
+  /* =========================
+     TEAM HELPER DATA
+  ========================= */
+
+  const playoffTeams =
+  teams.map(
+    function(team,index) {
+
+      const wins =
+      Number(
+        team.wins || 0
+      );
+
+
+      const losses =
+      Number(
+        team.losses || 0
+      );
+
+
+      const ties =
+      Number(
+        team.ties || 0
+      );
+
+
+      const gamesPlayed =
+      wins +
+      losses +
+      ties;
+
+
+      const remainingGames =
+      Math.max(
+        0,
+        14 -
+        gamesPlayed
+      );
+
+
+      const currentValue =
+      wins +
+      (
+        ties *
+        .5
+      );
+
+
+      const maxValue =
+      currentValue +
+      remainingGames;
+
+
+      return {
+
+        ...team,
+
+        seed:
+        index + 1,
+
+        manager:
+        managerMap[
+          team.teamId
+        ] || "Unknown",
+
+        gamesPlayed,
+
+        remainingGames,
+
+        currentValue,
+
+        maxValue
+
+      };
+
+    }
+  );
+
+
+  /* =========================
+     CLINCH / ELIMINATION LOGIC
+  ========================= */
+
+  playoffTeams.forEach(
+    function(team) {
+
+      let teamsThatCanReachOrPass =
+      0;
+
+
+      let teamsAlreadyBeyondMax =
+      0;
+
+
+      let teamsThatCanReachBye =
+      0;
+
+
+      playoffTeams.forEach(
+        function(other) {
+
+          if (
+            other.teamId
+            ===
+            team.teamId
+          ) {
+
+            return;
+
+          }
+
+
+          if (
+            other.maxValue
+            >=
+            team.currentValue
+          ) {
+
+            teamsThatCanReachOrPass++;
+
+          }
+
+
+          if (
+            other.currentValue
+            >
+            team.maxValue
+          ) {
+
+            teamsAlreadyBeyondMax++;
+
+          }
+
+
+          if (
+            other.maxValue
+            >=
+            team.currentValue
+          ) {
+
+            teamsThatCanReachBye++;
+
+          }
+
+        }
+      );
+
+
+      team.clinchedPlayoffs =
+      (
+        teamsThatCanReachOrPass
+        <=
+        5
+      );
+
+
+      team.clinchedBye =
+      (
+        teamsThatCanReachBye
+        <=
+        1
+      );
+
+
+      team.eliminated =
+      (
+        teamsAlreadyBeyondMax
+        >=
+        6
+      );
+
+    }
+  );
+
+
+  /* =========================
+     NEXT OPPONENT
+  ========================= */
+
+  function getNextOpponent(teamId) {
+
+    const futureGame =
+    schedule
+    .filter(
+      function(game) {
+
+        return (
+          Number(
+            game.matchupPeriodId
+          )
+          >=
+          currentWeek
+          &&
+          Number(
+            game.matchupPeriodId
+          )
+          <=
+          14
+          &&
+          (
+            Number(
+              game.homeTeamId
+            )
+            ===
+            Number(teamId)
+            ||
+            Number(
+              game.awayTeamId
+            )
+            ===
+            Number(teamId)
+          )
+          &&
+          (
+            !game.winner
+            ||
+            game.winner
+            ===
+            "UNDECIDED"
+          )
+        );
+
+      }
+    )
+    .sort(
+      function(a,b) {
+
+        return (
+          Number(
+            a.matchupPeriodId
+          )
+          -
+          Number(
+            b.matchupPeriodId
+          )
+        );
+
+      }
+    )[0];
+
+
+    if (
+      !futureGame
+    ) {
+
+      return null;
+
+    }
+
+
+    const opponentId =
+    Number(
+      futureGame.homeTeamId
+    )
+    ===
+    Number(teamId)
+    ?
+    futureGame.awayTeamId
+    :
+    futureGame.homeTeamId;
+
+
+    return {
+
+      week:
+      futureGame.matchupPeriodId,
+
+      manager:
+      managerMap[
+        opponentId
+      ] || "Unknown"
+
+    };
+
+  }
+
+
+  /* =========================
+     CUT LINE
+  ========================= */
+
+  const sixth =
+  playoffTeams[5];
+
+
+  const seventh =
+  playoffTeams[6];
+
+
+  const sixthValue =
+  sixth
+  ?
+  sixth.currentValue
+  :
+  0;
+
+
+  const seventhValue =
+  seventh
+  ?
+  seventh.currentValue
+  :
+  0;
+
+
+  /* =========================
+     PAGE MESSAGE
+  ========================= */
+
+  if (
+    currentWeek <= 9
+  ) {
+
+    playoffMessage.innerHTML = `
+
+    The playoff picture is still developing.
+    The <strong>top 6</strong> qualify,
+    while seeds <strong>#1 and #2</strong>
+    earn first-round byes.
+    Points For breaks ties in the standings.
+
+    `;
+
+
+    playoffRaceLabel.textContent =
+    "Current Playoff Picture";
+
+  }
+
+
+  else if (
+    currentWeek <= 11
+  ) {
+
+    playoffMessage.innerHTML = `
+
+    The playoff race is heating up.
+    Every win matters now, and
+    <strong>Points For</strong> could decide
+    who gets in when records are tied.
+
+    `;
+
+
+    playoffRaceLabel.textContent =
+    "Playoff Push";
+
+  }
+
+
+  else if (
+    currentWeek <= 14
+  ) {
+
+    playoffMessage.innerHTML = `
+
+    <strong>Scenario Mode:</strong>
+    playoff clinches, elimination possibilities
+    and bubble-team situations are now being
+    calculated from the ESPN standings and
+    remaining regular-season schedule.
+
+    `;
+
+
+    playoffRaceLabel.textContent =
+    "Playoff Scenarios";
+
+  }
+
+
+  /* =========================
+     TEAM STATUS
+  ========================= */
+
+  function getTeamStatus(
+    team,
+    index
+  ) {
+
+    const nextGame =
+    getNextOpponent(
+      team.teamId
+    );
+
+
+    const nextOpponent =
+    nextGame
+    ?
+    nextGame.manager
+    :
+    null;
+
+
+    const nextWeek =
+    nextGame
+    ?
+    nextGame.week
+    :
+    null;
+
+
+    /* CLINCHED BYE */
+
+    if (
+      team.clinchedBye
+      &&
+      currentWeek >= 10
+    ) {
+
+      return {
+
+        rowClass:
+        "bye",
+
+        statusClass:
+        "status-bye",
+
+        title:
+        "CLINCHED BYE",
+
+        detail:
+        "First-round bye secured."
+
+      };
+
+    }
+
+
+    /* CLINCHED PLAYOFFS */
+
+    if (
+      team.clinchedPlayoffs
+      &&
+      currentWeek >= 10
+    ) {
+
+      return {
+
+        rowClass:
+        index < 2
+        ?
+        "bye"
+        :
+        "in",
+
+        statusClass:
+        index < 2
+        ?
+        "status-bye"
+        :
+        "status-in",
+
+        title:
+        index < 2
+        ?
+        "PLAYOFFS CLINCHED • BYE POSITION"
+        :
+        "PLAYOFFS CLINCHED",
+
+        detail:
+        index < 2
+        ?
+        "Still battling to secure the first-round bye."
+        :
+        "Guaranteed a spot in the six-team playoff field."
+
+      };
+
+    }
+
+
+    /* ELIMINATED */
+
+    if (
+      team.eliminated
+    ) {
+
+      return {
+
+        rowClass:
+        "out",
+
+        statusClass:
+        "status-out",
+
+        title:
+        "ELIMINATED",
+
+        detail:
+        "Can no longer reach the top six."
+
+      };
+
+    }
+
+
+    /* =========================
+       EARLY SEASON
+    ========================= */
+
+    if (
+      currentWeek <= 9
+    ) {
+
+      if (
+        index < 2
+      ) {
+
+        return {
+
+          rowClass:
+          "bye",
+
+          statusClass:
+          "status-bye",
+
+          title:
+          "CURRENT BYE",
+
+          detail:
+          "Currently holding a first-round bye."
+
+        };
+
+      }
+
+
+      if (
+        index < 6
+      ) {
+
+        return {
+
+          rowClass:
+          "in",
+
+          statusClass:
+          "status-in",
+
+          title:
+          "CURRENT PLAYOFF SEED",
+
+          detail:
+          "Currently inside the six-team playoff field."
+
+        };
+
+      }
+
+
+      if (
+        index === 6
+      ) {
+
+        return {
+
+          rowClass:
+          "bubble",
+
+          statusClass:
+          "status-bubble",
+
+          title:
+          "FIRST TEAM OUT",
+
+          detail:
+          sixth
+          ?
+          `Chasing ${sixth.manager} for the final playoff spot.`
+          :
+          "Just outside the playoff field."
+
+        };
+
+      }
+
+
+      return {
+
+        rowClass:
+        "out",
+
+        statusClass:
+        "status-out",
+
+        title:
+        "OUTSIDE LOOKING IN",
+
+        detail:
+        "Plenty of season remains to climb back into the top six."
+
+      };
+
+    }
+
+
+    /* =========================
+       WEEKS 10–11
+    ========================= */
+
+    if (
+      currentWeek <= 11
+    ) {
+
+      if (
+        index < 2
+      ) {
+
+        return {
+
+          rowClass:
+          "bye",
+
+          statusClass:
+          "status-bye",
+
+          title:
+          "BYE POSITION",
+
+          detail:
+          nextOpponent
+          ?
+          `Controls a top-two spot entering Week ${nextWeek} vs ${nextOpponent}.`
+          :
+          "Currently holding a first-round bye."
+
+        };
+
+      }
+
+
+      if (
+        index < 6
+      ) {
+
+        return {
+
+          rowClass:
+          "in",
+
+          statusClass:
+          "status-in",
+
+          title:
+          "CONTROLS OWN DESTINY",
+
+          detail:
+          nextOpponent
+          ?
+          `Win against ${nextOpponent} to stay in strong playoff position.`
+          :
+          "Currently inside the playoff field."
+
+        };
+
+      }
+
+
+      if (
+        index === 6
+      ) {
+
+        return {
+
+          rowClass:
+          "bubble",
+
+          statusClass:
+          "status-bubble",
+
+          title:
+          "ON THE BUBBLE",
+
+          detail:
+          nextOpponent
+          ?
+          `Needs wins and help from teams currently above the cut line. Next: ${nextOpponent}.`
+          :
+          "Within striking distance of the final playoff spot."
+
+        };
+
+      }
+
+
+      return {
+
+        rowClass:
+        "out",
+
+        statusClass:
+        "status-out",
+
+        title:
+        "NEEDS HELP",
+
+        detail:
+        nextOpponent
+        ?
+        `Needs to beat ${nextOpponent} and get losses from teams ahead.`
+        :
+        "Needs wins plus help from teams ahead in the standings."
+
+      };
+
+    }
+
+
+    /* =========================
+       WEEKS 12–14
+    ========================= */
+
+    if (
+      index < 2
+    ) {
+
+      return {
+
+        rowClass:
+        "bye",
+
+        statusClass:
+        "status-bye",
+
+        title:
+        "BYE POSITION",
+
+        detail:
+        nextOpponent
+        ?
+        `A win over ${nextOpponent} strengthens the first-round bye position.`
+        :
+        "Currently positioned for a first-round bye."
+
+      };
+
+    }
+
+
+    if (
+      index <= 4
+    ) {
+
+      return {
+
+        rowClass:
+        "in",
+
+        statusClass:
+        "status-in",
+
+        title:
+        "CONTROLS OWN DESTINY",
+
+        detail:
+        nextOpponent
+        ?
+        `Win vs ${nextOpponent} and remain inside the playoff field.`
+        :
+        "Currently safely inside the playoff picture."
+
+      };
+
+    }
+
+
+    /* #6 SEED */
+
+    if (
+      index === 5
+    ) {
+
+      let detail =
+      "Currently holds the final playoff spot.";
+
+
+      if (
+        nextOpponent
+      ) {
+
+        detail =
+        `Win vs ${nextOpponent} and stay ahead of ${seventh ? seventh.manager : "the #7 seed"}.`;
+
+      }
+
+
+      if (
+        seventh &&
+        sixthValue ===
+        seventhValue
+      ) {
+
+        detail +=
+        " Points For is currently the tiebreaker.";
+
+      }
+
+
+      return {
+
+        rowClass:
+        "bubble",
+
+        statusClass:
+        "status-bubble",
+
+        title:
+        "ON THE BUBBLE",
+
+        detail
+
+      };
+
+    }
+
+
+    /* #7 SEED */
+
+    if (
+      index === 6
+    ) {
+
+      let detail;
+
+
+      if (
+        nextOpponent &&
+        sixth
+      ) {
+
+        if (
+          team.currentValue ===
+          sixth.currentValue
+        ) {
+
+          detail =
+          `Needs to beat ${nextOpponent} and make up the Points For tiebreaker on ${sixth.manager}.`;
+
+        }
+
+        else {
+
+          detail =
+          `Needs a win vs ${nextOpponent} plus a ${sixth.manager} loss to move toward the final playoff spot.`;
+
+        }
+
+      }
+
+      else {
+
+        detail =
+        "Needs help from the current #6 seed.";
+
+      }
+
+
+      return {
+
+        rowClass:
+        "bubble",
+
+        statusClass:
+        "status-bubble",
+
+        title:
+        "NEEDS HELP",
+
+        detail
+
+      };
+
+    }
+
+
+    /* #8–10 */
+
+    const teamsAhead =
+    playoffTeams
+    .slice(
+      5,
+      index
+    )
+    .map(
+      function(other) {
+
+        return other.manager;
+
+      }
+    )
+    .slice(
+      0,
+      2
+    );
+
+
+    let helpText =
+    teamsAhead.length
+    ?
+    teamsAhead.join(" and ")
+    :
+    "teams ahead";
+
+
+    return {
+
+      rowClass:
+      "out",
+
+      statusClass:
+      "status-out",
+
+      title:
+      "NEEDS HELP",
+
+      detail:
+      nextOpponent
+      ?
+      `Must beat ${nextOpponent} and needs losses from ${helpText}.`
+      :
+      `Needs losses from ${helpText} to stay alive.`
+
+    };
+
+  }
+
+
+  /* =========================
+     BUILD PLAYOFF ROWS
+  ========================= */
+
+  playoffRace.innerHTML =
+  "";
+
+
+  playoffTeams.forEach(
+    function(team,index) {
+
+      const status =
+      getTeamStatus(
+        team,
+        index
+      );
+
+
+      const row =
+      document.createElement(
+        "div"
+      );
+
+
+      row.className =
+      "playoff-team " +
+      status.rowClass +
+      (
+        index === 6
+        ?
+        " playoff-cutline"
+        :
+        ""
+      );
+
+
+      let record =
+      `${team.wins}-${team.losses}`;
+
+
+      if (
+        Number(
+          team.ties || 0
+        ) > 0
+      ) {
+
+        record +=
+        `-${team.ties}`;
+
+      }
+
+
+      row.innerHTML = `
+
+      <div class="playoff-seed">
+      ${team.seed}
+      </div>
+
+
+      <div class="playoff-team-main">
+
+        <strong>
+        ${team.manager}
+        </strong>
+
+        <span>
+        ${record}
+        •
+        ${Number(
+          team.pointsFor || 0
+        ).toFixed(2)}
+        PF
+        •
+        ${team.remainingGames}
+        game${team.remainingGames === 1 ? "" : "s"} left
+        </span>
+
+      </div>
+
+
+      <div class="playoff-status">
+
+        <strong class="${status.statusClass}">
+        ${status.title}
+        </strong>
+
+        <span>
+        ${status.detail}
+        </span>
+
+      </div>
+
+      `;
+
+
+      playoffRace.appendChild(
+        row
+      );
+
+    }
+  );
 
 }
 
@@ -2335,9 +3314,16 @@ async function loadESPNData() {
     await response.json();
 
 
-    /* BUILD NEWS */
+    /* NEWS */
 
     buildLeagueNews(
+      data
+    );
+
+
+    /* PLAYOFF RACE */
+
+    buildPlayoffRace(
       data
     );
 
@@ -2365,7 +3351,9 @@ async function loadESPNData() {
     );
 
 
-    /* SYNC TIME */
+    /* =========================
+       SYNC TIME
+    ========================= */
 
     if (
       data.lastUpdated
@@ -2396,64 +3384,72 @@ async function loadESPNData() {
     }
 
 
-    /* SORT STANDINGS */
+    /* =========================
+       SORT STANDINGS
+    ========================= */
 
     teams.sort(
       function(a,b) {
 
+        const aWinValue =
+        Number(a.wins || 0) +
+        (
+          Number(a.ties || 0)
+          *
+          .5
+        );
+
+
+        const bWinValue =
+        Number(b.wins || 0) +
+        (
+          Number(b.ties || 0)
+          *
+          .5
+        );
+
+
         if (
-          b.wins !==
-          a.wins
+          bWinValue !==
+          aWinValue
         ) {
 
           return (
-            b.wins -
-            a.wins
+            bWinValue -
+            aWinValue
           );
 
         }
 
 
         if (
-          (b.percentage || 0)
+          Number(b.pointsFor || 0)
           !==
-          (a.percentage || 0)
+          Number(a.pointsFor || 0)
         ) {
 
           return (
-            (b.percentage || 0)
+            Number(b.pointsFor || 0)
             -
-            (a.percentage || 0)
-          );
-
-        }
-
-
-        if (
-          (b.pointsFor || 0)
-          !==
-          (a.pointsFor || 0)
-        ) {
-
-          return (
-            (b.pointsFor || 0)
-            -
-            (a.pointsFor || 0)
+            Number(a.pointsFor || 0)
           );
 
         }
 
 
         return (
-          a.teamId -
-          b.teamId
+          Number(a.teamId)
+          -
+          Number(b.teamId)
         );
 
       }
     );
 
 
-    /* BUILD STANDINGS */
+    /* =========================
+       BUILD STANDINGS
+    ========================= */
 
     standingsBody.innerHTML =
     "";
@@ -2529,16 +3525,22 @@ async function loadESPNData() {
     );
 
 
-    /* CURRENT WEEK MATCHUPS */
+    /* =========================
+       CURRENT WEEK MATCHUPS
+    ========================= */
 
     const currentMatchups =
     schedule.filter(
       function(game) {
 
         return (
-          game.matchupPeriodId
+          Number(
+            game.matchupPeriodId
+          )
           ===
-          currentWeek
+          Number(
+            currentWeek
+          )
         );
 
       }
@@ -2618,23 +3620,39 @@ async function loadESPNData() {
 
         const isFeatured =
         (
-          game.homeTeamId
+          Number(
+            game.homeTeamId
+          )
           ===
-          featuredTeam1
+          Number(
+            featuredTeam1
+          )
           &&
-          game.awayTeamId
+          Number(
+            game.awayTeamId
+          )
           ===
-          featuredTeam2
+          Number(
+            featuredTeam2
+          )
         )
         ||
         (
-          game.homeTeamId
+          Number(
+            game.homeTeamId
+          )
           ===
-          featuredTeam2
+          Number(
+            featuredTeam2
+          )
           &&
-          game.awayTeamId
+          Number(
+            game.awayTeamId
+          )
           ===
-          featuredTeam1
+          Number(
+            featuredTeam1
+          )
         );
 
 
@@ -2675,8 +3693,7 @@ async function loadESPNData() {
 
 
         if (
-          status.text
-          ===
+          status.text ===
           "FINAL"
         ) {
 
@@ -2772,7 +3789,9 @@ async function loadESPNData() {
         );
 
 
-        /* FEATURED GAME */
+        /* =========================
+           FEATURED GAME
+        ========================= */
 
         if (
           isFeatured
@@ -2784,9 +3803,13 @@ async function loadESPNData() {
 
 
           if (
-            game.homeTeamId
+            Number(
+              game.homeTeamId
+            )
             ===
-            featuredTeam1
+            Number(
+              featuredTeam1
+            )
           ) {
 
             firstScore =
@@ -2887,11 +3910,12 @@ async function loadESPNData() {
     );
 
 
-    /* NO MATCHUPS */
+    /* =========================
+       NO MATCHUPS
+    ========================= */
 
     if (
-      currentMatchups.length
-      ===
+      currentMatchups.length ===
       0
     ) {
 
@@ -2969,6 +3993,29 @@ async function loadESPNData() {
       <div class="error-message">
 
       League news is temporarily unavailable.
+
+      </div>
+
+      `;
+
+    }
+
+
+    const playoffRace =
+    document.getElementById(
+      "playoffRace"
+    );
+
+
+    if (
+      playoffRace
+    ) {
+
+      playoffRace.innerHTML = `
+
+      <div class="error-message">
+
+      Playoff race data is temporarily unavailable.
 
       </div>
 
