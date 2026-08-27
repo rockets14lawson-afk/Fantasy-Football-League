@@ -242,6 +242,7 @@ nav a:hover {
 
 .pick-manager {
   font-weight: bold;
+  font-size: 16px;
 }
 
 .draft-board-wrap {
@@ -360,6 +361,7 @@ footer strong {
 </style>
 </head>
 
+
 <body>
 
 <header>
@@ -408,6 +410,8 @@ ESPN League
 <div class="container">
 
 
+<!-- DRAFT COUNTDOWN -->
+
 <section class="card">
 
 <div class="section-title">
@@ -423,9 +427,15 @@ September 5, 2026 • 12:30 PM
 </div>
 
 
-<div id="draftStatusBox" style="text-align:center;margin-bottom:20px">
+<div
+id="draftStatusBox"
+style="text-align:center;margin-bottom:20px"
+>
 
-<span class="draft-status status-waiting" id="draftStatus">
+<span
+class="draft-status status-waiting"
+id="draftStatus"
+>
 Awaiting Draft
 </span>
 
@@ -458,6 +468,8 @@ Awaiting Draft
 
 </section>
 
+
+<!-- DRAFT DETAILS -->
 
 <section class="card">
 
@@ -496,6 +508,8 @@ Draft Details
 </section>
 
 
+<!-- DRAFT ORDER -->
+
 <section class="card">
 
 <div class="section-title">
@@ -505,22 +519,30 @@ Draft Order
 </h2>
 
 <span id="draftOrderLabel">
-To Be Drawn
+Official Draft Order
 </span>
 
 </div>
 
 
-<div class="note" id="draftOrderNote">
-Draft positions will be determined by random envelope draw.
+<div
+class="note"
+id="draftOrderNote"
+>
+The 2026 JDC Degenerates draft order is officially set.
 </div>
 
 <br>
 
-<div class="order-list" id="draftOrderList"></div>
+<div
+class="order-list"
+id="draftOrderList"
+></div>
 
 </section>
 
+
+<!-- DRAFT RULES -->
 
 <section class="card">
 
@@ -574,6 +596,8 @@ League Settings
 </section>
 
 
+<!-- DRAFT BOARD -->
+
 <section class="card">
 
 <div class="section-title">
@@ -589,12 +613,18 @@ Awaiting Draft
 </div>
 
 
-<div class="sync-box" id="syncBox">
+<div
+class="sync-box"
+id="syncBox"
+>
 Loading ESPN draft data...
 </div>
 
 
-<div class="note" id="draftBoardNote">
+<div
+class="note"
+id="draftBoardNote"
+>
 The draft board will automatically populate from ESPN after the draft is completed.
 </div>
 
@@ -603,7 +633,10 @@ The draft board will automatically populate from ESPN after the draft is complet
 
 <div class="draft-board-wrap">
 
-<div class="draft-board" id="draftBoard"></div>
+<div
+class="draft-board"
+id="draftBoard"
+></div>
 
 </div>
 
@@ -629,6 +662,10 @@ JDC Degenerates
 <script>
 
 
+/* =====================================
+   MANAGER DISPLAY NAMES
+===================================== */
+
 const displayNames = {
 
   "Devin": "Devin",
@@ -645,18 +682,22 @@ const displayNames = {
 };
 
 
+/* =====================================
+   OFFICIAL 2026 DRAFT ORDER
+===================================== */
+
 const managerOrder = [
 
+  "Toby",
+  "Matt",
+  "Philip",
+  "Steve H.",
+  "Steve P.",
+  "Mike",
   "Devin",
   "Hunter",
-  "Mike",
   "Tom",
-  "Steve P.",
-  "Steve H.",
-  "Matt",
-  "Toby",
-  "Josh",
-  "Philip"
+  "Josh"
 
 ];
 
@@ -687,16 +728,24 @@ function updateCountdown() {
 
   if (difference <= 0) {
 
-    document.getElementById("days").textContent =
+    document.getElementById(
+      "days"
+    ).textContent =
     "0";
 
-    document.getElementById("hours").textContent =
+    document.getElementById(
+      "hours"
+    ).textContent =
     "0";
 
-    document.getElementById("minutes").textContent =
+    document.getElementById(
+      "minutes"
+    ).textContent =
     "0";
 
-    document.getElementById("seconds").textContent =
+    document.getElementById(
+      "seconds"
+    ).textContent =
     "0";
 
     return;
@@ -738,16 +787,24 @@ function updateCountdown() {
   );
 
 
-  document.getElementById("days").textContent =
+  document.getElementById(
+    "days"
+  ).textContent =
   days;
 
-  document.getElementById("hours").textContent =
+  document.getElementById(
+    "hours"
+  ).textContent =
   hours;
 
-  document.getElementById("minutes").textContent =
+  document.getElementById(
+    "minutes"
+  ).textContent =
   minutes;
 
-  document.getElementById("seconds").textContent =
+  document.getElementById(
+    "seconds"
+  ).textContent =
   seconds;
 
 }
@@ -762,7 +819,7 @@ setInterval(
 
 
 /* =====================================
-   EMPTY DRAFT ORDER
+   BUILD OFFICIAL DRAFT ORDER
 ===================================== */
 
 function buildWaitingOrder() {
@@ -773,39 +830,54 @@ function buildWaitingOrder() {
   );
 
 
-  list.innerHTML = "";
+  list.innerHTML =
+  "";
 
 
-  for (
-    let pick = 1;
-    pick <= 10;
-    pick++
-  ) {
+  managerOrder.forEach(
+    function(manager,index) {
 
-    const row =
-    document.createElement("div");
-
-
-    row.className =
-    "order-row";
+      const row =
+      document.createElement(
+        "div"
+      );
 
 
-    row.innerHTML = `
-
-    <div class="pick-number">
-    ${pick}
-    </div>
-
-    <div class="pick-manager">
-    TBD
-    </div>
-
-    `;
+      row.className =
+      "order-row";
 
 
-    list.appendChild(row);
+      row.innerHTML = `
 
-  }
+      <div class="pick-number">
+      ${index + 1}
+      </div>
+
+      <div class="pick-manager">
+      ${displayNames[manager] || manager}
+      </div>
+
+      `;
+
+
+      list.appendChild(
+        row
+      );
+
+    }
+  );
+
+
+  document.getElementById(
+    "draftOrderLabel"
+  ).textContent =
+  "Official Draft Order";
+
+
+  document.getElementById(
+    "draftOrderNote"
+  ).textContent =
+  "The 2026 JDC Degenerates draft order is officially set.";
 
 }
 
@@ -822,14 +894,17 @@ function buildEmptyBoard() {
   );
 
 
-  board.innerHTML = "";
+  board.innerHTML =
+  "";
 
 
   managerOrder.forEach(
     function(manager) {
 
       const column =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
 
       column.className =
@@ -849,7 +924,9 @@ function buildEmptyBoard() {
       `;
 
 
-      board.appendChild(column);
+      board.appendChild(
+        column
+      );
 
     }
   );
@@ -869,60 +946,96 @@ function buildDraftBoard(picks) {
   );
 
 
-  board.innerHTML = "";
+  board.innerHTML =
+  "";
 
 
-  const managerPicks = {};
+  const managerPicks =
+  {};
 
 
   managerOrder.forEach(
     function(manager) {
 
-      managerPicks[manager] = [];
+      managerPicks[
+        manager
+      ] = [];
 
     }
   );
 
 
-  picks.forEach(function(pick) {
+  picks.forEach(
+    function(pick) {
 
-    if (!managerPicks[pick.manager]) {
+      if (
+        !managerPicks[
+          pick.manager
+        ]
+      ) {
 
-      managerPicks[pick.manager] = [];
+        managerPicks[
+          pick.manager
+        ] = [];
+
+      }
+
+
+      managerPicks[
+        pick.manager
+      ].push(
+        pick
+      );
 
     }
+  );
 
 
-    managerPicks[
-      pick.manager
-    ].push(pick);
-
-  });
-
+  /* =====================================
+     ESPN ROUND 1 ORDER
+  ===================================== */
 
   const firstRound =
   picks
-  .filter(function(pick) {
+  .filter(
+    function(pick) {
 
-    return (
-      Number(pick.roundId)
-      ===
-      1
-    );
+      return (
+        Number(
+          pick.roundId
+        )
+        ===
+        1
+      );
 
-  })
-  .sort(function(a,b) {
+    }
+  )
+  .sort(
+    function(a,b) {
 
-    return (
-      Number(a.roundPickNumber)
-      -
-      Number(b.roundPickNumber)
-    );
+      return (
+        Number(
+          a.roundPickNumber
+        )
+        -
+        Number(
+          b.roundPickNumber
+        )
+      );
 
-  });
+    }
+  );
 
 
-  if (firstRound.length) {
+  /*
+     Once ESPN draft results exist,
+     ESPN's Round 1 results become
+     the final verification of the order.
+  */
+
+  if (
+    firstRound.length
+  ) {
 
     const list =
     document.getElementById(
@@ -930,14 +1043,17 @@ function buildDraftBoard(picks) {
     );
 
 
-    list.innerHTML = "";
+    list.innerHTML =
+    "";
 
 
     firstRound.forEach(
       function(pick) {
 
         const row =
-        document.createElement("div");
+        document.createElement(
+          "div"
+        );
 
 
         row.className =
@@ -957,7 +1073,9 @@ function buildDraftBoard(picks) {
         `;
 
 
-        list.appendChild(row);
+        list.appendChild(
+          row
+        );
 
       }
     );
@@ -972,16 +1090,22 @@ function buildDraftBoard(picks) {
     document.getElementById(
       "draftOrderNote"
     ).textContent =
-    "Official 2026 draft order from ESPN.";
+    "Official 2026 draft order confirmed by ESPN.";
 
   }
 
+
+  /* =====================================
+     BUILD EACH MANAGER'S DRAFT COLUMN
+  ===================================== */
 
   managerOrder.forEach(
     function(manager) {
 
       const column =
-      document.createElement("div");
+      document.createElement(
+        "div"
+      );
 
 
       column.className =
@@ -989,16 +1113,24 @@ function buildDraftBoard(picks) {
 
 
       const managerDraft =
-      managerPicks[manager] || [];
+      managerPicks[
+        manager
+      ]
+      ||
+      [];
 
 
       managerDraft.sort(
         function(a,b) {
 
           return (
-            Number(a.overallPickNumber)
+            Number(
+              a.overallPickNumber
+            )
             -
-            Number(b.overallPickNumber)
+            Number(
+              b.overallPickNumber
+            )
           );
 
         }
@@ -1009,34 +1141,36 @@ function buildDraftBoard(picks) {
       managerDraft.length
       ?
       managerDraft
-      .map(function(pick) {
+      .map(
+        function(pick) {
 
-        return `
+          return `
 
-        <div class="pick-cell">
+          <div class="pick-cell">
 
-          <strong>
-          Pick ${pick.overallPickNumber}
-          </strong>
+            <strong>
+            Pick ${pick.overallPickNumber}
+            </strong>
 
-          <span>
-          Round ${pick.roundId}
-          • Pick ${pick.roundPickNumber}
-          </span>
+            <span>
+            Round ${pick.roundId}
+            • Pick ${pick.roundPickNumber}
+            </span>
 
-          <strong>
-${pick.playerName || "Player Name Pending"}
-</strong>
+            <strong>
+            ${pick.playerName || "Player Name Pending"}
+            </strong>
 
-<span>
-Player ID: ${pick.playerId}
-</span>
+            <span>
+            Player ID: ${pick.playerId}
+            </span>
 
-        </div>
+          </div>
 
-        `;
+          `;
 
-      })
+        }
+      )
       .join("")
       :
       `
@@ -1059,7 +1193,9 @@ Player ID: ${pick.playerId}
       `;
 
 
-      board.appendChild(column);
+      board.appendChild(
+        column
+      );
 
     }
   );
@@ -1077,12 +1213,15 @@ async function loadDraft() {
 
     const response =
     await fetch(
-      "league-data.json?v=" +
+      "league-data.json?v="
+      +
       Date.now()
     );
 
 
-    if (!response.ok) {
+    if (
+      !response.ok
+    ) {
 
       throw new Error(
         "Could not load league-data.json"
@@ -1096,13 +1235,19 @@ async function loadDraft() {
 
 
     const draft =
-    data.draft || {
+    data.draft
+    ||
+    {
+
       drafted: false,
       picks: []
+
     };
 
 
-    if (data.lastUpdated) {
+    if (
+      data.lastUpdated
+    ) {
 
       const updated =
       new Date(
@@ -1113,11 +1258,19 @@ async function loadDraft() {
       document.getElementById(
         "syncBox"
       ).textContent =
-      "ESPN last synced: " +
+      "ESPN last synced: "
+      +
       updated.toLocaleString();
 
     }
 
+
+    /*
+       BEFORE THE DRAFT:
+
+       Keep showing the official
+       manually entered order.
+    */
 
     if (
       !draft.drafted
@@ -1136,6 +1289,10 @@ async function loadDraft() {
     }
 
 
+    /*
+       AFTER THE DRAFT
+    */
+
     document.getElementById(
       "draftStatus"
     ).textContent =
@@ -1151,7 +1308,8 @@ async function loadDraft() {
     document.getElementById(
       "draftBoardLabel"
     ).textContent =
-    draft.picks.length +
+    draft.picks.length
+    +
     " Picks Loaded";
 
 
@@ -1167,9 +1325,12 @@ async function loadDraft() {
 
   }
 
-  catch (error) {
 
-    console.error(error);
+  catch(error) {
+
+    console.error(
+      error
+    );
 
 
     document.getElementById(
@@ -1177,6 +1338,14 @@ async function loadDraft() {
     ).textContent =
     "ESPN draft data unavailable";
 
+
+    /*
+       IMPORTANT:
+
+       Even if ESPN is unavailable,
+       we still know the official
+       draft order.
+    */
 
     buildWaitingOrder();
 
