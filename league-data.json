@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-01T01:29:22.912500+00:00",
+  "lastUpdated": "2026-09-01T01:41:27.996914+00:00",
   "currentMatchupPeriod": 1,
   "currentScoringPeriod": 1,
   "teams": [
@@ -17,7 +17,7 @@
     },
     {
       "teamId": 2,
-      "teamName": "Hunter's Heated Team",
+      "teamName": "Calm Downs Calm Downs",
       "wins": 0,
       "losses": 0,
       "ties": 0,
