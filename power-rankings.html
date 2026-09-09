@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Power Rankings | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: #f5f5f5;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212,175,55,.22),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      #111,
+      #050505
+    );
+
+  border-bottom: 3px solid #d4af37;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.season {
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(42px,7vw,72px);
+  color: #d4af37;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+/* =========================
+   NAV
+========================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  padding: 12px;
+
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #343434;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #d4af37;
+  color: black;
+}
+
+/* =========================
+   PAGE
+========================= */
+
+.container {
+  width: min(1100px,92%);
+  margin: auto;
+  padding: 35px 0 70px;
+}
+
+.card {
+  background:
+    linear-gradient(
+      145deg,
+      #151515,
+      #0e0e0e
+    );
+
+  border: 1px solid #2c2c2c;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+
+  border-bottom: 2px solid #d4af37;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #d4af37;
+  font-size: 25px;
+}
+
+.section-label {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.sync-box {
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro {
+  color: #aaa;
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* =========================
+   TOP 3 PODIUM
+========================= */
+
+.podium {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.podium-card {
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 14px;
+  padding: 22px 15px;
+  text-align: center;
+}
+
+.podium-card.first {
+  border: 2px solid #d4af37;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212,175,55,.12),
+      transparent 55%
+    ),
+    #101010;
+}
+
+.podium-medal {
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.podium-manager {
+  color: #d4af37;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.podium-team {
+  color: #888;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.podium-grade {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ddd;
+}
+
+/* =========================
+   POWER RANK CARDS
+========================= */
+
+.power-list {
+  display: grid;
+  gap: 14px;
+}
+
+.power-card {
+  display: grid;
+  grid-template-columns:
+    70px
+    minmax(160px,1.2fr)
+    minmax(140px,.8fr)
+    minmax(100px,.6fr)
+    minmax(260px,2fr);
+
+  gap: 16px;
+  align-items: center;
+
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 14px;
+
+  padding: 18px;
+}
+
+.power-card.rank-one {
+  border-color: #d4af37;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(212,175,55,.09),
+      #101010 35%
+    );
+}
+
+.rank-box {
+  text-align: center;
+}
+
+.rank-number {
+  color: #d4af37;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.movement {
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.move-up {
+  color: #65d68a;
+}
+
+.move-down {
+  color: #ff7777;
+}
+
+.move-same {
+  color: #888;
+}
+
+.manager-name {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.team-name {
+  color: #888;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.record-box {
+  text-align: center;
+}
+
+.record-label {
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 9px;
+}
+
+.record-value {
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 4px;
+}
+
+.pf-value {
+  color: #d4af37;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.grade-box {
+  text-align: center;
+}
+
+.grade {
+  width: 54px;
+  height: 54px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d4af37;
+  color: black;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.writeup {
+  color: #bbb;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.writeup strong {
+  display: block;
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* =========================
+   LEGEND
+========================= */
+
+.legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  color: #888;
+  font-size: 11px;
+
+  margin-top: 22px;
+}
+
+.legend strong {
+  margin-right: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .power-card {
+    grid-template-columns:
+      60px
+      1fr
+      100px;
+  }
+
+  .grade-box {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .record-box {
+    grid-column: 2 / 4;
+    text-align: left;
+  }
+
+  .writeup {
+    grid-column: 1 / -1;
+    border-top: 1px solid #292929;
+    padding-top: 12px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .podium {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .power-card {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .grade-box {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    text-align: left;
+  }
+
+  .grade {
+    margin: 0;
+  }
+
+  .record-box {
+    grid-column: 1 / -1;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<div class="season">
+2026 JDC Degenerates
+</div>
+
+<h1>
+Power Rankings
+</h1>
+
+<div class="hero-subtitle">
+Where standings don't tell the whole story.
+</div>
+
+</div>
+
+</header>
+
+<!-- NAV -->
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="schedule.html">
+Schedule
+</a>
+
+<a href="index.html#standings">
+Standings
+</a>
+
+<a href="index.html#playoff-race">
+Playoff Race
+</a>
+
+<a
+href="power-rankings.html"
+class="active">
+Power Rankings
+</a>
+
+<a href="managers.html">
+Managers
+</a>
+
+<a href="recap.html">
+Weekly Recap
+</a>
+
+<a href="rivalries.html">
+Rivalries
+</a>
+
+<a href="draft.html">
+Draft Central
+</a>
+
+<a href="records.html">
+Records
+</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank"
+rel="noopener noreferrer">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<!-- INTRO -->
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+🔥 Commissioner Power Rankings
+</h2>
+
+<span
+class="section-label"
+id="rankingWeek">
+Preseason
+</span>
+
+</div>
+
+<div class="intro">
+
+These rankings are not the standings.
+
+<br><br>
+
+Roster strength, quarterback value,
+depth, weekly ceiling, recent performance
+and commissioner judgment all matter.
+
+<br><br>
+
+Complaints may be submitted directly
+to the trash can.
+
+</div>
+
+</section>
+
+<!-- TOP THREE -->
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+🏆 The Podium
+</h2>
+
+<span class="section-label">
+Top 3
+</span>
+
+</div>
+
+<div
+class="podium"
+id="podium">
+</div>
+
+</section>
+
+<!-- FULL RANKINGS -->
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+1–10 Rankings
+</h2>
+
+<span class="section-label">
+2026
+</span>
+
+</div>
+
+<div
+class="sync-box"
+id="syncBox">
+Loading ESPN team data...
+</div>
+
+<div
+class="power-list"
+id="powerList">
+</div>
+
+<div class="legend">
+
+<span>
+<strong class="move-up">▲</strong>
+Moved Up
+</span>
+
+<span>
+<strong class="move-down">▼</strong>
+Moved Down
+</span>
+
+<span>
+<strong class="move-same">—</strong>
+No Change
+</span>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<strong>
+JDC Degenerates
+</strong>
+
+<br><br>
+
+Fantasy Football League • Est. 2022
+
+</footer>
+
+<script>
+
+/* =========================
+   ESPN TEAM / MANAGER MAP
+========================= */
+
+const managerMap = {
+
+  1: "Devin",
+  2: "Hunter",
+  3: "Mike",
+  4: "Tom",
+  5: "Dr. Steve",
+  6: "Steve",
+  7: "Matt",
+  8: "Toby",
+  9: "Josh",
+  10: "Philip"
+
+};
+
+
+/* =========================
+   POWER RANKINGS
+
+   Change ONLY this section
+   each week.
+========================= */
+
+const rankings = [
+
+  {
+    rank: 1,
+    previous: 1,
+    teamId: 1,
+    grade: "A+",
+
+    headline:
+    "The Commissioner Built a Problem",
+
+    writeup:
+    "Maye and Hurts give Devin elite Superflex firepower, while A.J. Brown, Drake London, Omarion Hampton and Kyren Williams give the roster balance everywhere else. Everyone will accuse the commissioner of ranking himself first. That sounds like their problem."
+  },
+
+  {
+    rank: 2,
+    previous: 2,
+    teamId: 8,
+    grade: "A",
+
+    headline:
+    "Former Champ Reloaded",
+
+    writeup:
+    "Josh Allen, Jonathan Taylor, Justin Jefferson and Nico Collins give Toby as much top-end firepower as anyone in the league. The ceiling is championship-level if the depth holds up."
+  },
+
+  {
+    rank: 3,
+    previous: 3,
+    teamId: 7,
+    grade: "A",
+
+    headline:
+    "The Champ Isn't Going Anywhere",
+
+    writeup:
+    "Matt enters the season as defending champion with a loaded running back room led by Bijan Robinson, James Cook and De'Von Achane. Trey McBride and Justin Herbert make the roster even harder to poke holes in."
+  },
+
+  {
+    rank: 4,
+    previous: 4,
+    teamId: 5,
+    grade: "A-",
+
+    headline:
+    "Quarterback Cheat Code",
+
+    writeup:
+    "Lamar Jackson and Jayden Daniels in Superflex is disgusting. If the young skill-position players hit, Dr. Steve could jump into the top three very quickly."
+  },
+
+  {
+    rank: 5,
+    previous: 5,
+    teamId: 10,
+    grade: "A-",
+
+    headline:
+    "Always the Bridesmaid?",
+
+    writeup:
+    "Philip has finished runner-up twice and once again drafted a roster capable of making a deep run. Gibbs and CeeDee Lamb provide an elite foundation, but the pressure is officially on to finally finish the job."
+  },
+
+  {
+    rank: 6,
+    previous: 6,
+    teamId: 3,
+    grade: "B+",
+
+    headline:
+    "Quietly Dangerous",
+
+    writeup:
+    "Mike may not have the flashiest roster on paper, but Ja'Marr Chase, Brock Purdy, Ashton Jeanty, Breece Hall and Sam LaPorta give him very few obvious weaknesses."
+  },
+
+  {
+    rank: 7,
+    previous: 7,
+    teamId: 2,
+    grade: "B+",
+
+    headline:
+    "Wide Receiver Factory",
+
+    writeup:
+    "Hunter loaded up on receivers with JSN, Amon-Ra, Egbuka and Ladd McConkey. If the quarterback room gives him enough, the rookie manager could surprise people quickly."
+  },
+
+  {
+    rank: 8,
+    previous: 8,
+    teamId: 9,
+    grade: "B",
+
+    headline:
+    "Boom-or-Bust Territory",
+
+    writeup:
+    "Burrow, Goff, CMC and Brock Bowers give Josh a strong core. The ceiling is high, but the running back depth behind McCaffrey could become important fast."
+  },
+
+  {
+    rank: 9,
+    previous: 9,
+    teamId: 4,
+    grade: "B",
+
+    headline:
+    "Receivers Everywhere",
+
+    writeup:
+    "Tom has plenty of receiver depth and two starting quarterbacks in Caleb Williams and Trevor Lawrence. Derrick Henry can still carry weeks, but the roster needs more consistency behind its stars."
+  },
+
+  {
+    rank: 10,
+    previous: 10,
+    teamId: 6,
+    grade: "B-",
+
+    headline:
+    "Somebody Had to Be Tenth",
+
+    writeup:
+    "Mahomes and Bo Nix keep Steve dangerous at quarterback, but the overall draft value lagged behind the rest of the league. The good news: preseason rankings don't count in the standings."
+  }
+
+];
+
+
+/* =========================
+   MOVEMENT
+========================= */
+
+function movementHTML(
+  rank,
+  previous
+) {
+
+  if (
+    previous === null
+    ||
+    previous === undefined
+  ) {
+
+    return `
+    <div class="movement move-same">
+    NEW
+    </div>
+    `;
+
+  }
+
+  const difference =
+  previous - rank;
+
+  if (
+    difference > 0
+  ) {
+
+    return `
+    <div class="movement move-up">
+    ▲ ${difference}
+    </div>
+    `;
+
+  }
+
+  if (
+    difference < 0
+  ) {
+
+    return `
+    <div class="movement move-down">
+    ▼ ${Math.abs(difference)}
+    </div>
+    `;
+
+  }
+
+  return `
+  <div class="movement move-same">
+  —
+  </div>
+  `;
+
+}
+
+
+/* =========================
+   BUILD PAGE
+========================= */
+
+function buildRankings(
+  teams
+) {
+
+  const powerList =
+  document.getElementById(
+    "powerList"
+  );
+
+  const podium =
+  document.getElementById(
+    "podium"
+  );
+
+  powerList.innerHTML =
+  "";
+
+  podium.innerHTML =
+  "";
+
+
+  const teamLookup =
+  {};
+
+  teams.forEach(
+    function(team) {
+
+      teamLookup[
+        Number(
+          team.teamId
+        )
+      ] = team;
+
+    }
+  );
+
+
+  rankings.forEach(
+    function(item) {
+
+      const team =
+      teamLookup[
+        item.teamId
+      ]
+      ||
+      {};
+
+
+      const manager =
+      managerMap[
+        item.teamId
+      ]
+      ||
+      "Unknown";
+
+
+      const teamName =
+      team.teamName
+      ||
+      "Team Name Pending";
+
+
+      const wins =
+      Number(
+        team.wins || 0
+      );
+
+
+      const losses =
+      Number(
+        team.losses || 0
+      );
+
+
+      const ties =
+      Number(
+        team.ties || 0
+      );
+
+
+      const pf =
+      Number(
+        team.pointsFor || 0
+      );
+
+
+      let record =
+      `${wins}-${losses}`;
+
+
+      if (
+        ties > 0
+      ) {
+
+        record +=
+        `-${ties}`;
+
+      }
+
+
+      /* =========================
+         FULL CARD
+      ========================= */
+
+      const card =
+      document.createElement(
+        "div"
+      );
+
+
+      card.className =
+      "power-card"
+      +
+      (
+        item.rank === 1
+        ?
+        " rank-one"
+        :
+        ""
+      );
+
+
+      card.innerHTML = `
+
+      <div class="rank-box">
+
+        <div class="rank-number">
+        #${item.rank}
+        </div>
+
+        ${movementHTML(
+          item.rank,
+          item.previous
+        )}
+
+      </div>
+
+
+      <div>
+
+        <div class="manager-name">
+        ${manager}
+        </div>
+
+        <div class="team-name">
+        ${teamName}
+        </div>
+
+      </div>
+
+
+      <div class="record-box">
+
+        <div class="record-label">
+        Record
+        </div>
+
+        <div class="record-value">
+        ${record}
+        </div>
+
+        <div class="pf-value">
+        ${pf.toFixed(2)} PF
+        </div>
+
+      </div>
+
+
+      <div class="grade-box">
+
+        <div class="grade">
+        ${item.grade}
+        </div>
+
+      </div>
+
+
+      <div class="writeup">
+
+        <strong>
+        ${item.headline}
+        </strong>
+
+        ${item.writeup}
+
+      </div>
+
+      `;
+
+
+      powerList.appendChild(
+        card
+      );
+
+
+      /* =========================
+         TOP THREE PODIUM
+      ========================= */
+
+      if (
+        item.rank <= 3
+      ) {
+
+        const podiumCard =
+        document.createElement(
+          "div"
+        );
+
+
+        podiumCard.className =
+        "podium-card"
+        +
+        (
+          item.rank === 1
+          ?
+          " first"
+          :
+          ""
+        );
+
+
+        let medal =
+        "🥉";
+
+
+        if (
+          item.rank === 1
+        ) {
+
+          medal =
+          "🥇";
+
+        }
+
+
+        else if (
+          item.rank === 2
+        ) {
+
+          medal =
+          "🥈";
+
+        }
+
+
+        podiumCard.innerHTML = `
+
+        <div class="podium-medal">
+        ${medal}
+        </div>
+
+        <div class="podium-manager">
+        #${item.rank} ${manager}
+        </div>
+
+        <div class="podium-team">
+        ${teamName}
+        </div>
+
+        <div class="podium-grade">
+        Draft Grade:
+        <strong>
+        ${item.grade}
+        </strong>
+        </div>
+
+        `;
+
+
+        podium.appendChild(
+          podiumCard
+        );
+
+      }
+
+    }
+  );
+
+}
+
+
+/* =========================
+   LOAD ESPN
+========================= */
+
+async function loadPowerRankings() {
+
+  const syncBox =
+  document.getElementById(
+    "syncBox"
+  );
+
+
+  try {
+
+    const response =
+    await fetch(
+      "league-data.json?v="
+      +
+      Date.now()
+    );
+
+
+    if (
+      !response.ok
+    ) {
+
+      throw new Error(
+        "Could not load ESPN data."
+      );
+
+    }
+
+
+    const data =
+    await response.json();
+
+
+    const teams =
+    data.teams
+    ||
+    [];
+
+
+    if (
+      data.lastUpdated
+    ) {
+
+      const updated =
+      new Date(
+        data.lastUpdated
+      );
+
+
+      syncBox.textContent =
+      "ESPN last synced: "
+      +
+      updated.toLocaleString();
+
+    }
+
+
+    else {
+
+      syncBox.textContent =
+      "Connected to ESPN";
+
+    }
+
+
+    buildRankings(
+      teams
+    );
+
+  }
+
+
+  catch(error) {
+
+    console.error(
+      error
+    );
+
+
+    syncBox.textContent =
+    "ESPN data unavailable — showing preseason rankings.";
+
+
+    buildRankings(
+      []
+    );
+
+  }
+
+}
+
+
+/* =========================
+   START
+========================= */
+
+loadPowerRankings();
+
+</script>
+
+</body>
+
+</html>
