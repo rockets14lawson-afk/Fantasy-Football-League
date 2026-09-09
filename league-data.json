@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-09T21:43:58.803390+00:00",
+  "lastUpdated": "2026-09-09T21:52:19.206948+00:00",
   "currentMatchupPeriod": 1,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2042,7 +2042,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": 4360569,
-        "playerName": "Jordan Mason",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
