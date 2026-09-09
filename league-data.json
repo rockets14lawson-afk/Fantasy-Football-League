@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-09T02:57:56.390568+00:00",
+  "lastUpdated": "2026-09-09T03:11:52.581670+00:00",
   "currentMatchupPeriod": 1,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1921,7 +1921,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 4241463,
-        "playerName": "Jerry Jeudy",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2141,7 +2141,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 4241457,
-        "playerName": "Najee Harris",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2284,7 +2284,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 2977187,
-        "playerName": "Cooper Kupp",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
