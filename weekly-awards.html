@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weekly Awards | JDC Degenerates</title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #070707;
+  color: #f5f5f5;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212,175,55,.22),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      #111,
+      #050505
+    );
+
+  border-bottom: 3px solid #d4af37;
+}
+
+.season {
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(42px,7vw,72px);
+  color: #d4af37;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: #aaa;
+  font-size: 18px;
+}
+
+/* NAV */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 8px;
+  padding: 12px;
+
+  background: rgba(8,8,8,.96);
+  border-bottom: 1px solid #343434;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #d4af37;
+  color: black;
+}
+
+/* PAGE */
+
+.container {
+  width: min(1100px,92%);
+  margin: auto;
+  padding: 35px 0 70px;
+}
+
+.card {
+  background:
+    linear-gradient(
+      145deg,
+      #151515,
+      #0e0e0e
+    );
+
+  border: 1px solid #2c2c2c;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 12px;
+  margin-bottom: 22px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #d4af37;
+}
+
+.section-label {
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.sync-box {
+  color: #d4af37;
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  font-size: 11px;
+  margin-bottom: 22px;
+}
+
+/* WEEK SELECTOR */
+
+.week-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.week-button {
+  background: #111;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 7px;
+  padding: 10px 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.week-button:hover {
+  background: #d4af37;
+  color: black;
+}
+
+.week-display {
+  min-width: 120px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+}
+
+/* AWARDS */
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 18px;
+}
+
+.award-card {
+  position: relative;
+  overflow: hidden;
+
+  background: #101010;
+  border: 1px solid #303030;
+  border-radius: 15px;
+
+  padding: 24px;
+  min-height: 220px;
+}
+
+.award-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #d4af37;
+}
+
+.award-icon {
+  font-size: 40px;
+}
+
+.award-title {
+  margin-top: 10px;
+  color: #d4af37;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.award-description {
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 9px;
+  margin-top: 5px;
+}
+
+.award-manager {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.award-team {
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.award-stat {
+  margin-top: 13px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.award-roast {
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px solid #292929;
+  color: #aaa;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+/* EMPTY */
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  padding: 45px 20px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  border-top: 1px solid #292929;
+  color: #777;
+}
+
+footer strong {
+  color: #d4af37;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<div>
+
+<div class="season">
+2026 JDC Degenerates
+</div>
+
+<h1>
+Weekly Awards
+</h1>
+
+<div class="hero-subtitle">
+Greatness. Failure. Public humiliation.
+</div>
+
+</div>
+
+</header>
+
+<nav>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="schedule.html">
+Schedule
+</a>
+
+<a href="index.html#standings">
+Standings
+</a>
+
+<a href="power-rankings.html">
+Power Rankings
+</a>
+
+<a href="index.html#playoff-race">
+Playoff Race
+</a>
+
+<a href="managers.html">
+Managers
+</a>
+
+<a href="recap.html">
+Weekly Recap
+</a>
+
+<a
+href="weekly-awards.html"
+class="active">
+Weekly Awards
+</a>
+
+<a href="rivalries.html">
+Rivalries
+</a>
+
+<a href="draft.html">
+Draft Central
+</a>
+
+<a href="records.html">
+Records
+</a>
+
+<a
+href="https://fantasy.espn.com/football/league?leagueId=90156758"
+target="_blank">
+ESPN League
+</a>
+
+</nav>
+
+<div class="container">
+
+<section class="card">
+
+<div class="section-title">
+
+<h2>
+🏆 Weekly Trophy Case
+</h2>
+
+<span
+class="section-label"
+id="weekLabel">
+Week 1
+</span>
+
+</div>
+
+<div
+class="sync-box"
+id="syncBox">
+Loading ESPN data...
+</div>
+
+<div class="week-controls">
+
+<button
+class="week-button"
+onclick="changeWeek(-1)">
+← Previous
+</button>
+
+<div
+class="week-display"
+id="weekDisplay">
+Week 1
+</div>
+
+<button
+class="week-button"
+onclick="changeWeek(1)">
+Next →
+</button>
+
+</div>
+
+<div
+class="awards-grid"
+id="awardsGrid">
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<strong>
+JDC Degenerates
+</strong>
+
+<br><br>
+
+Fantasy Football League • Est. 2022
+
+</footer>
+
+<script>
+
+/* =========================
+   MANAGERS
+========================= */
+
+const managerMap = {
+
+  1: "Devin",
+  2: "Hunter",
+  3: "Mike",
+  4: "Tom",
+  5: "Dr. Steve",
+  6: "Steve",
+  7: "Matt",
+  8: "Toby",
+  9: "Josh",
+  10: "Philip"
+
+};
+
+
+let leagueData = null;
+
+let selectedWeek = 1;
+
+
+/* =========================
+   CURRENT WEEK
+========================= */
+
+const weekOneStart =
+new Date(
+  2026,
+  8,
+  8,
+  0,
+  0,
+  0
+);
+
+
+const today =
+new Date();
+
+
+if (
+  today >= weekOneStart
+) {
+
+  selectedWeek =
+  Math.floor(
+    (
+      today - weekOneStart
+    )
+    /
+    (
+      7 *
+      24 *
+      60 *
+      60 *
+      1000
+    )
+  )
+  + 1;
+
+}
+
+
+if (
+  selectedWeek > 14
+) {
+
+  selectedWeek = 14;
+
+}
+
+
+if (
+  selectedWeek < 1
+) {
+
+  selectedWeek = 1;
+
+}
+
+
+/* =========================
+   CHANGE WEEK
+========================= */
+
+function changeWeek(
+  amount
+) {
+
+  selectedWeek +=
+  amount;
+
+
+  if (
+    selectedWeek < 1
+  ) {
+
+    selectedWeek = 1;
+
+  }
+
+
+  if (
+    selectedWeek > 14
+  ) {
+
+    selectedWeek = 14;
+
+  }
+
+
+  buildAwards();
+
+}
+
+
+/* =========================
+   AWARD CARD
+========================= */
+
+function awardCard(
+  icon,
+  title,
+  description,
+  manager,
+  teamName,
+  stat,
+  roast
+) {
+
+  return `
+
+  <div class="award-card">
+
+    <div class="award-icon">
+    ${icon}
+    </div>
+
+    <div class="award-title">
+    ${title}
+    </div>
+
+    <div class="award-description">
+    ${description}
+    </div>
+
+    <div class="award-manager">
+    ${manager}
+    </div>
+
+    <div class="award-team">
+    ${teamName}
+    </div>
+
+    <div class="award-stat">
+    ${stat}
+    </div>
+
+    <div class="award-roast">
+    ${roast}
+    </div>
+
+  </div>
+
+  `;
+
+}
+
+
+/* =========================
+   BUILD AWARDS
+========================= */
+
+function buildAwards() {
+
+  const grid =
+  document.getElementById(
+    "awardsGrid"
+  );
+
+
+  document.getElementById(
+    "weekDisplay"
+  ).textContent =
+  "Week "
+  +
+  selectedWeek;
+
+
+  document.getElementById(
+    "weekLabel"
+  ).textContent =
+  "Week "
+  +
+  selectedWeek;
+
+
+  if (
+    !leagueData
+  ) {
+
+    return;
+
+  }
+
+
+  const schedule =
+  leagueData.schedule
+  ||
+  [];
+
+
+  const teams =
+  leagueData.teams
+  ||
+  [];
+
+
+  const teamLookup =
+  {};
+
+
+  teams.forEach(
+    function(team) {
+
+      teamLookup[
+        Number(
+          team.teamId
+        )
+      ] =
+      team;
+
+    }
+  );
+
+
+  const games =
+  schedule.filter(
+    function(game) {
+
+      return (
+        Number(
+          game.matchupPeriodId
+        )
+        ===
+        Number(
+          selectedWeek
+        )
+      );
+
+    }
+  );
+
+
+  /*
+  Only use completed games.
+  */
+
+  const completed =
+  games.filter(
+    function(game) {
+
+      return (
+        game.winner
+        &&
+        game.winner !==
+        "UNDECIDED"
+      );
+
+    }
+  );
+
+
+  if (
+    completed.length === 0
+  ) {
+
+    grid.innerHTML = `
+
+    <div
+    class="empty-state"
+    style="grid-column:1/-1;">
+
+    🏈 Week ${selectedWeek}
+    awards are not ready yet.
+
+    <br><br>
+
+    Once the matchups are final,
+    the trophy case will automatically
+    calculate the winners.
+
+    </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  /* =========================
+     CREATE TEAM SCORES
+  ========================= */
+
+  const performances =
+  [];
+
+
+  completed.forEach(
+    function(game) {
+
+      performances.push({
+
+        teamId:
+        Number(
+          game.awayTeamId
+        ),
+
+        score:
+        Number(
+          game.awayScore || 0
+        )
+
+      });
+
+
+      performances.push({
+
+        teamId:
+        Number(
+          game.homeTeamId
+        ),
+
+        score:
+        Number(
+          game.homeScore || 0
+        )
+
+      });
+
+    }
+  );
+
+
+  performances.sort(
+    function(a,b) {
+
+      return (
+        b.score -
+        a.score
+      );
+
+    }
+  );
+
+
+  /* =========================
+     KING
+  ========================= */
+
+  const king =
+  performances[0];
+
+
+  /* =========================
+     BUM
+  ========================= */
+
+  const bum =
+  performances[
+    performances.length - 1
+  ];
+
+
+  /* =========================
+     MARGINS
+  ========================= */
+
+  const margins =
+  completed.map(
+    function(game) {
+
+      const away =
+      Number(
+        game.awayScore || 0
+      );
+
+
+      const home =
+      Number(
+        game.homeScore || 0
+      );
+
+
+      return {
+
+        game:
+        game,
+
+        margin:
+        Math.abs(
+          away - home
+        )
+
+      };
+
+    }
+  );
+
+
+  margins.sort(
+    function(a,b) {
+
+      return (
+        b.margin -
+        a.margin
+      );
+
+    }
+  );
+
+
+  const biggest =
+  margins[0];
+
+
+  const closest =
+  [...margins].sort(
+    function(a,b) {
+
+      return (
+        a.margin -
+        b.margin
+      );
+
+    }
+  )[0];
+
+
+  /* =========================
+     HELPERS
+  ========================= */
+
+  function getManager(
+    teamId
+  ) {
+
+    return (
+      managerMap[
+        teamId
+      ]
+      ||
+      "Unknown"
+    );
+
+  }
+
+
+  function getTeamName(
+    teamId
+  ) {
+
+    const team =
+    teamLookup[
+      teamId
+    ];
+
+
+    return (
+      team
+      ?
+      team.teamName
+      :
+      ""
+    );
+
+  }
+
+
+  function winningTeam(
+    game
+  ) {
+
+    const away =
+    Number(
+      game.awayScore || 0
+    );
+
+
+    const home =
+    Number(
+      game.homeScore || 0
+    );
+
+
+    if (
+      away > home
+    ) {
+
+      return Number(
+        game.awayTeamId
+      );
+
+    }
+
+
+    return Number(
+      game.homeTeamId
+    );
+
+  }
+
+
+  function losingTeam(
+    game
+  ) {
+
+    const away =
+    Number(
+      game.awayScore || 0
+    );
+
+
+    const home =
+    Number(
+      game.homeScore || 0
+    );
+
+
+    if (
+      away < home
+    ) {
+
+      return Number(
+        game.awayTeamId
+      );
+
+    }
+
+
+    return Number(
+      game.homeTeamId
+    );
+
+  }
+
+
+  const blowoutWinner =
+  winningTeam(
+    biggest.game
+  );
+
+
+  const heartbreaker =
+  losingTeam(
+    closest.game
+  );
+
+
+  /* =========================
+     RENDER
+  ========================= */
+
+  grid.innerHTML =
+
+
+  awardCard(
+
+    "👑",
+
+    "King of the Week",
+
+    "Highest Scoring Team",
+
+    getManager(
+      king.teamId
+    ),
+
+    getTeamName(
+      king.teamId
+    ),
+
+    king.score.toFixed(2)
+    +
+    " Points",
+
+    "Everybody else spent the week fighting for second place."
+
+  )
+
+
+  +
+
+
+  awardCard(
+
+    "💩",
+
+    "Bum of the Week",
+
+    "Lowest Scoring Team",
+
+    getManager(
+      bum.teamId
+    ),
+
+    getTeamName(
+      bum.teamId
+    ),
+
+    bum.score.toFixed(2)
+    +
+    " Points",
+
+    "A performance worthy of being deleted from league history."
+
+  )
+
+
+  +
+
+
+  awardCard(
+
+    "💥",
+
+    "Ass Whooping",
+
+    "Largest Margin of Victory",
+
+    getManager(
+      blowoutWinner
+    ),
+
+    getTeamName(
+      blowoutWinner
+    ),
+
+    "Won by "
+    +
+    biggest.margin.toFixed(2),
+
+    "This stopped being a matchup and became a public execution."
+
+  )
+
+
+  +
+
+
+  awardCard(
+
+    "💔",
+
+    "Heartbreaker",
+
+    "Closest Loss",
+
+    getManager(
+      heartbreaker
+    ),
+
+    getTeamName(
+      heartbreaker
+    ),
+
+    "Lost by "
+    +
+    closest.margin.toFixed(2),
+
+    "One lineup decision away from sleeping peacefully."
+
+  );
+
+}
+
+
+/* =========================
+   LOAD ESPN DATA
+========================= */
+
+async function loadData() {
+
+  const syncBox =
+  document.getElementById(
+    "syncBox"
+  );
+
+
+  try {
+
+    const response =
+    await fetch(
+      "league-data.json?v="
+      +
+      Date.now()
+    );
+
+
+    if (
+      !response.ok
+    ) {
+
+      throw new Error(
+        "Could not load league data."
+      );
+
+    }
+
+
+    leagueData =
+    await response.json();
+
+
+    if (
+      leagueData.lastUpdated
+    ) {
+
+      const date =
+      new Date(
+        leagueData.lastUpdated
+      );
+
+
+      syncBox.textContent =
+      "ESPN last synced: "
+      +
+      date.toLocaleString();
+
+    }
+
+
+    else {
+
+      syncBox.textContent =
+      "Connected to ESPN";
+
+    }
+
+
+    buildAwards();
+
+  }
+
+
+  catch(error) {
+
+    console.error(
+      error
+    );
+
+
+    syncBox.textContent =
+    "Unable to load ESPN league data.";
+
+
+    document.getElementById(
+      "awardsGrid"
+    ).innerHTML = `
+
+    <div
+    class="empty-state"
+    style="grid-column:1/-1;">
+
+    Unable to load weekly awards.
+
+    </div>
+
+    `;
+
+  }
+
+}
+
+
+loadData();
+
+</script>
+
+</body>
+
+</html>
