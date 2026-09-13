@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-13T19:54:02.078948+00:00",
+  "lastUpdated": "2026-09-13T20:03:38.072989+00:00",
   "currentMatchupPeriod": 1,
   "currentScoringPeriod": 1,
   "teams": [
@@ -27,7 +27,7 @@
     },
     {
       "teamId": 3,
-      "teamName": "Picken Purdy Flowers",
+      "teamName": "Zero Dark Purdy",
       "wins": 0,
       "losses": 0,
       "ties": 0,
