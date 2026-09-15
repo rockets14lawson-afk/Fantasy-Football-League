@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-15T16:22:42.762098+00:00",
+  "lastUpdated": "2026-09-15T16:35:33.518699+00:00",
   "currentMatchupPeriod": 2,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2482,7 +2482,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": -16008,
-        "playerName": "Lions D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
