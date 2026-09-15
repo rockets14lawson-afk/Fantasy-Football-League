@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-15T16:47:56.328245+00:00",
+  "lastUpdated": "2026-09-15T16:57:28.317078+00:00",
   "currentMatchupPeriod": 2,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2504,7 +2504,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -16030,
-        "playerName": "Jaguars D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
