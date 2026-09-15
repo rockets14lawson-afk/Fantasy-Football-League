@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-15T22:32:23.922750+00:00",
+  "lastUpdated": "2026-09-15T22:42:49.466700+00:00",
   "currentMatchupPeriod": 2,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2537,7 +2537,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4710714,
-        "playerName": "De'Zhaun Stribling",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       }
