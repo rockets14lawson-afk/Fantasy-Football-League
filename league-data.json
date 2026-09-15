@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-15T11:22:53.985682+00:00",
+  "lastUpdated": "2026-09-15T11:34:26.046620+00:00",
   "currentMatchupPeriod": 2,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1569,7 +1569,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -16014,
-        "playerName": "Rams D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2108,7 +2108,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4361529,
-        "playerName": "Isiah Pacheco",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
