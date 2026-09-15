@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-15T20:20:02.113385+00:00",
+  "lastUpdated": "2026-09-15T20:31:29.978504+00:00",
   "currentMatchupPeriod": 2,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2163,7 +2163,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": 4870653,
-        "playerName": "KC Concepcion",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
