@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-22T11:35:16.927754+00:00",
+  "lastUpdated": "2026-09-22T11:45:41.836145+00:00",
   "currentMatchupPeriod": 3,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1965,7 +1965,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4569587,
-        "playerName": "Wan'Dale Robinson",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
