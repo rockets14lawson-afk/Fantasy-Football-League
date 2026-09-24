@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-24T15:18:49.494727+00:00",
+  "lastUpdated": "2026-09-24T15:33:06.798080+00:00",
   "currentMatchupPeriod": 3,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1899,7 +1899,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 4360078,
-        "playerName": "Alec Pierce",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
