@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-29T13:29:48.063256+00:00",
+  "lastUpdated": "2026-09-29T18:48:44.718970+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1239,7 +1239,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 3052587,
-        "playerName": "Baker Mayfield",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1877,7 +1877,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 3917792,
-        "playerName": null,
+        "playerName": "Daniel Jones",
         "bidAmount": 0,
         "keeper": false
       },
