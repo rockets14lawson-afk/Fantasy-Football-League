@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-29T22:41:23.975521+00:00",
+  "lastUpdated": "2026-09-30T01:35:02.662987+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2185,7 +2185,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4360248,
-        "playerName": "Kyle Pitts Sr.",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
