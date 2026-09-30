@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-09-30T07:21:12.063682+00:00",
+  "lastUpdated": "2026-09-30T13:55:22.027366+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1305,7 +1305,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4038941,
-        "playerName": "Justin Herbert",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1965,7 +1965,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4569587,
-        "playerName": null,
+        "playerName": "Wan'Dale Robinson",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2240,7 +2240,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4373626,
-        "playerName": "Tyler Allgeier",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
