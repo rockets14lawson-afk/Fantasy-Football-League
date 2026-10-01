@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-01T14:46:40.769627+00:00",
+  "lastUpdated": "2026-10-01T19:52:55.614279+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -920,7 +920,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4429160,
-        "playerName": "De'Von Achane",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
