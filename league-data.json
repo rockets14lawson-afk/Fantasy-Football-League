@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-04T14:08:16.702718+00:00",
+  "lastUpdated": "2026-10-04T18:07:42.521021+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1690,7 +1690,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": 4432577,
-        "playerName": null,
+        "playerName": "C.J. Stroud",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2251,7 +2251,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 2473037,
-        "playerName": null,
+        "playerName": "Jason Myers",
         "bidAmount": 0,
         "keeper": false
       },
