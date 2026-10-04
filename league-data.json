@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-04T02:01:39.331503+00:00",
+  "lastUpdated": "2026-10-04T08:19:03.977245+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1690,7 +1690,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": 4432577,
-        "playerName": "C.J. Stroud",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2097,7 +2097,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4870795,
-        "playerName": null,
+        "playerName": "Makai Lemon",
         "bidAmount": 0,
         "keeper": false
       },
