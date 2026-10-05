@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-05T04:51:52.184481+00:00",
+  "lastUpdated": "2026-10-05T11:52:27.978713+00:00",
   "currentMatchupPeriod": 4,
   "currentScoringPeriod": 1,
   "teams": [
@@ -97,7 +97,7 @@
     },
     {
       "teamId": 5,
-      "teamName": "Borderline Bipolar Blitz",
+      "teamName": "Papa Johns",
       "wins": 0,
       "losses": 3,
       "ties": 0,
