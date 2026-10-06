@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-06T07:18:34.071534+00:00",
+  "lastUpdated": "2026-10-06T14:16:17.581606+00:00",
   "currentMatchupPeriod": 5,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1184,7 +1184,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 4685512,
-        "playerName": "Jadarian Price",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1305,7 +1305,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4038941,
-        "playerName": null,
+        "playerName": "Justin Herbert",
         "bidAmount": 0,
         "keeper": false
       },
@@ -1877,7 +1877,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 3917792,
-        "playerName": "Daniel Jones",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2031,7 +2031,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 4036133,
-        "playerName": null,
+        "playerName": "T.J. Hockenson",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2284,7 +2284,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 2977187,
-        "playerName": "Cooper Kupp",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
