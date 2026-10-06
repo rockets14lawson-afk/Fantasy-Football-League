@@ -1,108 +1,108 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-06T00:58:39.347222+00:00",
-  "currentMatchupPeriod": 4,
+  "lastUpdated": "2026-10-06T07:18:34.071534+00:00",
+  "currentMatchupPeriod": 5,
   "currentScoringPeriod": 1,
   "teams": [
     {
       "teamId": 3,
       "teamName": "Zero Dark Purdy",
-      "wins": 3,
+      "wins": 4,
       "losses": 0,
       "ties": 0,
-      "pointsFor": 406.2,
-      "pointsAgainst": 393.4,
+      "pointsFor": 551.7,
+      "pointsAgainst": 538.7,
       "percentage": 1.0
     },
     {
       "teamId": 4,
       "teamName": "Let's Go Muskies!",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
       "ties": 0,
-      "pointsFor": 519.2,
-      "pointsAgainst": 461.7,
-      "percentage": 0.6666666666666666
+      "pointsFor": 672.3,
+      "pointsAgainst": 614.7,
+      "percentage": 0.75
+    },
+    {
+      "teamId": 9,
+      "teamName": "89 and a  Wake Up",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0,
+      "pointsFor": 638.6,
+      "pointsAgainst": 492.1,
+      "percentage": 0.75
     },
     {
       "teamId": 10,
       "teamName": "Ceedeez Gibbs",
       "wins": 2,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "pointsFor": 508.1,
-      "pointsAgainst": 465.9,
-      "percentage": 0.6666666666666666
-    },
-    {
-      "teamId": 2,
-      "teamName": "MID AGAIN ",
-      "wins": 2,
-      "losses": 1,
-      "ties": 0,
-      "pointsFor": 492.0,
-      "pointsAgainst": 461.9,
-      "percentage": 0.6666666666666666
+      "pointsFor": 668.0,
+      "pointsAgainst": 628.3,
+      "percentage": 0.5
     },
     {
       "teamId": 6,
       "teamName": "Stone Cold Steve",
       "wins": 2,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "pointsFor": 479.4,
-      "pointsAgainst": 466.8,
-      "percentage": 0.6666666666666666
+      "pointsFor": 624.7,
+      "pointsAgainst": 612.3,
+      "percentage": 0.5
     },
     {
-      "teamId": 9,
-      "teamName": "89 and a  Wake Up",
+      "teamId": 2,
+      "teamName": "MID AGAIN ",
       "wins": 2,
-      "losses": 1,
+      "losses": 2,
       "ties": 0,
-      "pointsFor": 458.9,
-      "pointsAgainst": 388.4,
-      "percentage": 0.6666666666666666
+      "pointsFor": 595.7,
+      "pointsAgainst": 641.6,
+      "percentage": 0.5
+    },
+    {
+      "teamId": 1,
+      "teamName": "Spitters Are Quitters",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 537.6,
+      "pointsAgainst": 593.9,
+      "percentage": 0.5
+    },
+    {
+      "teamId": 7,
+      "teamName": "Nabers ran Achane in Herbert",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "pointsFor": 658.1,
+      "pointsAgainst": 610.0,
+      "percentage": 0.25
     },
     {
       "teamId": 8,
       "teamName": "Team H00ch",
       "wins": 1,
-      "losses": 2,
-      "ties": 0,
-      "pointsFor": 472.2,
-      "pointsAgainst": 485.3,
-      "percentage": 0.3333333333333333
-    },
-    {
-      "teamId": 1,
-      "teamName": "Spitters Are Quitters",
-      "wins": 1,
-      "losses": 2,
-      "ties": 0,
-      "pointsFor": 375.2,
-      "pointsAgainst": 434.0,
-      "percentage": 0.3333333333333333
-    },
-    {
-      "teamId": 7,
-      "teamName": "Nabers ran Achane in Herbert",
-      "wins": 0,
       "losses": 3,
       "ties": 0,
-      "pointsFor": 453.1,
-      "pointsAgainst": 493.2,
-      "percentage": 0.0
+      "pointsFor": 625.2,
+      "pointsAgainst": 638.4,
+      "percentage": 0.25
     },
     {
       "teamId": 5,
       "teamName": "Papa Johns",
       "wins": 0,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "pointsFor": 385.6,
-      "pointsAgainst": 499.3,
+      "pointsFor": 502.4,
+      "pointsAgainst": 704.3,
       "percentage": 0.0
     }
   ],
@@ -230,42 +230,42 @@
     {
       "matchupPeriodId": 4,
       "homeTeamId": 10,
-      "homeScore": 0.0,
+      "homeScore": 159.9,
       "awayTeamId": 1,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 162.4,
+      "winner": "AWAY"
     },
     {
       "matchupPeriodId": 4,
       "homeTeamId": 2,
-      "homeScore": 0.0,
+      "homeScore": 103.7,
       "awayTeamId": 9,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 179.7,
+      "winner": "AWAY"
     },
     {
       "matchupPeriodId": 4,
       "homeTeamId": 3,
-      "homeScore": 0.0,
+      "homeScore": 145.5,
       "awayTeamId": 6,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 145.3,
+      "winner": "HOME"
     },
     {
       "matchupPeriodId": 4,
       "homeTeamId": 7,
-      "homeScore": 0.0,
+      "homeScore": 205.0,
       "awayTeamId": 5,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 116.8,
+      "winner": "HOME"
     },
     {
       "matchupPeriodId": 4,
       "homeTeamId": 4,
-      "homeScore": 0.0,
+      "homeScore": 153.1,
       "awayTeamId": 8,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 153.0,
+      "winner": "HOME"
     },
     {
       "matchupPeriodId": 5,
@@ -2565,7 +2565,13 @@
       "closestGame": "Mike defeated Toby by 5.30",
       "gameOfWeek": "Devin 123.40 \u2014 Hunter 157.80"
     },
-    "4": null,
+    "4": {
+      "highestScorer": "Matt \u2014 205.00 pts",
+      "lowestScorer": "Hunter \u2014 103.70 pts",
+      "biggestBlowout": "Matt defeated Steve P. by 88.20",
+      "closestGame": "Tom defeated Toby by 0.10",
+      "gameOfWeek": "Toby 153.00 \u2014 Tom 153.10"
+    },
     "5": null,
     "6": null,
     "7": null,
