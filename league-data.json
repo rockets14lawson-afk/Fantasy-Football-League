@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-07T21:15:49.830406+00:00",
+  "lastUpdated": "2026-10-08T01:02:36.148130+00:00",
   "currentMatchupPeriod": 5,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2328,7 +2328,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4429025,
-        "playerName": "Quentin Johnston",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
