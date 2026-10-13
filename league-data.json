@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-13T11:02:26.177889+00:00",
+  "lastUpdated": "2026-10-13T18:07:21.123790+00:00",
   "currentMatchupPeriod": 6,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1877,7 +1877,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 3917792,
-        "playerName": null,
+        "playerName": "Daniel Jones",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2405,7 +2405,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4689936,
-        "playerName": "Jake Bates",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2427,7 +2427,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": 17427,
-        "playerName": "Cairo Santos",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
