@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-17T09:40:42.368140+00:00",
+  "lastUpdated": "2026-10-17T13:12:02.440482+00:00",
   "currentMatchupPeriod": 6,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1811,7 +1811,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 4361411,
-        "playerName": null,
+        "playerName": "Pat Freiermuth",
         "bidAmount": 0,
         "keeper": false
       },
