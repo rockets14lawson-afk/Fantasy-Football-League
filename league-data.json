@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-20T15:47:18.221158+00:00",
+  "lastUpdated": "2026-10-20T19:38:44.086463+00:00",
   "currentMatchupPeriod": 7,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1239,7 +1239,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 3052587,
-        "playerName": null,
+        "playerName": "Baker Mayfield",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2097,7 +2097,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4870795,
-        "playerName": "Makai Lemon",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2350,7 +2350,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": 3917232,
-        "playerName": "Tyler Bass",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2515,7 +2515,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -16002,
-        "playerName": "Bills D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
