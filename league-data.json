@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-21T15:32:37.499620+00:00",
+  "lastUpdated": "2026-10-21T19:31:44.578312+00:00",
   "currentMatchupPeriod": 7,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1976,7 +1976,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 4362081,
-        "playerName": "Cameron Dicker",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2273,7 +2273,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": 3055899,
-        "playerName": null,
+        "playerName": "Harrison Butker",
         "bidAmount": 0,
         "keeper": false
       },
