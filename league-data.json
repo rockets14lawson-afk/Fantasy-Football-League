@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-21T10:32:44.355689+00:00",
+  "lastUpdated": "2026-10-21T15:32:37.499620+00:00",
   "currentMatchupPeriod": 7,
   "currentScoringPeriod": 1,
   "teams": [
@@ -788,7 +788,7 @@
         "teamId": 1,
         "manager": "Devin",
         "playerId": 4040715,
-        "playerName": "Jalen Hurts",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1305,7 +1305,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4038941,
-        "playerName": null,
+        "playerName": "Justin Herbert",
         "bidAmount": 0,
         "keeper": false
       },
