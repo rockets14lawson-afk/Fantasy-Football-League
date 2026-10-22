@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-22T10:33:01.371817+00:00",
+  "lastUpdated": "2026-10-22T15:33:44.268832+00:00",
   "currentMatchupPeriod": 7,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1613,7 +1613,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": 3121422,
-        "playerName": "Terry McLaurin",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
