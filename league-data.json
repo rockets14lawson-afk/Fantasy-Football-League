@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-10-29T02:45:51.238521+00:00",
+  "lastUpdated": "2026-10-29T08:56:46.229598+00:00",
   "currentMatchupPeriod": 8,
   "currentScoringPeriod": 1,
   "teams": [
@@ -61,7 +61,7 @@
       "wins": 3,
       "losses": 4,
       "ties": 0,
-      "pointsFor": 1085.3,
+      "pointsFor": 1086.3,
       "pointsAgainst": 1092.3,
       "percentage": 0.42857142857142855
     },
@@ -92,7 +92,7 @@
       "losses": 5,
       "ties": 0,
       "pointsFor": 974.8,
-      "pointsAgainst": 1128.9,
+      "pointsAgainst": 1129.9,
       "percentage": 0.2857142857142857
     },
     {
@@ -376,7 +376,7 @@
       "homeTeamId": 5,
       "homeScore": 115.4,
       "awayTeamId": 10,
-      "awayScore": 167.4,
+      "awayScore": 168.4,
       "winner": "AWAY"
     },
     {
@@ -1987,7 +1987,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -16033,
-        "playerName": "Ravens D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
