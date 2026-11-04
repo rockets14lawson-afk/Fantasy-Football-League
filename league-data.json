@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-04T00:11:51.846307+00:00",
+  "lastUpdated": "2026-11-04T06:19:26.923456+00:00",
   "currentMatchupPeriod": 9,
   "currentScoringPeriod": 1,
   "teams": [
@@ -689,7 +689,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 3916387,
-        "playerName": "Lamar Jackson",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -1305,7 +1305,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4038941,
-        "playerName": null,
+        "playerName": "Justin Herbert",
         "bidAmount": 0,
         "keeper": false
       },
@@ -1811,7 +1811,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 4361411,
-        "playerName": "Pat Freiermuth",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
