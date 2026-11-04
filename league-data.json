@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-04T14:42:16.442156+00:00",
+  "lastUpdated": "2026-11-04T20:56:21.139606+00:00",
   "currentMatchupPeriod": 9,
   "currentScoringPeriod": 1,
   "teams": [
@@ -57,7 +57,7 @@
     },
     {
       "teamId": 2,
-      "teamName": "MLP AGAIN ",
+      "teamName": "7-2",
       "wins": 4,
       "losses": 4,
       "ties": 0,
@@ -2042,7 +2042,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": 4360569,
-        "playerName": "Jordan Mason",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2207,7 +2207,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": 4686658,
-        "playerName": null,
+        "playerName": "Mike Washington Jr.",
         "bidAmount": 0,
         "keeper": false
       },
