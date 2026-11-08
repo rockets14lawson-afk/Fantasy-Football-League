@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-08T01:23:55.497442+00:00",
+  "lastUpdated": "2026-11-08T07:36:17.327483+00:00",
   "currentMatchupPeriod": 9,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2526,7 +2526,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 4688813,
-        "playerName": "Josh Downs",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
