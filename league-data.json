@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-10T10:15:47.899812+00:00",
+  "lastUpdated": "2026-11-10T17:54:17.889245+00:00",
   "currentMatchupPeriod": 10,
   "currentScoringPeriod": 1,
   "teams": [
@@ -57,7 +57,7 @@
     },
     {
       "teamId": 2,
-      "teamName": "7-2",
+      "teamName": "Middle of the road",
       "wins": 4,
       "losses": 5,
       "ties": 0,
