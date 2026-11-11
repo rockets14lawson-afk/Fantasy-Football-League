@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-10T22:39:23.642371+00:00",
+  "lastUpdated": "2026-11-11T02:14:22.717626+00:00",
   "currentMatchupPeriod": 10,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2416,7 +2416,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 4241474,
-        "playerName": "Brian Robinson Jr.",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
