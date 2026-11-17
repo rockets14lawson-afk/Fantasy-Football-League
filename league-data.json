@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-17T10:34:22.134470+00:00",
+  "lastUpdated": "2026-11-17T19:19:48.998489+00:00",
   "currentMatchupPeriod": 11,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1976,7 +1976,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 4362081,
-        "playerName": null,
+        "playerName": "Cameron Dicker",
         "bidAmount": 0,
         "keeper": false
       },
@@ -1987,7 +1987,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": -16033,
-        "playerName": "Ravens D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2042,7 +2042,7 @@
         "teamId": 9,
         "manager": "Josh",
         "playerId": 4360569,
-        "playerName": null,
+        "playerName": "Jordan Mason",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2119,7 +2119,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 4242355,
-        "playerName": "Jake Ferguson",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2240,7 +2240,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4373626,
-        "playerName": "Tyler Allgeier",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2515,7 +2515,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -16002,
-        "playerName": null,
+        "playerName": "Bills D/ST",
         "bidAmount": 0,
         "keeper": false
       },
