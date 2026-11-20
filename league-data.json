@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-20T03:57:56.495789+00:00",
+  "lastUpdated": "2026-11-20T12:32:49.563863+00:00",
   "currentMatchupPeriod": 11,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1965,7 +1965,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4569587,
-        "playerName": "Wan'Dale Robinson",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2526,7 +2526,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 4688813,
-        "playerName": "Josh Downs",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
