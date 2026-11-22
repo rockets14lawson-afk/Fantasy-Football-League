@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-21T21:45:41.883849+00:00",
+  "lastUpdated": "2026-11-22T01:39:16.269229+00:00",
   "currentMatchupPeriod": 11,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1734,7 +1734,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 3128429,
-        "playerName": null,
+        "playerName": "Courtland Sutton",
         "bidAmount": 0,
         "keeper": false
       },
