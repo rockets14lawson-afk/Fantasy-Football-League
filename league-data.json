@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-23T11:08:07.282651+00:00",
+  "lastUpdated": "2026-11-23T22:35:09.383233+00:00",
   "currentMatchupPeriod": 11,
   "currentScoringPeriod": 1,
   "teams": [
@@ -876,7 +876,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 4426515,
-        "playerName": "Puka Nacua",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
