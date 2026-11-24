@@ -1,109 +1,109 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-24T06:20:43.978127+00:00",
-  "currentMatchupPeriod": 11,
+  "lastUpdated": "2026-11-24T17:57:31.900149+00:00",
+  "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
     {
       "teamId": 3,
       "teamName": "Zero Dark Purdy",
-      "wins": 9,
+      "wins": 10,
       "losses": 1,
       "ties": 0,
-      "pointsFor": 1460.3,
-      "pointsAgainst": 1345.7,
-      "percentage": 0.9
+      "pointsFor": 1644.6,
+      "pointsAgainst": 1492.0,
+      "percentage": 0.9090909090909091
     },
     {
       "teamId": 9,
       "teamName": "89 and a  Wake Up",
-      "wins": 8,
+      "wins": 9,
       "losses": 2,
       "ties": 0,
-      "pointsFor": 1738.6,
-      "pointsAgainst": 1273.6,
-      "percentage": 0.8
+      "pointsFor": 1870.7,
+      "pointsAgainst": 1405.7,
+      "percentage": 0.8181818181818182
     },
     {
       "teamId": 4,
       "teamName": "Let's Go Muskies!",
       "wins": 7,
-      "losses": 3,
+      "losses": 4,
       "ties": 0,
-      "pointsFor": 1701.7,
-      "pointsAgainst": 1481.7,
-      "percentage": 0.7
+      "pointsFor": 1848.0,
+      "pointsAgainst": 1666.0,
+      "percentage": 0.6363636363636364
+    },
+    {
+      "teamId": 10,
+      "teamName": "Ceedeez Gibbs",
+      "wins": 6,
+      "losses": 5,
+      "ties": 0,
+      "pointsFor": 1739.3,
+      "pointsAgainst": 1693.0,
+      "percentage": 0.5454545454545454
     },
     {
       "teamId": 7,
       "teamName": "Nabers ran Achane in McBride",
       "wins": 5,
-      "losses": 5,
+      "losses": 6,
       "ties": 0,
-      "pointsFor": 1634.0,
-      "pointsAgainst": 1468.4,
-      "percentage": 0.5
-    },
-    {
-      "teamId": 10,
-      "teamName": "Ceedeez Gibbs",
-      "wins": 5,
-      "losses": 5,
-      "ties": 0,
-      "pointsFor": 1551.6,
-      "pointsAgainst": 1576.3,
-      "percentage": 0.5
+      "pointsFor": 1740.3,
+      "pointsAgainst": 1639.0,
+      "percentage": 0.45454545454545453
     },
     {
       "teamId": 2,
       "teamName": "Middle of the road",
       "wins": 5,
-      "losses": 5,
+      "losses": 6,
       "ties": 0,
-      "pointsFor": 1465.0,
-      "pointsAgainst": 1455.3,
-      "percentage": 0.5
+      "pointsFor": 1597.1,
+      "pointsAgainst": 1587.4,
+      "percentage": 0.45454545454545453
     },
     {
       "teamId": 5,
       "teamName": "Papa Johns",
-      "wins": 4,
+      "wins": 5,
       "losses": 6,
       "ties": 0,
-      "pointsFor": 1419.2,
-      "pointsAgainst": 1564.5,
-      "percentage": 0.4
+      "pointsFor": 1549.8,
+      "pointsAgainst": 1690.1,
+      "percentage": 0.45454545454545453
     },
     {
       "teamId": 1,
       "teamName": "Spitters Are Quitters",
       "wins": 4,
-      "losses": 6,
+      "losses": 7,
       "ties": 0,
-      "pointsFor": 1336.7,
-      "pointsAgainst": 1565.8,
-      "percentage": 0.4
+      "pointsFor": 1462.3,
+      "pointsAgainst": 1696.4,
+      "percentage": 0.36363636363636365
     },
     {
       "teamId": 6,
       "teamName": "Stone Cold Steve",
-      "wins": 2,
+      "wins": 3,
       "losses": 8,
       "ties": 0,
-      "pointsFor": 1423.6,
-      "pointsAgainst": 1664.4,
-      "percentage": 0.2
+      "pointsFor": 1594.2,
+      "pointsAgainst": 1770.7,
+      "percentage": 0.2727272727272727
     },
     {
       "teamId": 8,
       "teamName": "Team H00ch",
       "wins": 1,
-      "losses": 9,
+      "losses": 10,
       "ties": 0,
-      "pointsFor": 1335.5,
-      "pointsAgainst": 1670.5,
-      "percentage": 0.1
+      "pointsFor": 1452.2,
+      "pointsAgainst": 1858.2,
+      "percentage": 0.09090909090909091
     }
   ],
   "schedule": [
@@ -510,42 +510,42 @@
     {
       "matchupPeriodId": 11,
       "homeTeamId": 5,
-      "homeScore": 0.0,
+      "homeScore": 130.6,
       "awayTeamId": 1,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 125.6,
+      "winner": "HOME"
     },
     {
       "matchupPeriodId": 11,
       "homeTeamId": 8,
-      "homeScore": 0.0,
+      "homeScore": 116.7,
       "awayTeamId": 10,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 187.7,
+      "winner": "AWAY"
     },
     {
       "matchupPeriodId": 11,
       "homeTeamId": 4,
-      "homeScore": 0.0,
+      "homeScore": 146.3,
       "awayTeamId": 3,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 184.3,
+      "winner": "AWAY"
     },
     {
       "matchupPeriodId": 11,
       "homeTeamId": 7,
-      "homeScore": 0.0,
+      "homeScore": 106.3,
       "awayTeamId": 6,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 170.6,
+      "winner": "AWAY"
     },
     {
       "matchupPeriodId": 11,
       "homeTeamId": 9,
-      "homeScore": 0.0,
+      "homeScore": 132.1,
       "awayTeamId": 2,
-      "awayScore": 0.0,
-      "winner": "UNDECIDED"
+      "awayScore": 132.1,
+      "winner": "HOME"
     },
     {
       "matchupPeriodId": 12,
@@ -1569,7 +1569,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": -16014,
-        "playerName": null,
+        "playerName": "Rams D/ST",
         "bidAmount": 0,
         "keeper": false
       },
@@ -1811,7 +1811,7 @@
         "teamId": 10,
         "manager": "Philip",
         "playerId": 4361411,
-        "playerName": null,
+        "playerName": "Pat Freiermuth",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2515,7 +2515,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": -16002,
-        "playerName": "Bills D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2614,7 +2614,13 @@
       "closestGame": "Philip defeated Tom by 6.50",
       "gameOfWeek": "Toby 154.80 \u2014 Mike 175.30"
     },
-    "11": null,
+    "11": {
+      "highestScorer": "Philip \u2014 187.70 pts",
+      "lowestScorer": "Matt \u2014 106.30 pts",
+      "biggestBlowout": "Philip defeated Toby by 71.00",
+      "closestGame": "Josh defeated Hunter by 0.00",
+      "gameOfWeek": "Toby 116.70 \u2014 Philip 187.70"
+    },
     "12": null,
     "13": null,
     "14": null
