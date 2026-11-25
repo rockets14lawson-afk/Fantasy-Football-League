@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-25T01:56:15.221508+00:00",
+  "lastUpdated": "2026-11-25T10:49:27.877080+00:00",
   "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1239,7 +1239,7 @@
         "teamId": 2,
         "manager": "Hunter",
         "playerId": 3052587,
-        "playerName": null,
+        "playerName": "Baker Mayfield",
         "bidAmount": 0,
         "keeper": false
       },
@@ -2504,7 +2504,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": -16030,
-        "playerName": "Jaguars D/ST",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
