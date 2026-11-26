@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-25T20:13:56.836216+00:00",
+  "lastUpdated": "2026-11-26T02:51:47.580746+00:00",
   "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2053,7 +2053,7 @@
         "teamId": 6,
         "manager": "Steve H.",
         "playerId": 4360761,
-        "playerName": "Michael Wilson",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2064,7 +2064,7 @@
         "teamId": 4,
         "manager": "Tom",
         "playerId": 4569682,
-        "playerName": "Audric Estime",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
@@ -2229,7 +2229,7 @@
         "teamId": 5,
         "manager": "Steve P.",
         "playerId": 8439,
-        "playerName": "Aaron Rodgers",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
