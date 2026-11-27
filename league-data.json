@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-26T20:29:03.513658+00:00",
+  "lastUpdated": "2026-11-27T03:07:16.545626+00:00",
   "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
@@ -2075,7 +2075,7 @@
         "teamId": 8,
         "manager": "Toby",
         "playerId": 4241985,
-        "playerName": "J.K. Dobbins",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
