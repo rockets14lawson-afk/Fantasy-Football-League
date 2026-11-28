@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-28T03:14:24.667209+00:00",
+  "lastUpdated": "2026-11-28T11:51:23.737654+00:00",
   "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1305,7 +1305,7 @@
         "teamId": 7,
         "manager": "Matt",
         "playerId": 4038941,
-        "playerName": "Justin Herbert",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
