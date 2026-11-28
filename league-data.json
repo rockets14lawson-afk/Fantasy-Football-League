@@ -1,7 +1,7 @@
 {
   "leagueId": "90156758",
   "season": 2026,
-  "lastUpdated": "2026-11-27T21:05:27.395349+00:00",
+  "lastUpdated": "2026-11-28T03:14:24.667209+00:00",
   "currentMatchupPeriod": 12,
   "currentScoringPeriod": 1,
   "teams": [
@@ -1547,7 +1547,7 @@
         "teamId": 3,
         "manager": "Mike",
         "playerId": 3917315,
-        "playerName": "Kyler Murray",
+        "playerName": null,
         "bidAmount": 0,
         "keeper": false
       },
